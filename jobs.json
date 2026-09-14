@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 08:39",
+  "updated_at_kst": "2026-09-15 08:41",
   "collector_status": "ok",
   "criteria": "일반창: 알바몬·알바천국 월~목 TOP20 / 금~일 TOP10 · 내일 이후 근무 · 당근알바: 별도 TOP10 · 오늘 포함 · 부산·경남·울산 · 최근3일 등록 우선 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상",
   "weekday_jobs": [
@@ -402,7 +402,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 79,
+      "candidates": 82,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -513,10 +513,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 24,
+      "candidates": 27,
       "accepted": 0,
       "rejected": {
-        "past_work": 23,
+        "past_work": 26,
         "hourly_below_12000": 1
       }
     },
@@ -529,8 +529,8 @@
       "candidates": 27,
       "accepted": 0,
       "rejected": {
-        "past_work": 26,
-        "old_post": 1
+        "past_work": 25,
+        "old_post": 2
       }
     },
     {
