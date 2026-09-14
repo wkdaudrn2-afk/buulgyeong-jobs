@@ -232,6 +232,53 @@ def work_range(text: str):
     return None, None
 
 
+def daangn_work_range(title: str, text: str):
+    """당근 카드에서 다른 공고 날짜가 섞이지 않도록 날짜 우선순위를 제한한다."""
+    # 1. 공고 제목에 명시된 날짜를 최우선 사용
+    a, b = work_range(title or "")
+    if a and b:
+        return a, b
+
+    # 2. '총 N일 / 9월 16~18일' 형태에서 '/' 뒤 날짜 부분 우선
+    t = text or ""
+    m = re.search(
+        r"총\s*\d{1,2}\s*일\s*[/·|]\s*"
+        r"(\d{1,2})\s*[./월]\s*(\d{1,2})(?:일)?\s*"
+        r"(?:~|-|–|—)\s*(?:(\d{1,2})\s*[./월]\s*)?(\d{1,2})(?:일)?",
+        t
+    )
+    if m:
+        sm, sd = int(m.group(1)), int(m.group(2))
+        em = int(m.group(3)) if m.group(3) else sm
+        ed = int(m.group(4))
+        a, b = safe_date(sm, sd), safe_date(em, ed)
+        if a and b and b >= a and (b - a).days <= 31:
+            return a, b
+
+    # 3. 카드 텍스트 전체에서 일반 날짜 추출
+    return work_range(t)
+
+
+def daangn_card_text(a):
+    """당근 공고 링크 하나에 대응하는 작은 카드 영역만 선택한다."""
+    best = norm(a.get_text(" ", strip=True))
+    node = a
+    for _ in range(6):
+        node = getattr(node, "parent", None)
+        if node is None:
+            break
+        txt = norm(node.get_text(" ", strip=True))
+        # 제목 + 지역 + 급여 + 날짜가 들어갈 만큼 충분하지만,
+        # 이웃 공고가 섞일 정도로 큰 컨테이너는 피한다.
+        if 35 <= len(txt) <= 850:
+            has_pay = bool(re.search(r"(시급|일급|일당|건당|월급)", txt))
+            has_date = bool(re.search(r"(총\s*\d+\s*일|\d{1,2}\s*[./월]\s*\d{1,2})", txt))
+            if has_pay and has_date:
+                best = txt
+                break
+    return best
+
+
 def region_name(text: str):
     for w in REGION_WORDS:
         if w in text:
@@ -322,7 +369,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     if post and not post_verified:
         return None, "old_post"
 
-    wa, wb = work_range(text)
+    wa, wb = daangn_work_range(title, text) if source == "당근알바" else work_range(text)
     if not wa or not wb:
         return None, "no_work_date"
     if wa < TOMORROW:
@@ -365,6 +412,12 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "day_pay": pay,
         "hourly_pay": hourly,
         "pay_type": ptype,
+        "pay_display": (
+            f"일급 {pay:,}원" if ptype == "일급" and pay
+            else f"시급 {hourly:,}원" if ptype == "시급" and hourly
+            else f"{pay:,}원" if pay
+            else "급여 확인"
+        ),
         "apply": app,
         "url": href,
         "duration_days": days,
@@ -454,10 +507,7 @@ def parse_alba_index(url: str):
 
 
 def parse_daangn_index(url: str):
-    """당근알바 지역 검색 결과 전용 파서.
-
-    공개 검색결과 페이지의 카드/링크만 읽고, 로그인·캡차·접근제한은 우회하지 않는다.
-    """
+    """당근알바 공개 검색결과 전용 파서."""
     r, fetch_diag = fetch(url)
     diag = {
         "source": "당근알바",
@@ -475,31 +525,26 @@ def parse_daangn_index(url: str):
     soup = BeautifulSoup(r.text, "html.parser")
     out, seen = [], set()
 
-    # 검색결과의 실제 링크와 주변 카드 텍스트를 사용.
-    for a, card_text in candidate_blocks(soup):
+    # 실제 공고 링크만 처리한다. 검색/내비게이션 링크는 제외.
+    for a in soup.find_all("a", href=True):
         href = urljoin(r.url, a.get("href", ""))
         low = href.lower()
-
-        # 당근 내부의 채용공고/검색결과 관련 링크만 처리.
-        if "jobs.daangn.com" not in low and "daangn.com/kr/jobs" not in low:
+        if "jobs.daangn.com/job-posts/" not in low:
             continue
+        if href in seen:
+            continue
+        seen.add(href)
 
-        text2 = norm(card_text)
+        text2 = daangn_card_text(a)
         if len(text2) < 25 or not region_name(text2):
             continue
-
-        # 급여/근무일 정보가 전혀 없는 내비게이션 링크는 제외.
-        if not re.search(r"(시급|일급|일당|건당|총\s*\d+\s*일|\d{1,2}\s*[./월]\s*\d{1,2})", text2):
+        if not re.search(r"(시급|일급|일당|건당|월급)", text2):
+            continue
+        if not re.search(r"(총\s*\d+\s*일|\d{1,2}\s*[./월]\s*\d{1,2})", text2):
             continue
 
-        key = (href, text2[:180])
-        if key in seen:
-            continue
-        seen.add(key)
         diag["candidates"] += 1
-
         title = norm(a.get_text(" ", strip=True))
-        # 링크 텍스트가 짧으면 카드 텍스트의 첫 급여 표기 전까지를 제목 후보로 사용.
         if len(title) < 5:
             title = re.split(r"\s+(?:시급|일급|일당|건당|월급)\s*", text2, maxsplit=1)[0][:160]
 
@@ -511,7 +556,7 @@ def parse_daangn_index(url: str):
             diag["rejected"][why] = diag["rejected"].get(why, 0) + 1
 
     if diag["candidates"] == 0:
-        diag["reason"] = "당근 지역 검색 페이지 응답은 정상이나 공고 카드를 찾지 못함"
+        diag["reason"] = "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인"
     elif diag["accepted"] == 0:
         diag["reason"] = "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
     else:
@@ -696,7 +741,7 @@ def main():
             deduped[k] = j
     jobs = list(deduped.values())
     jobs.sort(key=lambda j: (
-        0 if j["duration_days"] == 1 else 1,
+        int(j.get("duration_days") or 99),
         0 if j.get("pay_type") == "일급" else 1,
         -int(j.get("day_pay") or 0),
         -int(j.get("hourly_pay") or 0),

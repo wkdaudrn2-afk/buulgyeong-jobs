@@ -49,6 +49,7 @@ h1{font-size:22px;margin:0 0 5px}.sub{font-size:11px;color:#dbeafe;line-height:1
 </div>
 <script>
 const fmtPay = n => n ? Number(n).toLocaleString('ko-KR')+'원' : '급여 확인';
+const jobPay = j => j.pay_display || (j.pay_type==='시급' && j.hourly_pay ? '시급 '+Number(j.hourly_pay).toLocaleString('ko-KR')+'원' : fmtPay(j.day_pay));
 function safe(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
 function render(data){
   const jobs=(data.jobs||[]).slice(0,20);
@@ -68,7 +69,7 @@ function render(data){
   top.innerHTML=''; list.innerHTML=''; empty.style.display=jobs.length?'none':'block';
   jobs.forEach((j,i)=>{
     const mini=document.createElement('div'); mini.className='toprowmini';
-    mini.innerHTML=`<div class="num">${i+1}위</div><div><div class="mtitle">${safe(j.title)}</div><div class="mmeta">${safe(j.work_date)} · ${safe(j.region)} · ${safe(j.source)}</div></div><div class="mpay">${fmtPay(j.day_pay)}</div>`;
+    mini.innerHTML=`<div class="num">${i+1}위</div><div><div class="mtitle">${safe(j.title)}</div><div class="mmeta">${safe(j.work_date)} · ${safe(j.region)} · ${safe(j.source)}</div></div><div class="mpay">${jobPay(j)}</div>`;
     top.appendChild(mini);
     const card=document.createElement('article'); card.className='card';
     card.innerHTML=`
@@ -81,7 +82,7 @@ function render(data){
         <b>지역</b><span>${safe(j.region||'-')}</span>
         <b>시간</b><span>${safe(j.work_time||'-')}</span>
         <b>업무</b><span>${safe(j.task||'-')}</span>
-        <b>급여</b><span class="pay">${fmtPay(j.day_pay)}</span>
+        <b>급여</b><span class="pay">${jobPay(j)}</span>
         <b>지원</b><span>${safe(j.apply||'-')}</span>
       </div>
       ${j.url?`<a class="go" href="${safe(j.url)}" target="_blank" rel="noopener">원본 공고 열기</a>`:''}`;
