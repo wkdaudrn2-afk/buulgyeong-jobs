@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 02:44",
+  "updated_at_kst": "2026-09-15 03:20",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -86,7 +86,7 @@
       "pay_type": "일급",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119193362?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119193485?logpath=14&productCount=1&sc=529",
       "duration_days": 2,
       "duration_label": "2일",
       "priority_hits": 1
@@ -233,8 +233,9 @@
       "candidates": 141,
       "accepted": 12,
       "messages": [
-        "공개 페이지 정상 · 10건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 6건 통과",
+        "공개 페이지 정상 · 5건 통과",
         "공개 페이지 정상 · 1건 통과"
       ]
     },
@@ -279,15 +280,15 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 10건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 63,
-      "accepted": 10,
+      "candidates": 61,
+      "accepted": 0,
       "rejected": {
-        "no_work_date": 33,
+        "no_work_date": 40,
         "old_post": 16,
-        "too_long": 2,
-        "past_or_today": 2
+        "too_long": 4,
+        "past_or_today": 1
       }
     },
     {
@@ -296,54 +297,52 @@
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 18,
+      "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "no_work_date": 15,
-        "hourly_below_12000": 1,
-        "too_long": 1,
-        "past_or_today": 1
+        "no_work_date": 20
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 1건 통과",
+      "reason": "공개 페이지 정상 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 1,
+      "accepted": 6,
       "rejected": {
-        "too_long": 2,
-        "past_or_today": 1,
-        "no_work_date": 15,
-        "hourly_below_12000": 1
+        "no_work_date": 7,
+        "too_long": 3,
+        "past_or_today": 4
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 1건 통과",
+      "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 1,
+      "accepted": 5,
       "rejected": {
-        "no_work_date": 19
+        "no_work_date": 13,
+        "past_or_today": 2
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 1,
       "rejected": {
-        "no_work_date": 16,
-        "too_long": 3,
-        "past_or_today": 1
+        "no_work_date": 15,
+        "hourly_below_12000": 2,
+        "past_or_today": 1,
+        "too_long": 1
       }
     },
     {
