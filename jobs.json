@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 07:17",
+  "updated_at_kst": "2026-09-15 07:44",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -233,9 +233,9 @@
       "candidates": 141,
       "accepted": 13,
       "messages": [
-        "공개 페이지 정상 · 7건 통과",
+        "공개 페이지 정상 · 9건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 6건 통과"
+        "공개 페이지 정상 · 4건 통과"
       ]
     },
     "알바천국": {
@@ -243,7 +243,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 88,
+      "candidates": 75,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -254,12 +254,13 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 6,
+      "candidates": 7,
       "accepted": 5,
       "messages": [
         "당근 공개 검색결과 정상 · 2건 통과",
-        "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
-        "당근 공개 검색결과 정상 · 1건 통과"
+        "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+        "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인"
       ]
     },
     "급구": {
@@ -279,12 +280,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 7건 통과",
+      "reason": "공개 페이지 정상 · 9건 통과",
       "http": 200,
       "candidates": 61,
-      "accepted": 7,
+      "accepted": 9,
       "rejected": {
-        "no_work_date": 31,
+        "no_work_date": 29,
         "old_post": 16,
         "too_long": 4,
         "past_or_today": 3
@@ -311,23 +312,22 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "no_work_date": 18,
-        "too_long": 1,
-        "past_or_today": 1
+        "no_work_date": 19,
+        "too_long": 1
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 6건 통과",
+      "reason": "공개 페이지 정상 · 4건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 6,
+      "accepted": 4,
       "rejected": {
-        "too_long": 2,
-        "past_or_today": 3,
-        "no_work_date": 9
+        "past_or_today": 4,
+        "no_work_date": 10,
+        "too_long": 2
       }
     },
     {
@@ -351,10 +351,11 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 26,
+      "candidates": 27,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 26
+        "past_or_today": 26,
+        "too_long": 1
       }
     },
     {
@@ -363,10 +364,12 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 30,
+      "candidates": 31,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 30
+        "past_or_today": 29,
+        "hourly_below_12000": 1,
+        "old_post": 1
       }
     },
     {
@@ -375,10 +378,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 32,
+      "candidates": 17,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 31,
+        "past_or_today": 16,
         "old_post": 1
       }
     },
@@ -396,11 +399,13 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D",
       "state": "ok",
-      "reason": "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
+      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 0,
+      "candidates": 1,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "past_or_today": 1
+      }
     },
     {
       "source": "당근알바",
