@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""부울경 단기알바 수집기 v2
+"""부울경 단기알바 수집기 v3 TOP20
 
 원칙
 - 공개 페이지에서만 수집
@@ -30,7 +30,7 @@ TODAY = NOW.date()
 TOMORROW = TODAY + timedelta(days=1)
 OUT = Path(__file__).with_name("jobs.json")
 
-UA = "BuUlGyeongJobChecker/2.0 (+public-pages-only)"
+UA = "Mozilla/5.0 (compatible; BuUlGyeongJobChecker/3.0; +public-pages-only)"
 HEADERS = {
     "User-Agent": UA,
     "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.5",
@@ -47,7 +47,7 @@ PRIORITY_WORDS = (
     "행사", "전시", "설치", "철거", "물류", "진열", "보조", "스태프", "포장", "피킹",
     "상하차", "세팅", "정리", "매장", "창고"
 )
-CLOSED_WORDS = ("채용마감", "접수마감", "모집마감", "마감되었습니다", "종료", "삭제", "채용완료")
+CLOSED_WORDS = ("마감되었습니다", "접수가 마감", "채용이 마감", "종료된 공고", "삭제된 공고", "채용완료")
 OPEN_WORDS = ("상시모집", "모집중", "지원", "채용중", "전화", "문자", "온라인")
 
 # 공개 목록 페이지. 한 소스가 실패해도 다른 소스는 계속 진행합니다.
@@ -57,7 +57,9 @@ SOURCE_PAGES = [
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=3"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=4"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=5"),
-    ("알바천국", "https://www.alba.co.kr/job/object/main"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3"),
     ("당근알바", "https://www.daangn.com/kr/jobs/"),
     ("당근알바", "https://jobs.daangn.com/"),
 ]
@@ -156,7 +158,15 @@ def posted_date_from_text(text: str):
     m = re.search(r"(\d+)\s*일\s*전", text)
     if m:
         return (NOW - timedelta(days=int(m.group(1)))).date()
-    # '등록 09.14', '게시일 9/14', '등록일 : 2026-09-14'
+    # 알바천국 상세 상단처럼 라벨 없이 2026.09.14 13:24가 표시되는 경우
+    head = text[:900]
+    m = re.search(r"(20\d{2})[./-](\d{1,2})[./-](\d{1,2})(?:\s+\d{1,2}:\d{2})?", head)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)), tzinfo=KST).date()
+        except ValueError:
+            pass
+    # '등록 09.14', '게시일 9/14'
     m = re.search(r"(?:등록일?|게시일?|작성일?)\s*[:：]?\s*(?:20\d{2}[./-])?(\d{1,2})[./-](\d{1,2})", text)
     if m:
         return safe_date(int(m.group(1)), int(m.group(2)))
@@ -309,6 +319,87 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     }, "accepted"
 
 
+def alba_detail_links(soup: BeautifulSoup, base_url: str):
+    """알바천국 목록에서 부산·경남·울산의 최근 공고 상세 링크만 추린다."""
+    out, seen = [], set()
+    for a, text in candidate_blocks(soup):
+        href = urljoin(base_url, a.get("href", ""))
+        if "alba.co.kr/job/" not in href.lower() or "adid=" not in href.lower():
+            continue
+        if not region_name(text):
+            continue
+        post = posted_date_from_text(text)
+        if post and not (0 <= (TODAY - post).days <= 3):
+            continue
+        # 목록 텍스트에 '시간 전/분 전/오늘' 등이 있으면 최근 후보로 간주
+        key = re.search(r"adid=(\d+)", href, re.I)
+        key = key.group(1) if key else href
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(href)
+    return out[:50]
+
+
+def parse_alba_detail(url: str):
+    r, fd = fetch(url)
+    if not r:
+        return None, fd
+    soup = BeautifulSoup(r.text, "html.parser")
+    text = norm(soup.get_text(" ", strip=True))
+
+    # 제목/업체명: OG title이 '업체 채용정보 : 공고제목 - 알바천국' 형식인 경우 우선
+    title, company = "", ""
+    og = soup.find("meta", attrs={"property": "og:title"})
+    ogt = norm(og.get("content", "")) if og else ""
+    m = re.match(r"(.+?)\s+채용정보\s*:\s*(.+?)\s*-\s*알바천국", ogt)
+    if m:
+        company, title = norm(m.group(1)), norm(m.group(2))
+    if not title:
+        h = soup.find(["h1", "h2"])
+        title = norm(h.get_text(" ", strip=True)) if h else ""
+    if not company:
+        # 상세 페이지 상단의 첫 줄이 업체명인 경우가 많음
+        lines = [norm(x) for x in soup.get_text("\n", strip=True).splitlines() if norm(x)]
+        for x in lines[:30]:
+            if x == title or "채용정보" in x or x.startswith("2026.") or x in ("인쇄하기", "공유하기", "닫기"):
+                continue
+            if 1 < len(x) < 60 and not re.search(r"^(일급|시급|월급|기간|요일|시간|모집)", x):
+                company = x
+                break
+    j, why = job_from_text("알바천국", title, company, text, r.url)
+    return j, {"state":"ok","reason":why,"http":r.status_code}
+
+
+def parse_alba_index(url: str):
+    r, fetch_diag = fetch(url)
+    diag = {"source":"알바천국","url":url,"state":fetch_diag["state"],"reason":fetch_diag["reason"],"http":fetch_diag.get("http"),"candidates":0,"accepted":0,"rejected":{}}
+    if not r:
+        return [], diag
+    soup = BeautifulSoup(r.text, "html.parser")
+    links = alba_detail_links(soup, r.url)
+    diag["candidates"] = len(links)
+    out=[]
+    for href in links:
+        try:
+            j, info = parse_alba_detail(href)
+            if j:
+                out.append(j); diag["accepted"] += 1
+            else:
+                why = info.get("reason", "detail_rejected") if isinstance(info,dict) else "detail_rejected"
+                diag["rejected"][why] = diag["rejected"].get(why,0)+1
+        except Exception as e:
+            k=f"detail_{type(e).__name__}"; diag["rejected"][k]=diag["rejected"].get(k,0)+1
+        time.sleep(0.25)
+    if not links:
+        diag["reason"]="목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함"
+    elif out:
+        diag["reason"]=f"알바천국 상세공고 {len(out)}건 통과"
+    else:
+        diag["reason"]="상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+    return out, diag
+
+
 def parse_page(source: str, url: str):
     r, fetch_diag = fetch(url)
     diag = {
@@ -396,7 +487,10 @@ def main():
     jobs, diags = [], []
     for source, url in SOURCE_PAGES:
         try:
-            found, diag = parse_page(source, url)
+            if source == "알바천국":
+                found, diag = parse_alba_index(url)
+            else:
+                found, diag = parse_page(source, url)
             jobs.extend(found)
             diags.append(diag)
             print(f"[{source}] {diag['state']} candidates={diag['candidates']} accepted={diag['accepted']} {diag['reason']}")
@@ -419,13 +513,13 @@ def main():
         -j["priority_hits"],
         j["work_start"],
     ))
-    jobs = jobs[:10]
+    jobs = jobs[:20]
 
     source_summary = summarize_sources(diags)
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
+        "criteria": "TOP20 · 최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
         "jobs": jobs,
         "source_summary": source_summary,
         "diagnostics": diags,
