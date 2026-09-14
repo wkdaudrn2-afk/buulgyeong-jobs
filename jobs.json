@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 06:44",
+  "updated_at_kst": "2026-09-15 07:17",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -180,28 +180,6 @@
       "priority_hits": 0
     },
     {
-      "source": "알바천국",
-      "posted_at": "2026-09-15",
-      "posted_verified": true,
-      "work_date": "09/20~09/24",
-      "work_start": "2026-09-20",
-      "work_end": "2026-09-24",
-      "region": "부산",
-      "company": "아웃백스테이크하우스코리아/여수웅천점",
-      "title": "[아웃백] 여수웅천점 홀&주방 직원(파트타임) 모집",
-      "task": "물류, 진열, 보조, 포장, 정리, 매장",
-      "work_time": "17:00~21:00",
-      "day_pay": 49600,
-      "hourly_pay": 12400,
-      "pay_type": "시급",
-      "pay_display": "시급 12,400원",
-      "apply": "온라인지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146844045&listmenucd=OPTION",
-      "duration_days": 5,
-      "duration_label": "5일",
-      "priority_hits": 6
-    },
-    {
       "source": "알바몬",
       "posted_at": "2026-09-15",
       "posted_verified": true,
@@ -255,9 +233,9 @@
       "candidates": 141,
       "accepted": 13,
       "messages": [
+        "공개 페이지 정상 · 7건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 2건 통과",
-        "공개 페이지 정상 · 11건 통과"
+        "공개 페이지 정상 · 6건 통과"
       ]
     },
     "알바천국": {
@@ -265,11 +243,10 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 65,
-      "accepted": 1,
+      "candidates": 88,
+      "accepted": 0,
       "messages": [
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "알바천국 상세공고 1건 통과"
+        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
       ]
     },
     "당근알바": {
@@ -302,15 +279,15 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 7건 통과",
       "http": 200,
       "candidates": 61,
-      "accepted": 0,
+      "accepted": 7,
       "rejected": {
-        "no_work_date": 40,
+        "no_work_date": 31,
         "old_post": 16,
         "too_long": 4,
-        "past_or_today": 1
+        "past_or_today": 3
       }
     },
     {
@@ -329,27 +306,28 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
       "candidates": 20,
-      "accepted": 2,
+      "accepted": 0,
       "rejected": {
-        "no_work_date": 11,
-        "too_long": 3,
-        "past_or_today": 4
+        "no_work_date": 18,
+        "too_long": 1,
+        "past_or_today": 1
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 11건 통과",
+      "reason": "공개 페이지 정상 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 11,
+      "accepted": 6,
       "rejected": {
-        "no_work_date": 7,
-        "past_or_today": 2
+        "too_long": 2,
+        "past_or_today": 3,
+        "no_work_date": 9
       }
     },
     {
@@ -373,11 +351,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 23,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 21,
-        "old_post": 2
+        "past_or_today": 26
       }
     },
     {
@@ -386,24 +363,23 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 17,
+      "candidates": 30,
       "accepted": 0,
       "rejected": {
-        "too_long": 1,
-        "past_or_today": 16
+        "past_or_today": 30
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
       "state": "ok",
-      "reason": "알바천국 상세공고 1건 통과",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
-      "accepted": 1,
+      "candidates": 32,
+      "accepted": 0,
       "rejected": {
-        "past_or_today": 23,
-        "too_long": 1
+        "past_or_today": 31,
+        "old_post": 1
       }
     },
     {
