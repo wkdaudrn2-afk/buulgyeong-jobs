@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-14 20:32",
+  "updated_at_kst": "2026-09-14 21:38",
   "collector_status": "ok",
   "criteria": "TOP20 · 최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
   "jobs": [
@@ -26,39 +26,20 @@
       "source": "알바천국",
       "posted_at": "2026-09-14",
       "posted_verified": true,
-      "work_date": "09/21~09/24",
-      "work_start": "2026-09-21",
-      "work_end": "2026-09-24",
+      "work_date": "09/16~09/18",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-18",
       "region": "부산",
-      "company": "이마트에브리데이 동탄목동점",
-      "title": "[이마트에브리데이 동탄목동점] 단기 아르바이트를 모집합니다.",
-      "task": "진열, 포장, 정리, 매장",
-      "work_time": "06:00~10:00",
-      "day_pay": 90000,
-      "apply": "온라인지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146836894&listmenucd=OPTION",
-      "duration_days": 4,
-      "duration_label": "4일",
+      "company": "세븐일레븐 통영봉평점",
+      "title": "단기 9월16일~ 9월18일 (22-09시)",
+      "task": "행사, 물류, 스태프, 매장",
+      "work_time": "22:00~09:00",
+      "day_pay": 120000,
+      "apply": "문자지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146899950&listmenucd=OPTION",
+      "duration_days": 3,
+      "duration_label": "3일",
       "priority_hits": 4
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
-      "work_date": "09/21~09/24",
-      "work_start": "2026-09-21",
-      "work_end": "2026-09-24",
-      "region": "부산",
-      "company": "이마트에브리데이 개봉동점",
-      "title": "[이마트에브리데이 개봉동점] 단기 아르바이트를 모집합니다.",
-      "task": "스태프, 매장",
-      "work_time": "09:00~18:00",
-      "day_pay": 90000,
-      "apply": "온라인지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146836887&listmenucd=OPTION",
-      "duration_days": 4,
-      "duration_label": "4일",
-      "priority_hits": 2
     },
     {
       "source": "알바몬",
@@ -83,20 +64,39 @@
       "source": "알바천국",
       "posted_at": "2026-09-14",
       "posted_verified": true,
+      "work_date": "09/18~09/20",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-20",
+      "region": "부산",
+      "company": "써브웨이 경남양산덕계메가마트점",
+      "title": "[써브웨이 양산덕계메가마트점] 매장에서 함께 일할 직원 구합니다 주말마감파트",
+      "task": "행사, 매장",
+      "work_time": "15:30~21:30",
+      "day_pay": 61920,
+      "apply": "이메일지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146772912&listmenucd=OPTION",
+      "duration_days": 3,
+      "duration_label": "3일",
+      "priority_hits": 2
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
       "work_date": "09/24~09/26",
       "work_start": "2026-09-24",
       "work_end": "2026-09-26",
       "region": "부산",
-      "company": "CU 고성죽왕점",
-      "title": "CU고성죽왕점 모집합니다(오전 10시 이후 연락부탁드립니다)",
-      "task": "매장",
-      "work_time": "06:00~13:00",
-      "day_pay": 72240,
-      "apply": "원본 공고 확인",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146855811&listmenucd=OPTION",
+      "company": "CU 송도밀레니엄점",
+      "title": "송도 밀레니엄cu(신규) 평일 오 전 목 금 스태프 공고모집",
+      "task": "스태프, 매장",
+      "work_time": "08:30~13:30",
+      "day_pay": 51600,
+      "apply": "문자지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146725741&listmenucd=OPTION",
       "duration_days": 3,
       "duration_label": "3일",
-      "priority_hits": 1
+      "priority_hits": 2
     },
     {
       "source": "알바몬",
@@ -245,7 +245,7 @@
       "work_time": "시간 확인",
       "day_pay": 0,
       "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/118998929?logpath=14&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/118919012?logpath=14&sc=529",
       "duration_days": 4,
       "duration_label": "4일",
       "priority_hits": 0
@@ -260,10 +260,10 @@
       "candidates": 151,
       "accepted": 19,
       "messages": [
-        "공개 페이지 정상 · 13건 통과",
         "공개 페이지 정상 · 2건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 4건 통과"
+        "공개 페이지 정상 · 5건 통과",
+        "공개 페이지 정상 · 12건 통과"
       ]
     },
     "알바천국": {
@@ -271,12 +271,11 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 87,
+      "candidates": 57,
       "accepted": 3,
       "messages": [
-        "알바천국 상세공고 1건 통과",
-        "알바천국 상세공고 2건 통과",
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "알바천국 상세공고 3건 통과"
       ]
     },
     "당근알바": {
@@ -296,28 +295,26 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 13건 통과",
+      "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
-      "candidates": 79,
-      "accepted": 13,
+      "candidates": 74,
+      "accepted": 2,
       "rejected": {
-        "no_work_date": 38,
-        "too_long": 2,
-        "past_or_today": 26
+        "no_work_date": 39,
+        "too_long": 5,
+        "past_or_today": 28
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 15,
-      "accepted": 2,
+      "candidates": 20,
+      "accepted": 0,
       "rejected": {
-        "no_work_date": 7,
-        "too_long": 3,
-        "past_or_today": 3
+        "no_work_date": 20
       }
     },
     {
@@ -336,62 +333,66 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 5,
       "rejected": {
-        "no_work_date": 20
+        "no_work_date": 7,
+        "too_long": 4,
+        "past_or_today": 4
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 12건 통과",
       "http": 200,
       "candidates": 17,
-      "accepted": 4,
+      "accepted": 12,
       "rejected": {
-        "no_work_date": 5,
-        "too_long": 4,
-        "past_or_today": 4
+        "past_or_today": 1,
+        "no_work_date": 4
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
       "state": "ok",
-      "reason": "알바천국 상세공고 1건 통과",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 28,
-      "accepted": 1,
+      "candidates": 16,
+      "accepted": 0,
       "rejected": {
-        "past_or_today": 27
+        "past_or_today": 15,
+        "old_post": 1
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
       "state": "ok",
-      "reason": "알바천국 상세공고 2건 통과",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 29,
-      "accepted": 2,
+      "candidates": 13,
+      "accepted": 0,
       "rejected": {
-        "past_or_today": 27
+        "past_or_today": 13
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
       "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "알바천국 상세공고 3건 통과",
       "http": 200,
-      "candidates": 30,
-      "accepted": 0,
+      "candidates": 28,
+      "accepted": 3,
       "rejected": {
-        "past_or_today": 30
+        "past_or_today": 23,
+        "old_post": 1,
+        "too_long": 1
       }
     },
     {
