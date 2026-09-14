@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 05:17",
+  "updated_at_kst": "2026-09-15 05:44",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -233,9 +233,9 @@
       "candidates": 141,
       "accepted": 13,
       "messages": [
-        "공개 페이지 정상 · 9건 통과",
+        "공개 페이지 정상 · 11건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 4건 통과"
+        "공개 페이지 정상 · 2건 통과"
       ]
     },
     "알바천국": {
@@ -279,14 +279,14 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 9건 통과",
+      "reason": "공개 페이지 정상 · 11건 통과",
       "http": 200,
-      "candidates": 62,
-      "accepted": 9,
+      "candidates": 63,
+      "accepted": 11,
       "rejected": {
         "no_work_date": 32,
         "old_post": 16,
-        "too_long": 3,
+        "too_long": 2,
         "past_or_today": 2
       }
     },
@@ -296,12 +296,12 @@
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 19,
+      "candidates": 18,
       "accepted": 0,
       "rejected": {
-        "too_long": 1,
-        "past_or_today": 1,
-        "no_work_date": 17
+        "no_work_date": 15,
+        "too_long": 2,
+        "past_or_today": 1
       }
     },
     {
@@ -320,12 +320,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 4,
+      "accepted": 2,
       "rejected": {
-        "no_work_date": 9,
+        "no_work_date": 11,
         "too_long": 3,
         "past_or_today": 4
       }
