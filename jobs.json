@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-14 23:36",
+  "updated_at_kst": "2026-09-14 23:39",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -108,7 +108,7 @@
       "pay_type": "시급",
       "pay_display": "시급 12,000원",
       "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/118998929?logpath=14&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/118919012?logpath=14&sc=529",
       "duration_days": 4,
       "duration_label": "4일",
       "priority_hits": 0
@@ -255,9 +255,9 @@
       "candidates": 151,
       "accepted": 17,
       "messages": [
-        "공개 페이지 정상 · 13건 통과",
+        "공개 페이지 정상 · 14건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 4건 통과"
+        "공개 페이지 정상 · 3건 통과"
       ]
     },
     "알바천국": {
@@ -265,7 +265,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 81,
+      "candidates": 75,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -300,13 +300,13 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 13건 통과",
+      "reason": "공개 페이지 정상 · 14건 통과",
       "http": 200,
       "candidates": 79,
-      "accepted": 13,
+      "accepted": 14,
       "rejected": {
         "no_work_date": 37,
-        "too_long": 3,
+        "too_long": 2,
         "past_or_today": 25,
         "hourly_below_12000": 1
       }
@@ -355,14 +355,14 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 3건 통과",
       "http": 200,
       "candidates": 17,
-      "accepted": 4,
+      "accepted": 3,
       "rejected": {
+        "no_work_date": 6,
         "too_long": 3,
-        "past_or_today": 5,
-        "no_work_date": 5
+        "past_or_today": 5
       }
     },
     {
@@ -371,11 +371,11 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 28,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 24,
-        "old_post": 1
+        "past_or_today": 27,
+        "hourly_below_12000": 1
       }
     },
     {
@@ -384,11 +384,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 22,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 24,
-        "hourly_below_12000": 1
+        "past_or_today": 22
       }
     },
     {
@@ -397,10 +396,11 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 31,
+      "candidates": 25,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 31
+        "past_or_today": 24,
+        "too_long": 1
       }
     },
     {
