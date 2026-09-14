@@ -367,8 +367,10 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     wa, wb = daangn_work_range(title, text) if source == "당근알바" else work_range(text)
     if not wa or not wb:
         return None, "no_work_date"
-    if wa < TOMORROW:
-        return None, "past_or_today"
+    # 일반 사이트는 내일 이후만, 당근알바 전용은 오늘 공고도 포함
+    min_work_date = TODAY if source == "당근알바" else TOMORROW
+    if wa < min_work_date:
+        return None, "past_work"
 
     # 당근은 '총 2일 / 9월16~23일'처럼 실제 2일 근무인데 날짜 범위가 길게 보일 수 있다.
     stated_days = total_work_days_from_text(text)
@@ -705,7 +707,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "일반창: 알바몬·알바천국 월~목 TOP20 / 금~일 TOP10 · 당근알바: 별도 TOP10 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상",
+        "criteria": "일반창: 알바몬·알바천국 월~목 TOP20 / 금~일 TOP10 · 내일 이후 근무 · 당근알바: 별도 TOP10 · 오늘 포함 · 부산·경남·울산 · 최근3일 등록 우선 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상",
         "weekday_jobs": weekday_jobs,
         "weekend_jobs": weekend_jobs,
         "daangn_jobs": daangn_jobs,

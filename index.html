@@ -34,7 +34,7 @@ function cls(s){return s==='당근알바'?'carrot':s==='알바천국'?'alba':'am
 function jobs(){return !D?[]:(TAB==='weekday'?D.weekday_jobs||[]:TAB==='weekend'?D.weekend_jobs||[]:D.daangn_jobs||[])}
 function setTab(t){TAB=t;['wd','we','dg'].forEach(x=>document.getElementById(x).classList.remove('active'));document.getElementById(t==='weekday'?'wd':t==='weekend'?'we':'dg').classList.add('active');
 document.getElementById('topName').textContent=t==='weekday'?'TOP20':'TOP10';
-document.getElementById('sub').textContent=t==='daangn'?'🥕 당근알바 전용 / 부산·울산·경남 / TOP10':'알바몬 · 알바천국 / 부산·울산·경남 / 최근 3일 등록 / 시급 12,000원 이상';
+document.getElementById('sub').textContent=t==='daangn'?'🥕 당근알바 전용 / 오늘 근무 포함 / 부산·울산·경남 / TOP10':'알바몬 · 알바천국 / 부산·울산·경남 / 최근 3일 등록 / 시급 12,000원 이상';
 document.getElementById('refreshText').textContent=t==='daangn'?'화면 1분마다 새 데이터 확인':'30분 자동수집';
 if(timer)clearInterval(timer);timer=setInterval(load,t==='daangn'?60000:300000);render()}
 function render(){if(!D)return;const a=jobs();document.getElementById('info').textContent=`현재 ${a.length}건 표시 · 하루알바/짧은 기간/급여 우선`;
