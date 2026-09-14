@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-14 23:47",
+  "updated_at_kst": "2026-09-15 00:19",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -27,7 +27,7 @@
     },
     {
       "source": "알바몬",
-      "posted_at": "2026-09-14",
+      "posted_at": "2026-09-15",
       "posted_verified": true,
       "work_date": "09/16",
       "work_start": "2026-09-16",
@@ -42,7 +42,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119188347?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187139?logpath=14&productCount=1&sc=529",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "priority_hits": 1
@@ -71,8 +71,8 @@
     },
     {
       "source": "알바몬",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "09/22~09/24",
       "work_start": "2026-09-22",
       "work_end": "2026-09-24",
@@ -108,7 +108,7 @@
       "pay_type": "시급",
       "pay_display": "시급 12,000원",
       "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/118919012?logpath=14&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/118998929?logpath=14&sc=529",
       "duration_days": 4,
       "duration_label": "4일",
       "priority_hits": 0
@@ -181,29 +181,7 @@
     },
     {
       "source": "알바몬",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
-      "work_date": "09/15~09/19",
-      "work_start": "2026-09-15",
-      "work_end": "2026-09-19",
-      "region": "부산",
-      "company": "",
-      "title": "(초보가능) 콘서트 무대설치철거 보조요원",
-      "task": "행사, 설치, 철거, 보조",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "급여 확인",
-      "pay_display": "급여 확인",
-      "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119177435?logpath=14&productCount=1&sc=529",
-      "duration_days": 5,
-      "duration_label": "5일",
-      "priority_hits": 4
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "2026-09-14",
+      "posted_at": "2026-09-15",
       "posted_verified": true,
       "work_date": "09/23~09/27",
       "work_start": "2026-09-23",
@@ -252,23 +230,24 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 151,
-      "accepted": 17,
+      "candidates": 142,
+      "accepted": 14,
       "messages": [
-        "공개 페이지 정상 · 14건 통과",
+        "공개 페이지 정상 · 3건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 3건 통과"
+        "공개 페이지 정상 · 6건 통과",
+        "공개 페이지 정상 · 5건 통과"
       ]
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 0,
-      "blocked_pages": 3,
+      "ok_pages": 3,
+      "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 0,
       "accepted": 0,
       "messages": [
-        "robots 확인 실패: URLError"
+        "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함"
       ]
     },
     "당근알바": {
@@ -276,10 +255,11 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 8,
+      "candidates": 6,
       "accepted": 3,
       "messages": [
         "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
         "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
       ]
     },
@@ -300,35 +280,19 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 14건 통과",
+      "reason": "공개 페이지 정상 · 3건 통과",
       "http": 200,
-      "candidates": 79,
-      "accepted": 14,
+      "candidates": 62,
+      "accepted": 3,
       "rejected": {
-        "no_work_date": 37,
-        "too_long": 2,
-        "past_or_today": 25,
-        "hourly_below_12000": 1
+        "no_work_date": 41,
+        "old_post": 16,
+        "too_long": 2
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
-      "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 15,
-      "accepted": 0,
-      "rejected": {
-        "too_long": 3,
-        "past_or_today": 3,
-        "hourly_below_12000": 1,
-        "no_work_date": 8
-      }
-    },
-    {
-      "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
@@ -340,37 +304,54 @@
     },
     {
       "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 6,
       "rejected": {
-        "no_work_date": 19,
-        "too_long": 1
+        "no_work_date": 6,
+        "too_long": 4,
+        "past_or_today": 4
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 5건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 5,
+      "rejected": {
+        "past_or_today": 6,
+        "no_work_date": 4,
+        "hourly_below_12000": 2,
+        "too_long": 3
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 3건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 17,
-      "accepted": 3,
+      "candidates": 20,
+      "accepted": 0,
       "rejected": {
-        "no_work_date": 6,
-        "too_long": 3,
-        "past_or_today": 5
+        "past_or_today": 3,
+        "no_work_date": 13,
+        "old_post": 2,
+        "too_long": 2
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
+      "state": "ok",
+      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
+      "http": 200,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -378,9 +359,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
+      "state": "ok",
+      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
+      "http": 200,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -388,9 +369,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
+      "state": "ok",
+      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
+      "http": 200,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -401,23 +382,19 @@
       "state": "ok",
       "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 2,
+      "candidates": 1,
       "accepted": 1,
-      "rejected": {
-        "no_work_date": 1
-      }
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
       "http": 200,
-      "candidates": 1,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "hourly_below_12000": 1
-      }
+      "rejected": {}
     },
     {
       "source": "당근알바",
@@ -425,9 +402,11 @@
       "state": "ok",
       "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 1,
+      "candidates": 2,
       "accepted": 1,
-      "rejected": {}
+      "rejected": {
+        "no_work_date": 1
+      }
     },
     {
       "source": "당근알바",
@@ -447,11 +426,10 @@
       "state": "ok",
       "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 2,
+      "candidates": 1,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 1,
-        "no_work_date": 1
+        "past_or_today": 1
       }
     },
     {
