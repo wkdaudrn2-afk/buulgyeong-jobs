@@ -1,7 +1,7 @@
 {
-  "updated_at_kst": "2026-09-15 08:22",
+  "updated_at_kst": "2026-09-15 08:30",
   "collector_status": "ok",
-  "criteria": "알바몬·알바천국·당근알바 · 부산·경남·울산 · 월~목 TOP20 / 금~일 TOP10 · 근무 시작일 기준 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
+  "criteria": "일반창: 알바몬·알바천국 월~목 TOP20 / 금~일 TOP10 · 당근알바: 별도 TOP10 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상",
   "weekday_jobs": [
     {
       "source": "알바몬",
@@ -152,13 +152,14 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "이메일지원",
-      "url": "https://www.albamon.com/jobs/detail/119187562?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187732?logpath=14&productCount=1&sc=529",
       "duration_days": 7,
       "duration_label": "7일",
       "priority_hits": 1
     }
   ],
-  "weekend_jobs": [
+  "weekend_jobs": [],
+  "daangn_jobs": [
     {
       "source": "당근알바",
       "posted_at": "등록일 미확인",
@@ -376,76 +377,10 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "이메일지원",
-      "url": "https://www.albamon.com/jobs/detail/119187562?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187732?logpath=14&productCount=1&sc=529",
       "duration_days": 7,
       "duration_label": "7일",
       "priority_hits": 1
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "10/18",
-      "work_start": "2026-10-18",
-      "work_end": "2026-10-18",
-      "region": "부산",
-      "company": "",
-      "title": "홀 서버 단기 및 정직원 구합니다(시급12,000) 시급 12,000원 총 35일 / 오늘~10월 18일 · 10:00 ~ 22:00 협의 쿠우쿠우골드부산동래점 · 온천동 당일지급 후기 11",
-      "task": "단기 아르바이트",
-      "work_time": "10:00 ~ 22:00",
-      "day_pay": 144000,
-      "hourly_pay": 12000,
-      "pay_type": "시급",
-      "pay_display": "시급 12,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%ED%99%80-%EC%84%9C%EB%B2%84-%EB%8B%A8%EA%B8%B0-%EB%B0%8F-%EC%A0%95%EC%A7%81%EC%9B%90-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%8B%9C%EA%B8%8912-000-ufrido4q6svw",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/18",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-18",
-      "region": "울산",
-      "company": "",
-      "title": "[울산 복합문화센터] 푸드트럭 시급 12,000원 시급 12,000원 9월 18일(금) · 10:00 ~ 14:00 협의 타코야 푸드트럭 · 온산읍 당일지급 후기 1",
-      "task": "단기 아르바이트",
-      "work_time": "10:00 ~ 14:00",
-      "day_pay": 48000,
-      "hourly_pay": 12000,
-      "pay_type": "시급",
-      "pay_display": "시급 12,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%9A%B8%EC%82%B0-%EB%B3%B5%ED%95%A9%EB%AC%B8%ED%99%94%EC%84%BC%ED%84%B0-%ED%91%B8%EB%93%9C%ED%8A%B8%EB%9F%AD-%EC%8B%9C%EA%B8%89-12-000%EC%9B%90-34i26owwnuat",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/18~09/27",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-27",
-      "region": "밀양",
-      "company": "",
-      "title": "부전동 밀양포차 단기알바 구합니당 시급 13,000원 총 5일 / 9월 18~27일 · 20:00 ~ 04:00 밀양포차 · 부전동",
-      "task": "단기 아르바이트",
-      "work_time": "20:00 ~ 04:00",
-      "day_pay": 104000,
-      "hourly_pay": 13000,
-      "pay_type": "시급",
-      "pay_display": "시급 13,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%A0%84%EB%8F%99-%EB%B0%80%EC%96%91%ED%8F%AC%EC%B0%A8-%EB%8B%A8%EA%B8%B0%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%B9-9595o6f7z9ho",
-      "duration_days": 5,
-      "duration_label": "5일",
-      "priority_hits": 0
     }
   ],
   "source_summary": {
@@ -457,9 +392,9 @@
       "candidates": 141,
       "accepted": 13,
       "messages": [
-        "공개 페이지 정상 · 10건 통과",
+        "공개 페이지 정상 · 11건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 3건 통과"
+        "공개 페이지 정상 · 2건 통과"
       ]
     },
     "알바천국": {
@@ -467,7 +402,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 78,
+      "candidates": 82,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -493,10 +428,10 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 10건 통과",
+      "reason": "공개 페이지 정상 · 11건 통과",
       "http": 200,
-      "candidates": 61,
-      "accepted": 10,
+      "candidates": 62,
+      "accepted": 11,
       "rejected": {
         "no_work_date": 30,
         "old_post": 16,
@@ -510,12 +445,12 @@
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 20,
+      "candidates": 19,
       "accepted": 0,
       "rejected": {
         "too_long": 1,
         "past_or_today": 1,
-        "no_work_date": 18
+        "no_work_date": 17
       }
     },
     {
@@ -534,12 +469,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 3건 통과",
+      "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 3,
+      "accepted": 2,
       "rejected": {
-        "no_work_date": 10,
+        "no_work_date": 11,
         "too_long": 3,
         "past_or_today": 4
       }
@@ -565,11 +500,12 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 29,
+      "candidates": 28,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 27,
-        "old_post": 2
+        "past_or_today": 26,
+        "hourly_below_12000": 1,
+        "old_post": 1
       }
     },
     {
@@ -578,12 +514,11 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 21,
+      "candidates": 28,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 18,
-        "old_post": 2,
-        "too_long": 1
+        "past_or_today": 26,
+        "hourly_below_12000": 2
       }
     },
     {
@@ -592,12 +527,11 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 28,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
         "past_or_today": 25,
-        "hourly_below_12000": 1,
-        "old_post": 2
+        "hourly_below_12000": 1
       }
     },
     {
