@@ -1,8 +1,30 @@
 {
-  "updated_at_kst": "2026-09-15 00:19",
+  "updated_at_kst": "2026-09-15 00:47",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "10/18",
+      "work_start": "2026-10-18",
+      "work_end": "2026-10-18",
+      "region": "부산",
+      "company": "",
+      "title": "홀 서버 단기 및 정직원 구합니다(시급12,000) 시급 12,000원 총 35일 / 오늘~10월 18일 · 10:00 ~ 22:00 협의 쿠우쿠우골드부산동래점 · 온천동 당일지급 후기 11",
+      "task": "단기 아르바이트",
+      "work_time": "10:00 ~ 22:00",
+      "day_pay": 144000,
+      "hourly_pay": 12000,
+      "pay_type": "시급",
+      "pay_display": "시급 12,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%ED%99%80-%EC%84%9C%EB%B2%84-%EB%8B%A8%EA%B8%B0-%EB%B0%8F-%EC%A0%95%EC%A7%81%EC%9B%90-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%8B%9C%EA%B8%8912-000-ufrido4q6svw",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "priority_hits": 0
+    },
     {
       "source": "당근알바",
       "posted_at": "등록일 미확인",
@@ -42,76 +64,10 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119187139?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119188347?logpath=14&productCount=1&sc=529",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "priority_hits": 1
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
-      "work_date": "09/24~09/25",
-      "work_start": "2026-09-24",
-      "work_end": "2026-09-25",
-      "region": "부산",
-      "company": "",
-      "title": "[09.24, 25 이틀근무] 신세계아울렛 안내데스크 알바",
-      "task": "행사",
-      "work_time": "11:00~18:30",
-      "day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "급여 확인",
-      "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119193485?logpath=14&productCount=1&sc=529",
-      "duration_days": 2,
-      "duration_label": "2일",
-      "priority_hits": 1
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/22~09/24",
-      "work_start": "2026-09-22",
-      "work_end": "2026-09-24",
-      "region": "부산",
-      "company": "",
-      "title": "#추석연휴 단기알바구인# /부산/떡집 판매,포장 #일당9만 #야간16만",
-      "task": "포장, 매장",
-      "work_time": "시간 확인",
-      "day_pay": 90000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 90,000원",
-      "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/119136992?logpath=14&productCount=1&sc=529",
-      "duration_days": 3,
-      "duration_label": "3일",
-      "priority_hits": 2
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
-      "work_date": "09/24~09/27",
-      "work_start": "2026-09-24",
-      "work_end": "2026-09-27",
-      "region": "부산",
-      "company": "",
-      "title": "9/24-27 추석 카페 단기알바 (시급12000)",
-      "task": "단기 아르바이트",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "hourly_pay": 12000,
-      "pay_type": "시급",
-      "pay_display": "시급 12,000원",
-      "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/118998929?logpath=14&sc=529",
-      "duration_days": 4,
-      "duration_label": "4일",
-      "priority_hits": 0
     },
     {
       "source": "알바몬",
@@ -230,13 +186,12 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 142,
-      "accepted": 14,
+      "candidates": 141,
+      "accepted": 10,
       "messages": [
-        "공개 페이지 정상 · 3건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 6건 통과",
-        "공개 페이지 정상 · 5건 통과"
+        "공개 페이지 정상 · 4건 통과",
+        "공개 페이지 정상 · 6건 통과"
       ]
     },
     "알바천국": {
@@ -255,11 +210,12 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 6,
-      "accepted": 3,
+      "candidates": 7,
+      "accepted": 5,
       "messages": [
-        "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색결과 정상 · 2건 통과",
         "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
+        "당근 공개 검색결과 정상 · 1건 통과",
         "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
       ]
     },
@@ -280,12 +236,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 3건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 62,
-      "accepted": 3,
+      "candidates": 63,
+      "accepted": 0,
       "rejected": {
-        "no_work_date": 41,
+        "no_work_date": 45,
         "old_post": 16,
         "too_long": 2
       }
@@ -293,6 +249,34 @@
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
+      "state": "ok",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 18,
+      "accepted": 0,
+      "rejected": {
+        "hourly_below_12000": 2,
+        "too_long": 2,
+        "past_or_today": 2,
+        "no_work_date": 12
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 4건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 4,
+      "rejected": {
+        "too_long": 1,
+        "no_work_date": 15
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
@@ -304,7 +288,7 @@
     },
     {
       "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
       "reason": "공개 페이지 정상 · 6건 통과",
       "http": 200,
@@ -314,36 +298,6 @@
         "no_work_date": 6,
         "too_long": 4,
         "past_or_today": 4
-      }
-    },
-    {
-      "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
-      "state": "ok",
-      "reason": "공개 페이지 정상 · 5건 통과",
-      "http": 200,
-      "candidates": 20,
-      "accepted": 5,
-      "rejected": {
-        "past_or_today": 6,
-        "no_work_date": 4,
-        "hourly_below_12000": 2,
-        "too_long": 3
-      }
-    },
-    {
-      "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
-      "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 20,
-      "accepted": 0,
-      "rejected": {
-        "past_or_today": 3,
-        "no_work_date": 13,
-        "old_post": 2,
-        "too_long": 2
       }
     },
     {
@@ -380,10 +334,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
@@ -400,13 +354,11 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
       "candidates": 2,
-      "accepted": 1,
-      "rejected": {
-        "no_work_date": 1
-      }
+      "accepted": 2,
+      "rejected": {}
     },
     {
       "source": "당근알바",
