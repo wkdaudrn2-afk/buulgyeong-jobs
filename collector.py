@@ -692,15 +692,23 @@ def main():
 
     weekday_jobs = weekday_jobs[:20]
     weekend_jobs = weekend_jobs[:10]
+
+    # 당근알바 전용 창: 전체 수집 결과 중 당근알바만 TOP10
+    daangn_jobs = [j for j in jobs if j.get("source") == "당근알바"][:10]
+
+    # 일반 창에서는 당근알바 제외: 알바몬 + 알바천국만 표시
+    weekday_jobs = [j for j in weekday_jobs if j.get("source") != "당근알바"][:20]
+    weekend_jobs = [j for j in weekend_jobs if j.get("source") != "당근알바"][:10]
     display_jobs = weekday_jobs + weekend_jobs
 
     source_summary = summarize_sources(diags)
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "알바몬·알바천국·당근알바 · 부산·경남·울산 · 월~목 TOP20 / 금~일 TOP10 · 근무 시작일 기준 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
+        "criteria": "일반창: 알바몬·알바천국 월~목 TOP20 / 금~일 TOP10 · 당근알바: 별도 TOP10 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상",
         "weekday_jobs": weekday_jobs,
         "weekend_jobs": weekend_jobs,
+        "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
         "source_summary": source_summary,
         "diagnostics": diags,
@@ -712,6 +720,7 @@ def main():
         payload["jobs"] = prev.get("jobs", [])
         payload["weekday_jobs"] = prev.get("weekday_jobs", [])
         payload["weekend_jobs"] = prev.get("weekend_jobs", [])
+        payload["daangn_jobs"] = prev.get("daangn_jobs", [])
         payload["collector_status"] = "모든 소스 접근 실패 · 이전 공고 임시 유지"
         payload["previous_data_preserved"] = True
 
