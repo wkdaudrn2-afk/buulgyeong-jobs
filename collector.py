@@ -519,7 +519,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "TOP20 · 최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
+        "criteria": "TOP20 · 최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·시급12000원 이상 우선·일급순·TOP20",
         "jobs": jobs,
         "source_summary": source_summary,
         "diagnostics": diags,
@@ -536,5 +536,74 @@ def main():
     print("saved", len(payload.get("jobs", [])), "jobs")
 
 
+
+# --- 알바천국 fallback 실행 ---
+try:
+    _extra_alba = _alba_search_fallback()
+    # collector 구현체별 공통 후보 리스트 이름에 병합
+    for _name in ("detail_urls", "candidate_urls", "urls", "job_urls", "links"):
+        if _name in globals() and isinstance(globals()[_name], (list, set)):
+            if isinstance(globals()[_name], set):
+                globals()[_name].update(_extra_alba)
+            else:
+                for _u in _extra_alba:
+                    if _u not in globals()[_name]:
+                        globals()[_name].append(_u)
+except Exception:
+    pass
+
 if __name__ == "__main__":
     main()
+
+
+# --- 2026-09 TOP20 / 알바천국 보강 패치 ---
+def _normalize_alba_url(href):
+    try:
+        from urllib.parse import urljoin, urlparse, parse_qs
+        if not href:
+            return None
+        u = urljoin("https://www.alba.co.kr", href)
+        p = urlparse(u)
+        q = parse_qs(p.query)
+        if "adid" in q and q["adid"]:
+            return f"https://www.alba.co.kr/job/Detail?adid={q['adid'][0]}"
+        m = re.search(r'(?:adid=|/detail/)(\d{6,})', u, re.I)
+        if m:
+            return f"https://www.alba.co.kr/job/Detail?adid={m.group(1)}"
+        return None
+    except Exception:
+        return None
+
+def _extract_alba_detail_links(html, base="https://www.alba.co.kr"):
+    links = set()
+    try:
+        soup = BeautifulSoup(html or "", "html.parser")
+        for a in soup.find_all("a", href=True):
+            u = _normalize_alba_url(a.get("href"))
+            if u:
+                links.add(u)
+        # JS/escaped links fallback
+        for m in re.finditer(r'adid(?:=|%3D|["\':\s]+)(\d{6,})', html or "", re.I):
+            links.add(f"https://www.alba.co.kr/job/Detail?adid={m.group(1)}")
+    except Exception:
+        pass
+    return list(links)
+
+def _alba_search_fallback():
+    """알바천국 공개 목록 페이지들에서 상세 adid를 수집. 접근 제한 시 빈 목록."""
+    seeds = [
+        "https://www.alba.co.kr/job/Main",
+        "https://www.alba.co.kr/job/object/Main",
+        "https://www.alba.co.kr/job/object/Main?hidlistview=LIST&hidsortcnt=50",
+    ]
+    found = set()
+    for u in seeds:
+        try:
+            r = SESSION.get(u, timeout=20, allow_redirects=True)
+            if r.status_code != 200:
+                continue
+            found.update(_extract_alba_detail_links(r.text, u))
+        except Exception:
+            continue
+    return sorted(found)
+
