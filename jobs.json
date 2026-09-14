@@ -1,7 +1,7 @@
 {
-  "updated_at_kst": "2026-09-14 18:33",
+  "updated_at_kst": "2026-09-14 19:31",
   "collector_status": "ok",
-  "criteria": "최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
+  "criteria": "TOP20 · 최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
   "jobs": [
     {
       "source": "알바몬",
@@ -188,7 +188,7 @@
       "work_time": "시간 확인",
       "day_pay": 0,
       "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/118919012?logpath=14&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/118998929?logpath=14&sc=529",
       "duration_days": 4,
       "duration_label": "4일",
       "priority_hits": 0
@@ -203,21 +203,21 @@
       "candidates": 151,
       "accepted": 19,
       "messages": [
-        "공개 페이지 정상 · 2건 통과",
+        "공개 페이지 정상 · 10건 통과",
+        "공개 페이지 정상 · 1건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 8건 통과",
-        "공개 페이지 정상 · 9건 통과"
+        "공개 페이지 정상 · 8건 통과"
       ]
     },
     "알바천국": {
-      "pages": 1,
-      "ok_pages": 1,
-      "blocked_pages": 0,
+      "pages": 3,
+      "ok_pages": 0,
+      "blocked_pages": 3,
       "error_pages": 0,
-      "candidates": 114,
+      "candidates": 0,
       "accepted": 0,
       "messages": [
-        "공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "robots 확인 실패: URLError"
       ]
     },
     "당근알바": {
@@ -225,10 +225,9 @@
       "ok_pages": 2,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 44,
-      "accepted": 44,
+      "candidates": 0,
+      "accepted": 0,
       "messages": [
-        "공개 페이지 정상 · 44건 통과",
         "페이지 응답은 정상이나 공고 카드/구조화데이터를 찾지 못함"
       ]
     }
@@ -238,13 +237,13 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공개 페이지 정상 · 10건 통과",
       "http": 200,
-      "candidates": 74,
-      "accepted": 2,
+      "candidates": 76,
+      "accepted": 10,
       "rejected": {
-        "no_work_date": 39,
-        "too_long": 5,
+        "no_work_date": 35,
+        "too_long": 3,
         "past_or_today": 28
       }
     },
@@ -252,12 +251,13 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
-      "candidates": 20,
-      "accepted": 0,
+      "candidates": 18,
+      "accepted": 1,
       "rejected": {
-        "no_work_date": 20
+        "too_long": 2,
+        "no_work_date": 15
       }
     },
     {
@@ -276,51 +276,67 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 8건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
       "candidates": 20,
-      "accepted": 8,
+      "accepted": 0,
       "rejected": {
+        "no_work_date": 13,
         "too_long": 4,
-        "no_work_date": 4,
-        "past_or_today": 4
+        "past_or_today": 3
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 9건 통과",
+      "reason": "공개 페이지 정상 · 8건 통과",
       "http": 200,
       "candidates": 17,
-      "accepted": 9,
+      "accepted": 8,
       "rejected": {
-        "no_work_date": 7,
-        "past_or_today": 1
+        "past_or_today": 2,
+        "no_work_date": 7
       }
     },
     {
       "source": "알바천국",
-      "url": "https://www.alba.co.kr/job/object/main",
-      "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 114,
+      "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "no_work_date": 77,
-        "too_long": 14,
-        "past_or_today": 23
-      }
+      "rejected": {}
+    },
+    {
+      "source": "알바천국",
+      "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": {}
+    },
+    {
+      "source": "알바천국",
+      "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://www.daangn.com/kr/jobs/",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 44건 통과",
+      "reason": "페이지 응답은 정상이나 공고 카드/구조화데이터를 찾지 못함",
       "http": 200,
-      "candidates": 44,
-      "accepted": 44,
+      "candidates": 0,
+      "accepted": 0,
       "rejected": {}
     },
     {
