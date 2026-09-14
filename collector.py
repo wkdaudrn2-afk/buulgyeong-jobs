@@ -60,9 +60,16 @@ SOURCE_PAGES = [
     ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1"),
     ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2"),
     ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3"),
-    ("당근알바", "https://www.daangn.com/kr/jobs/"),
-    ("당근알바", "https://jobs.daangn.com/"),
+
+    # 당근알바는 메인 페이지가 아니라 실제 지역 검색 결과 페이지를 확인한다.
+    # 부산 주요 권역을 나눠 조회하면 한 페이지의 주변지역 반경 결과까지 함께 잡힌다.
+    ("당근알바", "https://jobs.daangn.com/s?regionId=5917&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=594&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=5923&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=671&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=648&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
 ]
+
 
 ROBOTS_CACHE = {}
 
@@ -107,6 +114,34 @@ def fetch(url: str):
     if "captcha" in low or "access denied" in low or "비정상적인 접근" in r.text[:200000]:
         return None, {"state": "blocked", "reason": "캡차/접근제한 화면", "http": r.status_code}
     return r, {"state": "ok", "reason": "공개 페이지 응답", "http": r.status_code}
+
+
+def parse_hourly(text: str) -> int:
+    """명시된 시급을 추출한다. 시급 표기가 없으면 0."""
+    t = (text or "").replace(",", "")
+    m = re.search(r"시급\s*[:：]?\s*([0-9]{4,6})\s*원?", t)
+    return int(m.group(1)) if m else 0
+
+
+def pay_type_from_text(text: str) -> str:
+    t = text or ""
+    if re.search(r"(?:일급|일당|하루)\s*[:：]?\s*[0-9]", t):
+        return "일급"
+    if re.search(r"시급\s*[:：]?\s*[0-9]", t):
+        return "시급"
+    if re.search(r"건당\s*[:：]?\s*[0-9]", t):
+        return "건당"
+    return "급여 확인"
+
+
+def total_work_days_from_text(text: str):
+    """당근의 '총 2일 / 9월16~23일'처럼 기간 폭과 실제 근무일수가 다른 경우 사용."""
+    m = re.search(r"총\s*(\d{1,2})\s*일", text or "")
+    if m:
+        n = int(m.group(1))
+        if 1 <= n <= 31:
+            return n
+    return None
 
 
 def parse_money(text: str) -> int:
@@ -287,11 +322,23 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         return None, "no_work_date"
     if wa < TOMORROW:
         return None, "past_or_today"
-    days = (wb - wa).days + 1
+
+    # 당근은 '총 2일 / 9월16~23일'처럼 실제 2일 근무인데 날짜 범위가 길게 보일 수 있다.
+    stated_days = total_work_days_from_text(text)
+    span_days = (wb - wa).days + 1
+    days = stated_days if stated_days is not None else span_days
     if not 1 <= days <= 7:
         return None, "too_long"
 
+    hourly = parse_hourly(text)
+    # 명시적으로 시급제인 공고는 12,000원 미만 제외.
+    # 일급/건당처럼 시급이 없는 공고는 일급 환산 순위를 위해 유지한다.
+    if hourly and hourly < 12000:
+        return None, "hourly_below_12000"
+
     pay = parse_money(text)
+    ptype = pay_type_from_text(text)
+
     tm = re.search(r"(\d{1,2}:\d{2}\s*(?:~|-|–|—)\s*\d{1,2}:\d{2}(?:\s*\(익일\))?)", text)
     app = next((w for w in ("온라인지원", "간편문자지원", "문자지원", "전화연락", "전화지원", "홈페이지", "이메일지원") if w in text), "원본 공고 확인")
     task_words = [w for w in PRIORITY_WORDS if w in text]
@@ -311,13 +358,14 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "task": ", ".join(task_words) if task_words else "단기 아르바이트",
         "work_time": tm.group(1) if tm else "시간 확인",
         "day_pay": pay,
+        "hourly_pay": hourly,
+        "pay_type": ptype,
         "apply": app,
         "url": href,
         "duration_days": days,
         "duration_label": duration_label,
         "priority_hits": len(task_words),
     }, "accepted"
-
 
 def alba_detail_links(soup: BeautifulSoup, base_url: str):
     """알바천국 목록에서 부산·경남·울산의 최근 공고 상세 링크만 추린다."""
@@ -397,6 +445,72 @@ def parse_alba_index(url: str):
         diag["reason"]=f"알바천국 상세공고 {len(out)}건 통과"
     else:
         diag["reason"]="상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+    return out, diag
+
+
+def parse_daangn_index(url: str):
+    """당근알바 지역 검색 결과 전용 파서.
+
+    공개 검색결과 페이지의 카드/링크만 읽고, 로그인·캡차·접근제한은 우회하지 않는다.
+    """
+    r, fetch_diag = fetch(url)
+    diag = {
+        "source": "당근알바",
+        "url": url,
+        "state": fetch_diag["state"],
+        "reason": fetch_diag["reason"],
+        "http": fetch_diag.get("http"),
+        "candidates": 0,
+        "accepted": 0,
+        "rejected": {},
+    }
+    if not r:
+        return [], diag
+
+    soup = BeautifulSoup(r.text, "html.parser")
+    out, seen = [], set()
+
+    # 검색결과의 실제 링크와 주변 카드 텍스트를 사용.
+    for a, card_text in candidate_blocks(soup):
+        href = urljoin(r.url, a.get("href", ""))
+        low = href.lower()
+
+        # 당근 내부의 채용공고/검색결과 관련 링크만 처리.
+        if "jobs.daangn.com" not in low and "daangn.com/kr/jobs" not in low:
+            continue
+
+        text2 = norm(card_text)
+        if len(text2) < 25 or not region_name(text2):
+            continue
+
+        # 급여/근무일 정보가 전혀 없는 내비게이션 링크는 제외.
+        if not re.search(r"(시급|일급|일당|건당|총\s*\d+\s*일|\d{1,2}\s*[./월]\s*\d{1,2})", text2):
+            continue
+
+        key = (href, text2[:180])
+        if key in seen:
+            continue
+        seen.add(key)
+        diag["candidates"] += 1
+
+        title = norm(a.get_text(" ", strip=True))
+        # 링크 텍스트가 짧으면 카드 텍스트의 첫 급여 표기 전까지를 제목 후보로 사용.
+        if len(title) < 5:
+            title = re.split(r"\s+(?:시급|일급|일당|건당|월급)\s*", text2, maxsplit=1)[0][:160]
+
+        j, why = job_from_text("당근알바", title, "", text2, href)
+        if j:
+            out.append(j)
+            diag["accepted"] += 1
+        else:
+            diag["rejected"][why] = diag["rejected"].get(why, 0) + 1
+
+    if diag["candidates"] == 0:
+        diag["reason"] = "당근 지역 검색 페이지 응답은 정상이나 공고 카드를 찾지 못함"
+    elif diag["accepted"] == 0:
+        diag["reason"] = "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
+    else:
+        diag["reason"] = f"당근 공개 검색결과 정상 · {diag['accepted']}건 통과"
     return out, diag
 
 
@@ -489,6 +603,8 @@ def main():
         try:
             if source == "알바천국":
                 found, diag = parse_alba_index(url)
+            elif source == "당근알바":
+                found, diag = parse_daangn_index(url)
             else:
                 found, diag = parse_page(source, url)
             jobs.extend(found)
@@ -507,9 +623,11 @@ def main():
             deduped[k] = j
     jobs = list(deduped.values())
     jobs.sort(key=lambda j: (
-        0 if j.get("posted_verified") else 1,
         0 if j["duration_days"] == 1 else 1,
-        -j["day_pay"],
+        0 if j.get("pay_type") == "일급" else 1,
+        -int(j.get("day_pay") or 0),
+        -int(j.get("hourly_pay") or 0),
+        0 if j.get("posted_verified") else 1,
         -j["priority_hits"],
         j["work_start"],
     ))
@@ -519,7 +637,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "TOP20 · 최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·시급12000원 이상 우선·일급순·TOP20",
+        "criteria": "TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
         "jobs": jobs,
         "source_summary": source_summary,
         "diagnostics": diags,
@@ -537,73 +655,5 @@ def main():
 
 
 
-# --- 알바천국 fallback 실행 ---
-try:
-    _extra_alba = _alba_search_fallback()
-    # collector 구현체별 공통 후보 리스트 이름에 병합
-    for _name in ("detail_urls", "candidate_urls", "urls", "job_urls", "links"):
-        if _name in globals() and isinstance(globals()[_name], (list, set)):
-            if isinstance(globals()[_name], set):
-                globals()[_name].update(_extra_alba)
-            else:
-                for _u in _extra_alba:
-                    if _u not in globals()[_name]:
-                        globals()[_name].append(_u)
-except Exception:
-    pass
-
 if __name__ == "__main__":
     main()
-
-
-# --- 2026-09 TOP20 / 알바천국 보강 패치 ---
-def _normalize_alba_url(href):
-    try:
-        from urllib.parse import urljoin, urlparse, parse_qs
-        if not href:
-            return None
-        u = urljoin("https://www.alba.co.kr", href)
-        p = urlparse(u)
-        q = parse_qs(p.query)
-        if "adid" in q and q["adid"]:
-            return f"https://www.alba.co.kr/job/Detail?adid={q['adid'][0]}"
-        m = re.search(r'(?:adid=|/detail/)(\d{6,})', u, re.I)
-        if m:
-            return f"https://www.alba.co.kr/job/Detail?adid={m.group(1)}"
-        return None
-    except Exception:
-        return None
-
-def _extract_alba_detail_links(html, base="https://www.alba.co.kr"):
-    links = set()
-    try:
-        soup = BeautifulSoup(html or "", "html.parser")
-        for a in soup.find_all("a", href=True):
-            u = _normalize_alba_url(a.get("href"))
-            if u:
-                links.add(u)
-        # JS/escaped links fallback
-        for m in re.finditer(r'adid(?:=|%3D|["\':\s]+)(\d{6,})', html or "", re.I):
-            links.add(f"https://www.alba.co.kr/job/Detail?adid={m.group(1)}")
-    except Exception:
-        pass
-    return list(links)
-
-def _alba_search_fallback():
-    """알바천국 공개 목록 페이지들에서 상세 adid를 수집. 접근 제한 시 빈 목록."""
-    seeds = [
-        "https://www.alba.co.kr/job/Main",
-        "https://www.alba.co.kr/job/object/Main",
-        "https://www.alba.co.kr/job/object/Main?hidlistview=LIST&hidsortcnt=50",
-    ]
-    found = set()
-    for u in seeds:
-        try:
-            r = SESSION.get(u, timeout=20, allow_redirects=True)
-            if r.status_code != 200:
-                continue
-            found.update(_extract_alba_detail_links(r.text, u))
-        except Exception:
-            continue
-    return sorted(found)
-
