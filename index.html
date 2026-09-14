@@ -4,15 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#10223f">
-<title>부울경 단기알바 TOP20</title>
+<title>부울경 단기알바 평일·주말 TOP</title>
 <style>
-:root{--bg:#f4f6f8;--card:#fff;--text:#111827;--muted:#64748b;--line:#e5e7eb;--navy:#10223f;--blue:#2563eb;--green:#15803d;--red:#dc2626;--gold:#b45309}
+:root{--bg:#f4f6f8;--card:#fff;--text:#111827;--muted:#64748b;--line:#e5e7eb;--navy:#10223f;--blue:#2563eb;--red:#dc2626;--gold:#b45309}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR","Segoe UI",sans-serif;color:var(--text);padding-bottom:60px}
 .wrap{max-width:920px;margin:auto}header{background:linear-gradient(135deg,#10223f,#1d4ed8);color:#fff;padding:18px 14px 17px;border-radius:0 0 24px 24px}
-h1{font-size:22px;margin:0 0 5px}.sub{font-size:11px;color:#dbeafe;line-height:1.55}.status{margin-top:9px;font-size:11px;background:#ffffff18;border:1px solid #ffffff30;border-radius:10px;padding:8px 9px}
+h1{font-size:21px;margin:0 0 5px}.sub{font-size:11px;color:#dbeafe;line-height:1.55}.status{margin-top:9px;font-size:11px;background:#ffffff18;border:1px solid #ffffff30;border-radius:10px;padding:8px 9px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px}.tab{border:1px solid var(--line);background:#fff;border-radius:13px;padding:12px 8px;font-size:14px;font-weight:900;color:#475569}
+.tab.active{background:var(--navy);color:#fff;border-color:var(--navy)}.count{display:block;font-size:10px;font-weight:700;margin-top:2px;opacity:.75}
 .summary{margin:11px 12px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px}
 .summary-title{font-size:18px;font-weight:950}.summary-sub{font-size:11px;color:var(--muted);margin:3px 0 10px}
-.TOP20{display:grid;gap:2px}.toprowmini{display:grid;grid-template-columns:30px 1fr auto;gap:7px;align-items:center;border-bottom:1px solid #eef2f7;padding:8px 0}
+.toplist{display:grid;gap:2px}.toprowmini{display:grid;grid-template-columns:30px 1fr auto;gap:7px;align-items:center;border-bottom:1px solid #eef2f7;padding:8px 0}
 .num{font-size:14px;font-weight:950;color:var(--gold)}.mtitle{font-size:12px;font-weight:850;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mmeta{font-size:10px;color:var(--muted);margin-top:2px}.mpay{font-size:12px;font-weight:950;color:var(--red);white-space:nowrap}
 .list{display:grid;gap:10px;margin:0 12px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px;box-shadow:0 4px 14px #0f172a0a}
 .toprow{display:flex;justify-content:space-between;gap:8px;align-items:start}.rank{font-size:18px;font-weight:950;color:var(--gold)}.badge{font-size:10px;font-weight:850;background:#eef2ff;color:#3730a3;border-radius:999px;padding:5px 7px}
@@ -26,51 +28,61 @@ h1{font-size:22px;margin:0 0 5px}.sub{font-size:11px;color:#dbeafe;line-height:1
 </head>
 <body><div class="wrap">
 <header>
-<h1>부울경 단기알바 TOP20</h1>
-<div class="sub">부산·경남·울산 · 알바몬·알바천국·당근알바·급구 · 최근 3일 등록 · 내일 이후 근무 · 하루알바 최우선 · 1주 이하</div>
+<h1>부울경 단기알바</h1>
+<div class="sub">알바몬 · 알바천국 · 당근알바 / 부산·경남·울산 / 근무 시작일 기준 분류</div>
 <div class="status" id="status">데이터 확인 중...</div>
 </header>
 
+<div class="tabs">
+  <button id="tabWeekday" class="tab active" onclick="switchTab('weekday')">월~목 TOP20<span id="weekdayCount" class="count">0건</span></button>
+  <button id="tabWeekend" class="tab" onclick="switchTab('weekend')">금~일 TOP10<span id="weekendCount" class="count">0건</span></button>
+</div>
+
 <section class="summary">
-<div class="summary-title">🏆 지금 볼 공고 TOP20</div>
-<div class="summary-sub">하루알바 우선 → 시급 12,000원 이상 우선 → 일급 높은 순</div>
-<div id="top20" class="TOP20"></div>
+<div id="sectionTitle" class="summary-title">🏆 월~목 TOP20</div>
+<div class="summary-sub">하루알바 우선 → 짧은 기간 우선 → 일급 우선 → 급여 높은 순</div>
+<div id="toplist" class="toplist"></div>
 </section>
 
 <section class="summary" id="diagbox" style="display:none">
 <div class="summary-title" style="font-size:15px">🔎 수집 상태</div>
-<div class="summary-sub">공고가 0건일 때 사이트별 원인을 바로 확인할 수 있습니다.</div>
+<div class="summary-sub">알바몬 · 알바천국 · 당근알바 수집 결과입니다.</div>
 <div id="sources" style="font-size:11px;line-height:1.7;color:#475569"></div>
 </section>
 
 <div id="list" class="list"></div>
-<div id="empty" class="empty" style="display:none">현재 조건을 충족하는 공고가 없습니다.<br>아래 수집 상태에서 알바몬·알바천국·당근알바별 원인을 확인할 수 있습니다.</div>
-<div class="footer">공개적으로 접근 가능한 공고만 확인합니다. 차단·로그인·캡차·접근제한을 우회하지 않습니다.<br>수집 데이터는 매시간 갱신되고, 이 화면은 5분마다 새 데이터를 확인합니다.</div>
+<div id="empty" class="empty" style="display:none">현재 이 구간의 조건을 충족하는 공고가 없습니다.</div>
+<div class="footer">공개적으로 접근 가능한 공고만 확인합니다. 차단·로그인·캡차·접근제한을 우회하지 않습니다.<br>30분마다 자동 수집하며, 화면은 5분마다 새 데이터를 확인합니다.</div>
 </div>
+
 <script>
-const fmtPay = n => n ? Number(n).toLocaleString('ko-KR')+'원' : '급여 확인';
-const jobPay = j => j.pay_display || (j.pay_type==='시급' && j.hourly_pay ? '시급 '+Number(j.hourly_pay).toLocaleString('ko-KR')+'원' : fmtPay(j.day_pay));
+let DATA=null, CURRENT='weekday';
+const fmtPay=n=>n?Number(n).toLocaleString('ko-KR')+'원':'급여 확인';
+const jobPay=j=>j.pay_display||(j.pay_type==='시급'&&j.hourly_pay?'시급 '+Number(j.hourly_pay).toLocaleString('ko-KR')+'원':fmtPay(j.day_pay));
 function safe(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-function render(data){
-  const jobs=(data.jobs||[]).slice(0,20);
-  document.getElementById('status').textContent =
-    `마지막 수집: ${data.updated_at_kst||'확인 안 됨'} · 조건 충족 ${jobs.length}건 · 다음 수집 약 1시간 이내`;
-  const diagbox=document.getElementById('diagbox'), sources=document.getElementById('sources');
-  const ss=data.source_summary||{};
-  if(Object.keys(ss).length){
-    diagbox.style.display='block';
-    sources.innerHTML=Object.entries(ss).map(([name,v])=>{
-      let state=v.accepted>0?'✅':(v.ok_pages>0?'⚠️':'⛔');
-      let msg=(v.messages||[]).slice(0,20).join(' / ');
-      return `<div style="padding:6px 0;border-bottom:1px solid #eef2f7"><b>${state} ${safe(name)}</b> · 후보 ${v.candidates||0}건 · 통과 ${v.accepted||0}건<br><span style="color:#64748b">${safe(msg)}</span></div>`;
-    }).join('');
-  }else{diagbox.style.display='none';sources.innerHTML='';}
-  const top=document.getElementById('top20'), list=document.getElementById('list'), empty=document.getElementById('empty');
-  top.innerHTML=''; list.innerHTML=''; empty.style.display=jobs.length?'none':'block';
-  jobs.forEach((j,i)=>{
+
+function switchTab(type){
+  CURRENT=type;
+  document.getElementById('tabWeekday').classList.toggle('active',type==='weekday');
+  document.getElementById('tabWeekend').classList.toggle('active',type==='weekend');
+  renderJobs();
+}
+
+function renderJobs(){
+  if(!DATA)return;
+  const jobs=CURRENT==='weekday'?(DATA.weekday_jobs||[]):(DATA.weekend_jobs||[]);
+  const limit=CURRENT==='weekday'?20:10;
+  const shown=jobs.slice(0,limit);
+  document.getElementById('sectionTitle').textContent=CURRENT==='weekday'?'🏆 월~목 TOP20':'🏆 금~일 TOP10';
+
+  const top=document.getElementById('toplist'), list=document.getElementById('list'), empty=document.getElementById('empty');
+  top.innerHTML=''; list.innerHTML=''; empty.style.display=shown.length?'none':'block';
+
+  shown.forEach((j,i)=>{
     const mini=document.createElement('div'); mini.className='toprowmini';
-    mini.innerHTML=`<div class="num">${i+1}위</div><div><div class="mtitle">${safe(j.title)}</div><div class="mmeta">${safe(j.work_date)} · ${safe(j.region)} · ${safe(j.source)}</div></div><div class="mpay">${jobPay(j)}</div>`;
+    mini.innerHTML=`<div class="num">${i+1}위</div><div><div class="mtitle">${safe(j.title)}</div><div class="mmeta">${safe(j.work_date)} · ${safe(j.region)} · ${safe(j.source)}</div></div><div class="mpay">${safe(jobPay(j))}</div>`;
     top.appendChild(mini);
+
     const card=document.createElement('article'); card.className='card';
     card.innerHTML=`
       <div class="toprow"><div class="rank">${i+1}위</div><div class="badge">${safe(j.duration_label||'단기')}</div></div>
@@ -82,23 +94,43 @@ function render(data){
         <b>지역</b><span>${safe(j.region||'-')}</span>
         <b>시간</b><span>${safe(j.work_time||'-')}</span>
         <b>업무</b><span>${safe(j.task||'-')}</span>
-        <b>급여</b><span class="pay">${jobPay(j)}</span>
+        <b>급여</b><span class="pay">${safe(jobPay(j))}</span>
         <b>지원</b><span>${safe(j.apply||'-')}</span>
       </div>
       ${j.url?`<a class="go" href="${safe(j.url)}" target="_blank" rel="noopener">원본 공고 열기</a>`:''}`;
     list.appendChild(card);
   });
 }
+
+function render(data){
+  DATA=data;
+  const wd=(data.weekday_jobs||[]).length, we=(data.weekend_jobs||[]).length;
+  document.getElementById('weekdayCount').textContent=`${wd}건`;
+  document.getElementById('weekendCount').textContent=`${we}건`;
+  document.getElementById('status').textContent=`마지막 수집: ${data.updated_at_kst||'확인 안 됨'} · 월~목 ${wd}건 · 금~일 ${we}건 · 30분 자동수집`;
+
+  const ss=data.source_summary||{}, diagbox=document.getElementById('diagbox'), sources=document.getElementById('sources');
+  if(Object.keys(ss).length){
+    diagbox.style.display='block';
+    sources.innerHTML=Object.entries(ss).map(([name,v])=>{
+      let state=v.accepted>0?'✅':(v.ok_pages>0?'⚠️':'⛔');
+      let msg=(v.messages||[]).slice(0,20).join(' / ');
+      return `<div style="padding:6px 0;border-bottom:1px solid #eef2f7"><b>${state} ${safe(name)}</b> · 후보 ${v.candidates||0}건 · 통과 ${v.accepted||0}건<br><span style="color:#64748b">${safe(msg)}</span></div>`;
+    }).join('');
+  }else{diagbox.style.display='none';sources.innerHTML='';}
+  renderJobs();
+}
+
 async function load(){
   try{
     const r=await fetch(`jobs.json?t=${Date.now()}`,{cache:'no-store'});
-    if(!r.ok) throw new Error('HTTP '+r.status);
+    if(!r.ok)throw new Error('HTTP '+r.status);
     render(await r.json());
   }catch(e){
     document.getElementById('status').textContent='데이터를 불러오지 못했습니다. 잠시 후 다시 확인합니다.';
   }
 }
 load();
-setInterval(load, 5*60*1000);
+setInterval(load,5*60*1000);
 </script>
 </body></html>
