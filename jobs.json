@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 01:46",
+  "updated_at_kst": "2026-09-15 02:15",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -191,18 +191,19 @@
       "messages": [
         "공개 페이지 정상 · 5건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 4건 통과"
+        "공개 페이지 정상 · 3건 통과",
+        "공개 페이지 정상 · 1건 통과"
       ]
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 3,
-      "blocked_pages": 0,
+      "ok_pages": 0,
+      "blocked_pages": 3,
       "error_pages": 0,
       "candidates": 0,
       "accepted": 0,
       "messages": [
-        "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함"
+        "robots 확인 실패: URLError"
       ]
     },
     "당근알바": {
@@ -266,12 +267,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 3건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 4,
+      "accepted": 3,
       "rejected": {
-        "no_work_date": 14,
+        "no_work_date": 15,
         "hourly_below_12000": 1,
         "too_long": 1
       }
@@ -280,12 +281,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 1,
       "rejected": {
-        "no_work_date": 20
+        "no_work_date": 19
       }
     },
     {
@@ -297,17 +298,17 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "no_work_date": 12,
+        "no_work_date": 13,
         "too_long": 4,
-        "past_or_today": 4
+        "past_or_today": 3
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "ok",
-      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
-      "http": 200,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -315,9 +316,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "ok",
-      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
-      "http": 200,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -325,9 +326,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "ok",
-      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
-      "http": 200,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
