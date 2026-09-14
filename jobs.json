@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-14 22:50",
+  "updated_at_kst": "2026-09-14 23:19",
   "collector_status": "ok",
   "criteria": "TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -23,27 +23,6 @@
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "priority_hits": 1
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
-      "work_date": "09/15~09/16",
-      "work_start": "2026-09-15",
-      "work_end": "2026-09-16",
-      "region": "부산",
-      "company": "다이소통영죽림점",
-      "title": "[다이소 죽림점] 매장관리 파트직원 모집/ 화물하차 2시간 파트직원 모집",
-      "task": "행사, 물류, 포장, 매장",
-      "work_time": "12:00~19:00",
-      "day_pay": 120000,
-      "hourly_pay": 12000,
-      "pay_type": "일급",
-      "apply": "문자지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146811353&listmenucd=OPTION",
-      "duration_days": 2,
-      "duration_label": "2일",
-      "priority_hits": 4
     },
     {
       "source": "당근알바",
@@ -390,7 +369,7 @@
       "work_end": "2026-10-25",
       "region": "부산",
       "company": "",
-      "title": "입주 청소 해주실분 구합니다. 일급 90,000원 내일(화) · 08:30 ~ 15:30 영우야청소를부탁해 · 다대동 후기 323",
+      "title": "입주 청소 해주실분 구합니다. 일급 105,000원 내일(화) · 08:30 ~ 15:30 영우야청소를부탁해 · 다대동 후기 323",
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
@@ -422,6 +401,27 @@
       "duration_days": 7,
       "duration_label": "7일",
       "priority_hits": 4
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "10/23~10/25",
+      "work_start": "2026-10-23",
+      "work_end": "2026-10-25",
+      "region": "부산",
+      "company": "",
+      "title": "행사장 아르바이트 시급 15,000원 총 2일 / 9월 15~16일 · 09:00 ~ 11:30 협의 지노스포츠 · 괘법동 당일지급",
+      "task": "행사, 포장, 정리, 매장",
+      "work_time": "14:00 ~ 21:00",
+      "day_pay": 101910,
+      "hourly_pay": 15000,
+      "pay_type": "일급",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%ED%96%89%EC%82%AC%EC%9E%A5-%EC%95%84%EB%A5%B4%EB%B0%94%EC%9D%B4%ED%8A%B8-43br82j7nqgq",
+      "duration_days": 7,
+      "duration_label": "7일",
+      "priority_hits": 4
     }
   ],
   "source_summary": {
@@ -443,11 +443,10 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 77,
-      "accepted": 1,
+      "candidates": 78,
+      "accepted": 0,
       "messages": [
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "알바천국 상세공고 1건 통과"
+        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
       ]
     },
     "당근알바": {
@@ -456,7 +455,7 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 105,
-      "accepted": 84,
+      "accepted": 63,
       "messages": [
         "당근 공개 검색결과 정상 · 21건 통과",
         "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
@@ -470,10 +469,10 @@
       "state": "ok",
       "reason": "공개 페이지 정상 · 11건 통과",
       "http": 200,
-      "candidates": 76,
+      "candidates": 77,
       "accepted": 11,
       "rejected": {
-        "no_work_date": 36,
+        "no_work_date": 37,
         "too_long": 3,
         "past_or_today": 25,
         "hourly_below_12000": 1
@@ -485,13 +484,13 @@
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 18,
+      "candidates": 17,
       "accepted": 0,
       "rejected": {
         "past_or_today": 3,
         "too_long": 2,
         "hourly_below_12000": 1,
-        "no_work_date": 12
+        "no_work_date": 11
       }
     },
     {
@@ -515,8 +514,8 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "no_work_date": 16,
-        "too_long": 3,
+        "no_work_date": 17,
+        "too_long": 2,
         "past_or_today": 1
       }
     },
@@ -529,9 +528,9 @@
       "candidates": 17,
       "accepted": 6,
       "rejected": {
+        "too_long": 2,
         "past_or_today": 4,
-        "too_long": 1,
-        "no_work_date": 6
+        "no_work_date": 5
       }
     },
     {
@@ -544,7 +543,8 @@
       "accepted": 0,
       "rejected": {
         "past_or_today": 25,
-        "old_post": 2
+        "old_post": 1,
+        "hourly_below_12000": 1
       }
     },
     {
@@ -553,11 +553,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 29,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 26,
-        "hourly_below_12000": 1,
+        "past_or_today": 24,
         "old_post": 2
       }
     },
@@ -565,13 +564,13 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
       "state": "ok",
-      "reason": "알바천국 상세공고 1건 통과",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 21,
-      "accepted": 1,
+      "candidates": 25,
+      "accepted": 0,
       "rejected": {
-        "past_or_today": 19,
-        "hourly_below_12000": 1
+        "past_or_today": 24,
+        "too_long": 1
       }
     },
     {
@@ -620,11 +619,13 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 21건 통과",
+      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
       "http": 200,
       "candidates": 21,
-      "accepted": 21,
-      "rejected": {}
+      "accepted": 0,
+      "rejected": {
+        "too_long": 21
+      }
     }
   ]
 }
