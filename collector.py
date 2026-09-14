@@ -68,6 +68,11 @@ SOURCE_PAGES = [
     ("당근알바", "https://jobs.daangn.com/s?regionId=5923&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=671&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=648&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
+
+    # 급구: 로그인 없이 공개 접근 가능한 공식 웹 페이지만 확인.
+    # 현재 공식 홈페이지가 앱 중심이라 공개 채용목록이 없으면 0건으로 진단된다.
+    ("급구", "https://www.gubgoo.com/"),
+    ("급구", "https://client.gubgoo.com/"),
 ]
 
 
@@ -514,6 +519,72 @@ def parse_daangn_index(url: str):
     return out, diag
 
 
+def parse_gubgoo_public(url: str):
+    """급구 공식 공개 웹페이지 전용 파서.
+
+    급구 앱/로그인 내부 데이터에는 접근하지 않는다.
+    공식 웹에 공개 JobPosting 또는 공개 채용 링크가 있을 때만 수집한다.
+    """
+    r, fetch_diag = fetch(url)
+    diag = {
+        "source": "급구",
+        "url": url,
+        "state": fetch_diag["state"],
+        "reason": fetch_diag["reason"],
+        "http": fetch_diag.get("http"),
+        "candidates": 0,
+        "accepted": 0,
+        "rejected": {},
+    }
+    if not r:
+        return [], diag
+
+    soup = BeautifulSoup(r.text, "html.parser")
+    out = []
+
+    # 1) 공식 페이지가 schema.org JobPosting을 공개하면 사용
+    for x in iter_jsonld_jobs(soup, r.url):
+        diag["candidates"] += 1
+        j, why = job_from_text("급구", x["title"], x["company"], x["text"], x["url"], x["datePosted"])
+        if j:
+            out.append(j)
+            diag["accepted"] += 1
+        else:
+            diag["rejected"][why] = diag["rejected"].get(why, 0) + 1
+
+    # 2) 공개 웹에 실제 공고 링크가 노출되는 경우만 처리
+    for a, card_text in candidate_blocks(soup):
+        href = urljoin(r.url, a.get("href", ""))
+        low = href.lower()
+        text2 = norm(card_text)
+
+        # 마케팅/블로그/앱설치 링크는 제외하고 채용성 링크만 제한적으로 허용
+        jobish_url = any(k in low for k in ("/job", "/jobs", "/recruit", "/hire", "posting"))
+        jobish_text = bool(re.search(r"(시급|일급|일당|근무일|근무시간|알바모집|채용)", text2))
+        if not (jobish_url and jobish_text):
+            continue
+        if not region_name(text2):
+            continue
+
+        diag["candidates"] += 1
+        title = norm(a.get_text(" ", strip=True))
+        j, why = job_from_text("급구", title, "", text2, href)
+        if j:
+            out.append(j)
+            diag["accepted"] += 1
+        else:
+            diag["rejected"][why] = diag["rejected"].get(why, 0) + 1
+
+    if diag["candidates"] == 0:
+        diag["reason"] = "급구 공식 웹 응답 정상 · 로그인 없는 공개 채용목록/공고데이터 미확인"
+    elif diag["accepted"] == 0:
+        diag["reason"] = "급구 공개 공고 후보는 확인했지만 현재 필터 조건 통과 0건"
+    else:
+        diag["reason"] = f"급구 공식 공개 공고 {diag['accepted']}건 통과"
+
+    return out, diag
+
+
 def parse_page(source: str, url: str):
     r, fetch_diag = fetch(url)
     diag = {
@@ -605,6 +676,8 @@ def main():
                 found, diag = parse_alba_index(url)
             elif source == "당근알바":
                 found, diag = parse_daangn_index(url)
+            elif source == "급구":
+                found, diag = parse_gubgoo_public(url)
             else:
                 found, diag = parse_page(source, url)
             jobs.extend(found)
@@ -637,7 +710,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
+        "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
         "jobs": jobs,
         "source_summary": source_summary,
         "diagnostics": diags,
