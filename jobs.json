@@ -1,7 +1,7 @@
 {
-  "updated_at_kst": "2026-09-14 23:19",
+  "updated_at_kst": "2026-09-14 23:23",
   "collector_status": "ok",
-  "criteria": "TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
+  "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
     {
       "source": "알바몬",
@@ -37,7 +37,7 @@
       "task": "행사, 설치, 물류, 보조, 포장, 정리, 매장",
       "work_time": "00:00 ~ 12:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/",
@@ -54,32 +54,11 @@
       "work_end": "2026-10-25",
       "region": "부산",
       "company": "",
-      "title": "1톤 트럭 이삿짐 이동 시급 15,000원 총 7일 / 오늘~9월 20일 · 시간 협의 주례동",
-      "task": "행사, 포장, 정리, 매장",
-      "work_time": "14:00 ~ 21:00",
-      "day_pay": 101910,
-      "hourly_pay": 15000,
-      "pay_type": "일급",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/1%ED%86%A4-%ED%8A%B8%EB%9F%AD-%EC%9D%B4%EC%82%BF%EC%A7%90-%EC%9D%B4%EB%8F%99-nfts7gp81ty4",
-      "duration_days": 7,
-      "duration_label": "7일",
-      "priority_hits": 4
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "10/23~10/25",
-      "work_start": "2026-10-23",
-      "work_end": "2026-10-25",
-      "region": "부산",
-      "company": "",
       "title": "주급 지급 / 쿠팡 소분, 원하는 날, 셔틀 운영 일급 101,910원 원하는 날 선택 쿠팡로지스틱스서비스 서부산1 · 암남동 후기 460",
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EC%A3%BC%EA%B8%89-%EC%A7%80%EA%B8%89-%EC%BF%A0%ED%8C%A1-%EC%86%8C%EB%B6%84-%EC%9B%90%ED%95%98%EB%8A%94-%EB%82%A0-%EC%85%94%ED%8B%80-%EC%9A%B4%EC%98%81-43ty1wuzyaib",
@@ -100,7 +79,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/15%EC%9D%BC-%ED%99%94%EC%9A%94%EC%9D%BC-%EB%8B%A8%EC%88%9C-%ED%8F%AC%EC%9E%A5-%EB%B0%8F-%EB%B0%B1%EC%97%85-%EC%95%8C%EB%B0%94-%EB%AA%A8%EC%85%94%EC%9A%94-mjhjzfotdikx",
@@ -121,7 +100,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EA%B0%95%EC%95%84%EC%A7%80%EB%B0%A9%EB%AC%B8%EB%8F%8C%EB%B4%84-10%EC%9B%9423-25%EC%9D%BC%EA%B9%8C%EC%A7%80-twqrmy6ujqd9",
@@ -142,7 +121,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EC%9B%90%EB%A3%B8-%EC%B2%AD%EC%86%8C-%ED%95%B4%EC%A3%BC%EC%8B%A4-%EB%B6%84-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-pq1tm4avt89w",
@@ -163,7 +142,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/qm6-%ED%8A%B8%EB%A0%81%ED%81%AC%EB%93%B1-%EC%88%98%EB%A6%AC-eh84p6hcauwf",
@@ -184,7 +163,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%82%B4%EC%9D%BC-%EC%86%90-%EA%BC%BC%EA%BC%BC%ED%95%98%EA%B3%A0-%EB%B9%A0%EB%A5%B4%EC%8B%A0%EB%B6%84-%EC%9E%AC%EB%A3%8C%EC%86%90%EC%A7%88-%EC%84%A4%EA%B1%B0%EC%A7%80-%EC%A0%95%EB%A6%AC-nrksvoy8eypb",
@@ -205,7 +184,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%8F%99%EC%95%84%EB%8C%80-%ED%91%B8%EB%93%9C%ED%8A%B8%EB%9F%AD-%EC%95%8C%EB%B0%94%EB%AA%A8%EC%A7%91-9-15-16-hhuzi6a6jwfs",
@@ -226,7 +205,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%AA%85%EB%8F%84-%EC%9E%85%ED%9A%8C%EC%9D%B8-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-%EA%B7%B8%EB%83%A5-%EC%84%9C-%EA%B3%84%EC%8B%9C%EB%A9%B4-%EB%90%98%EC%84%B8%EC%9A%94-ucomocgoidyg",
@@ -247,7 +226,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EA%B0%80%EC%82%AC%EC%9D%BC-%EB%8F%84%EC%99%80%EC%A3%BC%EC%85%94%EC%9A%94-pjvn7iubr4hb",
@@ -268,7 +247,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%8B%B9%EA%B0%90-%EC%B6%98%EC%8B%9D%EC%9D%B4%EB%84%A4-%EB%8B%A8%EA%B8%B0%EC%95%8C%EB%B0%94-%EB%AA%A8%EC%A7%91-cok2jscp9y37",
@@ -289,7 +268,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/9%EC%9B%94-14%EC%9D%BC-3%EC%8B%9C%EA%B0%84-%EC%95%8C%EB%B0%94-%EC%8B%9C%EA%B8%89-15-000%EC%9B%90-%EB%8B%B9%EC%9D%BC%EC%A7%80%EA%B8%89-sfwsrui5vthm",
@@ -310,7 +289,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%8B%A4%EC%9D%B4%EC%86%8C-%EC%8B%AC%EB%B6%80%EB%A6%84-%ED%95%B4%EC%A3%BC%EC%8B%A4%EB%B6%84-o3yz79b8iu28",
@@ -331,7 +310,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/2%EC%8B%9C%EA%B0%84%EB%A7%8C-%EB%AC%BC%EA%B1%B4%EB%84%A3%EA%B3%A0-%EC%9E%A1%EC%95%84%EC%A3%BC%EC%8B%A4%EB%B6%84-e2xffzsjsgod",
@@ -352,7 +331,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EC%A7%91%EC%B2%AD%EC%86%8C-%EC%9E%98%ED%95%98%EC%8B%9C%EB%8A%94%EB%B6%84-153otk768inp",
@@ -373,7 +352,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EC%9E%85%EC%A3%BC-%EC%B2%AD%EC%86%8C-%ED%95%B4%EC%A3%BC%EC%8B%A4%EB%B6%84-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-rjh1qxi2q2ps",
@@ -394,7 +373,7 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EC%A7%91-%EB%AA%B0%EB%94%A9-%EB%B0%A9%EB%AC%B8-%EC%B0%BD%EB%AC%B8%EC%83%B7%EC%8B%9C-%ED%8E%98%EC%9D%B8%ED%8A%B8%EC%B9%A0-%EB%8F%84%EC%99%80%EC%A3%BC%EC%8B%A4%EB%B6%84-nw5z9oia4kke",
@@ -415,10 +394,31 @@
       "task": "행사, 포장, 정리, 매장",
       "work_time": "14:00 ~ 21:00",
       "day_pay": 101910,
-      "hourly_pay": 15000,
+      "hourly_pay": 12000,
       "pay_type": "일급",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%ED%96%89%EC%82%AC%EC%9E%A5-%EC%95%84%EB%A5%B4%EB%B0%94%EC%9D%B4%ED%8A%B8-43br82j7nqgq",
+      "duration_days": 7,
+      "duration_label": "7일",
+      "priority_hits": 4
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "10/23~10/25",
+      "work_start": "2026-10-23",
+      "work_end": "2026-10-25",
+      "region": "부산",
+      "company": "",
+      "title": "영어 파트 선생님 대강 건당 125,000원 총 3일 / 9월 16~18일 · 14:00 ~ 20:30 범천동",
+      "task": "행사, 포장, 정리, 매장",
+      "work_time": "14:00 ~ 21:00",
+      "day_pay": 101910,
+      "hourly_pay": 12000,
+      "pay_type": "일급",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%98%81%EC%96%B4-%ED%8C%8C%ED%8A%B8-%EC%84%A0%EC%83%9D%EB%8B%98-%EB%8C%80%EA%B0%95-fq6rm6hc4giu",
       "duration_days": 7,
       "duration_label": "7일",
       "priority_hits": 4
@@ -443,10 +443,11 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 78,
-      "accepted": 0,
+      "candidates": 75,
+      "accepted": 1,
       "messages": [
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "알바천국 상세공고 1건 통과"
       ]
     },
     "당근알바": {
@@ -459,6 +460,17 @@
       "messages": [
         "당근 공개 검색결과 정상 · 21건 통과",
         "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
+      ]
+    },
+    "급구": {
+      "pages": 2,
+      "ok_pages": 2,
+      "blocked_pages": 0,
+      "error_pages": 0,
+      "candidates": 0,
+      "accepted": 0,
+      "messages": [
+        "급구 공식 웹 응답 정상 · 로그인 없는 공개 채용목록/공고데이터 미확인"
       ]
     }
   },
@@ -553,24 +565,24 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 26,
+      "candidates": 23,
       "accepted": 0,
       "rejected": {
-        "past_or_today": 24,
-        "old_post": 2
+        "past_or_today": 22,
+        "old_post": 1
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
       "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "알바천국 상세공고 1건 통과",
       "http": 200,
       "candidates": 25,
-      "accepted": 0,
+      "accepted": 1,
       "rejected": {
-        "past_or_today": 24,
-        "too_long": 1
+        "past_or_today": 23,
+        "old_post": 1
       }
     },
     {
@@ -626,6 +638,26 @@
       "rejected": {
         "too_long": 21
       }
+    },
+    {
+      "source": "급구",
+      "url": "https://www.gubgoo.com/",
+      "state": "ok",
+      "reason": "급구 공식 웹 응답 정상 · 로그인 없는 공개 채용목록/공고데이터 미확인",
+      "http": 200,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": {}
+    },
+    {
+      "source": "급구",
+      "url": "https://client.gubgoo.com/",
+      "state": "ok",
+      "reason": "급구 공식 웹 응답 정상 · 로그인 없는 공개 채용목록/공고데이터 미확인",
+      "http": 200,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": {}
     }
   ]
 }
