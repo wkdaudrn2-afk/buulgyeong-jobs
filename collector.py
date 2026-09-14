@@ -63,11 +63,11 @@ SOURCE_PAGES = [
 
     # 당근알바는 메인 페이지가 아니라 실제 지역 검색 결과 페이지를 확인한다.
     # 부산 주요 권역을 나눠 조회하면 한 페이지의 주변지역 반경 결과까지 함께 잡힌다.
-    ("당근알바", "https://jobs.daangn.com/s?regionId=5917&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
-    ("당근알바", "https://jobs.daangn.com/s?regionId=594&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
-    ("당근알바", "https://jobs.daangn.com/s?regionId=5923&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
-    ("당근알바", "https://jobs.daangn.com/s?regionId=671&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
-    ("당근알바", "https://jobs.daangn.com/s?regionId=648&workPeriod=%5B%22LESS_THAN_A_MONTH%22%5D"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=5917"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=594"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=5923"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=671"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=648"),
 ]
 
 
@@ -350,6 +350,19 @@ def iter_jsonld_jobs(soup: BeautifulSoup, base_url: str):
 
 
 def job_from_text(source: str, title: str, company: str, text: str, href: str, date_posted: str = ""):
+    """부울경 공개 공고를 최대한 넓게 수집한다.
+
+    제외:
+    - 부산·울산·경남이 아닌 공고
+    - 명확히 마감/삭제된 공고
+
+    더 이상 제외하지 않음:
+    - 등록일 오래됨/미확인
+    - 오늘/과거 날짜 표기
+    - 1주 초과
+    - 시급 12,000원 미만
+    - 근무일 미확인
+    """
     rg = region_name(text)
     if not rg or is_closed(text):
         return None, "region_or_closed"
@@ -360,58 +373,82 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
             post = datetime.fromisoformat(date_posted[:10]).date()
         except Exception:
             pass
-    post_verified = bool(post and 0 <= (TODAY - post).days <= 3)
-    if post and not post_verified:
-        return None, "old_post"
+    post_verified = bool(post)
 
+    # 등록일이 확인되는 공고는 최근 3일 이내만 허용.
+    # 등록일을 공개 페이지에서 확인할 수 없는 공고는 수집 후보로 유지.
+    if post and not (0 <= (TODAY - post).days <= 3):
+        return None, "older_than_3_days"
+
+    # 날짜를 찾으면 사용하고, 없으면 미확인으로 유지
     wa, wb = daangn_work_range(title, text) if source == "당근알바" else work_range(text)
-    if not wa or not wb:
-        return None, "no_work_date"
-    # 일반 사이트는 내일 이후만, 당근알바 전용은 오늘 공고도 포함
-    min_work_date = TODAY if source == "당근알바" else TOMORROW
-    if wa < min_work_date:
-        return None, "past_work"
 
-    # 당근은 '총 2일 / 9월16~23일'처럼 실제 2일 근무인데 날짜 범위가 길게 보일 수 있다.
     stated_days = total_work_days_from_text(text)
-    span_days = (wb - wa).days + 1
-    days = stated_days if stated_days is not None else span_days
-    if not 1 <= days <= 7:
-        return None, "too_long"
+    if stated_days is not None:
+        days = stated_days
+    elif wa and wb:
+        days = max(1, (wb - wa).days + 1)
+    elif re.search(r"(하루\s*알바|하루\s*근무|당일\s*알바|당일\s*근무|1일\s*(?:알바|근무))", text or ""):
+        days = 1
+    else:
+        days = 99
 
     hourly = parse_hourly(text)
-    # 명시적으로 시급제인 공고는 12,000원 미만 제외.
-    # 일급/건당처럼 시급이 없는 공고는 일급 환산 순위를 위해 유지한다.
-    if hourly and hourly < 12000:
-        return None, "hourly_below_12000"
-
     pay = parse_money(text)
     ptype = pay_type_from_text(text)
 
     tm = re.search(r"(\d{1,2}:\d{2}\s*(?:~|-|–|—)\s*\d{1,2}:\d{2}(?:\s*\(익일\))?)", text)
     app = next((w for w in ("온라인지원", "간편문자지원", "문자지원", "전화연락", "전화지원", "홈페이지", "이메일지원") if w in text), "원본 공고 확인")
     task_words = [w for w in PRIORITY_WORDS if w in text]
-    duration_label = "하루(1일)" if days == 1 else f"{days}일"
+
+    if days == 1:
+        duration_label = "하루(1일)"
+    elif 2 <= days <= 31:
+        duration_label = f"{days}일"
+    else:
+        duration_label = "기간 확인"
 
     title = norm(title) or text[:100]
+
+    if wa and wb:
+        work_date = wa.strftime("%m/%d") if wa == wb else f"{wa.strftime('%m/%d')}~{wb.strftime('%m/%d')}"
+        work_start = wa.isoformat()
+        work_end = wb.isoformat()
+    else:
+        work_date = "근무일 확인"
+        work_start = ""
+        work_end = ""
+
+    # 시급 공고의 일급 환산값은 랭킹의 '일급'으로 사용하지 않도록 실제 일급만 별도 계산
+    explicit_day_pay = 0
+    raw = (text or "").replace(",", "")
+    m = re.search(r"(?:일급|일당|하루)\s*[:：]?\s*([0-9]{4,7})\s*원?", raw)
+    if m:
+        explicit_day_pay = int(m.group(1))
+    else:
+        m = re.search(r"(?:일급|일당|하루)[^0-9]{0,8}([0-9]{1,3})\s*만(?:원)?", raw)
+        if m:
+            explicit_day_pay = int(m.group(1)) * 10000
+
     return {
         "source": source,
         "posted_at": post.isoformat() if post else "등록일 미확인",
         "posted_verified": post_verified,
-        "work_date": wa.strftime("%m/%d") if wa == wb else f"{wa.strftime('%m/%d')}~{wb.strftime('%m/%d')}",
-        "work_start": wa.isoformat(),
-        "work_end": wb.isoformat(),
+        "work_date": work_date,
+        "work_start": work_start,
+        "work_end": work_end,
         "region": rg,
         "company": company,
         "title": title[:160],
-        "task": ", ".join(task_words) if task_words else "단기 아르바이트",
+        "task": ", ".join(task_words) if task_words else "아르바이트",
         "work_time": tm.group(1) if tm else "시간 확인",
         "day_pay": pay,
+        "explicit_day_pay": explicit_day_pay,
         "hourly_pay": hourly,
         "pay_type": ptype,
         "pay_display": (
-            f"일급 {pay:,}원" if ptype == "일급" and pay
-            else f"시급 {hourly:,}원" if ptype == "시급" and hourly
+            f"일급 {explicit_day_pay:,}원" if explicit_day_pay
+            else f"시급 {hourly:,}원" if hourly
             else f"{pay:,}원" if pay
             else "급여 확인"
         ),
@@ -430,9 +467,6 @@ def alba_detail_links(soup: BeautifulSoup, base_url: str):
         if "alba.co.kr/job/" not in href.lower() or "adid=" not in href.lower():
             continue
         if not region_name(text):
-            continue
-        post = posted_date_from_text(text)
-        if post and not (0 <= (TODAY - post).days <= 3):
             continue
         # 목록 텍스트에 '시간 전/분 전/오늘' 등이 있으면 최근 후보로 간주
         key = re.search(r"adid=(\d+)", href, re.I)
@@ -537,9 +571,6 @@ def parse_daangn_index(url: str):
             continue
         if not re.search(r"(시급|일급|일당|건당|월급)", text2):
             continue
-        if not re.search(r"(총\s*\d+\s*일|\d{1,2}\s*[./월]\s*\d{1,2})", text2):
-            continue
-
         diag["candidates"] += 1
         title = norm(a.get_text(" ", strip=True))
         if len(title) < 5:
@@ -615,7 +646,7 @@ def parse_page(source: str, url: str):
 
 def dedupe_key(j):
     core = re.sub(r"[^가-힣A-Za-z0-9]", "", j["title"])[:36]
-    return hashlib.sha1(f"{core}|{j['work_start']}|{j['day_pay']}".encode()).hexdigest()
+    return hashlib.sha1(f"{core}|{j.get('work_start','')}|{j.get('explicit_day_pay',0)}|{j.get('hourly_pay',0)}".encode()).hexdigest()
 
 
 def summarize_sources(diags):
@@ -669,47 +700,34 @@ def main():
         if old is None or (j.get("posted_verified") and not old.get("posted_verified")):
             deduped[k] = j
     jobs = list(deduped.values())
-    jobs.sort(key=lambda j: (
-        int(j.get("duration_days") or 99),
-        0 if j.get("pay_type") == "일급" else 1,
-        -int(j.get("day_pay") or 0),
-        -int(j.get("hourly_pay") or 0),
-        0 if j.get("posted_verified") else 1,
-        -j["priority_hits"],
-        j["work_start"],
-    ))
+    # 순위 규칙:
+    # 1) 하루알바 우선
+    # 2) 실제 일급 높은 순
+    # 3) 시급 높은 순
+    # 4) 근무일이 확인되는 경우 빠른 날짜
+    def rank_key(j):
+        one_day = 0 if int(j.get("duration_days") or 99) == 1 else 1
+        day_pay = -int(j.get("explicit_day_pay") or 0)
+        hourly = -int(j.get("hourly_pay") or 0)
+        date_key = j.get("work_start") or "9999-12-31"
+        return (one_day, day_pay, hourly, date_key, j.get("title",""))
 
-    # 근무 시작일 기준 분류
-    weekday_jobs = []   # 월~목 TOP20
-    weekend_jobs = []   # 금~일 TOP10
-    for j in jobs:
-        try:
-            wd = datetime.strptime(j["work_start"], "%Y-%m-%d").weekday()  # 월=0 ... 일=6
-        except Exception:
-            continue
-        if wd <= 3:
-            weekday_jobs.append(j)
-        else:
-            weekend_jobs.append(j)
+    jobs.sort(key=rank_key)
 
-    weekday_jobs = weekday_jobs[:20]
-    weekend_jobs = weekend_jobs[:10]
+    # 일반창: 알바몬 + 알바천국 TOP20
+    general_jobs = [j for j in jobs if j.get("source") in ("알바몬", "알바천국")][:20]
 
-    # 당근알바 전용 창: 전체 수집 결과 중 당근알바만 TOP10
-    daangn_jobs = [j for j in jobs if j.get("source") == "당근알바"][:10]
+    # 당근알바 별도창 TOP20
+    daangn_jobs = [j for j in jobs if j.get("source") == "당근알바"][:20]
 
-    # 일반 창에서는 당근알바 제외: 알바몬 + 알바천국만 표시
-    weekday_jobs = [j for j in weekday_jobs if j.get("source") != "당근알바"][:20]
-    weekend_jobs = [j for j in weekend_jobs if j.get("source") != "당근알바"][:10]
-    display_jobs = weekday_jobs + weekend_jobs
+    display_jobs = general_jobs + daangn_jobs
 
     source_summary = summarize_sources(diags)
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
-        "collector_status": "ok" if display_jobs else "수집 실행 완료 · 조건 통과 공고 0건",
-        "criteria": "일반창: 알바몬·알바천국 월~목 TOP20 / 금~일 TOP10 · 내일 이후 근무 · 당근알바: 별도 TOP10 · 오늘 포함 · 부산·경남·울산 · 최근3일 등록 우선 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상",
-        "weekday_jobs": weekday_jobs,
-        "weekend_jobs": weekend_jobs,
+        "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
+        "criteria": "부산·울산·경남 · 등록일 확인 공고 최근 3일 이내 · 등록일 미확인 공고는 후보 유지 · 일반(알바몬+알바천국) TOP20 · 당근알바 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
+        "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
         "source_summary": source_summary,
@@ -720,14 +738,13 @@ def main():
     all_failed = bool(diags) and all(d["state"] != "ok" for d in diags)
     if not display_jobs and all_failed and prev.get("jobs"):
         payload["jobs"] = prev.get("jobs", [])
-        payload["weekday_jobs"] = prev.get("weekday_jobs", [])
-        payload["weekend_jobs"] = prev.get("weekend_jobs", [])
+        payload["general_jobs"] = prev.get("general_jobs", [])
         payload["daangn_jobs"] = prev.get("daangn_jobs", [])
         payload["collector_status"] = "모든 소스 접근 실패 · 이전 공고 임시 유지"
         payload["previous_data_preserved"] = True
 
     OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("saved", len(payload.get("weekday_jobs", [])), "weekday +", len(payload.get("weekend_jobs", [])), "weekend jobs")
+    print("saved", len(payload.get("general_jobs", [])), "general +", len(payload.get("daangn_jobs", [])), "daangn jobs")
 
 
 
