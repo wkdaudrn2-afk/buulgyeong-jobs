@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-14 23:39",
+  "updated_at_kst": "2026-09-14 23:47",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -262,13 +262,13 @@
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 3,
-      "blocked_pages": 0,
+      "ok_pages": 0,
+      "blocked_pages": 3,
       "error_pages": 0,
-      "candidates": 75,
+      "candidates": 0,
       "accepted": 0,
       "messages": [
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "robots 확인 실패: URLError"
       ]
     },
     "당근알바": {
@@ -320,10 +320,10 @@
       "candidates": 15,
       "accepted": 0,
       "rejected": {
+        "too_long": 3,
         "past_or_today": 3,
-        "too_long": 2,
         "hourly_below_12000": 1,
-        "no_work_date": 9
+        "no_work_date": 8
       }
     },
     {
@@ -368,40 +368,32 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 28,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "past_or_today": 27,
-        "hourly_below_12000": 1
-      }
+      "rejected": {}
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 22,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "past_or_today": 22
-      }
+      "rejected": {}
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 25,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "past_or_today": 24,
-        "too_long": 1
-      }
+      "rejected": {}
     },
     {
       "source": "당근알바",
