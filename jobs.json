@@ -1,6 +1,6 @@
 {
-  "updated_at_kst": "배포 후 첫 자동수집 전",
-  "collector_status": "waiting",
+  "updated_at_kst": "2026-09-14 16:53",
+  "collector_status": "ok",
   "criteria": "최근3일 등록·내일 이후·1~7일·하루우선·일급순",
   "jobs": []
 }
