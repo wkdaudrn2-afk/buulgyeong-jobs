@@ -1,6 +1,337 @@
 {
-  "updated_at_kst": "2026-09-14 17:33",
+  "updated_at_kst": "2026-09-14 18:33",
   "collector_status": "ok",
-  "criteria": "최근3일 등록·내일 이후·1~7일·하루우선·일급순",
-  "jobs": []
+  "criteria": "최근3일 등록 우선·등록일 미확인 보충·내일 이후·1~7일·하루우선·일급순",
+  "jobs": [
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/16",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-16",
+      "region": "부산",
+      "company": "",
+      "title": "[POLO/단기AR]폴로매장 입고지원 일일알바 신세계부산아울렛(9/16)",
+      "task": "매장",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119188347?logpath=14&productCount=1&sc=529",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/22~09/24",
+      "work_start": "2026-09-22",
+      "work_end": "2026-09-24",
+      "region": "부산",
+      "company": "",
+      "title": "#추석연휴 단기알바구인# /부산/떡집 판매,포장 #일당9만 #야간16만",
+      "task": "포장, 매장",
+      "work_time": "시간 확인",
+      "day_pay": 90000,
+      "apply": "간편문자지원",
+      "url": "https://www.albamon.com/jobs/detail/119136992?logpath=14&productCount=1&sc=529",
+      "duration_days": 3,
+      "duration_label": "3일",
+      "priority_hits": 2
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/15~09/19",
+      "work_start": "2026-09-15",
+      "work_end": "2026-09-19",
+      "region": "부산",
+      "company": "",
+      "title": "(초보가능) 콘서트 무대설치철거 보조요원",
+      "task": "행사, 설치, 철거, 보조",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119177435?logpath=14&productCount=1&sc=529",
+      "duration_days": 5,
+      "duration_label": "5일",
+      "priority_hits": 4
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/16~09/20",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-20",
+      "region": "부산",
+      "company": "",
+      "title": "[부산]망미중앙시장 온누리상품권 환급행사 슈퍼바이저/운영요원 모집(수산)",
+      "task": "행사",
+      "work_time": "09:30~18:30",
+      "day_pay": 0,
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119172163?logpath=14&productCount=1&sc=529",
+      "duration_days": 5,
+      "duration_label": "5일",
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/16~09/20",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-20",
+      "region": "부산",
+      "company": "",
+      "title": "[부산]남포동신동아자갈치 온누리상품권환급행사 슈퍼바이저/요원모집(수산)",
+      "task": "행사",
+      "work_time": "08:30~17:30",
+      "day_pay": 0,
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119165823?logpath=14&productCount=1&sc=529",
+      "duration_days": 5,
+      "duration_label": "5일",
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/21~09/27",
+      "work_start": "2026-09-21",
+      "work_end": "2026-09-27",
+      "region": "부산",
+      "company": "",
+      "title": "[(주)제이브이엠] 부산의료원 의료기기 모니터링 단기AR 모집",
+      "task": "보조",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "apply": "이메일지원",
+      "url": "https://www.albamon.com/jobs/detail/119187732?logpath=14&productCount=1&sc=529",
+      "duration_days": 7,
+      "duration_label": "7일",
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/23~09/27",
+      "work_start": "2026-09-23",
+      "work_end": "2026-09-27",
+      "region": "부산",
+      "company": "",
+      "title": "한국공항보안(주) 김해국제공항 안내보조(추석특송) 기간제근로자 채용",
+      "task": "보조",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "apply": "이메일지원",
+      "url": "https://www.albamon.com/jobs/detail/119190186?logpath=14&productCount=1&sc=529",
+      "duration_days": 5,
+      "duration_label": "5일",
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/24~09/25",
+      "work_start": "2026-09-24",
+      "work_end": "2026-09-25",
+      "region": "부산",
+      "company": "",
+      "title": "[09.24, 25 이틀근무] 신세계아울렛 안내데스크 알바",
+      "task": "행사",
+      "work_time": "11:00~18:30",
+      "day_pay": 0,
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119193485?logpath=14&productCount=1&sc=529",
+      "duration_days": 2,
+      "duration_label": "2일",
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/19~09/20",
+      "work_start": "2026-09-19",
+      "work_end": "2026-09-20",
+      "region": "부산",
+      "company": "",
+      "title": "★ [시급 11000원] 이케아 동부산점 이벤트 스텝 모집 (2일 단기)",
+      "task": "단기 아르바이트",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119160435?logpath=14&productCount=1&sc=529",
+      "duration_days": 2,
+      "duration_label": "2일",
+      "priority_hits": 0
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-14",
+      "posted_verified": true,
+      "work_date": "09/24~09/27",
+      "work_start": "2026-09-24",
+      "work_end": "2026-09-27",
+      "region": "부산",
+      "company": "",
+      "title": "9/24-27 추석 카페 단기알바 (시급12000)",
+      "task": "단기 아르바이트",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "apply": "간편문자지원",
+      "url": "https://www.albamon.com/jobs/detail/118919012?logpath=14&sc=529",
+      "duration_days": 4,
+      "duration_label": "4일",
+      "priority_hits": 0
+    }
+  ],
+  "source_summary": {
+    "알바몬": {
+      "pages": 5,
+      "ok_pages": 5,
+      "blocked_pages": 0,
+      "error_pages": 0,
+      "candidates": 151,
+      "accepted": 19,
+      "messages": [
+        "공개 페이지 정상 · 2건 통과",
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 8건 통과",
+        "공개 페이지 정상 · 9건 통과"
+      ]
+    },
+    "알바천국": {
+      "pages": 1,
+      "ok_pages": 1,
+      "blocked_pages": 0,
+      "error_pages": 0,
+      "candidates": 114,
+      "accepted": 0,
+      "messages": [
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+      ]
+    },
+    "당근알바": {
+      "pages": 2,
+      "ok_pages": 2,
+      "blocked_pages": 0,
+      "error_pages": 0,
+      "candidates": 44,
+      "accepted": 44,
+      "messages": [
+        "공개 페이지 정상 · 44건 통과",
+        "페이지 응답은 정상이나 공고 카드/구조화데이터를 찾지 못함"
+      ]
+    }
+  },
+  "diagnostics": [
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 2건 통과",
+      "http": 200,
+      "candidates": 74,
+      "accepted": 2,
+      "rejected": {
+        "no_work_date": 39,
+        "too_long": 5,
+        "past_or_today": 28
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
+      "state": "ok",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 0,
+      "rejected": {
+        "no_work_date": 20
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
+      "state": "ok",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 0,
+      "rejected": {
+        "no_work_date": 20
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 8건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 8,
+      "rejected": {
+        "too_long": 4,
+        "no_work_date": 4,
+        "past_or_today": 4
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 9건 통과",
+      "http": 200,
+      "candidates": 17,
+      "accepted": 9,
+      "rejected": {
+        "no_work_date": 7,
+        "past_or_today": 1
+      }
+    },
+    {
+      "source": "알바천국",
+      "url": "https://www.alba.co.kr/job/object/main",
+      "state": "ok",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 114,
+      "accepted": 0,
+      "rejected": {
+        "no_work_date": 77,
+        "too_long": 14,
+        "past_or_today": 23
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://www.daangn.com/kr/jobs/",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 44건 통과",
+      "http": 200,
+      "candidates": 44,
+      "accepted": 44,
+      "rejected": {}
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/",
+      "state": "ok",
+      "reason": "페이지 응답은 정상이나 공고 카드/구조화데이터를 찾지 못함",
+      "http": 200,
+      "candidates": 0,
+      "accepted": 0,
+      "rejected": {}
+    }
+  ]
 }
