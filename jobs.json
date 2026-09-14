@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 00:47",
+  "updated_at_kst": "2026-09-15 01:17",
   "collector_status": "ok",
   "criteria": "알바몬·알바천국·당근알바·급구 · TOP20 · 부산·경남·울산 · 최근3일 등록 우선 · 내일 이후 · 1~7일 · 하루알바 우선 · 시급제 12,000원 이상 · 일급 우선 · 30분 자동업데이트",
   "jobs": [
@@ -71,7 +71,29 @@
     },
     {
       "source": "알바몬",
-      "posted_at": "2026-09-14",
+      "posted_at": "2026-09-15",
+      "posted_verified": true,
+      "work_date": "09/24~09/27",
+      "work_start": "2026-09-24",
+      "work_end": "2026-09-27",
+      "region": "부산",
+      "company": "",
+      "title": "9/24-27 추석 카페 단기알바 (시급12000)",
+      "task": "단기 아르바이트",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "hourly_pay": 12000,
+      "pay_type": "시급",
+      "pay_display": "시급 12,000원",
+      "apply": "간편문자지원",
+      "url": "https://www.albamon.com/jobs/detail/118998929?logpath=14&sc=529",
+      "duration_days": 4,
+      "duration_label": "4일",
+      "priority_hits": 0
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-15",
       "posted_verified": true,
       "work_date": "09/16~09/20",
       "work_start": "2026-09-16",
@@ -93,7 +115,7 @@
     },
     {
       "source": "알바몬",
-      "posted_at": "2026-09-14",
+      "posted_at": "2026-09-15",
       "posted_verified": true,
       "work_date": "09/16~09/20",
       "work_start": "2026-09-16",
@@ -156,28 +178,6 @@
       "duration_days": 5,
       "duration_label": "5일",
       "priority_hits": 1
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "2026-09-14",
-      "posted_verified": true,
-      "work_date": "09/21~09/27",
-      "work_start": "2026-09-21",
-      "work_end": "2026-09-27",
-      "region": "부산",
-      "company": "",
-      "title": "[(주)제이브이엠] 부산의료원 의료기기 모니터링 단기AR 모집",
-      "task": "보조",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "급여 확인",
-      "pay_display": "급여 확인",
-      "apply": "이메일지원",
-      "url": "https://www.albamon.com/jobs/detail/119187732?logpath=14&productCount=1&sc=529",
-      "duration_days": 7,
-      "duration_label": "7일",
-      "priority_hits": 1
     }
   ],
   "source_summary": {
@@ -187,22 +187,22 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 141,
-      "accepted": 10,
+      "accepted": 9,
       "messages": [
+        "공개 페이지 정상 · 5건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 4건 통과",
-        "공개 페이지 정상 · 6건 통과"
+        "공개 페이지 정상 · 4건 통과"
       ]
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 3,
-      "blocked_pages": 0,
+      "ok_pages": 0,
+      "blocked_pages": 3,
       "error_pages": 0,
       "candidates": 0,
       "accepted": 0,
       "messages": [
-        "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함"
+        "robots 확인 실패: URLError"
       ]
     },
     "당근알바": {
@@ -236,14 +236,15 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
       "candidates": 63,
-      "accepted": 0,
+      "accepted": 5,
       "rejected": {
-        "no_work_date": 45,
+        "no_work_date": 38,
         "old_post": 16,
-        "too_long": 2
+        "too_long": 2,
+        "past_or_today": 2
       }
     },
     {
@@ -255,10 +256,10 @@
       "candidates": 18,
       "accepted": 0,
       "rejected": {
-        "hourly_below_12000": 2,
+        "no_work_date": 13,
+        "hourly_below_12000": 1,
         "too_long": 2,
-        "past_or_today": 2,
-        "no_work_date": 12
+        "past_or_today": 2
       }
     },
     {
@@ -270,8 +271,9 @@
       "candidates": 20,
       "accepted": 4,
       "rejected": {
-        "too_long": 1,
-        "no_work_date": 15
+        "no_work_date": 14,
+        "hourly_below_12000": 1,
+        "too_long": 1
       }
     },
     {
@@ -290,12 +292,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 6건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
       "candidates": 20,
-      "accepted": 6,
+      "accepted": 0,
       "rejected": {
-        "no_work_date": 6,
+        "no_work_date": 12,
         "too_long": 4,
         "past_or_today": 4
       }
@@ -303,9 +305,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "ok",
-      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
-      "http": 200,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -313,9 +315,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "ok",
-      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
-      "http": 200,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
@@ -323,9 +325,9 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "ok",
-      "reason": "목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함",
-      "http": 200,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
       "candidates": 0,
       "accepted": 0,
       "rejected": {}
