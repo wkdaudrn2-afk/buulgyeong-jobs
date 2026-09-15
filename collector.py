@@ -54,12 +54,27 @@ DAANGN_UNWANTED_WORDS = (
     "영업","세일즈","정규직","정직원","월급","피부관리","뷰티","헤어","네일","학원","과외","돌봄","요양","간병"
 )
 
+GENERAL_WANTED_WORDS = (
+    "행사","이벤트","스태프","staff","공연","공연보조","운영스태프","운영 staff",
+    "벡스코","bexco","전시","박람회","팝업","팝업스토어","백화점","아울렛",
+    "입점","설치","철거","세팅","셋팅","진열","매장진열","매장이동",
+    "짐 옮기기","짐옮기기","물자이동","물품이동","운반","상하차","하차","하역",
+    "현장보조","행사보조","안전요원","부스","무대","전광판","led","집기",
+    "이케아","신세계","롯데백화점","롯데아울렛","프리미엄 아울렛"
+)
+GENERAL_UNWANTED_WORDS = (
+    "카페","커피","베이커리","주방","홀서빙","서빙","음식점","식당",
+    "상품권 환급","온누리상품권","환급행사",
+    "의료기기","안내보안","보안요원","공항보안",
+    "영업","세일즈","정규직","정직원","월급"
+)
+
 PRIORITY_WORDS = (
     "벡스코", "bexco", "행사", "행사보조", "행사스태프", "전시", "박람회",
     "팝업", "팝업스토어", "백화점", "신세계", "롯데백화점", "관광공사",
     "설치", "철거", "세팅", "입점", "매장이동", "박스이동", "짐 옮기기",
     "물자이동", "진열", "보조", "스태프", "포장", "물류", "정리", "매장"
-)
+,"이벤트","공연","공연보조","운영스태프","아울렛","이케아")
 CLOSED_WORDS = ("마감되었습니다", "접수가 마감", "채용이 마감", "종료된 공고", "삭제된 공고", "채용완료")
 OPEN_WORDS = ("상시모집", "모집중", "지원", "채용중", "전화", "문자", "온라인")
 
@@ -555,6 +570,21 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         if any(w.lower() in low_text for w in DAANGN_UNWANTED_WORDS) and not any(w in low_text for w in strong):
             return None, "daangn_unwanted_job"
 
+    # 알바몬/알바천국도 사용자가 선호하는 단기 현장형 공고 중심으로 선별
+    if source in ("알바몬", "알바천국"):
+        low_general = f"{title} {company} {text}".lower()
+        wanted_general = any(w.lower() in low_general for w in GENERAL_WANTED_WORDS)
+        if not wanted_general:
+            return None, "general_not_preferred"
+
+        # 행사/설치/철거/입점/공연 등 핵심 현장형이면 일부 일반 단어가 섞여도 유지
+        strong_general = (
+            "행사","이벤트","공연","입점","설치","철거","세팅","셋팅","벡스코","bexco",
+            "전시","박람회","팝업","짐 옮기기","짐옮기기","상하차","하역","무대","부스"
+        )
+        if any(w.lower() in low_general for w in GENERAL_UNWANTED_WORDS) and not any(w in low_general for w in strong_general):
+            return None, "general_unwanted_job"
+
     # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
     # 제외업종/브랜드
     # "물류"라는 일반 업무 단어 자체는 제외하지 않는다.
@@ -791,6 +821,10 @@ def daangn_nearby_region_urls(url: str, limit: int = 30):
             break
     return out
 
+DAANGN_DETAIL_FETCHED = set()
+DAANGN_DETAIL_CACHE = {}
+DAANGN_DETAIL_MAX = 80
+
 def parse_daangn_index(url: str):
     """당근 공개 검색결과: 카드 + 개별 상세공고 본문까지 확인."""
     r, fetch_diag = fetch(url)
@@ -814,6 +848,11 @@ def parse_daangn_index(url: str):
         if href in seen:
             continue
         seen.add(href)
+        if href in DAANGN_DETAIL_FETCHED:
+            continue
+        if len(DAANGN_DETAIL_FETCHED) >= DAANGN_DETAIL_MAX:
+            break
+        DAANGN_DETAIL_FETCHED.add(href)
         diag["candidates"] += 1
 
         card_text = daangn_card_text(a)
@@ -846,7 +885,7 @@ def parse_daangn_index(url: str):
             diag["accepted"] += 1
         else:
             diag["rejected"][why] = diag["rejected"].get(why, 0) + 1
-        time.sleep(0.10)
+        time.sleep(0.03)
 
     if diag["candidates"] == 0:
         diag["reason"] = "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인"
