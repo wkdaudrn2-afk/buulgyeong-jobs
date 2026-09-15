@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 14:12",
+  "updated_at_kst": "2026-09-15 14:17",
   "collector_status": "ok",
   "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -380,6 +380,31 @@
     }
   ],
   "daangn_jobs": [
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "09/16~09/26",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-26",
+      "region": "김해",
+      "company": "",
+      "title": "김해공항 스카이허브라운지 홀, 세척 단기 PT 채용 일급 110,000원 총 11일 / 9월 16~26일 · 06:00 ~ 15:00 협의 (주)이브릿지 · 대저2동 모범구인 후기 5",
+      "task": "아르바이트",
+      "work_time": "06:00 ~ 15:00",
+      "day_pay": 110000,
+      "explicit_day_pay": 110000,
+      "hourly_pay": 0,
+      "pay_type": "일급",
+      "pay_display": "일급 110,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EA%B9%80%ED%95%B4%EA%B3%B5%ED%95%AD-%EC%8A%A4%EC%B9%B4%EC%9D%B4%ED%97%88%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%A7%80-%ED%99%80-%EC%84%B8%EC%B2%99-%EB%8B%A8%EA%B8%B0-pt-%EC%B1%84%EC%9A%A9-shn8w7bxcof9",
+      "duration_days": 11,
+      "duration_label": "기간 미확인",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
     {
       "source": "당근알바",
       "posted_at": "등록일 미확인",
@@ -986,6 +1011,31 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/16~09/26",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-26",
+      "region": "김해",
+      "company": "",
+      "title": "김해공항 스카이허브라운지 홀, 세척 단기 PT 채용 일급 110,000원 총 11일 / 9월 16~26일 · 06:00 ~ 15:00 협의 (주)이브릿지 · 대저2동 모범구인 후기 5",
+      "task": "아르바이트",
+      "work_time": "06:00 ~ 15:00",
+      "day_pay": 110000,
+      "explicit_day_pay": 110000,
+      "hourly_pay": 0,
+      "pay_type": "일급",
+      "pay_display": "일급 110,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EA%B9%80%ED%95%B4%EA%B3%B5%ED%95%AD-%EC%8A%A4%EC%B9%B4%EC%9D%B4%ED%97%88%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%A7%80-%ED%99%80-%EC%84%B8%EC%B2%99-%EB%8B%A8%EA%B8%B0-pt-%EC%B1%84%EC%9A%A9-shn8w7bxcof9",
+      "duration_days": 11,
+      "duration_label": "기간 미확인",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "09/19~09/30",
       "work_start": "2026-09-19",
       "work_end": "2026-09-30",
@@ -1228,7 +1278,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 57,
+      "candidates": 58,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -1239,8 +1289,8 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 25,
-      "accepted": 25,
+      "candidates": 27,
+      "accepted": 27,
       "messages": [
         "당근 공개 검색결과 정상 · 3건 통과",
         "당근 공개 검색결과 정상 · 4건 통과",
@@ -1321,18 +1371,6 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 23,
-      "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 23
-      }
-    },
-    {
-      "source": "알바천국",
-      "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
       "candidates": 26,
       "accepted": 0,
       "rejected": {
@@ -1341,14 +1379,26 @@
     },
     {
       "source": "알바천국",
+      "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 15,
+      "accepted": 0,
+      "rejected": {
+        "excluded_keyword": 15
+      }
+    },
+    {
+      "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 8,
+      "candidates": 17,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 8
+        "excluded_keyword": 17
       }
     },
     {
@@ -1365,20 +1415,20 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 4,
+      "accepted": 4,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 4,
+      "accepted": 4,
       "rejected": {}
     },
     {
