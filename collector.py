@@ -64,10 +64,10 @@ GENERAL_WANTED_WORDS = (
 ,"매장 입점","입점 작업","이벤트 스텝","이벤트 스태프","공연 STAFF","공연스태프","운영 스태프","롯데몰")
 GENERAL_UNWANTED_WORDS = (
     "카페","커피","베이커리","주방","홀서빙","서빙","음식점","식당",
-    "상품권 환급","온누리상품권","환급행사",
+    
     "의료기기","안내보안","보안요원","공항보안",
     "영업","세일즈","정규직","정직원","월급"
-,"온누리 상품권","상품권","상품권 증정","상품권 지급","와인선물","와인 선물","명절 와인","POLO","폴로매장","플로매장","입고지원","판매지원","매장 홍보","스킨케어")
+,"상품권","와인선물","와인 선물","명절 와인","POLO","폴로매장","플로매장","입고지원","판매지원","매장 홍보","스킨케어")
 
 PRIORITY_WORDS = (
     "벡스코", "bexco", "행사", "행사보조", "행사스태프", "전시", "박람회",
@@ -574,21 +574,6 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         if any(w.lower() in low_text for w in DAANGN_UNWANTED_WORDS) and not any(w in low_text for w in strong):
             return None, "daangn_unwanted_job"
 
-    # 알바몬/알바천국도 사용자가 선호하는 단기 현장형 공고 중심으로 선별
-    if source in ("알바몬", "알바천국"):
-        low_general = f"{title} {company} {text}".lower()
-        wanted_general = any(w.lower() in low_general for w in GENERAL_WANTED_WORDS)
-        if not wanted_general:
-            return None, "general_not_preferred"
-
-        # 행사/설치/철거/입점/공연 등 핵심 현장형이면 일부 일반 단어가 섞여도 유지
-        strong_general = (
-            "행사","이벤트","공연","입점","설치","철거","세팅","셋팅","벡스코","bexco",
-            "전시","박람회","팝업","짐 옮기기","짐옮기기","상하차","하역","무대","부스"
-        )
-        if any(w.lower() in low_general for w in GENERAL_UNWANTED_WORDS) and not any(w in low_general for w in strong_general):
-            return None, "general_unwanted_job"
-
     # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
     # 제외업종/브랜드
     # "물류"라는 일반 업무 단어 자체는 제외하지 않는다.
@@ -600,7 +585,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "메리츠", "메리츠화재", "메리 보험", "메리보험",
         "편의점", "gs25", "세븐일레븐", "7-eleven", "이마트24", "미니스톱",
         "택배", "택배상하차", "택배 분류", "택배분류", "택배 배송", "택배배송"
-    ,"온누리상품권","온누리 상품권","상품권 환급","환급행사","상품권 증정","상품권 지급","기프트콘","포인트 지급")
+    ,"포인트 지급")
     # CU는 영문 일반문자열 오탐이 많아 단어 경계로만 판정
     if any(w.lower() in haystack for w in brand_excludes) or re.search(r"(?<![a-z])cu(?![a-z])", haystack):
         return None, "excluded_keyword"
