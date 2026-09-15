@@ -111,9 +111,9 @@ SOURCE_PAGES = [
     ("당근알바", "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=LIGHT_WORK"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER"),
-    "https://www.albamon.com/jobs/short-term?areas=H000&page=6",
-    "https://www.albamon.com/jobs/short-term?areas=H000&page=7",
-    "https://www.albamon.com/jobs/short-term?areas=H000&page=8",
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=6"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=7"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=8"),
 
 ]
 
