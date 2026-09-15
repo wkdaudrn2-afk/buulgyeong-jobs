@@ -16,6 +16,7 @@ import hashlib
 import json
 import re
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -254,7 +255,7 @@ def fetch(url: str):
     if not allowed:
         return None, {"state": "blocked", "reason": reason, "http": None}
     try:
-        r = SESSION.get(url, timeout=20, allow_redirects=True)
+        r = SESSION.get(url, timeout=(4, 7), allow_redirects=True)
     except requests.RequestException as e:
         return None, {"state": "error", "reason": type(e).__name__, "http": None}
     if r.status_code in (401, 403, 429):
@@ -757,7 +758,7 @@ def alba_detail_links(soup: BeautifulSoup, base_url: str):
             continue
         seen.add(key)
         out.append(href)
-    return out[:100]
+    return out[:60]
 
 
 def parse_alba_detail(url: str):
@@ -800,17 +801,20 @@ def parse_alba_index(url: str):
     links = alba_detail_links(soup, r.url)
     diag["candidates"] = len(links)
     out=[]
-    for href in links:
-        try:
-            j, info = parse_alba_detail(href)
-            if j:
-                out.append(j); diag["accepted"] += 1
-            else:
-                why = info.get("reason", "detail_rejected") if isinstance(info,dict) else "detail_rejected"
-                diag["rejected"][why] = diag["rejected"].get(why,0)+1
-        except Exception as e:
-            k=f"detail_{type(e).__name__}"; diag["rejected"][k]=diag["rejected"].get(k,0)+1
-        time.sleep(0.25)
+    # 상세페이지를 순차로 1건씩 읽으면 5분 주기보다 오래 걸릴 수 있어 병렬 처리한다.
+    # 공개 페이지에 정상 응답하는 범위에서만 수집하며 실패한 상세공고는 건너뛴다.
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futures = {ex.submit(parse_alba_detail, href): href for href in links}
+        for fut in as_completed(futures):
+            try:
+                j, info = fut.result()
+                if j:
+                    out.append(j); diag["accepted"] += 1
+                else:
+                    why = info.get("reason", "detail_rejected") if isinstance(info,dict) else "detail_rejected"
+                    diag["rejected"][why] = diag["rejected"].get(why,0)+1
+            except Exception as e:
+                k=f"detail_{type(e).__name__}"; diag["rejected"][k]=diag["rejected"].get(k,0)+1
     if not links:
         diag["reason"]="목록 응답은 정상이나 부울경 상세공고 링크를 찾지 못함"
     elif out:
@@ -1050,7 +1054,7 @@ def main():
             print("daangn region discovery error:", seed, repr(e))
         if len(discovered) >= 80:
             break
-        time.sleep(0.25)
+        time.sleep(0.03)
     pages.extend(discovered)
     print("daangn nearby region pages added (target 부산·김해·양산):", len(discovered))
 
@@ -1068,7 +1072,7 @@ def main():
         except Exception as e:
             diags.append({"source": source, "url": url, "state": "error", "reason": f"파서 오류: {type(e).__name__}", "http": None, "candidates": 0, "accepted": 0, "rejected": {}})
             print("source error:", source, url, repr(e))
-        time.sleep(0.12)
+        time.sleep(0.02)
 
     deduped = {}
     for j in jobs:
