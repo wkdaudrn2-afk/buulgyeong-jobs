@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 15:08",
+  "updated_at_kst": "2026-09-15 15:23",
   "collector_status": "ok",
   "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -384,31 +384,6 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
-      "work_date": "09/18~09/22",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-22",
-      "region": "부산",
-      "company": "",
-      "title": "(직영)오프뷰티 롯데동부산점 오픈/진열 세팅",
-      "task": "세팅, 진열, 정리, 매장",
-      "work_time": "11:00 ~ 20:00",
-      "day_pay": 60000,
-      "explicit_day_pay": 60000,
-      "hourly_pay": 13000,
-      "pay_type": "일급",
-      "pay_display": "일급 60,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%A7%81%EC%98%81-%EC%98%A4%ED%94%84%EB%B7%B0%ED%8B%B0-%EB%A1%AF%EB%8D%B0%EB%8F%99%EB%B6%80%EC%82%B0%EC%A0%90-%EC%98%A4%ED%94%88-%EC%A7%84%EC%97%B4-%EC%84%B8%ED%8C%85-iurpw7h98yrb",
-      "duration_days": 4,
-      "duration_label": "4일",
-      "day_group": "평일+주말",
-      "post_age_rank": 1,
-      "priority_hits": 4
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
       "work_date": "09/15",
       "work_start": "2026-09-15",
       "work_end": "2026-09-15",
@@ -502,31 +477,6 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 2
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/18~10/05",
-      "work_start": "2026-09-18",
-      "work_end": "2026-10-05",
-      "region": "부산",
-      "company": "",
-      "title": "롯데 아울렛 동부산",
-      "task": "정리, 매장",
-      "work_time": "09:00 ~ 21:30",
-      "day_pay": 156250,
-      "explicit_day_pay": 0,
-      "hourly_pay": 12500,
-      "pay_type": "시급",
-      "pay_display": "시급 12,500원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%A1%AF%EB%8D%B0-%EC%95%84%EC%9A%B8%EB%A0%9B-%EB%8F%99%EB%B6%80%EC%82%B0-vco1d2qkzfh1",
-      "duration_days": 2,
-      "duration_label": "2일",
-      "day_group": "평일+주말",
       "post_age_rank": 1,
       "priority_hits": 2
     },
@@ -659,6 +609,31 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/17~09/19",
+      "work_start": "2026-09-17",
+      "work_end": "2026-09-19",
+      "region": "부산",
+      "company": "",
+      "title": "단기3일 롯데호텔 커피제조 알바구합니다",
+      "task": "행사",
+      "work_time": "08:00 ~ 16:00",
+      "day_pay": 84000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10500,
+      "pay_type": "시급",
+      "pay_display": "시급 10,500원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%8B%A8%EA%B8%B03%EC%9D%BC-%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94-%EC%BB%A4%ED%94%BC%EC%A0%9C%EC%A1%B0-%EC%95%8C%EB%B0%94%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-xj3fvgd22dc1",
+      "duration_days": 3,
+      "duration_label": "3일",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 1
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
@@ -714,21 +689,21 @@
       "work_end": "",
       "region": "부산",
       "company": "",
-      "title": "화목하게 일하실 주방정직원 모집합니다",
-      "task": "설치, 보조, 매장",
-      "work_time": "09:30 ~ 21:00",
+      "title": "사무실 전기 및 랜선 정리 도와주세요",
+      "task": "팝업, 팝업스토어, 백화점, 설치, 정리, 매장",
+      "work_time": "시간 확인",
       "day_pay": 0,
       "explicit_day_pay": 0,
       "hourly_pay": 0,
-      "pay_type": "급여 확인",
+      "pay_type": "건당",
       "pay_display": "급여 확인",
-      "apply": "문자지원",
-      "url": "https://jobs.daangn.com/job-posts/%ED%99%94%EB%AA%A9%ED%95%98%EA%B2%8C-%EC%9D%BC%ED%95%98%EC%8B%A4-%EC%A3%BC%EB%B0%A9%EC%A0%95%EC%A7%81%EC%9B%90-%EB%AA%A8%EC%A7%91%ED%95%A9%EB%8B%88%EB%8B%A4-qbeq7omjmn8f",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%82%AC%EB%AC%B4%EC%8B%A4-%EC%A0%84%EA%B8%B0-%EB%B0%8F-%EB%9E%9C%EC%84%A0-%EC%A0%95%EB%A6%AC-%EB%8F%84%EC%99%80%EC%A3%BC%EC%84%B8%EC%9A%94-hpzua1oqkm7s",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
       "post_age_rank": 1,
-      "priority_hits": 3
+      "priority_hits": 6
     },
     {
       "source": "당근알바",
@@ -739,21 +714,21 @@
       "work_end": "",
       "region": "부산",
       "company": "",
-      "title": "물건 옮겨주실분 찾습니다.",
-      "task": "짐 옮기기, 매장",
-      "work_time": "시간 확인",
+      "title": "화목하게 일하실 주방정직원 모집합니다",
+      "task": "설치, 보조, 매장",
+      "work_time": "09:30 ~ 21:00",
       "day_pay": 0,
       "explicit_day_pay": 0,
       "hourly_pay": 0,
-      "pay_type": "건당",
+      "pay_type": "급여 확인",
       "pay_display": "급여 확인",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%AC%BC%EA%B1%B4-%EC%98%AE%EA%B2%A8%EC%A3%BC%EC%8B%A4%EB%B6%84-%EC%B0%BE%EC%8A%B5%EB%8B%88%EB%8B%A4-oaeuvzx6c24i",
+      "apply": "문자지원",
+      "url": "https://jobs.daangn.com/job-posts/%ED%99%94%EB%AA%A9%ED%95%98%EA%B2%8C-%EC%9D%BC%ED%95%98%EC%8B%A4-%EC%A3%BC%EB%B0%A9%EC%A0%95%EC%A7%81%EC%9B%90-%EB%AA%A8%EC%A7%91%ED%95%A9%EB%8B%88%EB%8B%A4-siu1874astjj",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
       "post_age_rank": 1,
-      "priority_hits": 2
+      "priority_hits": 3
     },
     {
       "source": "당근알바",
@@ -1336,31 +1311,6 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
-      "work_date": "09/18~09/22",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-22",
-      "region": "부산",
-      "company": "",
-      "title": "(직영)오프뷰티 롯데동부산점 오픈/진열 세팅",
-      "task": "세팅, 진열, 정리, 매장",
-      "work_time": "11:00 ~ 20:00",
-      "day_pay": 60000,
-      "explicit_day_pay": 60000,
-      "hourly_pay": 13000,
-      "pay_type": "일급",
-      "pay_display": "일급 60,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%A7%81%EC%98%81-%EC%98%A4%ED%94%84%EB%B7%B0%ED%8B%B0-%EB%A1%AF%EB%8D%B0%EB%8F%99%EB%B6%80%EC%82%B0%EC%A0%90-%EC%98%A4%ED%94%88-%EC%A7%84%EC%97%B4-%EC%84%B8%ED%8C%85-iurpw7h98yrb",
-      "duration_days": 4,
-      "duration_label": "4일",
-      "day_group": "평일+주말",
-      "post_age_rank": 1,
-      "priority_hits": 4
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
       "work_date": "09/15",
       "work_start": "2026-09-15",
       "work_end": "2026-09-15",
@@ -1454,31 +1404,6 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 2
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/18~10/05",
-      "work_start": "2026-09-18",
-      "work_end": "2026-10-05",
-      "region": "부산",
-      "company": "",
-      "title": "롯데 아울렛 동부산",
-      "task": "정리, 매장",
-      "work_time": "09:00 ~ 21:30",
-      "day_pay": 156250,
-      "explicit_day_pay": 0,
-      "hourly_pay": 12500,
-      "pay_type": "시급",
-      "pay_display": "시급 12,500원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%A1%AF%EB%8D%B0-%EC%95%84%EC%9A%B8%EB%A0%9B-%EB%8F%99%EB%B6%80%EC%82%B0-vco1d2qkzfh1",
-      "duration_days": 2,
-      "duration_label": "2일",
-      "day_group": "평일+주말",
       "post_age_rank": 1,
       "priority_hits": 2
     },
@@ -1611,6 +1536,31 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/17~09/19",
+      "work_start": "2026-09-17",
+      "work_end": "2026-09-19",
+      "region": "부산",
+      "company": "",
+      "title": "단기3일 롯데호텔 커피제조 알바구합니다",
+      "task": "행사",
+      "work_time": "08:00 ~ 16:00",
+      "day_pay": 84000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10500,
+      "pay_type": "시급",
+      "pay_display": "시급 10,500원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%8B%A8%EA%B8%B03%EC%9D%BC-%EB%A1%AF%EB%8D%B0%ED%98%B8%ED%85%94-%EC%BB%A4%ED%94%BC%EC%A0%9C%EC%A1%B0-%EC%95%8C%EB%B0%94%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-xj3fvgd22dc1",
+      "duration_days": 3,
+      "duration_label": "3일",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 1
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
@@ -1666,21 +1616,21 @@
       "work_end": "",
       "region": "부산",
       "company": "",
-      "title": "화목하게 일하실 주방정직원 모집합니다",
-      "task": "설치, 보조, 매장",
-      "work_time": "09:30 ~ 21:00",
+      "title": "사무실 전기 및 랜선 정리 도와주세요",
+      "task": "팝업, 팝업스토어, 백화점, 설치, 정리, 매장",
+      "work_time": "시간 확인",
       "day_pay": 0,
       "explicit_day_pay": 0,
       "hourly_pay": 0,
-      "pay_type": "급여 확인",
+      "pay_type": "건당",
       "pay_display": "급여 확인",
-      "apply": "문자지원",
-      "url": "https://jobs.daangn.com/job-posts/%ED%99%94%EB%AA%A9%ED%95%98%EA%B2%8C-%EC%9D%BC%ED%95%98%EC%8B%A4-%EC%A3%BC%EB%B0%A9%EC%A0%95%EC%A7%81%EC%9B%90-%EB%AA%A8%EC%A7%91%ED%95%A9%EB%8B%88%EB%8B%A4-qbeq7omjmn8f",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%82%AC%EB%AC%B4%EC%8B%A4-%EC%A0%84%EA%B8%B0-%EB%B0%8F-%EB%9E%9C%EC%84%A0-%EC%A0%95%EB%A6%AC-%EB%8F%84%EC%99%80%EC%A3%BC%EC%84%B8%EC%9A%94-hpzua1oqkm7s",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
       "post_age_rank": 1,
-      "priority_hits": 3
+      "priority_hits": 6
     },
     {
       "source": "당근알바",
@@ -1691,21 +1641,21 @@
       "work_end": "",
       "region": "부산",
       "company": "",
-      "title": "물건 옮겨주실분 찾습니다.",
-      "task": "짐 옮기기, 매장",
-      "work_time": "시간 확인",
+      "title": "화목하게 일하실 주방정직원 모집합니다",
+      "task": "설치, 보조, 매장",
+      "work_time": "09:30 ~ 21:00",
       "day_pay": 0,
       "explicit_day_pay": 0,
       "hourly_pay": 0,
-      "pay_type": "건당",
+      "pay_type": "급여 확인",
       "pay_display": "급여 확인",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%AC%BC%EA%B1%B4-%EC%98%AE%EA%B2%A8%EC%A3%BC%EC%8B%A4%EB%B6%84-%EC%B0%BE%EC%8A%B5%EB%8B%88%EB%8B%A4-oaeuvzx6c24i",
+      "apply": "문자지원",
+      "url": "https://jobs.daangn.com/job-posts/%ED%99%94%EB%AA%A9%ED%95%98%EA%B2%8C-%EC%9D%BC%ED%95%98%EC%8B%A4-%EC%A3%BC%EB%B0%A9%EC%A0%95%EC%A7%81%EC%9B%90-%EB%AA%A8%EC%A7%91%ED%95%A9%EB%8B%88%EB%8B%A4-siu1874astjj",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
       "post_age_rank": 1,
-      "priority_hits": 2
+      "priority_hits": 3
     },
     {
       "source": "당근알바",
@@ -1917,10 +1867,11 @@
       "candidates": 138,
       "accepted": 27,
       "messages": [
-        "공개 페이지 정상 · 13건 통과",
-        "공개 페이지 정상 · 12건 통과",
-        "공개 페이지 정상 · 2건 통과",
-        "공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "공개 페이지 정상 · 1건 통과",
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 7건 통과",
+        "공개 페이지 정상 · 14건 통과",
+        "공개 페이지 정상 · 5건 통과"
       ]
     },
     "알바천국": {
@@ -1928,7 +1879,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 82,
+      "candidates": 55,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -1940,10 +1891,13 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 291,
-      "accepted": 93,
+      "accepted": 90,
       "messages": [
-        "상세 공고 20건 확인 · 8건 통과",
+        "상세 공고 20건 확인 · 6건 통과",
+        "상세 공고 20건 확인 · 4건 통과",
         "상세 공고 20건 확인 · 5건 통과",
+        "상세 공고 20건 확인 · 3건 통과",
+        "상세 공고 20건 확인 · 8건 통과",
         "상세 공고 20건 확인 · 7건 통과",
         "상세 공고 11건 확인 · 4건 통과"
       ]
@@ -1954,51 +1908,51 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 13건 통과",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
-      "candidates": 60,
-      "accepted": 13,
+      "candidates": 61,
+      "accepted": 1,
       "rejected": {
-        "excluded_keyword": 26,
+        "excluded_keyword": 40,
         "older_than_3_days": 16,
-        "over_7_days": 5
+        "over_7_days": 4
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 12건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 18,
-      "accepted": 12,
+      "candidates": 20,
+      "accepted": 0,
       "rejected": {
-        "excluded_keyword": 4,
-        "over_7_days": 2
+        "excluded_keyword": 20
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공개 페이지 정상 · 7건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 2,
+      "accepted": 7,
       "rejected": {
-        "excluded_keyword": 18
+        "excluded_keyword": 6,
+        "over_7_days": 7
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 14건 통과",
       "http": 200,
-      "candidates": 20,
-      "accepted": 0,
+      "candidates": 17,
+      "accepted": 14,
       "rejected": {
-        "excluded_keyword": 19,
+        "excluded_keyword": 2,
         "over_7_days": 1
       }
     },
@@ -2006,13 +1960,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 5,
       "rejected": {
-        "over_7_days": 4,
-        "excluded_keyword": 16
+        "excluded_keyword": 15
       }
     },
     {
@@ -2021,10 +1974,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 28,
+      "candidates": 23,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 28
+        "excluded_keyword": 23
       }
     },
     {
@@ -2033,10 +1986,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 24,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 25
+        "excluded_keyword": 24
       }
     },
     {
@@ -2045,23 +1998,23 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 29,
+      "candidates": 8,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 28,
-        "region_or_closed": 1
+        "excluded_keyword": 8
       }
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 8건 통과",
+      "reason": "상세 공고 20건 확인 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 8,
+      "accepted": 6,
       "rejected": {
-        "daangn_not_preferred": 11,
+        "daangn_unwanted_job": 1,
+        "daangn_not_preferred": 12,
         "excluded_keyword": 1
       },
       "detail_checked": 20
@@ -2070,13 +2023,13 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 5건 통과",
+      "reason": "상세 공고 20건 확인 · 4건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 5,
+      "accepted": 4,
       "rejected": {
         "daangn_not_preferred": 14,
-        "daangn_unwanted_job": 1
+        "daangn_unwanted_job": 2
       },
       "detail_checked": 20
     },
@@ -2089,7 +2042,8 @@
       "candidates": 20,
       "accepted": 5,
       "rejected": {
-        "daangn_not_preferred": 14,
+        "daangn_unwanted_job": 1,
+        "daangn_not_preferred": 13,
         "excluded_keyword": 1
       },
       "detail_checked": 20
@@ -2098,14 +2052,14 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 5건 통과",
+      "reason": "상세 공고 20건 확인 · 3건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 5,
+      "accepted": 3,
       "rejected": {
-        "daangn_not_preferred": 11,
-        "daangn_unwanted_job": 2,
-        "daangn_outside_target_area": 2
+        "daangn_outside_target_area": 3,
+        "daangn_not_preferred": 12,
+        "daangn_unwanted_job": 2
       },
       "detail_checked": 20
     },
@@ -2113,12 +2067,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 7건 통과",
+      "reason": "상세 공고 20건 확인 · 8건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 7,
+      "accepted": 8,
       "rejected": {
-        "daangn_not_preferred": 11,
+        "daangn_not_preferred": 10,
         "daangn_unwanted_job": 1,
         "excluded_keyword": 1
       },
@@ -2141,12 +2095,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648&jobTask=OTHER",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 7건 통과",
+      "reason": "상세 공고 20건 확인 · 8건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 7,
+      "accepted": 8,
       "rejected": {
-        "daangn_not_preferred": 11,
+        "daangn_not_preferred": 10,
         "daangn_unwanted_job": 1,
         "excluded_keyword": 1
       },
@@ -2156,12 +2110,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648&jobTask=INSTALLATION_REPAIR",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 7건 통과",
+      "reason": "상세 공고 20건 확인 · 8건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 7,
+      "accepted": 8,
       "rejected": {
-        "daangn_not_preferred": 11,
+        "daangn_not_preferred": 10,
         "daangn_unwanted_job": 1,
         "excluded_keyword": 1
       },
@@ -2171,12 +2125,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648&jobTask=LOGISTICS_PACKING",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 7건 통과",
+      "reason": "상세 공고 20건 확인 · 8건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 7,
+      "accepted": 8,
       "rejected": {
-        "daangn_not_preferred": 11,
+        "daangn_not_preferred": 10,
         "daangn_unwanted_job": 1,
         "excluded_keyword": 1
       },
@@ -2186,12 +2140,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 7건 통과",
+      "reason": "상세 공고 20건 확인 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 7,
+      "accepted": 6,
       "rejected": {
-        "daangn_not_preferred": 10,
+        "daangn_not_preferred": 11,
         "daangn_unwanted_job": 2,
         "excluded_keyword": 1
       },
@@ -2206,8 +2160,8 @@
       "candidates": 20,
       "accepted": 7,
       "rejected": {
-        "daangn_not_preferred": 10,
-        "daangn_unwanted_job": 2,
+        "daangn_not_preferred": 11,
+        "daangn_unwanted_job": 1,
         "excluded_keyword": 1
       },
       "detail_checked": 20
@@ -2229,12 +2183,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 7건 통과",
+      "reason": "상세 공고 20건 확인 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 7,
+      "accepted": 6,
       "rejected": {
-        "daangn_not_preferred": 10,
+        "daangn_not_preferred": 11,
         "daangn_unwanted_job": 2,
         "excluded_keyword": 1
       },
@@ -2262,8 +2216,8 @@
       "candidates": 20,
       "accepted": 7,
       "rejected": {
-        "daangn_not_preferred": 10,
-        "daangn_unwanted_job": 2,
+        "daangn_not_preferred": 11,
+        "daangn_unwanted_job": 1,
         "excluded_keyword": 1
       },
       "detail_checked": 20
