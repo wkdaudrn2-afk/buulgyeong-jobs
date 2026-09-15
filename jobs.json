@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-16 05:43",
+  "updated_at_kst": "2026-09-16 05:47",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -2170,8 +2170,8 @@
       "accepted": 236,
       "messages": [
         "공개 페이지 정상 · 39건 통과",
-        "공개 페이지 정상 · 19건 통과",
         "공개 페이지 정상 · 20건 통과",
+        "공개 페이지 정상 · 18건 통과",
         "공개 페이지 정상 · 10건 통과",
         "공개 페이지 정상 · 9건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
@@ -2240,20 +2240,20 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 19건 통과",
+      "reason": "공개 페이지 정상 · 20건 통과",
       "http": 200,
-      "candidates": 19,
-      "accepted": 19,
+      "candidates": 20,
+      "accepted": 20,
       "rejected": {}
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 19건 통과",
+      "reason": "공개 페이지 정상 · 18건 통과",
       "http": 200,
-      "candidates": 20,
-      "accepted": 19,
+      "candidates": 19,
+      "accepted": 18,
       "rejected": {
         "work_date_already_passed": 1
       }
@@ -2666,8 +2666,8 @@
       "candidates": 50,
       "accepted": 24,
       "rejected": {
-        "older_than_3_days": 2,
-        "work_date_already_passed": 24
+        "work_date_already_passed": 24,
+        "older_than_3_days": 2
       }
     },
     {
@@ -2705,8 +2705,8 @@
       "candidates": 50,
       "accepted": 25,
       "rejected": {
-        "work_date_already_passed": 22,
-        "older_than_3_days": 3
+        "older_than_3_days": 3,
+        "work_date_already_passed": 22
       }
     },
     {
@@ -2718,8 +2718,8 @@
       "candidates": 50,
       "accepted": 18,
       "rejected": {
-        "older_than_3_days": 2,
-        "work_date_already_passed": 30
+        "work_date_already_passed": 30,
+        "older_than_3_days": 2
       }
     },
     {
@@ -2807,8 +2807,8 @@
       "candidates": 50,
       "accepted": 29,
       "rejected": {
-        "older_than_3_days": 4,
-        "work_date_already_passed": 17
+        "work_date_already_passed": 17,
+        "older_than_3_days": 4
       }
     },
     {
@@ -2845,8 +2845,8 @@
       "candidates": 50,
       "accepted": 25,
       "rejected": {
-        "older_than_3_days": 3,
-        "work_date_already_passed": 22
+        "work_date_already_passed": 22,
+        "older_than_3_days": 3
       }
     },
     {
