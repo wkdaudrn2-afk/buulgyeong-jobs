@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 14:27",
+  "updated_at_kst": "2026-09-15 14:40",
   "collector_status": "ok",
   "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -221,7 +221,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119200672?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119188674?logpath=14&productCount=1&sc=529",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
@@ -346,7 +346,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "이메일지원",
-      "url": "https://www.albamon.com/jobs/detail/119187562?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187732?logpath=14&productCount=1&sc=529",
       "duration_days": 7,
       "duration_label": "7일",
       "day_group": "평일+주말",
@@ -380,81 +380,6 @@
     }
   ],
   "daangn_jobs": [
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/16~09/26",
-      "work_start": "2026-09-16",
-      "work_end": "2026-09-26",
-      "region": "김해",
-      "company": "",
-      "title": "김해공항 스카이허브라운지 홀, 세척 단기 PT 채용 일급 110,000원 총 11일 / 9월 16~26일 · 06:00 ~ 15:00 협의 (주)이브릿지 · 대저2동 모범구인 후기 5",
-      "task": "아르바이트",
-      "work_time": "06:00 ~ 15:00",
-      "day_pay": 110000,
-      "explicit_day_pay": 110000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 110,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EA%B9%80%ED%95%B4%EA%B3%B5%ED%95%AD-%EC%8A%A4%EC%B9%B4%EC%9D%B4%ED%97%88%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%A7%80-%ED%99%80-%EC%84%B8%EC%B2%99-%EB%8B%A8%EA%B8%B0-pt-%EC%B1%84%EC%9A%A9-shn8w7bxcof9",
-      "duration_days": 11,
-      "duration_label": "기간 미확인",
-      "day_group": "평일+주말",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/19~09/30",
-      "work_start": "2026-09-19",
-      "work_end": "2026-09-30",
-      "region": "김해",
-      "company": "",
-      "title": "김해공항 스카이허브라운지 홀근무 일급 110,000원 총 12일 / 9월 19~30일 · 06:00 ~ 22:00 협의 김해 스카이허브라운지 · 대저2동 후기 1",
-      "task": "아르바이트",
-      "work_time": "06:00 ~ 22:00",
-      "day_pay": 110000,
-      "explicit_day_pay": 110000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 110,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EA%B9%80%ED%95%B4%EA%B3%B5%ED%95%AD-%EC%8A%A4%EC%B9%B4%EC%9D%B4%ED%97%88%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%A7%80-%ED%99%80%EA%B7%BC%EB%AC%B4-fmc2e8ii55u9",
-      "duration_days": 12,
-      "duration_label": "기간 미확인",
-      "day_group": "평일+주말",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "부산",
-      "company": "",
-      "title": "부산항 컨벤션 센터 led철거 시급 20,000원 내일(수) · 16:30 ~ 18:30 한국아트비전 · 초량동 모범구인 후기 29",
-      "task": "철거",
-      "work_time": "16:30 ~ 18:30",
-      "day_pay": 40000,
-      "explicit_day_pay": 0,
-      "hourly_pay": 20000,
-      "pay_type": "시급",
-      "pay_display": "시급 20,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0%ED%95%AD-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%BC%ED%84%B0-led%EC%B2%A0%EA%B1%B0-7m77r593wgux",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 1
-    },
     {
       "source": "당근알바",
       "posted_at": "등록일 미확인",
@@ -502,6 +427,31 @@
       "duration_days": 2,
       "duration_label": "2일",
       "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산 Biff hill 영화의전당 시급 12,000원 오늘 · 16:00 ~ 20:00 킴스카펫트 · 우동 당일지급 후기 393",
+      "task": "아르바이트",
+      "work_time": "16:00 ~ 20:00",
+      "day_pay": 48000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 12000,
+      "pay_type": "시급",
+      "pay_display": "시급 12,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-biff-hill-%EC%98%81%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9-a9mr997vj4q4",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
       "post_age_rank": 1,
       "priority_hits": 0
     },
@@ -574,31 +524,6 @@
       "pay_display": "시급 11,000원",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%8F%99%EB%B6%80%EC%82%B0-%EB%A1%AF%EB%8D%B0%EC%95%84%EC%9A%B8%EB%A0%9B-%EC%88%98%EC%84%A0%EC%8B%A4-%EB%B0%B0%EB%8B%AC-%EC%A3%BC%EB%A7%90%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-yn36s2zqvq4y",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "양산",
-      "company": "",
-      "title": "배스킨라빈스 알바 구인 시급 10,320원 금~일 · 19:00 ~ 23:00 배스킨라빈스 양산덕계점 · 덕계동 후기 1",
-      "task": "아르바이트",
-      "work_time": "19:00 ~ 23:00",
-      "day_pay": 41280,
-      "explicit_day_pay": 0,
-      "hourly_pay": 10320,
-      "pay_type": "시급",
-      "pay_display": "시급 10,320원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B0%B0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4-%EC%95%8C%EB%B0%94-%EA%B5%AC%EC%9D%B8-fis1b4x4254t",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
@@ -850,7 +775,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119200672?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119188674?logpath=14&productCount=1&sc=529",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
@@ -975,7 +900,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "이메일지원",
-      "url": "https://www.albamon.com/jobs/detail/119187562?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187732?logpath=14&productCount=1&sc=529",
       "duration_days": 7,
       "duration_label": "7일",
       "day_group": "평일+주말",
@@ -1005,81 +930,6 @@
       "duration_label": "5일",
       "day_group": "평일+주말",
       "post_age_rank": 0,
-      "priority_hits": 1
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/16~09/26",
-      "work_start": "2026-09-16",
-      "work_end": "2026-09-26",
-      "region": "김해",
-      "company": "",
-      "title": "김해공항 스카이허브라운지 홀, 세척 단기 PT 채용 일급 110,000원 총 11일 / 9월 16~26일 · 06:00 ~ 15:00 협의 (주)이브릿지 · 대저2동 모범구인 후기 5",
-      "task": "아르바이트",
-      "work_time": "06:00 ~ 15:00",
-      "day_pay": 110000,
-      "explicit_day_pay": 110000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 110,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EA%B9%80%ED%95%B4%EA%B3%B5%ED%95%AD-%EC%8A%A4%EC%B9%B4%EC%9D%B4%ED%97%88%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%A7%80-%ED%99%80-%EC%84%B8%EC%B2%99-%EB%8B%A8%EA%B8%B0-pt-%EC%B1%84%EC%9A%A9-shn8w7bxcof9",
-      "duration_days": 11,
-      "duration_label": "기간 미확인",
-      "day_group": "평일+주말",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/19~09/30",
-      "work_start": "2026-09-19",
-      "work_end": "2026-09-30",
-      "region": "김해",
-      "company": "",
-      "title": "김해공항 스카이허브라운지 홀근무 일급 110,000원 총 12일 / 9월 19~30일 · 06:00 ~ 22:00 협의 김해 스카이허브라운지 · 대저2동 후기 1",
-      "task": "아르바이트",
-      "work_time": "06:00 ~ 22:00",
-      "day_pay": 110000,
-      "explicit_day_pay": 110000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 110,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EA%B9%80%ED%95%B4%EA%B3%B5%ED%95%AD-%EC%8A%A4%EC%B9%B4%EC%9D%B4%ED%97%88%EB%B8%8C%EB%9D%BC%EC%9A%B4%EC%A7%80-%ED%99%80%EA%B7%BC%EB%AC%B4-fmc2e8ii55u9",
-      "duration_days": 12,
-      "duration_label": "기간 미확인",
-      "day_group": "평일+주말",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "부산",
-      "company": "",
-      "title": "부산항 컨벤션 센터 led철거 시급 20,000원 내일(수) · 16:30 ~ 18:30 한국아트비전 · 초량동 모범구인 후기 29",
-      "task": "철거",
-      "work_time": "16:30 ~ 18:30",
-      "day_pay": 40000,
-      "explicit_day_pay": 0,
-      "hourly_pay": 20000,
-      "pay_type": "시급",
-      "pay_display": "시급 20,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0%ED%95%AD-%EC%BB%A8%EB%B2%A4%EC%85%98-%EC%84%BC%ED%84%B0-led%EC%B2%A0%EA%B1%B0-7m77r593wgux",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
       "priority_hits": 1
     },
     {
@@ -1129,6 +979,31 @@
       "duration_days": 2,
       "duration_label": "2일",
       "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산 Biff hill 영화의전당 시급 12,000원 오늘 · 16:00 ~ 20:00 킴스카펫트 · 우동 당일지급 후기 393",
+      "task": "아르바이트",
+      "work_time": "16:00 ~ 20:00",
+      "day_pay": 48000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 12000,
+      "pay_type": "시급",
+      "pay_display": "시급 12,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-biff-hill-%EC%98%81%ED%99%94%EC%9D%98%EC%A0%84%EB%8B%B9-a9mr997vj4q4",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
       "post_age_rank": 1,
       "priority_hits": 0
     },
@@ -1214,31 +1089,6 @@
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
-      "region": "양산",
-      "company": "",
-      "title": "배스킨라빈스 알바 구인 시급 10,320원 금~일 · 19:00 ~ 23:00 배스킨라빈스 양산덕계점 · 덕계동 후기 1",
-      "task": "아르바이트",
-      "work_time": "19:00 ~ 23:00",
-      "day_pay": 41280,
-      "explicit_day_pay": 0,
-      "hourly_pay": 10320,
-      "pay_type": "시급",
-      "pay_display": "시급 10,320원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B0%B0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4-%EC%95%8C%EB%B0%94-%EA%B5%AC%EC%9D%B8-fis1b4x4254t",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
       "region": "부산",
       "company": "",
       "title": "[코디 평균 월 327만원] 세일즈/케어 전문가 월급 327만원 월~토 · 09:00 ~ 20:00 협의 코웨이 부산학장지국 · 괘법동",
@@ -1265,11 +1115,12 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 138,
-      "accepted": 28,
+      "accepted": 27,
       "messages": [
         "공개 페이지 정상 · 14건 통과",
-        "공개 페이지 정상 · 4건 통과",
+        "공개 페이지 정상 · 7건 통과",
         "공개 페이지 정상 · 1건 통과",
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 5건 통과"
       ]
     },
@@ -1278,26 +1129,23 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 76,
+      "candidates": 78,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
       ]
     },
     "당근알바": {
-      "pages": 11,
-      "ok_pages": 11,
+      "pages": 15,
+      "ok_pages": 15,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 34,
-      "accepted": 27,
+      "candidates": 47,
+      "accepted": 31,
       "messages": [
-        "당근 공개 검색결과 정상 · 2건 통과",
-        "당근 공개 검색결과 정상 · 4건 통과",
-        "당근 공개 검색결과 정상 · 3건 통과",
-        "당근 공개 검색결과 정상 · 6건 통과",
-        "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
-        "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인"
+        "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색결과 정상 · 5건 통과",
+        "당근 공개 검색결과 정상 · 4건 통과"
       ]
     }
   },
@@ -1320,13 +1168,13 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 7건 통과",
       "http": 200,
       "candidates": 18,
-      "accepted": 4,
+      "accepted": 7,
       "rejected": {
         "over_7_days": 2,
-        "excluded_keyword": 12
+        "excluded_keyword": 9
       }
     },
     {
@@ -1345,12 +1193,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
       "candidates": 20,
-      "accepted": 4,
+      "accepted": 0,
       "rejected": {
-        "excluded_keyword": 9,
+        "excluded_keyword": 13,
         "over_7_days": 7
       }
     },
@@ -1372,10 +1220,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 23,
+      "candidates": 27,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 23
+        "excluded_keyword": 27
       }
     },
     {
@@ -1384,10 +1232,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 29,
+      "candidates": 25,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 29
+        "excluded_keyword": 25
       }
     },
     {
@@ -1396,20 +1244,20 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 24,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 24
+        "excluded_keyword": 26
       }
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 2건 통과",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 2,
+      "candidates": 2,
+      "accepted": 1,
       "rejected": {
         "daangn_outside_target_area": 1
       }
@@ -1417,6 +1265,102 @@
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 3,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 2
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=5923",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 4,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 3
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=671",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 5건 통과",
+      "http": 200,
+      "candidates": 7,
+      "accepted": 5,
+      "rejected": {
+        "daangn_outside_target_area": 2
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=648",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 2,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 1
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=648&jobTask=LIGHT_WORK",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 2,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 1
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=648&jobTask=OTHER",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 2,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 1
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=648&jobTask=INSTALLATION_REPAIR",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 2,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 1
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=648&jobTask=LOGISTICS_PACKING",
+      "state": "ok",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "http": 200,
+      "candidates": 2,
+      "accepted": 1,
+      "rejected": {
+        "daangn_outside_target_area": 1
+      }
+    },
+    {
+      "source": "당근알바",
+      "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
       "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
@@ -1426,58 +1370,12 @@
     },
     {
       "source": "당근알바",
-      "url": "https://jobs.daangn.com/s?regionId=5923",
-      "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
-      "http": 200,
-      "candidates": 4,
-      "accepted": 3,
-      "rejected": {
-        "daangn_outside_target_area": 1
-      }
-    },
-    {
-      "source": "당근알바",
-      "url": "https://jobs.daangn.com/s?regionId=671",
-      "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 6건 통과",
-      "http": 200,
-      "candidates": 7,
-      "accepted": 6,
-      "rejected": {
-        "daangn_outside_target_area": 1
-      }
-    },
-    {
-      "source": "당근알바",
-      "url": "https://jobs.daangn.com/s?regionId=648",
-      "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
-      "http": 200,
-      "candidates": 1,
-      "accepted": 0,
-      "rejected": {
-        "daangn_outside_target_area": 1
-      }
-    },
-    {
-      "source": "당근알바",
-      "url": "https://jobs.daangn.com/s?regionId=6028",
-      "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
-      "http": 200,
-      "candidates": 3,
-      "accepted": 3,
-      "rejected": {}
-    },
-    {
-      "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
-      "candidates": 4,
-      "accepted": 3,
+      "candidates": 5,
+      "accepted": 4,
       "rejected": {
         "daangn_outside_target_area": 1
       }
@@ -1486,30 +1384,30 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 0,
-      "accepted": 0,
+      "candidates": 1,
+      "accepted": 1,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 4,
+      "accepted": 4,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 0,
+      "candidates": 2,
+      "accepted": 1,
       "rejected": {
         "daangn_outside_target_area": 1
       }
@@ -1518,10 +1416,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
-      "candidates": 4,
-      "accepted": 3,
+      "candidates": 5,
+      "accepted": 4,
       "rejected": {
         "daangn_outside_target_area": 1
       }
