@@ -1,8 +1,33 @@
 {
-  "updated_at_kst": "2026-09-15 12:25",
+  "updated_at_kst": "2026-09-15 12:43",
   "collector_status": "ok",
-  "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
+  "criteria": "알바몬+알바천국 기존 최근3일 단기우선 유지 및 평일/주말 분류; 당근은 별도탭에서 현재 공개 공고를 매 수집시 반영; 행사/벡스코/전시/백화점/팝업/설치/철거/세팅/행사보조/짐이동 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-15",
+      "posted_verified": true,
+      "work_date": "09/16",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-16",
+      "region": "부산",
+      "company": "",
+      "title": "단기 / 벡스코 학회 STAFF / 09월16일 (1일)",
+      "task": "벡스코, 행사, 전시",
+      "work_time": "08:00~17:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "시급",
+      "pay_display": "급여 확인",
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119208800?logpath=14&productCount=1&sc=529",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 3
+    },
     {
       "source": "알바몬",
       "posted_at": "2026-09-15",
@@ -359,6 +384,31 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/18~09/22",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-22",
+      "region": "부산",
+      "company": "",
+      "title": "(직영)오프뷰티 롯데동부산점 오픈/진열 세팅 시급 13,000원 총 4일 / 9월 18~22일 · 11:00 ~ 20:00 오프뷰티 롯데동부산점 · 기장읍 모범구인 후기 9",
+      "task": "세팅, 진열",
+      "work_time": "11:00 ~ 20:00",
+      "day_pay": 117000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 13000,
+      "pay_type": "시급",
+      "pay_display": "시급 13,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%A7%81%EC%98%81-%EC%98%A4%ED%94%84%EB%B7%B0%ED%8B%B0-%EB%A1%AF%EB%8D%B0%EB%8F%99%EB%B6%80%EC%82%B0%EC%A0%90-%EC%98%A4%ED%94%88-%EC%A7%84%EC%97%B4-%EC%84%B8%ED%8C%85-iurpw7h98yrb",
+      "duration_days": 4,
+      "duration_label": "4일",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 2
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
@@ -532,6 +582,31 @@
     }
   ],
   "jobs": [
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-15",
+      "posted_verified": true,
+      "work_date": "09/16",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-16",
+      "region": "부산",
+      "company": "",
+      "title": "단기 / 벡스코 학회 STAFF / 09월16일 (1일)",
+      "task": "벡스코, 행사, 전시",
+      "work_time": "08:00~17:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "시급",
+      "pay_display": "급여 확인",
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119208800?logpath=14&productCount=1&sc=529",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 3
+    },
     {
       "source": "알바몬",
       "posted_at": "2026-09-15",
@@ -886,6 +961,31 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/18~09/22",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-22",
+      "region": "부산",
+      "company": "",
+      "title": "(직영)오프뷰티 롯데동부산점 오픈/진열 세팅 시급 13,000원 총 4일 / 9월 18~22일 · 11:00 ~ 20:00 오프뷰티 롯데동부산점 · 기장읍 모범구인 후기 9",
+      "task": "세팅, 진열",
+      "work_time": "11:00 ~ 20:00",
+      "day_pay": 117000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 13000,
+      "pay_type": "시급",
+      "pay_display": "시급 13,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%A7%81%EC%98%81-%EC%98%A4%ED%94%84%EB%B7%B0%ED%8B%B0-%EB%A1%AF%EB%8D%B0%EB%8F%99%EB%B6%80%EC%82%B0%EC%A0%90-%EC%98%A4%ED%94%88-%EC%A7%84%EC%97%B4-%EC%84%B8%ED%8C%85-iurpw7h98yrb",
+      "duration_days": 4,
+      "duration_label": "4일",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 2
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
@@ -1067,21 +1167,21 @@
       "candidates": 141,
       "accepted": 26,
       "messages": [
-        "공개 페이지 정상 · 2건 통과",
-        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 4건 통과",
-        "공개 페이지 정상 · 18건 통과"
+        "공개 페이지 정상 · 1건 통과",
+        "공개 페이지 정상 · 3건 통과",
+        "공개 페이지 정상 · 17건 통과"
       ]
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 0,
-      "blocked_pages": 3,
+      "ok_pages": 3,
+      "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 0,
+      "candidates": 75,
       "accepted": 0,
       "messages": [
-        "robots 확인 실패: URLError"
+        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
       ]
     },
     "당근알바": {
@@ -1089,8 +1189,8 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 16,
-      "accepted": 16,
+      "candidates": 18,
+      "accepted": 18,
       "messages": [
         "당근 공개 검색결과 정상 · 2건 통과",
         "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
@@ -1104,12 +1204,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공개 페이지 정상 · 4건 통과",
       "http": 200,
       "candidates": 61,
-      "accepted": 2,
+      "accepted": 4,
       "rejected": {
-        "excluded_keyword": 39,
+        "excluded_keyword": 37,
         "older_than_3_days": 16,
         "over_7_days": 4
       }
@@ -1118,36 +1218,37 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 1,
       "rejected": {
-        "excluded_keyword": 20
+        "excluded_keyword": 19
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 3건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 4,
+      "accepted": 3,
       "rejected": {
-        "excluded_keyword": 8,
-        "over_7_days": 8
+        "excluded_keyword": 10,
+        "over_7_days": 7
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 18건 통과",
+      "reason": "공개 페이지 정상 · 17건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 18,
+      "accepted": 17,
       "rejected": {
+        "over_7_days": 1,
         "excluded_keyword": 2
       }
     },
@@ -1155,43 +1256,49 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 2,
+      "accepted": 1,
       "rejected": {
-        "excluded_keyword": 18
+        "excluded_keyword": 19
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
-      "candidates": 0,
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 22,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "excluded_keyword": 22
+      }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
-      "candidates": 0,
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 27,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "excluded_keyword": 27
+      }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
-      "candidates": 0,
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 26,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "excluded_keyword": 26
+      }
     },
     {
       "source": "당근알바",
@@ -1227,30 +1334,30 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 2건 통과",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 2,
+      "candidates": 3,
+      "accepted": 3,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 2건 통과",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 2,
+      "candidates": 1,
+      "accepted": 1,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
@@ -1277,10 +1384,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
