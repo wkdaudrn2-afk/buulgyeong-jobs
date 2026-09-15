@@ -9,17 +9,17 @@
 *{box-sizing:border-box}
 body{margin:0;background:#f4f6f9;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans KR","Segoe UI",sans-serif;color:#101828}
 .app{max-width:760px;margin:auto;min-height:100vh;background:#fff}
-.hero{height:82px;background:#0863df;color:#fff;padding:15px 18px;display:flex;align-items:flex-start;justify-content:space-between}
-.hero h1{margin:0;font-size:27px;font-weight:950;letter-spacing:-1.4px;white-space:nowrap}
+.hero{height:62px;background:#0863df;color:#fff;padding:10px 14px;display:flex;align-items:flex-start;justify-content:space-between}
+.hero h1{margin:0;font-size:23px;font-weight:950;letter-spacing:-1.4px;white-space:nowrap}
 .hero h1 b{color:#ffe13b}
-.updated{text-align:right;font-size:9px;line-height:1.45;color:#dbeafe;padding-top:3px}
-.updated b{display:block;font-size:11px;color:#fff}
-.tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px 6px}
-.tab{height:48px;border:1px solid #d8dee8;background:#f8fafc;border-radius:11px;font-size:14px;font-weight:900;color:#172033}
+.updated{text-align:right;font-size:8px;line-height:1.45;color:#dbeafe;padding-top:3px}
+.updated b{display:block;font-size:10px;color:#fff}
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:7px 12px 5px}
+.tab{height:38px;border:1px solid #d8dee8;background:#f8fafc;border-radius:9px;font-size:12px;font-weight:900;color:#172033}
 .tab.active{background:#0863df;border-color:#0863df;color:#fff}
 .tab.carrot.active{background:#ff6f0f;border-color:#ff6f0f}
-.daytabs{display:flex;gap:7px;padding:0 12px 8px}
-.daytab{flex:1;height:39px;border:1px solid #d8dee8;background:#fff;border-radius:10px;font-size:12px;font-weight:850}
+.daytabs{display:flex;gap:6px;padding:0 12px 6px}
+.daytab{flex:1;height:31px;border:1px solid #d8dee8;background:#fff;border-radius:8px;font-size:11px;font-weight:850}
 .daytab.active{background:#eef5ff;border-color:#75aaf2;color:#075dcf}
 .sortbar{display:flex;align-items:center;gap:6px;padding:5px 14px 9px;border-bottom:1px solid #e9edf3;color:#667085;font-size:11px}
 .sortbar b{color:#0b63dc}
@@ -30,16 +30,16 @@ body{margin:0;background:#f4f6f9;font-family:-apple-system,BlinkMacSystemFont,"N
 .badge,.paytype{flex:0 0 auto;border-radius:6px;padding:3px 6px;font-size:9px;font-weight:900}
 .badge{background:#fff0e7;color:#e85c0c}.badge.alba{background:#fff0a8;color:#202020}.badge.carrot{background:#fff0e7;color:#e85c0c}
 .paytype.daily{background:#ff3347;color:#fff}.paytype.hourly{background:#0863df;color:#fff}
-.main{min-width:0;flex:1}
+.main{min-width:0;flex:1}.titleline{display:flex;align-items:baseline;gap:8px;min-width:0}.titleline .title{flex:1;min-width:0}.titlepay{flex:0 0 auto;font-size:13px;font-weight:950;color:#0863df;white-space:nowrap}
 .title{font-size:14px;font-weight:900;line-height:1.32;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .company{margin-top:3px;color:#536174;font-size:10px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pay{margin-top:7px;font-size:15px;font-weight:950;color:#0863df}
+.pay{display:none}
 .meta{margin-top:5px;color:#687588;font-size:10px;line-height:1.5}
 .arrow{position:absolute;right:2px;top:48%;transform:translateY(-50%);font-size:24px;color:#8c99a8}
-.unknown .pay{color:#667085}.unknown .paytype{background:#eef1f5;color:#667085}
+.unknown .titlepay{color:#667085}.unknown .paytype{background:#eef1f5;color:#667085}
 .empty{margin:25px 4px;padding:34px 12px;text-align:center;color:#718096;border:1px dashed #ccd5e0;border-radius:12px;font-size:14px}
 .note{padding:2px 14px 24px;text-align:center;color:#98a2b3;font-size:9px}
-@media(max-width:390px){.hero h1{font-size:25px}.title{font-size:13px}}
+@media(max-width:390px){.hero h1{font-size:21px}.title{font-size:13px}}
 </style>
 </head>
 <body>
@@ -96,9 +96,9 @@ function render(){
  list.innerHTML='';
  if(!jobs.length){list.innerHTML='<div class="empty">현재 표시할 공고가 없습니다.</div>';return}
  jobs.forEach(j=>{
-  let p=payInfo(j),company=(j.company||'').trim()||'등록회사 확인',date=j.work_date||'근무일 확인',time=hoursText(j.work_time);
+  let p=payInfo(j),company=(j.company||'').trim()||'',date=j.work_date||'근무일 확인',time=hoursText(j.work_time);
   let e=document.createElement('article');e.className='job '+(p.rank===2?'unknown':'');
-  e.innerHTML=`<div class="row"><span class="badge ${sourceCls(j.source)}">${esc(j.source)}</span><span class="paytype ${p.cls}">${p.type}</span><div class="main"><div class="title">${esc(j.title)}</div><div class="company">${esc(company)}</div></div></div><div class="pay">${esc(p.text)}</div><div class="meta">${esc(j.region||'-')} · ${esc(date)} · ${esc(time)}</div><div class="arrow">›</div>`;
+  e.innerHTML=`<div class="row"><span class="badge ${sourceCls(j.source)}">${esc(j.source)}</span><span class="paytype ${p.cls}">${p.type}</span><div class="main"><div class="titleline"><div class="title">${esc(j.title)}</div><div class="titlepay">${esc(p.text)}</div></div>${company?`<div class="company">${esc(company)}</div>`:''}</div></div><div class="meta">${esc(j.region||'-')} · ${esc(date)} · ${esc(time)}</div><div class="arrow">›</div>`;
   e.onclick=()=>j.url&&window.open(j.url,'_blank','noopener');list.appendChild(e);
  });
 }

@@ -434,6 +434,67 @@ def iter_jsonld_jobs(soup: BeautifulSoup, base_url: str):
                 stack.extend(x)
 
 
+
+
+def clean_company_name(value: str) -> str:
+    v = norm(value)
+    if not v:
+        return ""
+    v = re.sub(r"\s*(?:채용정보|채용공고)\s*$", "", v).strip(" -|·")
+    bad = ("알바몬", "알바천국", "당근알바", "채용정보", "채용공고", "상세정보", "모집내용", "근무조건", "지원방법")
+    if v in bad or len(v) < 2 or len(v) > 80:
+        return ""
+    if re.match(r"^(?:시급|일급|월급|주급|급여|근무|모집|지원|등록|지역|시간)", v):
+        return ""
+    return v
+
+def company_from_soup(soup: BeautifulSoup, title: str = "") -> str:
+    # 1) JobPosting 구조화 데이터의 hiringOrganization.name
+    for x in iter_jsonld_jobs(soup, ""):
+        c = clean_company_name(x.get("company", ""))
+        if c:
+            return c
+    # 2) 자주 쓰이는 메타 태그
+    for attrs in (
+        {"property":"og:site_name"}, {"name":"author"},
+        {"name":"company"}, {"name":"hiringOrganization"}
+    ):
+        tag=soup.find("meta", attrs=attrs)
+        if tag:
+            c=clean_company_name(tag.get("content", ""))
+            if c and c not in ("알바몬","알바천국","당근"):
+                return c
+    # 3) 업체/기업/회사/공고등록자 라벨 옆 텍스트
+    lines=[norm(x) for x in soup.get_text("\n", strip=True).splitlines() if norm(x)]
+    labels=("기업명","업체명","회사명","근무회사","고용주","공고등록자","등록자명","상호명")
+    for i,x in enumerate(lines):
+        for label in labels:
+            if x == label and i+1 < len(lines):
+                c=clean_company_name(lines[i+1])
+                if c and c != title: return c
+            if x.startswith(label):
+                c=clean_company_name(re.sub(r"^"+re.escape(label)+r"\s*[:：]?\s*", "", x))
+                if c and c != title: return c
+    return ""
+
+def company_from_card(a, card_text: str, title: str = "") -> str:
+    # 카드 내부에서 company/employer/store/business 계열 요소 우선
+    node=a
+    for _ in range(5):
+        if node is None: break
+        for tag in node.find_all(True):
+            classes=" ".join(tag.get("class",[])).lower()
+            ident=str(tag.get("id","")).lower()
+            if any(k in classes+" "+ident for k in ("company","corp","employer","business","store","brand","name")):
+                c=clean_company_name(tag.get_text(" ",strip=True))
+                if c and c != title and c not in card_text[:len(c)]:
+                    return c
+        node=node.parent
+    # 텍스트 라벨 fallback
+    m=re.search(r"(?:기업명|업체명|회사명|공고등록자|상호명)\s*[:：]?\s*([^|·/]{2,50})", card_text)
+    return clean_company_name(m.group(1)) if m else ""
+
+
 def job_from_text(source: str, title: str, company: str, text: str, href: str, date_posted: str = ""):
     """부울경 공개 공고를 최대한 넓게 수집한다.
 
@@ -448,6 +509,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     - 시급 12,000원 미만
     - 근무일 미확인
     """
+    company = clean_company_name(company)
     rg = region_name(text)
     if not rg or is_closed(text):
         return None, "region_or_closed"
@@ -632,6 +694,7 @@ def parse_alba_detail(url: str):
             if 1 < len(x) < 60 and not re.search(r"^(일급|시급|월급|기간|요일|시간|모집)", x):
                 company = x
                 break
+    company = clean_company_name(company) or company_from_soup(soup, title)
     j, why = job_from_text("알바천국", title, company, text, r.url)
     return j, {"state":"ok","reason":why,"http":r.status_code}
 
@@ -704,7 +767,8 @@ def parse_daangn_index(url: str):
         if len(title) < 5:
             title = re.split(r"\s+(?:시급|일급|일당|건당|월급)\s*", text2, maxsplit=1)[0][:160]
 
-        j, why = job_from_text("당근알바", title, "", text2, href)
+        company = company_from_card(a, text2, title)
+        j, why = job_from_text("당근알바", title, company, text2, href)
         if j:
             out.append(j)
             diag["accepted"] += 1
@@ -756,7 +820,8 @@ def parse_page(source: str, url: str):
         diag["candidates"] += 1
         href = urljoin(r.url, a.get("href", ""))
         title = norm(a.get_text(" ", strip=True))
-        j, why = job_from_text(source, title, "", text, href)
+        company = company_from_card(a, text, title)
+        j, why = job_from_text(source, title, company, text, href)
         if j:
             out.append(j)
             diag["accepted"] += 1
