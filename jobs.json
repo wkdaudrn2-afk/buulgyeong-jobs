@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 10:15",
+  "updated_at_kst": "2026-09-15 10:19",
   "collector_status": "ok",
   "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거는 허용 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
   "general_jobs": [
@@ -369,6 +369,29 @@
       "pay_display": "시급 12,000원",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EB%A9%94%EA%B0%80%EC%BB%A4%ED%94%BC%EC%A7%84%EA%B5%AC%EC%B2%AD-%EC%A3%BC%EB%A7%90-18%EC%8B%9C-00%EC%8B%9C-%EC%8B%9C%EA%B8%89-12-000-or9qyv9vysqq",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "토일월 오픈 , 월화 마감 알바 구해요 시급 11,500원 월,화,토,일 · 07:00 ~ 12:00 백억커피 부산 부전점 · 부전동 후기 1",
+      "task": "아르바이트",
+      "work_time": "07:00 ~ 12:00",
+      "day_pay": 57500,
+      "explicit_day_pay": 0,
+      "hourly_pay": 11500,
+      "pay_type": "시급",
+      "pay_display": "시급 11,500원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%ED%86%A0%EC%9D%BC%EC%9B%94-%EC%98%A4%ED%94%88-%EC%9B%94%ED%99%94-%EB%A7%88%EA%B0%90-%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%B4%EC%9A%94-72pn3a2e6bk6",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "priority_hits": 0
@@ -796,6 +819,29 @@
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "토일월 오픈 , 월화 마감 알바 구해요 시급 11,500원 월,화,토,일 · 07:00 ~ 12:00 백억커피 부산 부전점 · 부전동 후기 1",
+      "task": "아르바이트",
+      "work_time": "07:00 ~ 12:00",
+      "day_pay": 57500,
+      "explicit_day_pay": 0,
+      "hourly_pay": 11500,
+      "pay_type": "시급",
+      "pay_display": "시급 11,500원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%ED%86%A0%EC%9D%BC%EC%9B%94-%EC%98%A4%ED%94%88-%EC%9B%94%ED%99%94-%EB%A7%88%EA%B0%90-%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%B4%EC%9A%94-72pn3a2e6bk6",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
       "region": "거제",
       "company": "",
       "title": "샐러드가게 함께 일 하실 분 구합니다 (연령상관없음) 시급 10,320원 화,목,일 · 19:00 ~ 22:00 협의 제스트효 · 거제동 후기 2",
@@ -856,7 +902,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 46,
+      "candidates": 78,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -867,12 +913,13 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 9,
-      "accepted": 8,
+      "candidates": 11,
+      "accepted": 10,
       "messages": [
-        "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색결과 정상 · 2건 통과",
         "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
-        "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
+        "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+        "당근 공개 검색결과 정상 · 1건 통과"
       ]
     }
   },
@@ -947,10 +994,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 22,
+      "candidates": 28,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 22
+        "excluded_keyword": 28
       }
     },
     {
@@ -959,10 +1006,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 14,
+      "candidates": 23,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 14
+        "excluded_keyword": 23
       }
     },
     {
@@ -971,20 +1018,20 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 10,
+      "candidates": 27,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 10
+        "excluded_keyword": 27
       }
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
@@ -1001,10 +1048,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
