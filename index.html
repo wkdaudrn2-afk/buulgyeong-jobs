@@ -35,7 +35,7 @@ body{margin:0;background:#f3f5f8;font-family:-apple-system,BlinkMacSystemFont,"N
 <body><div class="app">
 <header class="hero">
 <h1>부울경 알바 <b>TOP20</b></h1>
-<div class="sub">알바몬·알바천국 최근 3일 / 당근 오늘 등록<br>행사·벡스코·백화점·팝업·설치·철거 우선</div>
+<div class="sub">알바몬·알바천국 최근 3일 / 당근 최근 12시간<br>행사·벡스코·백화점·팝업·설치·철거 우선</div>
 <div class="updated">최종 수집: <b id="updated">확인 중</b></div>
 </header>
 
@@ -49,7 +49,7 @@ body{margin:0;background:#f3f5f8;font-family:-apple-system,BlinkMacSystemFont,"N
 <button id="weekdayDay" class="daytab" onclick="setDay('평일')">평일</button>
 <button id="weekendDay" class="daytab" onclick="setDay('주말')">주말</button>
 </div>
-<div class="rule">당근: 오늘 등록만 · 근무기간 제한 없음 / 공통 제외: 쿠팡·컬리·메리츠보험·편의점·택배</div>
+<div class="rule">당근: 최근 12시간 등록만 · 근무기간 제한 없음 / 공통 제외: 쿠팡·컬리·메리츠보험·편의점·택배</div>
 <main id="list" class="list"></main>
 <div class="note">공개적으로 접근 가능한 공고만 수집합니다. 로그인·캡차·접근제한은 우회하지 않습니다.</div>
 </div>
@@ -93,7 +93,7 @@ function render(){
       <div class="main">
         <div class="line"><span class="badge ${cls(j.source)}">${esc(j.source)}</span><div class="title">${esc(j.title)}</div></div>
         <div class="meta">📅 ${esc(date)}　📍 ${esc(j.region||'-')}　◷ ${esc(time)}</div>
-        <span class="kind">${esc((j.day_group&&j.day_group!=='미확인'?j.day_group+' · ':'')+(j.source==='당근알바'?'오늘등록':(j.duration_days===1?'하루알바':j.duration_label||'기간 확인')))}</span>
+        <span class="kind">${esc((j.day_group&&j.day_group!=='미확인'?j.day_group+' · ':'')+(j.source==='당근알바'?'12시간이내':(j.duration_days===1?'하루알바':j.duration_label||'기간 확인')))}</span>
       </div>
       <div class="pay">${esc(pay(j))}</div>
       <div class="arrow">›</div>`;

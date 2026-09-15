@@ -87,6 +87,47 @@ SOURCE_PAGES = [
 ROBOTS_CACHE = {}
 
 
+
+def daangn_posted_at(text):
+    """당근의 '몇 분 전/몇 시간 전/오늘 HH:MM/어제 HH:MM'을 로컬 datetime으로 변환."""
+    if not text:
+        return None
+    t = re.sub(r"\s+", " ", text)
+
+    m = re.search(r"(\d+)\s*분\s*전", t)
+    if m:
+        return NOW - timedelta(minutes=int(m.group(1)))
+
+    m = re.search(r"(\d+)\s*시간\s*전", t)
+    if m:
+        return NOW - timedelta(hours=int(m.group(1)))
+
+    if re.search(r"(방금|몇\s*초\s*전|1\s*분\s*미만)", t):
+        return NOW
+
+    m = re.search(r"오늘\s*(\d{1,2}):(\d{2})", t)
+    if m:
+        return datetime.combine(TODAY, datetime.min.time()).replace(
+            hour=int(m.group(1)), minute=int(m.group(2))
+        )
+
+    m = re.search(r"어제\s*(\d{1,2}):(\d{2})", t)
+    if m:
+        d = TODAY - timedelta(days=1)
+        return datetime.combine(d, datetime.min.time()).replace(
+            hour=int(m.group(1)), minute=int(m.group(2))
+        )
+
+    # yyyy.mm.dd HH:MM / yyyy-mm-dd HH:MM
+    m = re.search(r"(20\d{2})[.\-/](\d{1,2})[.\-/](\d{1,2})\s+(\d{1,2}):(\d{2})", t)
+    if m:
+        try:
+            return datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                            int(m.group(4)), int(m.group(5)))
+        except ValueError:
+            return None
+    return None
+
 def daangn_detail_links(html, base_url="https://jobs.daangn.com"):
     """당근 목록 HTML에서 상세 공고 URL을 먼저 최대한 확보한다."""
     if not html:
@@ -435,12 +476,17 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
             pass
     post_verified = bool(post)
 
-    # 등록일 필터
-    # 당근알바: '오늘 등록'이 확인되는 공고만 사용. 등록일 미확인도 제외.
-    # 알바몬/알바천국: 등록일 확인 시 최근 3일 이내, 미확인은 후보 유지.
+    # 등록시간 필터
+    # 당근알바: 현재 수집시각 기준 최근 12시간 이내 등록이 확인되는 공고만.
+    # 상세/카드 텍스트의 '몇 분 전/몇 시간 전/오늘/어제 HH:MM'을 실제 시각으로 변환한다.
+    # 알바몬/알바천국: 기존대로 등록일 확인 시 최근 3일 이내.
     if source == "당근알바":
-        if not post or post != TODAY:
-            return None, "daangn_not_posted_today"
+        posted_at = daangn_posted_at(text)
+        if not posted_at:
+            return None, "daangn_post_time_unknown"
+        age = NOW - posted_at
+        if age.total_seconds() < 0 or age > timedelta(hours=12):
+            return None, "daangn_older_than_12h"
     elif post and not (0 <= (TODAY - post).days <= 3):
         return None, "older_than_3_days"
 
@@ -794,7 +840,7 @@ def main():
         priority = -int(j.get("priority_hits") or 0)
         date_key = j.get("work_start") or "9999-12-31"
         if j.get("source") == "당근알바":
-            # 당근: 오늘 등록 중 원하는 행사형 공고 → 일급 → 시급
+            # 당근: 최근 12시간 등록 중 원하는 행사형 공고 → 일급 → 시급
             return (0, priority, day_pay, hourly, date_key, j.get("title",""))
         d = int(j.get("duration_days") or 99)
         duration_rank = 0 if d == 1 else (1 if 2 <= d <= 7 else 2)
@@ -815,7 +861,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 오늘 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
+        "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 최근 12시간 이내 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
