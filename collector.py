@@ -67,7 +67,7 @@ GENERAL_UNWANTED_WORDS = (
     "상품권 환급","온누리상품권","환급행사",
     "의료기기","안내보안","보안요원","공항보안",
     "영업","세일즈","정규직","정직원","월급"
-)
+,"온누리 상품권","상품권","상품권 증정","상품권 지급")
 
 PRIORITY_WORDS = (
     "벡스코", "bexco", "행사", "행사보조", "행사스태프", "전시", "박람회",
@@ -596,7 +596,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "메리츠", "메리츠화재", "메리 보험", "메리보험",
         "편의점", "gs25", "세븐일레븐", "7-eleven", "이마트24", "미니스톱",
         "택배", "택배상하차", "택배 분류", "택배분류", "택배 배송", "택배배송"
-    )
+    ,"온누리상품권","온누리 상품권","상품권 환급","환급행사","상품권 증정","상품권 지급","기프트콘","포인트 지급")
     # CU는 영문 일반문자열 오탐이 많아 단어 경계로만 판정
     if any(w.lower() in haystack for w in brand_excludes) or re.search(r"(?<![a-z])cu(?![a-z])", haystack):
         return None, "excluded_keyword"
