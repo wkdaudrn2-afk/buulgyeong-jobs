@@ -84,6 +84,37 @@ SOURCE_PAGES = [
 
 ROBOTS_CACHE = {}
 
+
+def daangn_detail_links(html, base_url="https://jobs.daangn.com"):
+    """당근 목록 HTML에서 상세 공고 URL을 먼저 최대한 확보한다."""
+    if not html:
+        return []
+    html2 = html.replace("\\u002F", "/").replace("\\/", "/")
+    patterns = [
+        r'href=["\']([^"\']*/job-posts/[^"\']+)["\']',
+        r'https://jobs\.daangn\.com/job-posts/[A-Za-z0-9%_\-가-힣]+',
+        r'["\'](/job-posts/[^"\']+)["\']',
+    ]
+    found = []
+    for pat in patterns:
+        found.extend(re.findall(pat, html2, flags=re.I))
+    result, seen = [], set()
+    for u in found:
+        if isinstance(u, tuple):
+            u = next((x for x in u if x), "")
+        u = u.replace("&amp;", "&").strip()
+        if u.startswith("/"):
+            u = base_url + u
+        elif u.startswith("job-posts/"):
+            u = base_url + "/" + u
+        if "/job-posts/" not in u:
+            continue
+        u = u.split("#")[0]
+        if u not in seen:
+            seen.add(u)
+            result.append(u)
+    return result
+
 def norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "")).strip()
 
@@ -759,7 +790,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거는 허용 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거 허용 · 당근은 상세 공고 링크 우선 수집 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
