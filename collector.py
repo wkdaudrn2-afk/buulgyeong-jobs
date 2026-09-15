@@ -379,11 +379,18 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         return None, "region_or_closed"
 
     # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
-    exclude_words = ("쿠팡", "coupang", "물류", "메리츠", "메리츠화재", "메리 보험", "메리보험",
-                     "마켓컬리", "컬리", "kurly", "편의점", "CU", "GS25", "세븐일레븐",
-                     "이마트24", "미니스톱")
+    # 제외업종/브랜드
+    # "물류"라는 일반 업무 단어 자체는 제외하지 않는다.
+    # 쿠팡·컬리 계열 물류/배송, 메리츠 보험, 편의점 공고만 제외한다.
     haystack = f"{title} {company} {text}".lower()
-    if any(w.lower() in haystack for w in exclude_words):
+    brand_excludes = (
+        "쿠팡", "coupang", "쿠팡로지스틱스", "쿠팡풀필먼트",
+        "마켓컬리", "컬리", "kurly",
+        "메리츠", "메리츠화재", "메리 보험", "메리보험",
+        "편의점", "gs25", "세븐일레븐", "7-eleven", "이마트24", "미니스톱"
+    )
+    # CU는 영문 일반문자열 오탐이 많아 단어 경계로만 판정
+    if any(w.lower() in haystack for w in brand_excludes) or re.search(r"(?<![a-z])cu(?![a-z])", haystack):
         return None, "excluded_keyword"
 
     post = posted_date_from_text(text)
@@ -752,7 +759,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 최근 3일 · 1~7일 단기 우선 · 기간 미확인 후순위 포함 · 8일 이상 확인 공고 제외 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 2~7일 → 기간미확인, 각 그룹 일급 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거는 허용 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
