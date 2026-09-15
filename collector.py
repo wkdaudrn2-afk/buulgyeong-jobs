@@ -401,10 +401,10 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     else:
         days = 99
 
-    # 근무기간은 하루~최대 7일만 표시
-    # 기간을 확인할 수 없는 공고도 제외하여 장기공고 유입 방지
-    if days < 1 or days > 7:
-        return None, "over_7_days_or_unknown_duration"
+    # 근무기간이 명확히 확인되는 경우 8일 이상만 제외.
+    # 기간을 확인할 수 없는 공고(days=99)는 누락 방지를 위해 후보로 유지하고 후순위 배치.
+    if days != 99 and (days < 1 or days > 7):
+        return None, "over_7_days"
 
     hourly = parse_hourly(text)
     pay = parse_money(text)
@@ -416,10 +416,10 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
 
     if days == 1:
         duration_label = "하루(1일)"
-    elif 2 <= days <= 31:
+    elif 2 <= days <= 7:
         duration_label = f"{days}일"
     else:
-        duration_label = "기간 확인"
+        duration_label = "기간 미확인"
 
     title = norm(title) or text[:100]
 
@@ -719,11 +719,13 @@ def main():
     # 3) 시급 높은 순
     # 4) 근무일이 확인되는 경우 빠른 날짜
     def rank_key(j):
-        one_day = 0 if int(j.get("duration_days") or 99) == 1 else 1
+        d = int(j.get("duration_days") or 99)
+        # 하루알바 최우선 → 2~7일 → 기간 미확인
+        duration_rank = 0 if d == 1 else (1 if 2 <= d <= 7 else 2)
         day_pay = -int(j.get("explicit_day_pay") or 0)
         hourly = -int(j.get("hourly_pay") or 0)
         date_key = j.get("work_start") or "9999-12-31"
-        return (one_day, day_pay, hourly, date_key, j.get("title",""))
+        return (duration_rank, day_pay, hourly, date_key, j.get("title",""))
 
     jobs.sort(key=rank_key)
 
@@ -739,7 +741,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 최근 3일 등록 · 근무기간 1~7일 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 최근 3일 · 1~7일 단기 우선 · 기간 미확인 후순위 포함 · 8일 이상 확인 공고 제외 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 2~7일 → 기간미확인, 각 그룹 일급 → 시급 높은 순",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
