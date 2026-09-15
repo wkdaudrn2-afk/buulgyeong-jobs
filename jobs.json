@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 10:24",
+  "updated_at_kst": "2026-09-15 10:45",
   "collector_status": "ok",
   "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거 허용 · 당근은 상세 공고 링크 우선 수집 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
   "general_jobs": [
@@ -945,13 +945,13 @@
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 0,
-      "blocked_pages": 3,
+      "ok_pages": 3,
+      "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 0,
+      "candidates": 80,
       "accepted": 0,
       "messages": [
-        "robots 확인 실패: URLError"
+        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
       ]
     },
     "당근알바": {
@@ -1037,32 +1037,38 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
-      "candidates": 0,
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 26,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "excluded_keyword": 26
+      }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
-      "candidates": 0,
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 27,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "excluded_keyword": 27
+      }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "blocked",
-      "reason": "robots 확인 실패: URLError",
-      "http": null,
-      "candidates": 0,
+      "state": "ok",
+      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "http": 200,
+      "candidates": 27,
       "accepted": 0,
-      "rejected": {}
+      "rejected": {
+        "excluded_keyword": 27
+      }
     },
     {
       "source": "당근알바",
