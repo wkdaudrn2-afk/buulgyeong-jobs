@@ -1028,8 +1028,14 @@ def main():
     jobs, diags = [], []
 
     # 기본 페이지 + 당근 공개 페이지에서 발견되는 주변 지역을 자동 확장
-    pages = list(SOURCE_PAGES)
-    seed_daangn = [u for s, u in SOURCE_PAGES if s == "당근알바" and "jobTask=" not in u]
+    # SOURCE_PAGES에 잘못된 값이 섞여도 전체 수집기가 죽지 않도록 정규화한다.
+    pages = []
+    for item in SOURCE_PAGES:
+        if isinstance(item, (tuple, list)) and len(item) == 2:
+            source, url = item
+            if source in ("알바몬", "알바천국", "당근알바") and isinstance(url, str) and url.startswith("http"):
+                pages.append((source, url))
+    seed_daangn = [u for source, u in pages if source == "당근알바" and "jobTask=" not in u]
     known_urls = {u for _, u in pages}
     discovered = []
     for seed in seed_daangn:
@@ -1062,7 +1068,7 @@ def main():
         except Exception as e:
             diags.append({"source": source, "url": url, "state": "error", "reason": f"파서 오류: {type(e).__name__}", "http": None, "candidates": 0, "accepted": 0, "rejected": {}})
             print("source error:", source, url, repr(e))
-        time.sleep(0.35)
+        time.sleep(0.12)
 
     deduped = {}
     for j in jobs:
@@ -1109,9 +1115,13 @@ def main():
             group, amount = 2, -hourly
         else:
             group, amount = 3, 0
-        posted = j.get("posted_at") or "9999-12-31"
+        posted = j.get("posted_at") or ""
+        try:
+            newest_rank = -datetime.fromisoformat(posted[:10]).date().toordinal() if posted else 0
+        except Exception:
+            newest_rank = 0
         date_key = j.get("work_start") or "9999-12-31"
-        return (group, amount, posted, date_key, j.get("title", ""))
+        return (group, amount, newest_rank, date_key, j.get("title", ""))
 
     for j in jobs:
         j["work_hours"] = work_hours_from_job(j)
