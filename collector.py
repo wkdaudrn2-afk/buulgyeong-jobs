@@ -514,6 +514,11 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     if not rg or is_closed(text):
         return None, "region_or_closed"
 
+    # 당근알바는 부산·김해·양산 지역 공고만 허용
+    # 알바몬/알바천국은 기존 부산·울산·경남 조건 유지
+    if source == "당근알바" and not any(area in text for area in ("부산", "김해", "양산")):
+        return None, "daangn_outside_target_area"
+
     # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
     # 제외업종/브랜드
     # "물류"라는 일반 업무 단어 자체는 제외하지 않는다.
@@ -728,6 +733,28 @@ def parse_alba_index(url: str):
     return out, diag
 
 
+
+def daangn_nearby_region_urls(url: str, limit: int = 30):
+    """공개 당근 검색 페이지에 노출된 주변 지역 regionId 링크를 자동 발견."""
+    r, _ = fetch(url)
+    if not r:
+        return []
+    soup = BeautifulSoup(r.text, "html.parser")
+    out, seen = [], set()
+    for a in soup.find_all("a", href=True):
+        href = urljoin(r.url, a.get("href", ""))
+        m = re.search(r"jobs\.daangn\.com/s\?[^#]*regionId=(\d+)", href, re.I)
+        if not m:
+            continue
+        rid = m.group(1)
+        if rid in seen:
+            continue
+        seen.add(rid)
+        out.append(f"https://jobs.daangn.com/s?regionId={rid}")
+        if len(out) >= limit:
+            break
+    return out
+
 def parse_daangn_index(url: str):
     """당근알바 공개 검색결과 전용 파서."""
     r, fetch_diag = fetch(url)
@@ -870,7 +897,29 @@ def main():
             prev = {}
 
     jobs, diags = [], []
-    for source, url in SOURCE_PAGES:
+
+    # 기본 페이지 + 당근 공개 페이지에서 발견되는 주변 지역을 자동 확장
+    pages = list(SOURCE_PAGES)
+    seed_daangn = [u for s, u in SOURCE_PAGES if s == "당근알바" and "jobTask=" not in u]
+    known_urls = {u for _, u in pages}
+    discovered = []
+    for seed in seed_daangn:
+        try:
+            for u in daangn_nearby_region_urls(seed, limit=30):
+                if u not in known_urls:
+                    known_urls.add(u)
+                    discovered.append(("당근알바", u))
+                    if len(discovered) >= 80:
+                        break
+        except Exception as e:
+            print("daangn region discovery error:", seed, repr(e))
+        if len(discovered) >= 80:
+            break
+        time.sleep(0.25)
+    pages.extend(discovered)
+    print("daangn nearby region pages added (target 부산·김해·양산):", len(discovered))
+
+    for source, url in pages:
         try:
             if source == "알바천국":
                 found, diag = parse_alba_index(url)
@@ -884,7 +933,7 @@ def main():
         except Exception as e:
             diags.append({"source": source, "url": url, "state": "error", "reason": f"파서 오류: {type(e).__name__}", "http": None, "candidates": 0, "accepted": 0, "rejected": {}})
             print("source error:", source, url, repr(e))
-        time.sleep(0.8)
+        time.sleep(0.35)
 
     deduped = {}
     for j in jobs:
