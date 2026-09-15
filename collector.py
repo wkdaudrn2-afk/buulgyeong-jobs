@@ -860,7 +860,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
+        "criteria": "알바몬+알바천국 기존 최근3일 단기우선 유지 및 평일/주말 분류; 당근은 별도탭에서 현재 공개 공고를 매 수집시 반영; 행사/벡스코/전시/백화점/팝업/설치/철거/세팅/행사보조/짐이동 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
