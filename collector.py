@@ -70,6 +70,10 @@ SOURCE_PAGES = [
     ("당근알바", "https://jobs.daangn.com/s?regionId=5923"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=671"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=648"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=LIGHT_WORK"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=OTHER"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=INSTALLATION_REPAIR"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=LOGISTICS_PACKING"),
 
     # 해운대/센텀/벡스코 인접권 확대
     # 공개 당근 검색에서 확인된 지역 ID
@@ -514,10 +518,17 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     if not rg or is_closed(text):
         return None, "region_or_closed"
 
-    # 당근알바는 부산·김해·양산 지역 공고만 허용
-    # 알바몬/알바천국은 기존 부산·울산·경남 조건 유지
-    if source == "당근알바" and not any(area in text for area in ("부산", "김해", "양산")):
-        return None, "daangn_outside_target_area"
+    # 당근알바 지역은 region_name()이 판정한 실제 근무지역 기준으로 제한한다.
+    # 부산은 그대로 허용하고, 경남으로 판정된 공고는 김해/양산만 허용한다.
+    # 본문에 부산이라는 단어가 우연히 포함된 거제 등 타지역 공고가 통과하는 문제를 방지한다.
+    if source == "당근알바":
+        if rg == "부산":
+            pass
+        elif rg == "경남":
+            if not re.search(r"(?:김해(?:시)?|양산(?:시)?)", text):
+                return None, "daangn_outside_target_area"
+        else:
+            return None, "daangn_outside_target_area"
 
     # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
     # 제외업종/브랜드
