@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 12:59",
+  "updated_at_kst": "2026-09-15 13:18",
   "collector_status": "ok",
   "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -1167,10 +1167,11 @@
       "candidates": 141,
       "accepted": 26,
       "messages": [
-        "공개 페이지 정상 · 7건 통과",
-        "공개 페이지 정상 · 1건 통과",
+        "공개 페이지 정상 · 13건 통과",
+        "공개 페이지 정상 · 2건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 17건 통과"
+        "공개 페이지 정상 · 10건 통과",
+        "공개 페이지 정상 · 1건 통과"
       ]
     },
     "알바천국": {
@@ -1178,7 +1179,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 76,
+      "candidates": 77,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -1205,12 +1206,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 7건 통과",
+      "reason": "공개 페이지 정상 · 13건 통과",
       "http": 200,
       "candidates": 61,
-      "accepted": 7,
+      "accepted": 13,
       "rejected": {
-        "excluded_keyword": 34,
+        "excluded_keyword": 28,
         "older_than_3_days": 16,
         "over_7_days": 4
       }
@@ -1219,12 +1220,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 1건 통과",
+      "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 1,
+      "accepted": 2,
       "rejected": {
-        "excluded_keyword": 19
+        "excluded_keyword": 18
       }
     },
     {
@@ -1236,20 +1237,19 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 13,
-        "over_7_days": 7
+        "excluded_keyword": 20
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 17건 통과",
+      "reason": "공개 페이지 정상 · 10건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 17,
+      "accepted": 10,
       "rejected": {
-        "over_7_days": 1,
+        "over_7_days": 8,
         "excluded_keyword": 2
       }
     },
@@ -1271,10 +1271,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 28,
+      "candidates": 24,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 28
+        "excluded_keyword": 24
       }
     },
     {
@@ -1283,10 +1283,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 21,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 21
+        "excluded_keyword": 26
       }
     },
     {
