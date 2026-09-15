@@ -17,7 +17,7 @@ body{margin:0;background:#f3f5f8;font-family:-apple-system,BlinkMacSystemFont,"N
 .tab{border:1px solid #dbe3ee;background:#f7f9fc;border-radius:14px;padding:13px 6px;font-size:14px;font-weight:950}
 .tab.active{background:#102b52;border-color:#102b52;color:#fff}
 .tab.carrot.active{background:#ff6f0f;border-color:#ff6f0f}
-.rule{padding:2px 12px 8px;color:#64748b;font-size:10px}
+.rule{padding:2px 12px 8px;color:#64748b;font-size:10px}.daytabs{display:flex;gap:6px;padding:0 10px 8px}.daytab{flex:1;border:1px solid #dbe3ee;background:#fff;border-radius:9px;padding:8px 3px;font-size:11px;font-weight:900}.daytab.active{background:#eaf2ff;border-color:#8bb6ff;color:#0d5bd3}
 .list{padding:5px 8px 18px}
 .job{display:grid;grid-template-columns:42px minmax(0,1fr) 105px 14px;gap:6px;align-items:center;border:1px solid #e5eaf0;border-radius:14px;padding:9px 8px;margin:7px 0;min-height:76px;background:white;box-shadow:0 2px 8px #0f172a08}
 .rank{height:48px;border-radius:10px;background:#eef5ff;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:950;color:#0d5bd3}.rank.top{background:#fff0f0;color:#e52e2e}
@@ -35,7 +35,7 @@ body{margin:0;background:#f3f5f8;font-family:-apple-system,BlinkMacSystemFont,"N
 <body><div class="app">
 <header class="hero">
 <h1>부울경 알바 <b>TOP20</b></h1>
-<div class="sub">부산·울산·경남 · 최근 3일 등록<br>하루 우선 · 2~7일 · 기간 미확인 후순위</div>
+<div class="sub">알바몬·알바천국 최근 3일 / 당근 오늘 등록<br>행사·벡스코·백화점·팝업·설치·철거 우선</div>
 <div class="updated">최종 수집: <b id="updated">확인 중</b></div>
 </header>
 
@@ -44,13 +44,18 @@ body{margin:0;background:#f3f5f8;font-family:-apple-system,BlinkMacSystemFont,"N
 <button id="daangnTab" class="tab carrot" onclick="setTab('daangn')">🥕 당근알바<br>TOP20</button>
 </nav>
 
-<div class="rule">순위: ① 하루 → ② 2~7일 → ③ 기간 미확인 · 일급 → 시급 높은 순</div>
+<div class="daytabs">
+<button id="allDay" class="daytab active" onclick="setDay('all')">전체</button>
+<button id="weekdayDay" class="daytab" onclick="setDay('평일')">평일</button>
+<button id="weekendDay" class="daytab" onclick="setDay('주말')">주말</button>
+</div>
+<div class="rule">당근: 오늘 등록만 · 근무기간 제한 없음 / 공통 제외: 쿠팡·컬리·메리츠보험·편의점·택배</div>
 <main id="list" class="list"></main>
 <div class="note">공개적으로 접근 가능한 공고만 수집합니다. 로그인·캡차·접근제한은 우회하지 않습니다.</div>
 </div>
 
 <script>
-let DATA=null,TAB='general';
+let DATA=null,TAB='general',DAY='all';
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
 function pay(j){
   if(j.explicit_day_pay) return '일급 '+Number(j.explicit_day_pay).toLocaleString('ko-KR')+'원';
@@ -64,9 +69,19 @@ function setTab(t){
   document.getElementById('daangnTab').classList.toggle('active',t==='daangn');
   render();
 }
+function setDay(d){
+  DAY=d;
+  document.getElementById('allDay').classList.toggle('active',d==='all');
+  document.getElementById('weekdayDay').classList.toggle('active',d==='평일');
+  document.getElementById('weekendDay').classList.toggle('active',d==='주말');
+  render();
+}
 function render(){
   if(!DATA)return;
-  const jobs=(TAB==='general'?(DATA.general_jobs||[]):(DATA.daangn_jobs||[])).slice(0,20);
+  let jobs=(TAB==='general'?(DATA.general_jobs||[]):(DATA.daangn_jobs||[]));
+  if(DAY==='평일') jobs=jobs.filter(j=>j.day_group==='평일'||j.day_group==='평일+주말');
+  if(DAY==='주말') jobs=jobs.filter(j=>j.day_group==='주말'||j.day_group==='평일+주말');
+  jobs=jobs.slice(0,20);
   const list=document.getElementById('list');list.innerHTML='';
   if(!jobs.length){list.innerHTML='<div class="empty">현재 공개 페이지에서 가져온 공고가 없습니다.</div>';return}
   jobs.forEach((j,i)=>{
@@ -78,7 +93,7 @@ function render(){
       <div class="main">
         <div class="line"><span class="badge ${cls(j.source)}">${esc(j.source)}</span><div class="title">${esc(j.title)}</div></div>
         <div class="meta">📅 ${esc(date)}　📍 ${esc(j.region||'-')}　◷ ${esc(time)}</div>
-        <span class="kind">${esc(j.duration_days===1?'하루알바':j.duration_label||'기간 확인')}</span>
+        <span class="kind">${esc((j.day_group&&j.day_group!=='미확인'?j.day_group+' · ':'')+(j.source==='당근알바'?'오늘등록':(j.duration_days===1?'하루알바':j.duration_label||'기간 확인')))}</span>
       </div>
       <div class="pay">${esc(pay(j))}</div>
       <div class="arrow">›</div>`;

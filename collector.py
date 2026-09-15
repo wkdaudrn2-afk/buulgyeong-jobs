@@ -44,8 +44,10 @@ REGION_WORDS = (
     "진주", "밀양", "사천", "고성", "함안", "창녕", "거창", "합천", "남해", "하동"
 )
 PRIORITY_WORDS = (
-    "행사", "전시", "설치", "철거", "물류", "진열", "보조", "스태프", "포장", "피킹",
-    "상하차", "세팅", "정리", "매장", "창고"
+    "벡스코", "bexco", "행사", "행사보조", "행사스태프", "전시", "박람회",
+    "팝업", "팝업스토어", "백화점", "신세계", "롯데백화점", "관광공사",
+    "설치", "철거", "세팅", "입점", "매장이동", "박스이동", "짐 옮기기",
+    "물자이동", "진열", "보조", "스태프", "포장", "물류", "정리", "매장"
 )
 CLOSED_WORDS = ("마감되었습니다", "접수가 마감", "채용이 마감", "종료된 공고", "삭제된 공고", "채용완료")
 OPEN_WORDS = ("상시모집", "모집중", "지원", "채용중", "전화", "문자", "온라인")
@@ -434,12 +436,13 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     post_verified = bool(post)
 
     # 등록일 필터
-    # 당근알바: 등록일 확인 시 최근 2일 이내
-    # 알바몬/알바천국: 등록일 확인 시 최근 3일 이내
-    # 등록일 미확인 공고는 누락 방지를 위해 후보로 유지.
-    max_post_age = 2 if source == "당근알바" else 3
-    if post and not (0 <= (TODAY - post).days <= max_post_age):
-        return None, "older_than_limit"
+    # 당근알바: '오늘 등록'이 확인되는 공고만 사용. 등록일 미확인도 제외.
+    # 알바몬/알바천국: 등록일 확인 시 최근 3일 이내, 미확인은 후보 유지.
+    if source == "당근알바":
+        if not post or post != TODAY:
+            return None, "daangn_not_posted_today"
+    elif post and not (0 <= (TODAY - post).days <= 3):
+        return None, "older_than_3_days"
 
     # 날짜를 찾으면 사용하고, 없으면 미확인으로 유지
     wa, wb = daangn_work_range(title, text) if source == "당근알바" else work_range(text)
@@ -454,9 +457,9 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     else:
         days = 99
 
-    # 근무기간이 명확히 확인되는 경우 8일 이상만 제외.
-    # 기간을 확인할 수 없는 공고(days=99)는 누락 방지를 위해 후보로 유지하고 후순위 배치.
-    if days != 99 and (days < 1 or days > 7):
+    # 당근은 근무기간을 필터 조건으로 사용하지 않는다.
+    # 알바몬/알바천국만 명확한 8일 이상 공고를 제외한다.
+    if source != "당근알바" and days != 99 and (days < 1 or days > 7):
         return None, "over_7_days"
 
     hourly = parse_hourly(text)
@@ -496,6 +499,19 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         if m:
             explicit_day_pay = int(m.group(1)) * 10000
 
+    # 근무일 기준 평일/주말 분류
+    day_group = "미확인"
+    if wa and wb:
+        d = wa
+        has_weekday = has_weekend = False
+        while d <= wb:
+            if d.weekday() >= 5:
+                has_weekend = True
+            else:
+                has_weekday = True
+            d += timedelta(days=1)
+        day_group = "평일+주말" if has_weekday and has_weekend else ("주말" if has_weekend else "평일")
+
     return {
         "source": source,
         "posted_at": post.isoformat() if post else "등록일 미확인",
@@ -522,6 +538,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "url": href,
         "duration_days": days,
         "duration_label": duration_label,
+        "day_group": day_group,
         "priority_hits": len(task_words),
     }, "accepted"
 
@@ -772,13 +789,17 @@ def main():
     # 3) 시급 높은 순
     # 4) 근무일이 확인되는 경우 빠른 날짜
     def rank_key(j):
-        d = int(j.get("duration_days") or 99)
-        # 하루알바 최우선 → 2~7일 → 기간 미확인
-        duration_rank = 0 if d == 1 else (1 if 2 <= d <= 7 else 2)
         day_pay = -int(j.get("explicit_day_pay") or 0)
         hourly = -int(j.get("hourly_pay") or 0)
+        priority = -int(j.get("priority_hits") or 0)
         date_key = j.get("work_start") or "9999-12-31"
-        return (duration_rank, day_pay, hourly, date_key, j.get("title",""))
+        if j.get("source") == "당근알바":
+            # 당근: 오늘 등록 중 원하는 행사형 공고 → 일급 → 시급
+            return (0, priority, day_pay, hourly, date_key, j.get("title",""))
+        d = int(j.get("duration_days") or 99)
+        duration_rank = 0 if d == 1 else (1 if 2 <= d <= 7 else 2)
+        # 알바몬/알바천국: 하루/단기 우선 + 원하는 유형 가중
+        return (1, duration_rank, priority, day_pay, hourly, date_key, j.get("title",""))
 
     jobs.sort(key=rank_key)
 
@@ -794,7 +815,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 · 당근 최근 2일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류·행사·설치·철거 허용 · 당근은 상세 공고 링크 우선 수집 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 오늘 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
