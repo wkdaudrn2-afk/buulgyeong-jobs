@@ -80,17 +80,58 @@ OPEN_WORDS = ("상시모집", "모집중", "지원", "채용중", "전화", "문
 
 # 공개 목록 페이지. 한 소스가 실패해도 다른 소스는 계속 진행합니다.
 SOURCE_PAGES = [
+    # 알바몬 부산 단기알바: 최근 등록 공고가 여러 페이지에 걸쳐 있어 넓게 순회
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=1"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=2"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=3"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=4"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=5"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=6"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=7"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=8"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=9"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=10"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=11"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=12"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=13"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=14"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=15"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=16"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=17"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=18"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=19"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=20"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=21"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=22"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=23"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=24"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=25"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=26"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=27"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=28"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=29"),
+    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=30"),
+    # 알바천국 일반 채용정보: 목록에서 부울경 공고를 골라 상세페이지에서 등록일 확인
     ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1"),
     ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2"),
     ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3"),
-
-    # 당근알바는 메인 페이지가 아니라 실제 지역 검색 결과 페이지를 확인한다.
-    # 부산 주요 권역을 나눠 조회하면 한 페이지의 주변지역 반경 결과까지 함께 잡힌다.
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=4"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=5"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=6"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=7"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=8"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=9"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=10"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=11"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=12"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=13"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=14"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=15"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=16"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=17"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=18"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=19"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=20"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=5917"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=594"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=5923"),
@@ -100,29 +141,12 @@ SOURCE_PAGES = [
     ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=OTHER"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=INSTALLATION_REPAIR"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=648&jobTask=LOGISTICS_PACKING"),
-
-    # 해운대/센텀/벡스코 인접권 확대
-    # 공개 당근 검색에서 확인된 지역 ID
     ("당근알바", "https://jobs.daangn.com/s?regionId=6028"),  # 해운대구 좌동
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027"),  # 해운대구 재송동
-
-    # 해운대권 단기/보조성 업무 결과 노출 확대
     ("당근알바", "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=LIGHT_WORK"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER"),
-    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=6"),
-    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=7"),
-    ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=8"),
-
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=4"),
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=5"),
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=6"),
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=7"),
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=8"),
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=9"),
-    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=10"),
-
 ]
 
 
@@ -595,7 +619,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "택배", "택배상하차", "택배 분류", "택배분류", "택배 배송", "택배배송"
     ,"포인트 지급")
     # CU는 영문 일반문자열 오탐이 많아 단어 경계로만 판정
-    if any(w.lower() in haystack for w in brand_excludes) or re.search(r"(?<![a-z])cu(?![a-z])", haystack):
+    if source == "당근알바" and (any(w.lower() in haystack for w in brand_excludes) or re.search(r"(?<![a-z])cu(?![a-z])", haystack)):
         return None, "excluded_keyword"
 
     post = posted_date_from_text(text)
@@ -615,8 +639,13 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         # 현재 공개 검색 페이지에 노출되는 공고를 매 수집 때 반영한다.
         posted_at = daangn_posted_at(text)
         post_age_rank = 0 if posted_at else 1
-    elif post and not (0 <= (TODAY - post).days <= 3):
-        return None, "older_than_3_days"
+    else:
+        # 알바몬/알바천국은 등록일이 실제로 확인된 최근 3일 이내 공고만 허용한다.
+        # 등록일 미확인 공고는 TOP25 후보에 넣지 않는다.
+        if not post:
+            return None, "posted_date_unverified"
+        if not (0 <= (TODAY - post).days <= 2):
+            return None, "older_than_3_days"
 
     # 날짜를 찾으면 사용하고, 없으면 미확인으로 유지
     wa, wb = daangn_work_range(title, text) if source == "당근알바" else work_range(text)
@@ -631,10 +660,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     else:
         days = 99
 
-    # 당근은 근무기간을 필터 조건으로 사용하지 않는다.
-    # 알바몬/알바천국만 명확한 8일 이상 공고를 제외한다.
-    if source != "당근알바" and days != 99 and (days < 1 or days > 7):
-        return None, "over_7_days"
+    # 알바몬/알바천국은 근무기간으로 제외하지 않는다. 등록일 최근 3일 여부만 필수 조건이다.
 
     hourly = parse_hourly(text)
     pay = parse_money(text)
@@ -718,22 +744,20 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     }, "accepted"
 
 def alba_detail_links(soup: BeautifulSoup, base_url: str):
-    """알바천국 목록에서 부산·경남·울산의 최근 공고 상세 링크만 추린다."""
+    """알바천국 목록의 상세공고 링크를 DOM 전체에서 확보한다. 지역/등록일은 상세에서 판정."""
     out, seen = [], set()
-    for a, text in candidate_blocks(soup):
+    for a in soup.find_all("a", href=True):
         href = urljoin(base_url, a.get("href", ""))
-        if "alba.co.kr/job/" not in href.lower() or "adid=" not in href.lower():
+        low = href.lower()
+        if "alba.co.kr/job/" not in low or "adid=" not in low:
             continue
-        if not region_name(text):
-            continue
-        # 목록 텍스트에 '시간 전/분 전/오늘' 등이 있으면 최근 후보로 간주
-        key = re.search(r"adid=(\d+)", href, re.I)
-        key = key.group(1) if key else href
+        m = re.search(r"adid=(\d+)", href, re.I)
+        key = m.group(1) if m else href
         if key in seen:
             continue
         seen.add(key)
         out.append(href)
-    return out[:50]
+    return out[:100]
 
 
 def parse_alba_detail(url: str):
@@ -970,6 +994,29 @@ def summarize_sources(diags):
     return summary
 
 
+def work_hours_from_job(j):
+    t = j.get("work_time") or ""
+    m = re.search(r"(\d{1,2}):(\d{2})\s*(?:~|-|–|—)\s*(\d{1,2}):(\d{2})", t)
+    if not m:
+        return 0.0
+    sh, sm, eh, em = map(int, m.groups())
+    start = sh * 60 + sm
+    end = eh * 60 + em
+    if end <= start:
+        end += 24 * 60
+    mins = end - start
+    return round(mins / 60.0, 2) if 0 < mins <= 24*60 else 0.0
+
+def expected_daily_earnings(j):
+    explicit = int(j.get("explicit_day_pay") or 0)
+    if explicit > 0:
+        return explicit
+    hourly = int(j.get("hourly_pay") or 0)
+    hours = work_hours_from_job(j)
+    if hourly > 0 and hours > 0:
+        return int(hourly * hours)
+    return 0
+
 def main():
     prev = {}
     if OUT.exists():
@@ -1044,21 +1091,31 @@ def main():
 
     jobs.sort(key=rank_key)
 
-    # 표시 순서: 일급 공고 → 시급 공고 → 급여 확인 공고
-    # 같은 급여형태 안에서는 금액이 높은 순으로 정렬
+    # 수익성 TOP25 정렬
+    # 1) 일급 공고: 일급 높은 순
+    # 2) 시급+근무시간 확인: 시급×근무시간의 예상 1일 수익 높은 순
+    # 3) 시급만 확인: 시급 높은 순
+    # 4) 급여 미확인: 마지막
     def display_rank(j):
-        if int(j.get("explicit_day_pay") or 0) > 0:
-            pay_group = 0
-            amount = -int(j.get("explicit_day_pay") or 0)
-        elif int(j.get("hourly_pay") or 0) > 0:
-            pay_group = 1
-            amount = -int(j.get("hourly_pay") or 0)
+        explicit = int(j.get("explicit_day_pay") or 0)
+        hourly = int(j.get("hourly_pay") or 0)
+        hours = work_hours_from_job(j)
+        expected = expected_daily_earnings(j)
+        if explicit > 0:
+            group, amount = 0, -explicit
+        elif hourly > 0 and hours > 0:
+            group, amount = 1, -expected
+        elif hourly > 0:
+            group, amount = 2, -hourly
         else:
-            pay_group = 2
-            amount = 0
-        priority = -int(j.get("priority_hits") or 0)
+            group, amount = 3, 0
+        posted = j.get("posted_at") or "9999-12-31"
         date_key = j.get("work_start") or "9999-12-31"
-        return (pay_group, amount, priority, date_key, j.get("title",""))
+        return (group, amount, posted, date_key, j.get("title", ""))
+
+    for j in jobs:
+        j["work_hours"] = work_hours_from_job(j)
+        j["expected_daily_earnings"] = expected_daily_earnings(j)
 
     # 일반창: 알바몬 + 알바천국 TOP25
     general_pool = [j for j in jobs if j.get("source") in ("알바몬", "알바천국")]
@@ -1074,7 +1131,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
+        "criteria": "알바몬+알바천국: 등록일 확인된 최근 3일 이내 부울경 공고만 수집, 업종/키워드 제한 없음, 일급 높은순→시급×근무시간 예상일수익 높은순→시급만 확인→급여확인 순 TOP25; 당근은 기존 별도 조건 유지",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
