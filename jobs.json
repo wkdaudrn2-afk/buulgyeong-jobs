@@ -1,7 +1,7 @@
 {
-  "updated_at_kst": "2026-09-15 11:55",
+  "updated_at_kst": "2026-09-15 12:06",
   "collector_status": "ok",
-  "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 오늘 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
+  "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 최근 12시간 이내 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
   "general_jobs": [
     {
       "source": "알바몬",
@@ -688,8 +688,8 @@
       "candidates": 141,
       "accepted": 26,
       "messages": [
-        "공개 페이지 정상 · 17건 통과",
-        "공개 페이지 정상 · 6건 통과",
+        "공개 페이지 정상 · 11건 통과",
+        "공개 페이지 정상 · 12건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 2건 통과",
         "공개 페이지 정상 · 1건 통과"
@@ -700,7 +700,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 64,
+      "candidates": 58,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -724,27 +724,27 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 17건 통과",
+      "reason": "공개 페이지 정상 · 11건 통과",
       "http": 200,
       "candidates": 63,
-      "accepted": 17,
+      "accepted": 11,
       "rejected": {
-        "excluded_keyword": 27,
+        "excluded_keyword": 28,
         "older_than_3_days": 16,
-        "over_7_days": 3
+        "over_7_days": 8
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 6건 통과",
+      "reason": "공개 페이지 정상 · 12건 통과",
       "http": 200,
       "candidates": 18,
-      "accepted": 6,
+      "accepted": 12,
       "rejected": {
         "over_7_days": 2,
-        "excluded_keyword": 10
+        "excluded_keyword": 4
       }
     },
     {
@@ -768,8 +768,8 @@
       "candidates": 20,
       "accepted": 2,
       "rejected": {
-        "excluded_keyword": 11,
-        "over_7_days": 7
+        "excluded_keyword": 16,
+        "over_7_days": 2
       }
     },
     {
@@ -790,10 +790,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 12,
+      "candidates": 17,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 12
+        "excluded_keyword": 17
       }
     },
     {
@@ -802,10 +802,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 26,
+      "candidates": 16,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 26
+        "excluded_keyword": 16
       }
     },
     {
@@ -814,10 +814,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 26,
+      "candidates": 25,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 26
+        "excluded_keyword": 25
       }
     },
     {
@@ -829,7 +829,7 @@
       "candidates": 3,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 3
+        "daangn_post_time_unknown": 3
       }
     },
     {
@@ -841,7 +841,7 @@
       "candidates": 1,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 1
+        "daangn_post_time_unknown": 1
       }
     },
     {
@@ -853,7 +853,7 @@
       "candidates": 3,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 3
+        "daangn_post_time_unknown": 3
       }
     },
     {
@@ -865,7 +865,7 @@
       "candidates": 2,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 1,
+        "daangn_post_time_unknown": 1,
         "excluded_keyword": 1
       }
     },
@@ -878,7 +878,7 @@
       "candidates": 2,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 2
+        "daangn_post_time_unknown": 2
       }
     },
     {
@@ -890,7 +890,7 @@
       "candidates": 1,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 1
+        "daangn_post_time_unknown": 1
       }
     },
     {
@@ -902,7 +902,7 @@
       "candidates": 2,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 2
+        "daangn_post_time_unknown": 2
       }
     },
     {
@@ -924,7 +924,7 @@
       "candidates": 1,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 1
+        "daangn_post_time_unknown": 1
       }
     },
     {
@@ -936,7 +936,7 @@
       "candidates": 1,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 1
+        "daangn_post_time_unknown": 1
       }
     },
     {
@@ -948,7 +948,7 @@
       "candidates": 2,
       "accepted": 0,
       "rejected": {
-        "daangn_not_posted_today": 2
+        "daangn_post_time_unknown": 2
       }
     }
   ]
