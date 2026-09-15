@@ -61,13 +61,13 @@ GENERAL_WANTED_WORDS = (
     "짐 옮기기","짐옮기기","물자이동","물품이동","운반","상하차","하차","하역",
     "현장보조","행사보조","안전요원","부스","무대","전광판","led","집기",
     "이케아","신세계","롯데백화점","롯데아울렛","프리미엄 아울렛"
-)
+,"매장 입점","입점 작업","이벤트 스텝","이벤트 스태프","공연 STAFF","공연스태프","운영 스태프","롯데몰")
 GENERAL_UNWANTED_WORDS = (
     "카페","커피","베이커리","주방","홀서빙","서빙","음식점","식당",
     "상품권 환급","온누리상품권","환급행사",
     "의료기기","안내보안","보안요원","공항보안",
     "영업","세일즈","정규직","정직원","월급"
-,"온누리 상품권","상품권","상품권 증정","상품권 지급")
+,"온누리 상품권","상품권","상품권 증정","상품권 지급","와인선물","와인 선물","명절 와인","POLO","폴로매장","플로매장","입고지원","판매지원","매장 홍보","스킨케어")
 
 PRIORITY_WORDS = (
     "벡스코", "bexco", "행사", "행사보조", "행사스태프", "전시", "박람회",
@@ -111,6 +111,10 @@ SOURCE_PAGES = [
     ("당근알바", "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=LIGHT_WORK"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER"),
+    "https://www.albamon.com/jobs/short-term?areas=H000&page=6",
+    "https://www.albamon.com/jobs/short-term?areas=H000&page=7",
+    "https://www.albamon.com/jobs/short-term?areas=H000&page=8",
+
 ]
 
 
