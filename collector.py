@@ -661,7 +661,10 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     else:
         days = 99
 
-    # 알바몬/알바천국은 근무기간으로 제외하지 않는다. 등록일 최근 3일 여부만 필수 조건이다.
+    # 정확도 보호: 최근 등록 공고인데 근무 종료일이 이미 지난 공고는 제외.
+    # 상세페이지의 다른 날짜(회사설립일/이벤트기간 등)를 근무일로 오인한 경우도 여기서 걸러진다.
+    if source in ("알바몬", "알바천국") and wb and wb < TODAY:
+        return None, "work_date_already_passed"
 
     hourly = parse_hourly(text)
     pay = parse_money(text)
@@ -762,13 +765,31 @@ def alba_detail_links(soup: BeautifulSoup, base_url: str):
 
 
 def parse_alba_detail(url: str):
+    """알바천국 상세: 페이지 전체 텍스트 대신 공고 자체의 구조화/메타 데이터만 우선 사용."""
     r, fd = fetch(url)
     if not r:
         return None, fd
     soup = BeautifulSoup(r.text, "html.parser")
-    text = norm(soup.get_text(" ", strip=True))
 
-    # 제목/업체명: OG title이 '업체 채용정보 : 공고제목 - 알바천국' 형식인 경우 우선
+    # JSON-LD JobPosting이 있으면 가장 신뢰도 높은 공고 단위 데이터로 사용한다.
+    for x in iter_jsonld_jobs(soup, r.url):
+        focused = norm(x.get("text", ""))
+        date_posted = x.get("datePosted", "")
+        if date_posted:
+            focused = f"등록일 {date_posted[:10]} " + focused
+        j, why = job_from_text(
+            "알바천국",
+            norm(x.get("title", "")),
+            clean_company_name(x.get("company", "")),
+            focused,
+            x.get("url") or r.url,
+            date_posted,
+        )
+        if j:
+            j["accuracy_source"] = "structured"
+            return j, {"state":"ok","reason":"structured","http":r.status_code}
+
+    # 구조화 데이터가 없을 때만 메타 + 상단 공고영역을 제한적으로 사용한다.
     title, company = "", ""
     og = soup.find("meta", attrs={"property": "og:title"})
     ogt = norm(og.get("content", "")) if og else ""
@@ -778,19 +799,31 @@ def parse_alba_detail(url: str):
     if not title:
         h = soup.find(["h1", "h2"])
         title = norm(h.get_text(" ", strip=True)) if h else ""
-    if not company:
-        # 상세 페이지 상단의 첫 줄이 업체명인 경우가 많음
-        lines = [norm(x) for x in soup.get_text("\n", strip=True).splitlines() if norm(x)]
-        for x in lines[:30]:
-            if x == title or "채용정보" in x or x.startswith("2026.") or x in ("인쇄하기", "공유하기", "닫기"):
-                continue
-            if 1 < len(x) < 60 and not re.search(r"^(일급|시급|월급|기간|요일|시간|모집)", x):
-                company = x
-                break
-    company = clean_company_name(company) or company_from_soup(soup, title)
-    j, why = job_from_text("알바천국", title, company, text, r.url)
-    return j, {"state":"ok","reason":why,"http":r.status_code}
 
+    # 페이지 전체 footer/추천공고가 섞이지 않도록 title 주변 부모영역을 우선.
+    focus = ""
+    if title:
+        title_node = soup.find(string=lambda s: isinstance(s, str) and title[:18] in norm(s))
+        if title_node:
+            node = title_node.parent
+            for _ in range(7):
+                if not node:
+                    break
+                candidate = norm(node.get_text(" ", strip=True))
+                if 120 <= len(candidate) <= 5000:
+                    focus = candidate
+                if len(candidate) >= 1200:
+                    break
+                node = node.parent
+    if not focus:
+        # fallback도 앞부분만 사용해 추천공고/푸터 오염을 줄인다.
+        focus = norm(" ".join(soup.get_text(" ", strip=True).split()[:900]))
+
+    company = clean_company_name(company) or company_from_soup(soup, title)
+    j, why = job_from_text("알바천국", title, company, focus, r.url)
+    if j:
+        j["accuracy_source"] = "focused_detail"
+    return j, {"state":"ok","reason":why,"http":r.status_code}
 
 def parse_alba_index(url: str):
     r, fetch_diag = fetch(url)
@@ -1125,7 +1158,8 @@ def main():
         except Exception:
             newest_rank = 0
         date_key = j.get("work_start") or "9999-12-31"
-        return (group, amount, newest_rank, date_key, j.get("title", ""))
+        accuracy_rank = 0 if j.get("accuracy_source") == "structured" else (1 if j.get("posted_verified") else 2)
+        return (group, amount, accuracy_rank, newest_rank, date_key, j.get("title", ""))
 
     for j in jobs:
         j["work_hours"] = work_hours_from_job(j)
@@ -1145,7 +1179,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "알바몬+알바천국: 등록일 확인된 최근 3일 이내 부울경 공고만 수집, 업종/키워드 제한 없음, 일급 높은순→시급×근무시간 예상일수익 높은순→시급만 확인→급여확인 순 TOP25; 당근은 기존 별도 조건 유지",
+        "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
