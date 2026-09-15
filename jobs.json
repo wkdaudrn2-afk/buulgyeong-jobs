@@ -1,7 +1,7 @@
 {
-  "updated_at_kst": "2026-09-15 10:19",
+  "updated_at_kst": "2026-09-15 10:24",
   "collector_status": "ok",
-  "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거는 허용 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
+  "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거 허용 · 당근은 상세 공고 링크 우선 수집 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
   "general_jobs": [
     {
       "source": "알바몬",
@@ -359,19 +359,19 @@
       "work_end": "",
       "region": "부산",
       "company": "",
-      "title": "메가커피진구청 주말 18시 - 00시 시급 12,000 시급 11,300원 토,일 · 17:00 ~ 00:00 메가커피 부산진구청 · 부암동 후기 1",
-      "task": "아르바이트",
-      "work_time": "17:00 ~ 00:00",
-      "day_pay": 84000,
+      "title": "롯데월드 부산 게임매장 STAFF 시급 13,000원 월~일 · 10:00 ~ 20:00 협의 게임파크 · 기장읍",
+      "task": "매장",
+      "work_time": "10:00 ~ 20:00",
+      "day_pay": 130000,
       "explicit_day_pay": 0,
-      "hourly_pay": 12000,
+      "hourly_pay": 13000,
       "pay_type": "시급",
-      "pay_display": "시급 12,000원",
+      "pay_display": "시급 13,000원",
       "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%A9%94%EA%B0%80%EC%BB%A4%ED%94%BC%EC%A7%84%EA%B5%AC%EC%B2%AD-%EC%A3%BC%EB%A7%90-18%EC%8B%9C-00%EC%8B%9C-%EC%8B%9C%EA%B8%89-12-000-or9qyv9vysqq",
+      "url": "https://jobs.daangn.com/job-posts/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C-%EB%B6%80%EC%82%B0-%EA%B2%8C%EC%9E%84%EB%A7%A4%EC%9E%A5-staff-th1m3z81te45",
       "duration_days": 99,
       "duration_label": "기간 미확인",
-      "priority_hits": 0
+      "priority_hits": 1
     },
     {
       "source": "당근알바",
@@ -392,6 +392,29 @@
       "pay_display": "시급 11,500원",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%ED%86%A0%EC%9D%BC%EC%9B%94-%EC%98%A4%ED%94%88-%EC%9B%94%ED%99%94-%EB%A7%88%EA%B0%90-%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%B4%EC%9A%94-72pn3a2e6bk6",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "갈비만 연산점 알바 모집합니다~ 시급 10,320원 월~일 · 11:00 ~ 22:30 협의 갈비만 부산점 · 연산동",
+      "task": "아르바이트",
+      "work_time": "11:00 ~ 22:30",
+      "day_pay": 118680,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EA%B0%88%EB%B9%84%EB%A7%8C-%EC%97%B0%EC%82%B0%EC%A0%90-%EC%95%8C%EB%B0%94-%EB%AA%A8%EC%A7%91%ED%95%A9%EB%8B%88%EB%8B%A4-z1sb8dzrhtog",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "priority_hits": 0
@@ -798,19 +821,19 @@
       "work_end": "",
       "region": "부산",
       "company": "",
-      "title": "메가커피진구청 주말 18시 - 00시 시급 12,000 시급 11,300원 토,일 · 17:00 ~ 00:00 메가커피 부산진구청 · 부암동 후기 1",
-      "task": "아르바이트",
-      "work_time": "17:00 ~ 00:00",
-      "day_pay": 84000,
+      "title": "롯데월드 부산 게임매장 STAFF 시급 13,000원 월~일 · 10:00 ~ 20:00 협의 게임파크 · 기장읍",
+      "task": "매장",
+      "work_time": "10:00 ~ 20:00",
+      "day_pay": 130000,
       "explicit_day_pay": 0,
-      "hourly_pay": 12000,
+      "hourly_pay": 13000,
       "pay_type": "시급",
-      "pay_display": "시급 12,000원",
+      "pay_display": "시급 13,000원",
       "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%A9%94%EA%B0%80%EC%BB%A4%ED%94%BC%EC%A7%84%EA%B5%AC%EC%B2%AD-%EC%A3%BC%EB%A7%90-18%EC%8B%9C-00%EC%8B%9C-%EC%8B%9C%EA%B8%89-12-000-or9qyv9vysqq",
+      "url": "https://jobs.daangn.com/job-posts/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C-%EB%B6%80%EC%82%B0-%EA%B2%8C%EC%9E%84%EB%A7%A4%EC%9E%A5-staff-th1m3z81te45",
       "duration_days": 99,
       "duration_label": "기간 미확인",
-      "priority_hits": 0
+      "priority_hits": 1
     },
     {
       "source": "당근알바",
@@ -831,6 +854,29 @@
       "pay_display": "시급 11,500원",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%ED%86%A0%EC%9D%BC%EC%9B%94-%EC%98%A4%ED%94%88-%EC%9B%94%ED%99%94-%EB%A7%88%EA%B0%90-%EC%95%8C%EB%B0%94-%EA%B5%AC%ED%95%B4%EC%9A%94-72pn3a2e6bk6",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "갈비만 연산점 알바 모집합니다~ 시급 10,320원 월~일 · 11:00 ~ 22:30 협의 갈비만 부산점 · 연산동",
+      "task": "아르바이트",
+      "work_time": "11:00 ~ 22:30",
+      "day_pay": 118680,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EA%B0%88%EB%B9%84%EB%A7%8C-%EC%97%B0%EC%82%B0%EC%A0%90-%EC%95%8C%EB%B0%94-%EB%AA%A8%EC%A7%91%ED%95%A9%EB%8B%88%EB%8B%A4-z1sb8dzrhtog",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "priority_hits": 0
@@ -899,13 +945,13 @@
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 3,
-      "blocked_pages": 0,
+      "ok_pages": 0,
+      "blocked_pages": 3,
       "error_pages": 0,
-      "candidates": 78,
+      "candidates": 0,
       "accepted": 0,
       "messages": [
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "robots 확인 실패: URLError"
       ]
     },
     "당근알바": {
@@ -913,13 +959,13 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 11,
-      "accepted": 10,
+      "candidates": 18,
+      "accepted": 17,
       "messages": [
         "당근 공개 검색결과 정상 · 2건 통과",
         "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
-        "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
-        "당근 공개 검색결과 정상 · 1건 통과"
+        "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색결과 정상 · 3건 통과"
       ]
     }
   },
@@ -991,38 +1037,32 @@
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 28,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 28
-      }
+      "rejected": {}
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 23,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 23
-      }
+      "rejected": {}
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 27,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 27
-      }
+      "rejected": {}
     },
     {
       "source": "당근알바",
@@ -1058,10 +1098,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 0,
+      "candidates": 2,
+      "accepted": 1,
       "rejected": {
         "excluded_keyword": 1
       }
@@ -1080,20 +1120,20 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 3,
+      "accepted": 3,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
@@ -1110,10 +1150,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 3,
+      "accepted": 3,
       "rejected": {}
     },
     {
@@ -1130,10 +1170,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     }
   ]
