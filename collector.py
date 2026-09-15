@@ -47,7 +47,7 @@ DAANGN_WANTED_WORDS = (
     "행사","행사보조","행사스태프","스태프","staff","벡스코","bexco","전시","박람회",
     "팝업","팝업스토어","백화점","신세계","롯데백화점","아울렛","설치","철거","세팅","셋팅",
     "입점","짐 옮기기","짐옮기기","물자이동","매장이동","기기운반","물품정리","물품 정리",
-    "진열","현장보조","현장 보조","안전요원","안전 요원","부스","무대","전광판","led","집기","하차"
+    "진열","현장보조","현장 보조","안전요원","안전 요원","부스","무대","전광판","led","집기","하차","자재","자재정리","자재 정리","현장청소","현장 청소","양중","공방","타일"
 )
 DAANGN_UNWANTED_WORDS = (
     "카페","베이커리","커피","주방","설거지","홀서빙","서빙","음식점","식당","배달","배송",
@@ -789,17 +789,12 @@ def daangn_nearby_region_urls(url: str, limit: int = 30):
     return out
 
 def parse_daangn_index(url: str):
-    """당근알바 공개 검색결과 전용 파서."""
+    """당근 공개 검색결과: 카드 + 개별 상세공고 본문까지 확인."""
     r, fetch_diag = fetch(url)
     diag = {
-        "source": "당근알바",
-        "url": url,
-        "state": fetch_diag["state"],
-        "reason": fetch_diag["reason"],
-        "http": fetch_diag.get("http"),
-        "candidates": 0,
-        "accepted": 0,
-        "rejected": {},
+        "source": "당근알바", "url": url, "state": fetch_diag["state"],
+        "reason": fetch_diag["reason"], "http": fetch_diag.get("http"),
+        "candidates": 0, "accepted": 0, "rejected": {}, "detail_checked": 0,
     }
     if not r:
         return [], diag
@@ -807,40 +802,55 @@ def parse_daangn_index(url: str):
     soup = BeautifulSoup(r.text, "html.parser")
     out, seen = [], set()
 
-    # 실제 공고 링크만 처리한다. 검색/내비게이션 링크는 제외.
+    # 검색목록에 노출된 실제 상세 공고 링크를 모두 후보로 확보한다.
     for a in soup.find_all("a", href=True):
         href = urljoin(r.url, a.get("href", ""))
-        low = href.lower()
-        if "jobs.daangn.com/job-posts/" not in low:
+        if "jobs.daangn.com/job-posts/" not in href.lower():
             continue
+        href = href.split("#")[0]
         if href in seen:
             continue
         seen.add(href)
-
-        text2 = daangn_card_text(a)
-        if len(text2) < 25 or not region_name(text2):
-            continue
-        if not re.search(r"(시급|일급|일당|건당|월급)", text2):
-            continue
         diag["candidates"] += 1
-        title = norm(a.get_text(" ", strip=True))
-        if len(title) < 5:
-            title = re.split(r"\s+(?:시급|일급|일당|건당|월급)\s*", text2, maxsplit=1)[0][:160]
 
-        company = company_from_card(a, text2, title)
-        j, why = job_from_text("당근알바", title, company, text2, href)
+        card_text = daangn_card_text(a)
+        card_title = norm(a.get_text(" ", strip=True))
+        company = company_from_card(a, card_text, card_title)
+
+        # 핵심 변경: 카드가 짧거나 지역/급여가 빠져도 버리지 않고 상세페이지를 연다.
+        detail_text = ""
+        detail_title = card_title
+        try:
+            dr, _ = fetch(href)
+            if dr:
+                ds = BeautifulSoup(dr.text, "html.parser")
+                detail_text = norm(ds.get_text(" ", strip=True))
+                if ds.find("h1"):
+                    detail_title = norm(ds.find("h1").get_text(" ", strip=True)) or detail_title
+                elif ds.title:
+                    detail_title = norm(ds.title.get_text(" ", strip=True)) or detail_title
+                diag["detail_checked"] += 1
+        except Exception:
+            pass
+
+        merged = norm(" ".join(x for x in (card_text, detail_text) if x))
+        if not merged:
+            continue
+        title = detail_title or card_title
+        j, why = job_from_text("당근알바", title, company, merged, href)
         if j:
             out.append(j)
             diag["accepted"] += 1
         else:
             diag["rejected"][why] = diag["rejected"].get(why, 0) + 1
+        time.sleep(0.10)
 
     if diag["candidates"] == 0:
-        diag["reason"] = "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인"
+        diag["reason"] = "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인"
     elif diag["accepted"] == 0:
-        diag["reason"] = "당근 공고 후보는 찾았지만 현재 조건 통과 0건"
+        diag["reason"] = f"상세 공고 {diag['detail_checked']}건 확인 · 현재 조건 통과 0건"
     else:
-        diag["reason"] = f"당근 공개 검색결과 정상 · {diag['accepted']}건 통과"
+        diag["reason"] = f"상세 공고 {diag['detail_checked']}건 확인 · {diag['accepted']}건 통과"
     return out, diag
 
 
