@@ -848,11 +848,29 @@ def main():
 
     jobs.sort(key=rank_key)
 
-    # 일반창: 알바몬 + 알바천국 TOP20
-    general_jobs = [j for j in jobs if j.get("source") in ("알바몬", "알바천국")][:20]
+    # 표시 순서: 일급 공고 → 시급 공고 → 급여 확인 공고
+    # 같은 급여형태 안에서는 금액이 높은 순으로 정렬
+    def display_rank(j):
+        if int(j.get("explicit_day_pay") or 0) > 0:
+            pay_group = 0
+            amount = -int(j.get("explicit_day_pay") or 0)
+        elif int(j.get("hourly_pay") or 0) > 0:
+            pay_group = 1
+            amount = -int(j.get("hourly_pay") or 0)
+        else:
+            pay_group = 2
+            amount = 0
+        priority = -int(j.get("priority_hits") or 0)
+        date_key = j.get("work_start") or "9999-12-31"
+        return (pay_group, amount, priority, date_key, j.get("title",""))
 
-    # 당근알바 별도창 TOP20
-    daangn_jobs = [j for j in jobs if j.get("source") == "당근알바"][:20]
+    # 일반창: 알바몬 + 알바천국 TOP25
+    general_pool = [j for j in jobs if j.get("source") in ("알바몬", "알바천국")]
+    general_jobs = sorted(general_pool, key=display_rank)[:25]
+
+    # 당근알바 별도창 TOP25
+    daangn_pool = [j for j in jobs if j.get("source") == "당근알바"]
+    daangn_jobs = sorted(daangn_pool, key=display_rank)[:25]
 
     display_jobs = general_jobs + daangn_jobs
 
@@ -860,7 +878,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "알바몬+알바천국 기존 최근3일 단기우선 유지 및 평일/주말 분류; 당근은 별도탭에서 현재 공개 공고를 매 수집시 반영; 행사/벡스코/전시/백화점/팝업/설치/철거/세팅/행사보조/짐이동 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
+        "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
