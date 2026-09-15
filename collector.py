@@ -481,12 +481,10 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     # 상세/카드 텍스트의 '몇 분 전/몇 시간 전/오늘/어제 HH:MM'을 실제 시각으로 변환한다.
     # 알바몬/알바천국: 기존대로 등록일 확인 시 최근 3일 이내.
     if source == "당근알바":
+        # 당근알바는 등록시간/근무기간으로 제외하지 않는다.
+        # 현재 공개 검색 페이지에 노출되는 공고를 매 수집 때 반영한다.
         posted_at = daangn_posted_at(text)
-        if not posted_at:
-            return None, "daangn_post_time_unknown"
-        age = NOW - posted_at
-        if age.total_seconds() < 0 or age > timedelta(hours=12):
-            return None, "daangn_older_than_12h"
+        post_age_rank = 0 if posted_at else 1
     elif post and not (0 <= (TODAY - post).days <= 3):
         return None, "older_than_3_days"
 
@@ -585,6 +583,7 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "duration_days": days,
         "duration_label": duration_label,
         "day_group": day_group,
+        "post_age_rank": (post_age_rank if source == "당근알바" else 0),
         "priority_hits": len(task_words),
     }, "accepted"
 
@@ -840,7 +839,7 @@ def main():
         priority = -int(j.get("priority_hits") or 0)
         date_key = j.get("work_start") or "9999-12-31"
         if j.get("source") == "당근알바":
-            # 당근: 최근 12시간 등록 중 원하는 행사형 공고 → 일급 → 시급
+            # 당근: 현재 공개된 공고 중 원하는 행사형 → 일급 → 시급 순.
             return (0, priority, day_pay, hourly, date_key, j.get("title",""))
         d = int(j.get("duration_days") or 99)
         duration_rank = 0 if d == 1 else (1 if 2 <= d <= 7 else 2)
@@ -861,7 +860,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 최근 12시간 이내 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
+        "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
