@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 13:40",
+  "updated_at_kst": "2026-09-15 13:46",
   "collector_status": "ok",
   "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -27,31 +27,6 @@
       "day_group": "평일+주말",
       "post_age_rank": 0,
       "priority_hits": 0
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "2026-09-15",
-      "posted_verified": true,
-      "work_date": "09/19~09/20",
-      "work_start": "2026-09-19",
-      "work_end": "2026-09-20",
-      "region": "부산",
-      "company": "Adecco Korea Busan Branch",
-      "title": "★ [시급 11000원] 이케아 동부산점 이벤트 스텝 모집 (2일 단기)",
-      "task": "백화점",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "explicit_day_pay": 0,
-      "hourly_pay": 11000,
-      "pay_type": "시급",
-      "pay_display": "시급 11,000원",
-      "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119160435?logpath=14&productCount=1&sc=529",
-      "duration_days": 2,
-      "duration_label": "2일",
-      "day_group": "주말",
-      "post_age_rank": 0,
-      "priority_hits": 1
     },
     {
       "source": "알바몬",
@@ -262,6 +237,31 @@
       "work_end": "2026-09-20",
       "region": "부산",
       "company": "아데코코리아",
+      "title": "[부산] 서동시장 온누리상품권 환급행사 슈퍼바이저/운영요원 모집(수산)",
+      "task": "행사",
+      "work_time": "09:30~18:30",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "일급",
+      "pay_display": "급여 확인",
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119210521?logpath=14&productCount=1&sc=529",
+      "duration_days": 5,
+      "duration_label": "5일",
+      "day_group": "평일+주말",
+      "post_age_rank": 0,
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-15",
+      "posted_verified": true,
+      "work_date": "09/16~09/20",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-20",
+      "region": "부산",
+      "company": "아데코코리아",
       "title": "[부산]남포동신동아자갈치 온누리상품권환급행사 슈퍼바이저/요원모집(수산)",
       "task": "행사",
       "work_time": "08:30~17:30",
@@ -427,6 +427,31 @@
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산대학교 led 전광판 철수 시급 15,000원 오늘 · 18:30 ~ 20:30 부경이벤트 · 장전동 당일지급 후기 173",
+      "task": "아르바이트",
+      "work_time": "18:30 ~ 20:30",
+      "day_pay": 30000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 15000,
+      "pay_type": "시급",
+      "pay_display": "시급 15,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90-led-%EC%A0%84%EA%B4%91%ED%8C%90-%EC%B2%A0%EC%88%98-d1ypgsphu6u4",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
       "post_age_rank": 1,
       "priority_hits": 0
     },
@@ -611,31 +636,6 @@
       "source": "알바몬",
       "posted_at": "2026-09-15",
       "posted_verified": true,
-      "work_date": "09/19~09/20",
-      "work_start": "2026-09-19",
-      "work_end": "2026-09-20",
-      "region": "부산",
-      "company": "Adecco Korea Busan Branch",
-      "title": "★ [시급 11000원] 이케아 동부산점 이벤트 스텝 모집 (2일 단기)",
-      "task": "백화점",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "explicit_day_pay": 0,
-      "hourly_pay": 11000,
-      "pay_type": "시급",
-      "pay_display": "시급 11,000원",
-      "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119160435?logpath=14&productCount=1&sc=529",
-      "duration_days": 2,
-      "duration_label": "2일",
-      "day_group": "주말",
-      "post_age_rank": 0,
-      "priority_hits": 1
-    },
-    {
-      "source": "알바몬",
-      "posted_at": "2026-09-15",
-      "posted_verified": true,
       "work_date": "09/15~09/19",
       "work_start": "2026-09-15",
       "work_end": "2026-09-19",
@@ -841,6 +841,31 @@
       "work_end": "2026-09-20",
       "region": "부산",
       "company": "아데코코리아",
+      "title": "[부산] 서동시장 온누리상품권 환급행사 슈퍼바이저/운영요원 모집(수산)",
+      "task": "행사",
+      "work_time": "09:30~18:30",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "일급",
+      "pay_display": "급여 확인",
+      "apply": "온라인지원",
+      "url": "https://www.albamon.com/jobs/detail/119210521?logpath=14&productCount=1&sc=529",
+      "duration_days": 5,
+      "duration_label": "5일",
+      "day_group": "평일+주말",
+      "post_age_rank": 0,
+      "priority_hits": 1
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-15",
+      "posted_verified": true,
+      "work_date": "09/16~09/20",
+      "work_start": "2026-09-16",
+      "work_end": "2026-09-20",
+      "region": "부산",
+      "company": "아데코코리아",
       "title": "[부산]남포동신동아자갈치 온누리상품권환급행사 슈퍼바이저/요원모집(수산)",
       "task": "행사",
       "work_time": "08:30~17:30",
@@ -1011,6 +1036,31 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산대학교 led 전광판 철수 시급 15,000원 오늘 · 18:30 ~ 20:30 부경이벤트 · 장전동 당일지급 후기 173",
+      "task": "아르바이트",
+      "work_time": "18:30 ~ 20:30",
+      "day_pay": 30000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 15000,
+      "pay_type": "시급",
+      "pay_display": "시급 15,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0%EB%8C%80%ED%95%99%EA%B5%90-led-%EC%A0%84%EA%B4%91%ED%8C%90-%EC%B2%A0%EC%88%98-d1ypgsphu6u4",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "09/18~09/22",
       "work_start": "2026-09-18",
       "work_end": "2026-09-22",
@@ -1164,14 +1214,13 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 141,
-      "accepted": 26,
+      "candidates": 138,
+      "accepted": 27,
       "messages": [
-        "공개 페이지 정상 · 13건 통과",
+        "공개 페이지 정상 · 15건 통과",
         "공개 페이지 정상 · 2건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-        "공개 페이지 정상 · 10건 통과",
-        "공개 페이지 정상 · 1건 통과"
+        "공개 페이지 정상 · 5건 통과"
       ]
     },
     "알바천국": {
@@ -1179,7 +1228,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 56,
+      "candidates": 87,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -1190,8 +1239,8 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 24,
-      "accepted": 24,
+      "candidates": 25,
+      "accepted": 25,
       "messages": [
         "당근 공개 검색결과 정상 · 3건 통과",
         "당근 공개 검색결과 정상 · 2건 통과",
@@ -1205,14 +1254,14 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 13건 통과",
+      "reason": "공개 페이지 정상 · 15건 통과",
       "http": 200,
-      "candidates": 61,
-      "accepted": 13,
+      "candidates": 60,
+      "accepted": 15,
       "rejected": {
-        "excluded_keyword": 27,
+        "excluded_keyword": 26,
         "older_than_3_days": 16,
-        "over_7_days": 5
+        "over_7_days": 3
       }
     },
     {
@@ -1221,10 +1270,11 @@
       "state": "ok",
       "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
-      "candidates": 20,
+      "candidates": 18,
       "accepted": 2,
       "rejected": {
-        "excluded_keyword": 18
+        "over_7_days": 2,
+        "excluded_keyword": 14
       }
     },
     {
@@ -1243,12 +1293,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 10건 통과",
+      "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 10,
+      "accepted": 5,
       "rejected": {
-        "excluded_keyword": 3,
+        "excluded_keyword": 8,
         "over_7_days": 7
       }
     },
@@ -1256,12 +1306,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 1건 통과",
+      "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 1,
+      "accepted": 5,
       "rejected": {
-        "excluded_keyword": 19
+        "excluded_keyword": 15
       }
     },
     {
@@ -1270,10 +1320,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 25
+        "excluded_keyword": 26
       }
     },
     {
@@ -1282,10 +1332,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 3,
+      "candidates": 30,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 3
+        "excluded_keyword": 30
       }
     },
     {
@@ -1294,11 +1344,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 28,
+      "candidates": 31,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 27,
-        "region_or_closed": 1
+        "excluded_keyword": 31
       }
     },
     {
@@ -1325,10 +1374,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 2건 통과",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 2,
+      "candidates": 3,
+      "accepted": 3,
       "rejected": {}
     },
     {
