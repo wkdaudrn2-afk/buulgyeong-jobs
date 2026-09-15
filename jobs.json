@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 12:18",
+  "updated_at_kst": "2026-09-15 12:25",
   "collector_status": "ok",
   "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -321,7 +321,7 @@
       "pay_type": "일급",
       "pay_display": "급여 확인",
       "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/119206311?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119206110?logpath=14&productCount=1&sc=529",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
@@ -462,6 +462,31 @@
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
+      "region": "양산",
+      "company": "",
+      "title": "배스킨라빈스 알바 구인 시급 10,320원 금~일 · 19:00 ~ 23:00 배스킨라빈스 양산덕계점 · 덕계동 후기 1",
+      "task": "아르바이트",
+      "work_time": "19:00 ~ 23:00",
+      "day_pay": 41280,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B0%B0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4-%EC%95%8C%EB%B0%94-%EA%B5%AC%EC%9D%B8-fis1b4x4254t",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
       "region": "거제",
       "company": "",
       "title": "샐러드가게 함께 일 하실 분 구합니다 (연령상관없음) 시급 10,320원 화,목,일 · 19:00 ~ 22:00 협의 제스트효 · 거제동 후기 2",
@@ -499,56 +524,6 @@
       "pay_display": "시급 10,320원",
       "apply": "원본 공고 확인",
       "url": "https://jobs.daangn.com/job-posts/%EC%BB%A4%ED%94%BC%EB%B3%B6%EB%8A%94%EC%8B%9C%EA%B3%A8%EC%BB%A4%ED%94%BC-%EA%B1%B0%EC%A0%9C%EB%B2%95%EC%9B%90%EC%A0%90-%ED%8C%8C%ED%8A%B8%ED%83%80%EC%9E%84%EA%B5%AC%ED%95%B4%EC%9A%94-ce3g6rdg9mmw",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "부산",
-      "company": "",
-      "title": "부산 다대포 와흘 카페 정직원,주말 오픈 스텝 모집 월급 282만원 월~금 · 10:00 ~ 21:00 협의 와흘 · 다대동 후기 1",
-      "task": "아르바이트",
-      "work_time": "10:00 ~ 21:00",
-      "day_pay": 0,
-      "explicit_day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "급여 확인",
-      "pay_display": "급여 확인",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-%EB%8B%A4%EB%8C%80%ED%8F%AC-%EC%99%80%ED%9D%98-%EC%B9%B4%ED%8E%98-%EC%A0%95%EC%A7%81%EC%9B%90-%EC%A3%BC%EB%A7%90-%EC%98%A4%ED%94%88-%EC%8A%A4%ED%85%9D-%EB%AA%A8%EC%A7%91-88yj9ncw5yq9",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "거제",
-      "company": "",
-      "title": "인테리어 현장 간단 목작업 부탁드려요 건당 30,000원 오늘 · 시간 협의 거제동 당일지급 후기 1",
-      "task": "아르바이트",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "explicit_day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "건당",
-      "pay_display": "급여 확인",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4-%ED%98%84%EC%9E%A5-%EA%B0%84%EB%8B%A8-%EB%AA%A9%EC%9E%91%EC%97%85-%EB%B6%80%ED%83%81%EB%93%9C%EB%A0%A4%EC%9A%94-g8bwm8yw9m5v",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
@@ -875,7 +850,7 @@
       "pay_type": "일급",
       "pay_display": "급여 확인",
       "apply": "간편문자지원",
-      "url": "https://www.albamon.com/jobs/detail/119206311?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119206110?logpath=14&productCount=1&sc=529",
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
@@ -1014,6 +989,31 @@
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
+      "region": "양산",
+      "company": "",
+      "title": "배스킨라빈스 알바 구인 시급 10,320원 금~일 · 19:00 ~ 23:00 배스킨라빈스 양산덕계점 · 덕계동 후기 1",
+      "task": "아르바이트",
+      "work_time": "19:00 ~ 23:00",
+      "day_pay": 41280,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B0%B0%EC%8A%A4%ED%82%A8%EB%9D%BC%EB%B9%88%EC%8A%A4-%EC%95%8C%EB%B0%94-%EA%B5%AC%EC%9D%B8-fis1b4x4254t",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
       "region": "거제",
       "company": "",
       "title": "샐러드가게 함께 일 하실 분 구합니다 (연령상관없음) 시급 10,320원 화,목,일 · 19:00 ~ 22:00 협의 제스트효 · 거제동 후기 2",
@@ -1056,56 +1056,6 @@
       "day_group": "미확인",
       "post_age_rank": 1,
       "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "부산",
-      "company": "",
-      "title": "부산 다대포 와흘 카페 정직원,주말 오픈 스텝 모집 월급 282만원 월~금 · 10:00 ~ 21:00 협의 와흘 · 다대동 후기 1",
-      "task": "아르바이트",
-      "work_time": "10:00 ~ 21:00",
-      "day_pay": 0,
-      "explicit_day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "급여 확인",
-      "pay_display": "급여 확인",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-%EB%8B%A4%EB%8C%80%ED%8F%AC-%EC%99%80%ED%9D%98-%EC%B9%B4%ED%8E%98-%EC%A0%95%EC%A7%81%EC%9B%90-%EC%A3%BC%EB%A7%90-%EC%98%A4%ED%94%88-%EC%8A%A4%ED%85%9D-%EB%AA%A8%EC%A7%91-88yj9ncw5yq9",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 0
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "거제",
-      "company": "",
-      "title": "인테리어 현장 간단 목작업 부탁드려요 건당 30,000원 오늘 · 시간 협의 거제동 당일지급 후기 1",
-      "task": "아르바이트",
-      "work_time": "시간 확인",
-      "day_pay": 0,
-      "explicit_day_pay": 0,
-      "hourly_pay": 0,
-      "pay_type": "건당",
-      "pay_display": "급여 확인",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4-%ED%98%84%EC%9E%A5-%EA%B0%84%EB%8B%A8-%EB%AA%A9%EC%9E%91%EC%97%85-%EB%B6%80%ED%83%81%EB%93%9C%EB%A0%A4%EC%9A%94-g8bwm8yw9m5v",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 0
     }
   ],
   "source_summary": {
@@ -1117,22 +1067,21 @@
       "candidates": 141,
       "accepted": 26,
       "messages": [
-        "공개 페이지 정상 · 11건 통과",
-        "공개 페이지 정상 · 12건 통과",
-        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 2건 통과",
-        "공개 페이지 정상 · 1건 통과"
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 4건 통과",
+        "공개 페이지 정상 · 18건 통과"
       ]
     },
     "알바천국": {
       "pages": 3,
-      "ok_pages": 3,
-      "blocked_pages": 0,
+      "ok_pages": 0,
+      "blocked_pages": 3,
       "error_pages": 0,
-      "candidates": 75,
+      "candidates": 0,
       "accepted": 0,
       "messages": [
-        "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
+        "robots 확인 실패: URLError"
       ]
     },
     "당근알바": {
@@ -1140,13 +1089,13 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 21,
-      "accepted": 21,
+      "candidates": 16,
+      "accepted": 16,
       "messages": [
+        "당근 공개 검색결과 정상 · 2건 통과",
+        "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
         "당근 공개 검색결과 정상 · 3건 통과",
-        "당근 공개 검색결과 정상 · 1건 통과",
-        "당근 공개 검색결과 정상 · 4건 통과",
-        "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인"
+        "당근 공개 검색결과 정상 · 1건 통과"
       ]
     }
   },
@@ -1155,32 +1104,19 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 11건 통과",
+      "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
-      "candidates": 63,
-      "accepted": 11,
+      "candidates": 61,
+      "accepted": 2,
       "rejected": {
-        "excluded_keyword": 28,
+        "excluded_keyword": 39,
         "older_than_3_days": 16,
-        "over_7_days": 8
+        "over_7_days": 4
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
-      "state": "ok",
-      "reason": "공개 페이지 정상 · 12건 통과",
-      "http": 200,
-      "candidates": 18,
-      "accepted": 12,
-      "rejected": {
-        "over_7_days": 2,
-        "excluded_keyword": 4
-      }
-    },
-    {
-      "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
@@ -1192,113 +1128,119 @@
     },
     {
       "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공개 페이지 정상 · 4건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 2,
+      "accepted": 4,
       "rejected": {
-        "excluded_keyword": 16,
-        "over_7_days": 2
+        "excluded_keyword": 8,
+        "over_7_days": 8
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 18건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 18,
+      "rejected": {
+        "excluded_keyword": 2
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 1건 통과",
+      "reason": "공개 페이지 정상 · 2건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 1,
+      "accepted": 2,
       "rejected": {
-        "excluded_keyword": 19
+        "excluded_keyword": 18
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 25,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 25
-      }
+      "rejected": {}
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 24,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 24
-      }
+      "rejected": {}
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
-      "state": "ok",
-      "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 26,
+      "state": "blocked",
+      "reason": "robots 확인 실패: URLError",
+      "http": null,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 26
-      }
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 0,
+      "accepted": 0,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 4건 통과",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 4,
-      "accepted": 4,
+      "candidates": 3,
+      "accepted": 3,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 1건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
@@ -1315,10 +1257,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     },
     {
@@ -1355,10 +1297,10 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 3건 통과",
+      "reason": "당근 공개 검색결과 정상 · 2건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 3,
+      "candidates": 2,
+      "accepted": 2,
       "rejected": {}
     }
   ]
