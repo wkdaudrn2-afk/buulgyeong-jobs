@@ -401,6 +401,11 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     else:
         days = 99
 
+    # 근무기간은 하루~최대 7일만 표시
+    # 기간을 확인할 수 없는 공고도 제외하여 장기공고 유입 방지
+    if days < 1 or days > 7:
+        return None, "over_7_days_or_unknown_duration"
+
     hourly = parse_hourly(text)
     pay = parse_money(text)
     ptype = pay_type_from_text(text)
@@ -734,7 +739,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 최근 3일 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 최근 3일 등록 · 근무기간 1~7일 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
