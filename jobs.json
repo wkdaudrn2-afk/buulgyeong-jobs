@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 09:18",
+  "updated_at_kst": "2026-09-15 09:25",
   "collector_status": "ok",
   "criteria": "부산·울산·경남 · 최근 3일 등록 · 근무기간 1~7일 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
   "general_jobs": [
@@ -430,8 +430,9 @@
       "candidates": 141,
       "accepted": 17,
       "messages": [
-        "공개 페이지 정상 · 13건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 6건 통과",
+        "공개 페이지 정상 · 9건 통과",
         "공개 페이지 정상 · 2건 통과"
       ]
     },
@@ -440,7 +441,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 76,
+      "candidates": 68,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -451,7 +452,7 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 8,
+      "candidates": 7,
       "accepted": 0,
       "messages": [
         "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
@@ -464,32 +465,19 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 13건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 63,
-      "accepted": 13,
+      "candidates": 61,
+      "accepted": 0,
       "rejected": {
-        "excluded_keyword": 28,
+        "excluded_keyword": 41,
         "older_than_3_days": 16,
-        "over_7_days_or_unknown_duration": 6
+        "over_7_days_or_unknown_duration": 4
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
-      "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
-      "http": 200,
-      "candidates": 18,
-      "accepted": 0,
-      "rejected": {
-        "over_7_days_or_unknown_duration": 2,
-        "excluded_keyword": 16
-      }
-    },
-    {
-      "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
@@ -501,15 +489,28 @@
     },
     {
       "source": "알바몬",
-      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 2건 통과",
+      "reason": "공개 페이지 정상 · 6건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 2,
+      "accepted": 6,
       "rejected": {
-        "excluded_keyword": 9,
-        "over_7_days_or_unknown_duration": 9
+        "excluded_keyword": 7,
+        "over_7_days_or_unknown_duration": 7
+      }
+    },
+    {
+      "source": "알바몬",
+      "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 9건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 9,
+      "rejected": {
+        "excluded_keyword": 5,
+        "over_7_days_or_unknown_duration": 6
       }
     },
     {
@@ -543,10 +544,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 16,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 25
+        "excluded_keyword": 16
       }
     },
     {
@@ -555,10 +556,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 25
+        "excluded_keyword": 26
       }
     },
     {
@@ -613,10 +614,10 @@
       "state": "ok",
       "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 3,
+      "candidates": 2,
       "accepted": 0,
       "rejected": {
-        "over_7_days_or_unknown_duration": 3
+        "over_7_days_or_unknown_duration": 2
       }
     }
   ]
