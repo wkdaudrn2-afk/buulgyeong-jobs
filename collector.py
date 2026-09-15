@@ -68,6 +68,17 @@ SOURCE_PAGES = [
     ("당근알바", "https://jobs.daangn.com/s?regionId=5923"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=671"),
     ("당근알바", "https://jobs.daangn.com/s?regionId=648"),
+
+    # 해운대/센텀/벡스코 인접권 확대
+    # 공개 당근 검색에서 확인된 지역 ID
+    ("당근알바", "https://jobs.daangn.com/s?regionId=6028"),  # 해운대구 좌동
+    ("당근알바", "https://jobs.daangn.com/s?regionId=6027"),  # 해운대구 재송동
+
+    # 해운대권 단기/보조성 업무 결과 노출 확대
+    ("당근알바", "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=LIGHT_WORK"),
+    ("당근알바", "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER"),
 ]
 
 
