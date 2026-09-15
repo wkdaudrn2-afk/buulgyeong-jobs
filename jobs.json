@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 09:37",
+  "updated_at_kst": "2026-09-15 09:49",
   "collector_status": "ok",
   "criteria": "부산·울산·경남 · 최근 3일 · 1~7일 단기 우선 · 기간 미확인 후순위 포함 · 8일 이상 확인 공고 제외 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 2~7일 → 기간미확인, 각 그룹 일급 → 시급 높은 순",
   "general_jobs": [
@@ -21,7 +21,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119188347?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187139?logpath=14&productCount=1&sc=529",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "priority_hits": 1
@@ -462,7 +462,7 @@
       "pay_type": "급여 확인",
       "pay_display": "급여 확인",
       "apply": "온라인지원",
-      "url": "https://www.albamon.com/jobs/detail/119188347?logpath=14&productCount=1&sc=529",
+      "url": "https://www.albamon.com/jobs/detail/119187139?logpath=14&productCount=1&sc=529",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "priority_hits": 1
@@ -891,9 +891,10 @@
       "candidates": 141,
       "accepted": 25,
       "messages": [
-        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 6건 통과",
-        "공개 페이지 정상 · 15건 통과",
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 1건 통과",
+        "공개 페이지 정상 · 14건 통과",
         "공개 페이지 정상 · 4건 통과"
       ]
     },
@@ -902,7 +903,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 44,
+      "candidates": 66,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -913,12 +914,12 @@
       "ok_pages": 5,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 7,
-      "accepted": 7,
+      "candidates": 6,
+      "accepted": 6,
       "messages": [
-        "당근 공개 검색결과 정상 · 2건 통과",
+        "당근 공개 검색결과 정상 · 1건 통과",
         "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인",
-        "당근 공개 검색결과 정상 · 1건 통과"
+        "당근 공개 검색결과 정상 · 2건 통과"
       ]
     }
   },
@@ -927,12 +928,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 6건 통과",
       "http": 200,
       "candidates": 61,
-      "accepted": 0,
+      "accepted": 6,
       "rejected": {
-        "excluded_keyword": 41,
+        "excluded_keyword": 35,
         "older_than_3_days": 16,
         "over_7_days": 4
       }
@@ -953,12 +954,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 6건 통과",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 6,
+      "accepted": 1,
       "rejected": {
-        "excluded_keyword": 7,
+        "excluded_keyword": 12,
         "over_7_days": 7
       }
     },
@@ -966,12 +967,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 15건 통과",
+      "reason": "공개 페이지 정상 · 14건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 15,
+      "accepted": 14,
       "rejected": {
-        "excluded_keyword": 5
+        "excluded_keyword": 6
       }
     },
     {
@@ -993,10 +994,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 13,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 13
+        "excluded_keyword": 26
       }
     },
     {
@@ -1005,10 +1006,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 16,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 16
+        "excluded_keyword": 26
       }
     },
     {
@@ -1017,20 +1018,20 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 15,
+      "candidates": 14,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 15
+        "excluded_keyword": 14
       }
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "당근 공개 검색결과 정상 · 2건 통과",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 2,
+      "candidates": 1,
+      "accepted": 1,
       "rejected": {}
     },
     {
