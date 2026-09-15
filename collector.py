@@ -43,6 +43,17 @@ REGION_WORDS = (
     "부산", "울산", "경남", "경상남도", "창원", "김해", "양산", "거제", "통영",
     "진주", "밀양", "사천", "고성", "함안", "창녕", "거창", "합천", "남해", "하동"
 )
+DAANGN_WANTED_WORDS = (
+    "행사","행사보조","행사스태프","스태프","staff","벡스코","bexco","전시","박람회",
+    "팝업","팝업스토어","백화점","신세계","롯데백화점","아울렛","설치","철거","세팅","셋팅",
+    "입점","짐 옮기기","짐옮기기","물자이동","매장이동","기기운반","물품정리","물품 정리",
+    "진열","현장보조","현장 보조","안전요원","안전 요원","부스","무대","전광판","led","집기","하차"
+)
+DAANGN_UNWANTED_WORDS = (
+    "카페","베이커리","커피","주방","설거지","홀서빙","서빙","음식점","식당","배달","배송",
+    "영업","세일즈","정규직","정직원","월급","피부관리","뷰티","헤어","네일","학원","과외","돌봄","요양","간병"
+)
+
 PRIORITY_WORDS = (
     "벡스코", "bexco", "행사", "행사보조", "행사스태프", "전시", "박람회",
     "팝업", "팝업스토어", "백화점", "신세계", "롯데백화점", "관광공사",
@@ -529,6 +540,17 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
                 return None, "daangn_outside_target_area"
         else:
             return None, "daangn_outside_target_area"
+
+        # 원하는 행사·설치·철거·현장보조형 공고만 통과
+        low_text = f"{title} {company} {text}".lower()
+        if not any(w.lower() in low_text for w in DAANGN_WANTED_WORDS):
+            return None, "daangn_not_preferred"
+
+        # 카페·음식점·영업·장기직은 제외. 핵심 현장형 키워드가 명확하면 유지.
+        strong = ("행사","벡스코","bexco","설치","철거","세팅","셋팅","부스","무대",
+                  "전시","박람회","팝업","짐 옮기기","짐옮기기")
+        if any(w.lower() in low_text for w in DAANGN_UNWANTED_WORDS) and not any(w in low_text for w in strong):
+            return None, "daangn_unwanted_job"
 
     # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
     # 제외업종/브랜드
