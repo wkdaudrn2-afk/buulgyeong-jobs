@@ -115,6 +115,14 @@ SOURCE_PAGES = [
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=7"),
     ("알바몬", "https://www.albamon.com/jobs/short-term?areas=H000&page=8"),
 
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=4"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=5"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=6"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=7"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=8"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=9"),
+    ("알바천국", "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=10"),
+
 ]
 
 
