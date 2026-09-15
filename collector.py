@@ -367,6 +367,14 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
     if not rg or is_closed(text):
         return None, "region_or_closed"
 
+    # 사용자 지정 제외 키워드: 제목/업체명/공고본문 어디에 있어도 제외
+    exclude_words = ("쿠팡", "coupang", "물류", "메리츠", "메리츠화재", "메리 보험", "메리보험",
+                     "마켓컬리", "컬리", "kurly", "편의점", "CU", "GS25", "세븐일레븐",
+                     "이마트24", "미니스톱")
+    haystack = f"{title} {company} {text}".lower()
+    if any(w.lower() in haystack for w in exclude_words):
+        return None, "excluded_keyword"
+
     post = posted_date_from_text(text)
     if not post and date_posted:
         try:
@@ -726,7 +734,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 등록일 확인 공고 최근 3일 이내 · 등록일 미확인 공고는 후보 유지 · 일반(알바몬+알바천국) TOP20 · 당근알바 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 최근 3일 · 제외: 쿠팡/물류/메리츠보험/마켓컬리/편의점 · 일반 TOP20 · 당근 TOP20 · 순위: 하루알바 → 일급 높은 순 → 시급 높은 순",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
