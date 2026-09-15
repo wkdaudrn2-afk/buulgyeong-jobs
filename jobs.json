@@ -1,7 +1,7 @@
 {
-  "updated_at_kst": "2026-09-15 12:06",
+  "updated_at_kst": "2026-09-15 12:18",
   "collector_status": "ok",
-  "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 + 1~7일 단기 우선 · 당근알바 최근 12시간 이내 등록 확인 공고만(근무기간 필터 없음) · 벡스코/행사/전시/백화점/팝업/설치/철거/세팅/행사보조 우선 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류/포장 허용 · 전체/평일/주말 분류",
+  "criteria": "알바몬/알바천국 기존 최근3일 단기우선 유지; 당근은 현재 공개 페이지 실시간 수집(등록시간/근무기간 필터 없음); 평일/주말 구분; 행사형 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
     {
       "source": "알바몬",
@@ -25,6 +25,7 @@
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
+      "post_age_rank": 0,
       "priority_hits": 2
     },
     {
@@ -49,6 +50,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 4
     },
     {
@@ -73,6 +75,7 @@
       "duration_days": 2,
       "duration_label": "2일",
       "day_group": "평일",
+      "post_age_rank": 0,
       "priority_hits": 2
     },
     {
@@ -97,6 +100,7 @@
       "duration_days": 2,
       "duration_label": "2일",
       "day_group": "주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -121,6 +125,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -145,6 +150,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -169,6 +175,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -193,6 +200,7 @@
       "duration_days": 7,
       "duration_label": "7일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -217,6 +225,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -241,6 +250,7 @@
       "duration_days": 4,
       "duration_label": "4일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 0
     },
     {
@@ -265,6 +275,7 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 4
     },
     {
@@ -289,6 +300,7 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 3
     },
     {
@@ -313,6 +325,7 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 2
     },
     {
@@ -337,10 +350,212 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 2
     }
   ],
-  "daangn_jobs": [],
+  "daangn_jobs": [
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "롯데월드 부산 게임매장 STAFF 시급 13,000원 월~일 · 10:00 ~ 20:00 협의 게임파크 · 기장읍",
+      "task": "매장",
+      "work_time": "10:00 ~ 20:00",
+      "day_pay": 130000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 13000,
+      "pay_type": "시급",
+      "pay_display": "시급 13,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C-%EB%B6%80%EC%82%B0-%EA%B2%8C%EC%9E%84%EB%A7%A4%EC%9E%A5-staff-th1m3z81te45",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 1
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "석암생소금구이광안리점 주방보조(직원식사),홀직원 월급 320만원 월,화,목,금,토,일 · 14:00 ~ 23:30 협의 석암생소금구이 부산 광안리점 · 광안동",
+      "task": "보조",
+      "work_time": "14:00 ~ 23:30",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%84%9D%EC%95%94%EC%83%9D%EC%86%8C%EA%B8%88%EA%B5%AC%EC%9D%B4%EA%B4%91%EC%95%88%EB%A6%AC%EC%A0%90-%EC%A3%BC%EB%B0%A9%EB%B3%B4%EC%A1%B0-%EC%A7%81%EC%9B%90%EC%8B%9D%EC%82%AC-%ED%99%80%EC%A7%81%EC%9B%90-asgwfj7sr4rp",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 1
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산 청년 홍보대사 알바 시급 12,000원 월~금 · 12:00 ~ 19:00 협의 퍼펙트유니온 · 부전동",
+      "task": "아르바이트",
+      "work_time": "12:00 ~ 19:00",
+      "day_pay": 84000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 12000,
+      "pay_type": "시급",
+      "pay_display": "시급 12,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-%EC%B2%AD%EB%85%84-%ED%99%8D%EB%B3%B4%EB%8C%80%EC%82%AC-%EC%95%8C%EB%B0%94-eq7gdjhw6ndo",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부타시니세 부산대점 시급 11,500원 월~일 · 18:00 ~ 23:00 부타시니세 부산대점 · 장전동",
+      "task": "아르바이트",
+      "work_time": "18:00 ~ 23:00",
+      "day_pay": 57500,
+      "explicit_day_pay": 0,
+      "hourly_pay": 11500,
+      "pay_type": "시급",
+      "pay_display": "시급 11,500원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%ED%83%80%EC%8B%9C%EB%8B%88%EC%84%B8-%EB%B6%80%EC%82%B0%EB%8C%80%EC%A0%90-bfxnnef7tqhu",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "거제",
+      "company": "",
+      "title": "샐러드가게 함께 일 하실 분 구합니다 (연령상관없음) 시급 10,320원 화,목,일 · 19:00 ~ 22:00 협의 제스트효 · 거제동 후기 2",
+      "task": "아르바이트",
+      "work_time": "19:00 ~ 22:00",
+      "day_pay": 30960,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%83%90%EB%9F%AC%EB%93%9C%EA%B0%80%EA%B2%8C-%ED%95%A8%EA%BB%98-%EC%9D%BC-%ED%95%98%EC%8B%A4-%EB%B6%84-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%97%B0%EB%A0%B9%EC%83%81%EA%B4%80%EC%97%86%EC%9D%8C-i98pefrbekyv",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "거제",
+      "company": "",
+      "title": "커피볶는시골커피 거제법원점 파트타임구해요 시급 10,320원 목,금 · 07:30 ~ 13:00 협의 커피볶는시골커피 · 거제동 후기 1",
+      "task": "아르바이트",
+      "work_time": "07:30 ~ 13:00",
+      "day_pay": 56760,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%BB%A4%ED%94%BC%EB%B3%B6%EB%8A%94%EC%8B%9C%EA%B3%A8%EC%BB%A4%ED%94%BC-%EA%B1%B0%EC%A0%9C%EB%B2%95%EC%9B%90%EC%A0%90-%ED%8C%8C%ED%8A%B8%ED%83%80%EC%9E%84%EA%B5%AC%ED%95%B4%EC%9A%94-ce3g6rdg9mmw",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산 다대포 와흘 카페 정직원,주말 오픈 스텝 모집 월급 282만원 월~금 · 10:00 ~ 21:00 협의 와흘 · 다대동 후기 1",
+      "task": "아르바이트",
+      "work_time": "10:00 ~ 21:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-%EB%8B%A4%EB%8C%80%ED%8F%AC-%EC%99%80%ED%9D%98-%EC%B9%B4%ED%8E%98-%EC%A0%95%EC%A7%81%EC%9B%90-%EC%A3%BC%EB%A7%90-%EC%98%A4%ED%94%88-%EC%8A%A4%ED%85%9D-%EB%AA%A8%EC%A7%91-88yj9ncw5yq9",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "거제",
+      "company": "",
+      "title": "인테리어 현장 간단 목작업 부탁드려요 건당 30,000원 오늘 · 시간 협의 거제동 당일지급 후기 1",
+      "task": "아르바이트",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "건당",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4-%ED%98%84%EC%9E%A5-%EA%B0%84%EB%8B%A8-%EB%AA%A9%EC%9E%91%EC%97%85-%EB%B6%80%ED%83%81%EB%93%9C%EB%A0%A4%EC%9A%94-g8bwm8yw9m5v",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    }
+  ],
   "jobs": [
     {
       "source": "알바몬",
@@ -364,6 +579,7 @@
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
+      "post_age_rank": 0,
       "priority_hits": 2
     },
     {
@@ -388,6 +604,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 4
     },
     {
@@ -412,6 +629,7 @@
       "duration_days": 2,
       "duration_label": "2일",
       "day_group": "평일",
+      "post_age_rank": 0,
       "priority_hits": 2
     },
     {
@@ -436,6 +654,7 @@
       "duration_days": 2,
       "duration_label": "2일",
       "day_group": "주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -460,6 +679,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -484,6 +704,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -508,6 +729,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -532,6 +754,7 @@
       "duration_days": 7,
       "duration_label": "7일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -556,6 +779,7 @@
       "duration_days": 5,
       "duration_label": "5일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 1
     },
     {
@@ -580,6 +804,7 @@
       "duration_days": 4,
       "duration_label": "4일",
       "day_group": "평일+주말",
+      "post_age_rank": 0,
       "priority_hits": 0
     },
     {
@@ -604,6 +829,7 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 4
     },
     {
@@ -628,6 +854,7 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 3
     },
     {
@@ -652,6 +879,7 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 2
     },
     {
@@ -676,7 +904,208 @@
       "duration_days": 99,
       "duration_label": "기간 미확인",
       "day_group": "미확인",
+      "post_age_rank": 0,
       "priority_hits": 2
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "롯데월드 부산 게임매장 STAFF 시급 13,000원 월~일 · 10:00 ~ 20:00 협의 게임파크 · 기장읍",
+      "task": "매장",
+      "work_time": "10:00 ~ 20:00",
+      "day_pay": 130000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 13000,
+      "pay_type": "시급",
+      "pay_display": "시급 13,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%A1%AF%EB%8D%B0%EC%9B%94%EB%93%9C-%EB%B6%80%EC%82%B0-%EA%B2%8C%EC%9E%84%EB%A7%A4%EC%9E%A5-staff-th1m3z81te45",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 1
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "석암생소금구이광안리점 주방보조(직원식사),홀직원 월급 320만원 월,화,목,금,토,일 · 14:00 ~ 23:30 협의 석암생소금구이 부산 광안리점 · 광안동",
+      "task": "보조",
+      "work_time": "14:00 ~ 23:30",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%84%9D%EC%95%94%EC%83%9D%EC%86%8C%EA%B8%88%EA%B5%AC%EC%9D%B4%EA%B4%91%EC%95%88%EB%A6%AC%EC%A0%90-%EC%A3%BC%EB%B0%A9%EB%B3%B4%EC%A1%B0-%EC%A7%81%EC%9B%90%EC%8B%9D%EC%82%AC-%ED%99%80%EC%A7%81%EC%9B%90-asgwfj7sr4rp",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 1
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산 청년 홍보대사 알바 시급 12,000원 월~금 · 12:00 ~ 19:00 협의 퍼펙트유니온 · 부전동",
+      "task": "아르바이트",
+      "work_time": "12:00 ~ 19:00",
+      "day_pay": 84000,
+      "explicit_day_pay": 0,
+      "hourly_pay": 12000,
+      "pay_type": "시급",
+      "pay_display": "시급 12,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-%EC%B2%AD%EB%85%84-%ED%99%8D%EB%B3%B4%EB%8C%80%EC%82%AC-%EC%95%8C%EB%B0%94-eq7gdjhw6ndo",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부타시니세 부산대점 시급 11,500원 월~일 · 18:00 ~ 23:00 부타시니세 부산대점 · 장전동",
+      "task": "아르바이트",
+      "work_time": "18:00 ~ 23:00",
+      "day_pay": 57500,
+      "explicit_day_pay": 0,
+      "hourly_pay": 11500,
+      "pay_type": "시급",
+      "pay_display": "시급 11,500원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%ED%83%80%EC%8B%9C%EB%8B%88%EC%84%B8-%EB%B6%80%EC%82%B0%EB%8C%80%EC%A0%90-bfxnnef7tqhu",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "거제",
+      "company": "",
+      "title": "샐러드가게 함께 일 하실 분 구합니다 (연령상관없음) 시급 10,320원 화,목,일 · 19:00 ~ 22:00 협의 제스트효 · 거제동 후기 2",
+      "task": "아르바이트",
+      "work_time": "19:00 ~ 22:00",
+      "day_pay": 30960,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%83%90%EB%9F%AC%EB%93%9C%EA%B0%80%EA%B2%8C-%ED%95%A8%EA%BB%98-%EC%9D%BC-%ED%95%98%EC%8B%A4-%EB%B6%84-%EA%B5%AC%ED%95%A9%EB%8B%88%EB%8B%A4-%EC%97%B0%EB%A0%B9%EC%83%81%EA%B4%80%EC%97%86%EC%9D%8C-i98pefrbekyv",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "거제",
+      "company": "",
+      "title": "커피볶는시골커피 거제법원점 파트타임구해요 시급 10,320원 목,금 · 07:30 ~ 13:00 협의 커피볶는시골커피 · 거제동 후기 1",
+      "task": "아르바이트",
+      "work_time": "07:30 ~ 13:00",
+      "day_pay": 56760,
+      "explicit_day_pay": 0,
+      "hourly_pay": 10320,
+      "pay_type": "시급",
+      "pay_display": "시급 10,320원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%BB%A4%ED%94%BC%EB%B3%B6%EB%8A%94%EC%8B%9C%EA%B3%A8%EC%BB%A4%ED%94%BC-%EA%B1%B0%EC%A0%9C%EB%B2%95%EC%9B%90%EC%A0%90-%ED%8C%8C%ED%8A%B8%ED%83%80%EC%9E%84%EA%B5%AC%ED%95%B4%EC%9A%94-ce3g6rdg9mmw",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "부산 다대포 와흘 카페 정직원,주말 오픈 스텝 모집 월급 282만원 월~금 · 10:00 ~ 21:00 협의 와흘 · 다대동 후기 1",
+      "task": "아르바이트",
+      "work_time": "10:00 ~ 21:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EB%B6%80%EC%82%B0-%EB%8B%A4%EB%8C%80%ED%8F%AC-%EC%99%80%ED%9D%98-%EC%B9%B4%ED%8E%98-%EC%A0%95%EC%A7%81%EC%9B%90-%EC%A3%BC%EB%A7%90-%EC%98%A4%ED%94%88-%EC%8A%A4%ED%85%9D-%EB%AA%A8%EC%A7%91-88yj9ncw5yq9",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "거제",
+      "company": "",
+      "title": "인테리어 현장 간단 목작업 부탁드려요 건당 30,000원 오늘 · 시간 협의 거제동 당일지급 후기 1",
+      "task": "아르바이트",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "건당",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4-%ED%98%84%EC%9E%A5-%EA%B0%84%EB%8B%A8-%EB%AA%A9%EC%9E%91%EC%97%85-%EB%B6%80%ED%83%81%EB%93%9C%EB%A0%A4%EC%9A%94-g8bwm8yw9m5v",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 0
     }
   ],
   "source_summary": {
@@ -700,7 +1129,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 58,
+      "candidates": 75,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -711,10 +1140,12 @@
       "ok_pages": 11,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 18,
-      "accepted": 0,
+      "candidates": 21,
+      "accepted": 21,
       "messages": [
-        "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+        "당근 공개 검색결과 정상 · 3건 통과",
+        "당근 공개 검색결과 정상 · 1건 통과",
+        "당근 공개 검색결과 정상 · 4건 통과",
         "당근 공개 검색 페이지 응답 정상 · 실제 공고 카드 미확인"
       ]
     }
@@ -790,10 +1221,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 17,
+      "candidates": 25,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 17
+        "excluded_keyword": 25
       }
     },
     {
@@ -802,10 +1233,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 16,
+      "candidates": 24,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 16
+        "excluded_keyword": 24
       }
     },
     {
@@ -814,96 +1245,81 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 25,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 25
+        "excluded_keyword": 26
       }
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
       "candidates": 3,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 3
-      }
+      "accepted": 3,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
       "candidates": 1,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 1
-      }
+      "accepted": 1,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 4건 통과",
       "http": 200,
-      "candidates": 3,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 3
-      }
+      "candidates": 4,
+      "accepted": 4,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 1,
-        "excluded_keyword": 1
-      }
+      "candidates": 1,
+      "accepted": 1,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 2
-      }
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
       "candidates": 1,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 1
-      }
+      "accepted": 1,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 2
-      }
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": {}
     },
     {
       "source": "당근알바",
@@ -919,37 +1335,31 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
       "candidates": 1,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 1
-      }
+      "accepted": 1,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 1건 통과",
       "http": 200,
       "candidates": 1,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 1
-      }
+      "accepted": 1,
+      "rejected": {}
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6027&jobTask=OTHER",
       "state": "ok",
-      "reason": "당근 공고 후보는 찾았지만 현재 조건 통과 0건",
+      "reason": "당근 공개 검색결과 정상 · 3건 통과",
       "http": 200,
-      "candidates": 2,
-      "accepted": 0,
-      "rejected": {
-        "daangn_post_time_unknown": 2
-      }
+      "candidates": 3,
+      "accepted": 3,
+      "rejected": {}
     }
   ]
 }
