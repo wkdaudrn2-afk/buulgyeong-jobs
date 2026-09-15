@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-15 12:43",
+  "updated_at_kst": "2026-09-15 12:46",
   "collector_status": "ok",
   "criteria": "알바몬+알바천국 기존 최근3일 단기우선 유지 및 평일/주말 분류; 당근은 별도탭에서 현재 공개 공고를 매 수집시 반영; 행사/벡스코/전시/백화점/팝업/설치/철거/세팅/행사보조/짐이동 우선; 쿠팡/컬리/메리츠보험/편의점/택배 제외",
   "general_jobs": [
@@ -1167,9 +1167,9 @@
       "candidates": 141,
       "accepted": 26,
       "messages": [
-        "공개 페이지 정상 · 4건 통과",
+        "공개 페이지 정상 · 7건 통과",
         "공개 페이지 정상 · 1건 통과",
-        "공개 페이지 정상 · 3건 통과",
+        "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 17건 통과"
       ]
     },
@@ -1178,7 +1178,7 @@
       "ok_pages": 3,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 75,
+      "candidates": 73,
       "accepted": 0,
       "messages": [
         "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건"
@@ -1204,12 +1204,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 4건 통과",
+      "reason": "공개 페이지 정상 · 7건 통과",
       "http": 200,
       "candidates": 61,
-      "accepted": 4,
+      "accepted": 7,
       "rejected": {
-        "excluded_keyword": 37,
+        "excluded_keyword": 34,
         "older_than_3_days": 16,
         "over_7_days": 4
       }
@@ -1230,12 +1230,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 3건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
       "candidates": 20,
-      "accepted": 3,
+      "accepted": 0,
       "rejected": {
-        "excluded_keyword": 10,
+        "excluded_keyword": 13,
         "over_7_days": 7
       }
     },
@@ -1282,10 +1282,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 27,
+      "candidates": 26,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 27
+        "excluded_keyword": 26
       }
     },
     {
@@ -1294,10 +1294,10 @@
       "state": "ok",
       "reason": "상세공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 26,
+      "candidates": 25,
       "accepted": 0,
       "rejected": {
-        "excluded_keyword": 26
+        "excluded_keyword": 25
       }
     },
     {
