@@ -418,7 +418,8 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
         "쿠팡", "coupang", "쿠팡로지스틱스", "쿠팡풀필먼트",
         "마켓컬리", "컬리", "kurly",
         "메리츠", "메리츠화재", "메리 보험", "메리보험",
-        "편의점", "gs25", "세븐일레븐", "7-eleven", "이마트24", "미니스톱"
+        "편의점", "gs25", "세븐일레븐", "7-eleven", "이마트24", "미니스톱",
+        "택배", "택배상하차", "택배 분류", "택배분류", "택배 배송", "택배배송"
     )
     # CU는 영문 일반문자열 오탐이 많아 단어 경계로만 판정
     if any(w.lower() in haystack for w in brand_excludes) or re.search(r"(?<![a-z])cu(?![a-z])", haystack):
@@ -432,10 +433,13 @@ def job_from_text(source: str, title: str, company: str, text: str, href: str, d
             pass
     post_verified = bool(post)
 
-    # 등록일이 확인되는 공고는 최근 3일 이내만 허용.
-    # 등록일을 공개 페이지에서 확인할 수 없는 공고는 수집 후보로 유지.
-    if post and not (0 <= (TODAY - post).days <= 3):
-        return None, "older_than_3_days"
+    # 등록일 필터
+    # 당근알바: 등록일 확인 시 최근 2일 이내
+    # 알바몬/알바천국: 등록일 확인 시 최근 3일 이내
+    # 등록일 미확인 공고는 누락 방지를 위해 후보로 유지.
+    max_post_age = 2 if source == "당근알바" else 3
+    if post and not (0 <= (TODAY - post).days <= max_post_age):
+        return None, "older_than_limit"
 
     # 날짜를 찾으면 사용하고, 없으면 미확인으로 유지
     wa, wb = daangn_work_range(title, text) if source == "당근알바" else work_range(text)
@@ -790,7 +794,7 @@ def main():
     payload = {
         "updated_at_kst": NOW.strftime("%Y-%m-%d %H:%M"),
         "collector_status": "ok" if display_jobs else "수집 실행 완료 · 공개 공고 0건",
-        "criteria": "부산·울산·경남 · 등록일 확인 시 최근 3일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점 · 일반 물류·행사·설치·철거 허용 · 당근은 상세 공고 링크 우선 수집 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
+        "criteria": "부산·울산·경남 · 알바몬/알바천국 최근 3일 · 당근 최근 2일 · 하루알바 최우선 · 2~7일 다음 · 기간 미확인 후순위 · 8일 이상 확인 공고 제외 · 제외: 쿠팡계열/마켓컬리·컬리/메리츠보험/편의점/택배 · 일반 물류·행사·설치·철거 허용 · 당근은 상세 공고 링크 우선 수집 · 일반 TOP20 · 당근 TOP20 · 각 그룹 일급 → 시급 높은 순",
         "general_jobs": general_jobs,
         "daangn_jobs": daangn_jobs,
         "jobs": display_jobs,
