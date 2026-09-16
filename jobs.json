@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-17 05:31",
+  "updated_at_kst": "2026-09-17 05:45",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -273,7 +273,7 @@
       "pay_type": "일급",
       "pay_display": "일급 121,785원",
       "apply": "원본 공고 확인",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922310&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922308&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "미확인",
@@ -508,7 +508,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-17",
+      "posted_at": "2026-09-16",
       "posted_verified": true,
       "work_date": "09/17",
       "work_start": "2026-09-17",
@@ -757,33 +757,6 @@
       "priority_hits": 1,
       "work_hours": 6.0,
       "expected_daily_earnings": 70000
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "부산",
-      "company": "",
-      "title": "세븐브릿지 스태프",
-      "task": "벡스코, 행사, 스태프",
-      "work_time": "02:30 ~ 13:00",
-      "day_pay": 945000,
-      "explicit_day_pay": 0,
-      "hourly_pay": 90000,
-      "pay_type": "시급",
-      "pay_display": "시급 90,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%84%B8%EB%B8%90%EB%B8%8C%EB%A6%BF%EC%A7%80-%EC%8A%A4%ED%83%9C%ED%94%84-vzp34si8fsi2",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 3,
-      "work_hours": 10.5,
-      "expected_daily_earnings": 945000
     },
     {
       "source": "당근알바",
@@ -1489,7 +1462,7 @@
       "pay_type": "일급",
       "pay_display": "일급 121,785원",
       "apply": "원본 공고 확인",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922310&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922308&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "미확인",
@@ -1724,7 +1697,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-17",
+      "posted_at": "2026-09-16",
       "posted_verified": true,
       "work_date": "09/17",
       "work_start": "2026-09-17",
@@ -1971,33 +1944,6 @@
       "priority_hits": 1,
       "work_hours": 6.0,
       "expected_daily_earnings": 70000
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "근무일 확인",
-      "work_start": "",
-      "work_end": "",
-      "region": "부산",
-      "company": "",
-      "title": "세븐브릿지 스태프",
-      "task": "벡스코, 행사, 스태프",
-      "work_time": "02:30 ~ 13:00",
-      "day_pay": 945000,
-      "explicit_day_pay": 0,
-      "hourly_pay": 90000,
-      "pay_type": "시급",
-      "pay_display": "시급 90,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EC%84%B8%EB%B8%90%EB%B8%8C%EB%A6%BF%EC%A7%80-%EC%8A%A4%ED%83%9C%ED%94%84-vzp34si8fsi2",
-      "duration_days": 99,
-      "duration_label": "기간 미확인",
-      "day_group": "미확인",
-      "post_age_rank": 1,
-      "priority_hits": 3,
-      "work_hours": 10.5,
-      "expected_daily_earnings": 945000
     },
     {
       "source": "당근알바",
@@ -2485,14 +2431,14 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 80,
-      "accepted": 19,
+      "accepted": 18,
       "messages": [
         "상세 공고 20건 확인 · 8건 통과",
         "상세 공고 9건 확인 · 2건 통과",
         "상세 공고 6건 확인 · 현재 조건 통과 0건",
         "상세 공고 19건 확인 · 2건 통과",
-        "상세 공고 8건 확인 · 4건 통과",
-        "상세 공고 18건 확인 · 3건 통과",
+        "상세 공고 7건 확인 · 3건 통과",
+        "상세 공고 19건 확인 · 3건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인"
       ]
     }
@@ -2938,8 +2884,8 @@
       "candidates": 50,
       "accepted": 25,
       "rejected": {
-        "older_than_3_days": 3,
-        "work_date_already_passed": 22
+        "work_date_already_passed": 22,
+        "older_than_3_days": 3
       }
     },
     {
@@ -3133,7 +3079,8 @@
       "candidates": 20,
       "accepted": 8,
       "rejected": {
-        "daangn_not_preferred": 12
+        "daangn_not_preferred": 11,
+        "excluded_keyword": 1
       },
       "detail_checked": 20
     },
@@ -3184,27 +3131,27 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "상세 공고 8건 확인 · 4건 통과",
+      "reason": "상세 공고 7건 확인 · 3건 통과",
       "http": 200,
-      "candidates": 8,
-      "accepted": 4,
+      "candidates": 7,
+      "accepted": 3,
       "rejected": {
         "daangn_not_preferred": 4
       },
-      "detail_checked": 8
+      "detail_checked": 7
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "상세 공고 18건 확인 · 3건 통과",
+      "reason": "상세 공고 19건 확인 · 3건 통과",
       "http": 200,
-      "candidates": 18,
+      "candidates": 19,
       "accepted": 3,
       "rejected": {
-        "daangn_not_preferred": 15
+        "daangn_not_preferred": 16
       },
-      "detail_checked": 18
+      "detail_checked": 19
     },
     {
       "source": "당근알바",
