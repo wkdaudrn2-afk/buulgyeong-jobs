@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-17 05:05",
+  "updated_at_kst": "2026-09-17 05:16",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -2489,22 +2489,21 @@
   "source_summary": {
     "알바몬": {
       "pages": 30,
-      "ok_pages": 27,
+      "ok_pages": 30,
       "blocked_pages": 0,
-      "error_pages": 3,
-      "candidates": 564,
-      "accepted": 189,
+      "error_pages": 0,
+      "candidates": 624,
+      "accepted": 248,
       "messages": [
         "공개 페이지 정상 · 57건 통과",
         "공개 페이지 정상 · 18건 통과",
-        "ReadTimeout",
-        "공개 페이지 정상 · 16건 통과",
-        "공개 페이지 정상 · 13건 통과",
         "공개 페이지 정상 · 20건 통과",
+        "공개 페이지 정상 · 16건 통과",
+        "공개 페이지 정상 · 19건 통과",
+        "공개 페이지 정상 · 13건 통과",
         "공개 페이지 정상 · 14건 통과",
         "공개 페이지 정상 · 4건 통과",
         "공개 페이지 정상 · 2건 통과",
-        "공개 페이지 정상 · 19건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
         "공개 페이지 정상 · 1건 통과"
       ]
@@ -2543,11 +2542,11 @@
       "accepted": 20,
       "messages": [
         "상세 공고 20건 확인 · 8건 통과",
-        "상세 공고 9건 확인 · 3건 통과",
+        "상세 공고 10건 확인 · 3건 통과",
         "상세 공고 6건 확인 · 현재 조건 통과 0건",
-        "상세 공고 18건 확인 · 2건 통과",
+        "상세 공고 19건 확인 · 2건 통과",
         "상세 공고 8건 확인 · 4건 통과",
-        "상세 공고 19건 확인 · 3건 통과",
+        "상세 공고 17건 확인 · 3건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인"
       ]
     }
@@ -2576,11 +2575,11 @@
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=3",
-      "state": "error",
-      "reason": "ReadTimeout",
-      "http": null,
-      "candidates": 0,
-      "accepted": 0,
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 20건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 20,
       "rejected": {}
     },
     {
@@ -2596,12 +2595,14 @@
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=5",
-      "state": "error",
-      "reason": "ReadTimeout",
-      "http": null,
-      "candidates": 0,
-      "accepted": 0,
-      "rejected": {}
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 19건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 19,
+      "rejected": {
+        "work_date_already_passed": 1
+      }
     },
     {
       "source": "알바몬",
@@ -2618,11 +2619,11 @@
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=7",
-      "state": "error",
-      "reason": "ReadTimeout",
-      "http": null,
-      "candidates": 0,
-      "accepted": 0,
+      "state": "ok",
+      "reason": "공개 페이지 정상 · 20건 통과",
+      "http": 200,
+      "candidates": 20,
+      "accepted": 20,
       "rejected": {}
     },
     {
@@ -2939,8 +2940,8 @@
       "candidates": 50,
       "accepted": 30,
       "rejected": {
-        "work_date_already_passed": 17,
-        "older_than_3_days": 3
+        "older_than_3_days": 3,
+        "work_date_already_passed": 17
       }
     },
     {
@@ -2991,8 +2992,8 @@
       "candidates": 50,
       "accepted": 25,
       "rejected": {
-        "work_date_already_passed": 22,
-        "older_than_3_days": 3
+        "older_than_3_days": 3,
+        "work_date_already_passed": 22
       }
     },
     {
@@ -3108,8 +3109,8 @@
       "candidates": 50,
       "accepted": 34,
       "rejected": {
-        "older_than_3_days": 3,
-        "work_date_already_passed": 13
+        "work_date_already_passed": 13,
+        "older_than_3_days": 3
       }
     },
     {
@@ -3186,8 +3187,7 @@
       "candidates": 20,
       "accepted": 8,
       "rejected": {
-        "daangn_not_preferred": 11,
-        "excluded_keyword": 1
+        "daangn_not_preferred": 12
       },
       "detail_checked": 20
     },
@@ -3195,15 +3195,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "상세 공고 9건 확인 · 3건 통과",
+      "reason": "상세 공고 10건 확인 · 3건 통과",
       "http": 200,
-      "candidates": 9,
+      "candidates": 10,
       "accepted": 3,
       "rejected": {
-        "daangn_not_preferred": 4,
+        "daangn_not_preferred": 5,
         "daangn_unwanted_job": 2
       },
-      "detail_checked": 9
+      "detail_checked": 10
     },
     {
       "source": "당근알바",
@@ -3214,8 +3214,8 @@
       "candidates": 6,
       "accepted": 0,
       "rejected": {
-        "daangn_not_preferred": 5,
-        "excluded_keyword": 1
+        "excluded_keyword": 2,
+        "daangn_not_preferred": 4
       },
       "detail_checked": 6
     },
@@ -3223,16 +3223,16 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "상세 공고 18건 확인 · 2건 통과",
+      "reason": "상세 공고 19건 확인 · 2건 통과",
       "http": 200,
-      "candidates": 18,
+      "candidates": 19,
       "accepted": 2,
       "rejected": {
-        "daangn_unwanted_job": 2,
+        "daangn_unwanted_job": 3,
         "daangn_not_preferred": 13,
         "daangn_outside_target_area": 1
       },
-      "detail_checked": 18
+      "detail_checked": 19
     },
     {
       "source": "당근알바",
@@ -3251,14 +3251,14 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "상세 공고 19건 확인 · 3건 통과",
+      "reason": "상세 공고 17건 확인 · 3건 통과",
       "http": 200,
-      "candidates": 19,
+      "candidates": 17,
       "accepted": 3,
       "rejected": {
-        "daangn_not_preferred": 16
+        "daangn_not_preferred": 14
       },
-      "detail_checked": 19
+      "detail_checked": 17
     },
     {
       "source": "당근알바",
