@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-18 05:18",
+  "updated_at_kst": "2026-09-18 05:32",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -57,6 +57,33 @@
       "priority_hits": 6,
       "accuracy_source": "focused_detail",
       "work_hours": 7.0,
+      "expected_daily_earnings": 250000
+    },
+    {
+      "source": "알바몬",
+      "posted_at": "2026-09-18",
+      "posted_verified": true,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "재연물류 ( 오늘 근무 가능 ) 당일지급",
+      "title": "[일급 25만] 당일지급/주말/단기/장기/수수료X/야간/택배/상하차/분류",
+      "task": "물류",
+      "work_time": "19:30~08:30 (익일)",
+      "day_pay": 250000,
+      "explicit_day_pay": 250000,
+      "hourly_pay": 0,
+      "pay_type": "일급",
+      "pay_display": "일급 250,000원",
+      "apply": "간편문자지원",
+      "url": "https://www.albamon.com/jobs/detail/119263963?logpath=14&productCount=3&sc=529",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 0,
+      "priority_hits": 1,
+      "work_hours": 13.0,
       "expected_daily_earnings": 250000
     },
     {
@@ -169,6 +196,34 @@
       "priority_hits": 2,
       "work_hours": 0.0,
       "expected_daily_earnings": 175000
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-09-18",
+      "posted_verified": true,
+      "work_date": "09/18",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-18",
+      "region": "부산",
+      "company": "할리스커피 보라매병원점",
+      "title": "[할리스] 직영점 정규직 바리스타 모집 (보라매병원점)",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "09:00~18:00",
+      "day_pay": 160000,
+      "explicit_day_pay": 160000,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 160,000원",
+      "apply": "이메일지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146835603&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 9.0,
+      "expected_daily_earnings": 160000
     },
     {
       "source": "알바천국",
@@ -328,7 +383,7 @@
       "pay_type": "일급",
       "pay_display": "일급 126,420원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922344&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922335&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -645,92 +700,9 @@
       "accuracy_source": "focused_detail",
       "work_hours": 0.0,
       "expected_daily_earnings": 111615
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-18",
-      "posted_verified": true,
-      "work_date": "09/18",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-18",
-      "region": "부산",
-      "company": "버거킹 충주호암FS점(S)",
-      "title": "충주 버거킹 호암점 평일, 주말 아르바이트 모집합니다.",
-      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "08:00~14:30",
-      "day_pay": 111615,
-      "explicit_day_pay": 111615,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 111,615원",
-      "apply": "문자지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146923282&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 6.5,
-      "expected_daily_earnings": 111615
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-18",
-      "posted_verified": true,
-      "work_date": "09/18",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-18",
-      "region": "부산",
-      "company": "맥도날드 포천 DT점",
-      "title": "[경기 포천시] 포천DT점07시~15시,15시~23시(시간협의 가능)",
-      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "20:00~24:00",
-      "day_pay": 110870,
-      "explicit_day_pay": 110870,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 110,870원",
-      "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146840925&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 4.0,
-      "expected_daily_earnings": 110870
     }
   ],
   "daangn_jobs": [
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/19",
-      "work_start": "2026-09-19",
-      "work_end": "2026-09-19",
-      "region": "부산",
-      "company": "",
-      "title": "동부산 롯데아울렛 육포판매 알바",
-      "task": "벡스코, 박람회, 매장, 아울렛",
-      "work_time": "11:30 ~ 19:30",
-      "day_pay": 100000,
-      "explicit_day_pay": 100000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 100,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%8F%99%EB%B6%80%EC%82%B0-%EB%A1%AF%EB%8D%B0%EC%95%84%EC%9A%B8%EB%A0%9B-%EC%9C%A1%ED%8F%AC%ED%8C%90%EB%A7%A4-%EC%95%8C%EB%B0%94-zf3g34zkh393",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "주말",
-      "post_age_rank": 1,
-      "priority_hits": 4,
-      "work_hours": 8.0,
-      "expected_daily_earnings": 100000
-    },
     {
       "source": "당근알바",
       "posted_at": "등록일 미확인",
@@ -945,6 +917,33 @@
       "post_age_rank": 1,
       "priority_hits": 1,
       "work_hours": 0.0,
+      "expected_daily_earnings": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "03/05",
+      "work_start": "2026-03-05",
+      "work_end": "2026-03-05",
+      "region": "부산",
+      "company": "",
+      "title": "3.5톤냉동차2017년식",
+      "task": "짐 옮기기, 물류",
+      "work_time": "06:00 ~ 15:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/3-5%ED%86%A4%EB%83%89%EB%8F%99%EC%B0%A82017%EB%85%84%EC%8B%9D-ibu5xuj5rmjw",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 1,
+      "priority_hits": 2,
+      "work_hours": 9.0,
       "expected_daily_earnings": 0
     },
     {
@@ -1114,6 +1113,33 @@
       "expected_daily_earnings": 250000
     },
     {
+      "source": "알바몬",
+      "posted_at": "2026-09-18",
+      "posted_verified": true,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "재연물류 ( 오늘 근무 가능 ) 당일지급",
+      "title": "[일급 25만] 당일지급/주말/단기/장기/수수료X/야간/택배/상하차/분류",
+      "task": "물류",
+      "work_time": "19:30~08:30 (익일)",
+      "day_pay": 250000,
+      "explicit_day_pay": 250000,
+      "hourly_pay": 0,
+      "pay_type": "일급",
+      "pay_display": "일급 250,000원",
+      "apply": "간편문자지원",
+      "url": "https://www.albamon.com/jobs/detail/119263963?logpath=14&productCount=3&sc=529",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 0,
+      "priority_hits": 1,
+      "work_hours": 13.0,
+      "expected_daily_earnings": 250000
+    },
+    {
       "source": "알바천국",
       "posted_at": "2026-09-18",
       "posted_verified": true,
@@ -1223,6 +1249,34 @@
       "priority_hits": 2,
       "work_hours": 0.0,
       "expected_daily_earnings": 175000
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-09-18",
+      "posted_verified": true,
+      "work_date": "09/18",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-18",
+      "region": "부산",
+      "company": "할리스커피 보라매병원점",
+      "title": "[할리스] 직영점 정규직 바리스타 모집 (보라매병원점)",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "09:00~18:00",
+      "day_pay": 160000,
+      "explicit_day_pay": 160000,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 160,000원",
+      "apply": "이메일지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146835603&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 9.0,
+      "expected_daily_earnings": 160000
     },
     {
       "source": "알바천국",
@@ -1382,7 +1436,7 @@
       "pay_type": "일급",
       "pay_display": "일급 126,420원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922344&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922335&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -1701,89 +1755,6 @@
       "expected_daily_earnings": 111615
     },
     {
-      "source": "알바천국",
-      "posted_at": "2026-09-18",
-      "posted_verified": true,
-      "work_date": "09/18",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-18",
-      "region": "부산",
-      "company": "버거킹 충주호암FS점(S)",
-      "title": "충주 버거킹 호암점 평일, 주말 아르바이트 모집합니다.",
-      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "08:00~14:30",
-      "day_pay": 111615,
-      "explicit_day_pay": 111615,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 111,615원",
-      "apply": "문자지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146923282&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 6.5,
-      "expected_daily_earnings": 111615
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-18",
-      "posted_verified": true,
-      "work_date": "09/18",
-      "work_start": "2026-09-18",
-      "work_end": "2026-09-18",
-      "region": "부산",
-      "company": "맥도날드 포천 DT점",
-      "title": "[경기 포천시] 포천DT점07시~15시,15시~23시(시간협의 가능)",
-      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "20:00~24:00",
-      "day_pay": 110870,
-      "explicit_day_pay": 110870,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 110,870원",
-      "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146840925&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 4.0,
-      "expected_daily_earnings": 110870
-    },
-    {
-      "source": "당근알바",
-      "posted_at": "등록일 미확인",
-      "posted_verified": false,
-      "work_date": "09/19",
-      "work_start": "2026-09-19",
-      "work_end": "2026-09-19",
-      "region": "부산",
-      "company": "",
-      "title": "동부산 롯데아울렛 육포판매 알바",
-      "task": "벡스코, 박람회, 매장, 아울렛",
-      "work_time": "11:30 ~ 19:30",
-      "day_pay": 100000,
-      "explicit_day_pay": 100000,
-      "hourly_pay": 0,
-      "pay_type": "일급",
-      "pay_display": "일급 100,000원",
-      "apply": "원본 공고 확인",
-      "url": "https://jobs.daangn.com/job-posts/%EB%8F%99%EB%B6%80%EC%82%B0-%EB%A1%AF%EB%8D%B0%EC%95%84%EC%9A%B8%EB%A0%9B-%EC%9C%A1%ED%8F%AC%ED%8C%90%EB%A7%A4-%EC%95%8C%EB%B0%94-zf3g34zkh393",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "주말",
-      "post_age_rank": 1,
-      "priority_hits": 4,
-      "work_hours": 8.0,
-      "expected_daily_earnings": 100000
-    },
-    {
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
@@ -2003,6 +1974,33 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "03/05",
+      "work_start": "2026-03-05",
+      "work_end": "2026-03-05",
+      "region": "부산",
+      "company": "",
+      "title": "3.5톤냉동차2017년식",
+      "task": "짐 옮기기, 물류",
+      "work_time": "06:00 ~ 15:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/3-5%ED%86%A4%EB%83%89%EB%8F%99%EC%B0%A82017%EB%85%84%EC%8B%9D-ibu5xuj5rmjw",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 1,
+      "priority_hits": 2,
+      "work_hours": 9.0,
+      "expected_daily_earnings": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "09/21",
       "work_start": "2026-09-21",
       "work_end": "2026-09-21",
@@ -2115,14 +2113,16 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 614,
-      "accepted": 187,
+      "accepted": 189,
       "messages": [
         "공개 페이지 정상 · 42건 통과",
         "공개 페이지 정상 · 15건 통과",
         "공개 페이지 정상 · 20건 통과",
         "공개 페이지 정상 · 13건 통과",
         "공개 페이지 정상 · 9건 통과",
+        "공개 페이지 정상 · 17건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+        "공개 페이지 정상 · 11건 통과",
         "공개 페이지 정상 · 4건 통과",
         "공개 페이지 정상 · 1건 통과",
         "공개 페이지 정상 · 2건 통과"
@@ -2134,7 +2134,7 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 627,
+      "accepted": 628,
       "messages": [
         "알바천국 상세공고 28건 통과",
         "알바천국 상세공고 23건 통과",
@@ -2165,11 +2165,10 @@
         "상세 공고 9건 확인 · 현재 조건 통과 0건",
         "상세 공고 5건 확인 · 1건 통과",
         "상세 공고 18건 확인 · 현재 조건 통과 0건",
-        "상세 공고 7건 확인 · 2건 통과",
+        "상세 공고 8건 확인 · 3건 통과",
         "상세 공고 18건 확인 · 2건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
-        "상세 공고 2건 확인 · 1건 통과",
-        "상세 공고 1건 확인 · 1건 통과"
+        "상세 공고 2건 확인 · 1건 통과"
       ]
     }
   },
@@ -2255,14 +2254,13 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=8",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 15건 통과",
+      "reason": "공개 페이지 정상 · 17건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 15,
+      "accepted": 17,
       "rejected": {
         "work_date_already_passed": 2,
-        "posted_date_unverified": 1,
-        "older_than_3_days": 2
+        "posted_date_unverified": 1
       }
     },
     {
@@ -2274,8 +2272,8 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "older_than_3_days": 5,
-        "posted_date_unverified": 15
+        "older_than_3_days": 7,
+        "posted_date_unverified": 13
       }
     },
     {
@@ -2287,8 +2285,8 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "older_than_3_days": 7,
-        "posted_date_unverified": 13
+        "posted_date_unverified": 14,
+        "older_than_3_days": 6
       }
     },
     {
@@ -2300,20 +2298,20 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "older_than_3_days": 2,
-        "posted_date_unverified": 18
+        "older_than_3_days": 3,
+        "posted_date_unverified": 17
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=12",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 15건 통과",
+      "reason": "공개 페이지 정상 · 13건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 15,
+      "accepted": 13,
       "rejected": {
-        "posted_date_unverified": 3,
+        "posted_date_unverified": 5,
         "older_than_3_days": 2
       }
     },
@@ -2321,13 +2319,13 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=13",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 9건 통과",
+      "reason": "공개 페이지 정상 · 11건 통과",
       "http": 200,
-      "candidates": 16,
-      "accepted": 9,
+      "candidates": 17,
+      "accepted": 11,
       "rejected": {
         "work_date_already_passed": 2,
-        "posted_date_unverified": 5
+        "posted_date_unverified": 4
       }
     },
     {
@@ -2336,11 +2334,11 @@
       "state": "ok",
       "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
-      "candidates": 20,
+      "candidates": 19,
       "accepted": 0,
       "rejected": {
         "posted_date_unverified": 11,
-        "older_than_3_days": 9
+        "older_than_3_days": 8
       }
     },
     {
@@ -2352,9 +2350,9 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "posted_date_unverified": 11,
         "older_than_3_days": 7,
-        "work_date_already_passed": 2
+        "posted_date_unverified": 12,
+        "work_date_already_passed": 1
       }
     },
     {
@@ -2366,8 +2364,9 @@
       "candidates": 20,
       "accepted": 4,
       "rejected": {
-        "older_than_3_days": 3,
-        "posted_date_unverified": 13
+        "older_than_3_days": 4,
+        "work_date_already_passed": 1,
+        "posted_date_unverified": 11
       }
     },
     {
@@ -2405,9 +2404,9 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "posted_date_unverified": 11,
+        "posted_date_unverified": 12,
         "older_than_3_days": 6,
-        "work_date_already_passed": 3
+        "work_date_already_passed": 2
       }
     },
     {
@@ -2419,8 +2418,9 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "older_than_3_days": 9,
-        "posted_date_unverified": 11
+        "posted_date_unverified": 10,
+        "work_date_already_passed": 1,
+        "older_than_3_days": 9
       }
     },
     {
@@ -2440,12 +2440,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=22",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 1건 통과",
+      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
       "http": 200,
       "candidates": 20,
-      "accepted": 1,
+      "accepted": 0,
       "rejected": {
-        "posted_date_unverified": 18,
+        "posted_date_unverified": 19,
         "older_than_3_days": 1
       }
     },
@@ -2453,12 +2453,12 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=23",
       "state": "ok",
-      "reason": "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
+      "reason": "공개 페이지 정상 · 1건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 0,
+      "accepted": 1,
       "rejected": {
-        "posted_date_unverified": 19,
+        "posted_date_unverified": 18,
         "older_than_3_days": 1
       }
     },
@@ -2484,8 +2484,8 @@
       "candidates": 20,
       "accepted": 2,
       "rejected": {
-        "posted_date_unverified": 13,
-        "older_than_3_days": 4,
+        "posted_date_unverified": 15,
+        "older_than_3_days": 2,
         "work_date_already_passed": 1
       }
     },
@@ -2498,7 +2498,8 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "posted_date_unverified": 20
+        "older_than_3_days": 2,
+        "posted_date_unverified": 18
       }
     },
     {
@@ -2536,9 +2537,8 @@
       "candidates": 20,
       "accepted": 2,
       "rejected": {
-        "posted_date_unverified": 16,
-        "older_than_3_days": 1,
-        "work_date_already_passed": 1
+        "posted_date_unverified": 17,
+        "older_than_3_days": 1
       }
     },
     {
@@ -2550,8 +2550,8 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
-        "work_date_already_passed": 1,
-        "posted_date_unverified": 17,
+        "posted_date_unverified": 16,
+        "work_date_already_passed": 2,
         "older_than_3_days": 2
       }
     },
@@ -2611,12 +2611,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=5",
       "state": "ok",
-      "reason": "알바천국 상세공고 27건 통과",
+      "reason": "알바천국 상세공고 28건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 27,
+      "accepted": 28,
       "rejected": {
-        "work_date_already_passed": 22,
+        "work_date_already_passed": 21,
         "older_than_3_days": 1
       }
     },
@@ -2770,8 +2770,9 @@
       "candidates": 50,
       "accepted": 32,
       "rejected": {
-        "work_date_already_passed": 17,
-        "older_than_3_days": 1
+        "work_date_already_passed": 16,
+        "older_than_3_days": 1,
+        "ReadTimeout": 1
       }
     },
     {
@@ -2874,15 +2875,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "상세 공고 7건 확인 · 2건 통과",
+      "reason": "상세 공고 8건 확인 · 3건 통과",
       "http": 200,
-      "candidates": 7,
-      "accepted": 2,
+      "candidates": 8,
+      "accepted": 3,
       "rejected": {
         "daangn_not_preferred": 4,
         "daangn_unwanted_job": 1
       },
-      "detail_checked": 7
+      "detail_checked": 8
     },
     {
       "source": "당근알바",
@@ -2958,12 +2959,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "상세 공고 1건 확인 · 1건 통과",
+      "reason": "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
       "http": 200,
-      "candidates": 1,
-      "accepted": 1,
+      "candidates": 0,
+      "accepted": 0,
       "rejected": {},
-      "detail_checked": 1
+      "detail_checked": 0
     },
     {
       "source": "당근알바",
