@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-20 05:17",
+  "updated_at_kst": "2026-09-20 05:30",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -208,7 +208,7 @@
       "region": "부산",
       "company": "맥도날드 화성병점DT",
       "title": "[화성시 병점] 맥도날드 화성병점DT점에서 함께 일할 크루 모집합니다.",
-      "task": "팝업, 백화점, 보조, 스태프, 매장, 이벤트, 공연, 아울렛",
+      "task": "팝업, 백화점, 보조, 스태프, 포장, 매장, 이벤트, 공연, 아울렛",
       "work_time": "05:00~02:00",
       "day_pay": 180620,
       "explicit_day_pay": 180620,
@@ -221,7 +221,7 @@
       "duration_label": "하루(1일)",
       "day_group": "주말",
       "post_age_rank": 0,
-      "priority_hits": 8,
+      "priority_hits": 9,
       "accuracy_source": "focused_detail",
       "work_hours": 21.0,
       "expected_daily_earnings": 180620
@@ -1504,7 +1504,7 @@
       "region": "부산",
       "company": "맥도날드 화성병점DT",
       "title": "[화성시 병점] 맥도날드 화성병점DT점에서 함께 일할 크루 모집합니다.",
-      "task": "팝업, 백화점, 보조, 스태프, 매장, 이벤트, 공연, 아울렛",
+      "task": "팝업, 백화점, 보조, 스태프, 포장, 매장, 이벤트, 공연, 아울렛",
       "work_time": "05:00~02:00",
       "day_pay": 180620,
       "explicit_day_pay": 180620,
@@ -1517,7 +1517,7 @@
       "duration_label": "하루(1일)",
       "day_group": "주말",
       "post_age_rank": 0,
-      "priority_hits": 8,
+      "priority_hits": 9,
       "accuracy_source": "focused_detail",
       "work_hours": 21.0,
       "expected_daily_earnings": 180620
@@ -2617,21 +2617,21 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 612,
+      "accepted": 617,
       "messages": [
         "알바천국 상세공고 32건 통과",
         "알바천국 상세공고 21건 통과",
         "알바천국 상세공고 27건 통과",
-        "알바천국 상세공고 30건 통과",
+        "알바천국 상세공고 31건 통과",
         "알바천국 상세공고 34건 통과",
         "알바천국 상세공고 28건 통과",
-        "알바천국 상세공고 22건 통과",
+        "알바천국 상세공고 23건 통과",
         "알바천국 상세공고 29건 통과",
         "알바천국 상세공고 38건 통과",
+        "알바천국 상세공고 35건 통과",
         "알바천국 상세공고 48건 통과",
-        "알바천국 상세공고 42건 통과",
-        "알바천국 상세공고 39건 통과",
-        "알바천국 상세공고 23건 통과"
+        "알바천국 상세공고 43건 통과",
+        "알바천국 상세공고 39건 통과"
       ]
     },
     "당근알바": {
@@ -3082,12 +3082,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=4",
       "state": "ok",
-      "reason": "알바천국 상세공고 30건 통과",
+      "reason": "알바천국 상세공고 31건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 30,
+      "accepted": 31,
       "rejected": {
-        "work_date_already_passed": 20
+        "work_date_already_passed": 19
       }
     },
     {
@@ -3112,7 +3112,8 @@
       "candidates": 50,
       "accepted": 28,
       "rejected": {
-        "work_date_already_passed": 21,
+        "ChunkedEncodingError": 1,
+        "work_date_already_passed": 20,
         "older_than_3_days": 1
       }
     },
@@ -3158,12 +3159,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=10",
       "state": "ok",
-      "reason": "알바천국 상세공고 22건 통과",
+      "reason": "알바천국 상세공고 23건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 22,
+      "accepted": 23,
       "rejected": {
-        "work_date_already_passed": 28
+        "work_date_already_passed": 27
       }
     },
     {
@@ -3195,12 +3196,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=13",
       "state": "ok",
-      "reason": "알바천국 상세공고 34건 통과",
+      "reason": "알바천국 상세공고 35건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 34,
+      "accepted": 35,
       "rejected": {
-        "work_date_already_passed": 15,
+        "work_date_already_passed": 14,
         "older_than_3_days": 1
       }
     },
@@ -3221,12 +3222,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=15",
       "state": "ok",
-      "reason": "알바천국 상세공고 42건 통과",
+      "reason": "알바천국 상세공고 43건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 42,
+      "accepted": 43,
       "rejected": {
-        "work_date_already_passed": 7,
+        "work_date_already_passed": 6,
         "older_than_3_days": 1
       }
     },
@@ -3234,12 +3235,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=16",
       "state": "ok",
-      "reason": "알바천국 상세공고 34건 통과",
+      "reason": "알바천국 상세공고 35건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 34,
+      "accepted": 35,
       "rejected": {
-        "work_date_already_passed": 13,
+        "work_date_already_passed": 12,
         "older_than_3_days": 3
       }
     },
