@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-20 05:30",
+  "updated_at_kst": "2026-09-20 05:56",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -563,7 +563,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-20",
+      "posted_at": "2026-09-19",
       "posted_verified": true,
       "work_date": "09/20",
       "work_start": "2026-09-20",
@@ -591,7 +591,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-20",
+      "posted_at": "2026-09-19",
       "posted_verified": true,
       "work_date": "09/20",
       "work_start": "2026-09-20",
@@ -607,7 +607,7 @@
       "pay_type": "일급",
       "pay_display": "일급 121,785원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922306&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922304&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "주말",
@@ -1859,7 +1859,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-20",
+      "posted_at": "2026-09-19",
       "posted_verified": true,
       "work_date": "09/20",
       "work_start": "2026-09-20",
@@ -1887,7 +1887,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-20",
+      "posted_at": "2026-09-19",
       "posted_verified": true,
       "work_date": "09/20",
       "work_start": "2026-09-20",
@@ -1903,7 +1903,7 @@
       "pay_type": "일급",
       "pay_display": "일급 121,785원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922306&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922304&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "주말",
@@ -2617,7 +2617,7 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 617,
+      "accepted": 618,
       "messages": [
         "알바천국 상세공고 32건 통과",
         "알바천국 상세공고 21건 통과",
@@ -2625,6 +2625,7 @@
         "알바천국 상세공고 31건 통과",
         "알바천국 상세공고 34건 통과",
         "알바천국 상세공고 28건 통과",
+        "알바천국 상세공고 22건 통과",
         "알바천국 상세공고 23건 통과",
         "알바천국 상세공고 29건 통과",
         "알바천국 상세공고 38건 통과",
@@ -3112,8 +3113,7 @@
       "candidates": 50,
       "accepted": 28,
       "rejected": {
-        "ChunkedEncodingError": 1,
-        "work_date_already_passed": 20,
+        "work_date_already_passed": 21,
         "older_than_3_days": 1
       }
     },
@@ -3146,12 +3146,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=9",
       "state": "ok",
-      "reason": "알바천국 상세공고 21건 통과",
+      "reason": "알바천국 상세공고 22건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 21,
+      "accepted": 22,
       "rejected": {
-        "work_date_already_passed": 28,
+        "work_date_already_passed": 27,
         "older_than_3_days": 1
       }
     },
@@ -3253,8 +3253,8 @@
       "candidates": 50,
       "accepted": 39,
       "rejected": {
-        "work_date_already_passed": 7,
-        "older_than_3_days": 4
+        "older_than_3_days": 4,
+        "work_date_already_passed": 7
       }
     },
     {
