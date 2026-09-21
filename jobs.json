@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-22 04:49",
+  "updated_at_kst": "2026-09-22 04:57",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -39,34 +39,6 @@
       "work_start": "2026-09-22",
       "work_end": "2026-09-22",
       "region": "부산",
-      "company": "CU 완정본점",
-      "title": "CU 완정본점 평일 야간 스태프 구인합니다.",
-      "task": "팝업, 백화점, 스태프, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "22:00~08:00",
-      "day_pay": 300000,
-      "explicit_day_pay": 300000,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 300,000원",
-      "apply": "문자지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147046559&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 10.0,
-      "expected_daily_earnings": 300000
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-22",
-      "posted_verified": true,
-      "work_date": "09/22",
-      "work_start": "2026-09-22",
-      "work_end": "2026-09-22",
-      "region": "부산",
       "company": "바로고 강남역삼1허브",
       "title": "강남구 쿠팡x바로고 배달기사님 모집합니다.",
       "task": "팝업, 백화점, 매장, 이벤트, 공연, 아울렛",
@@ -85,6 +57,34 @@
       "priority_hits": 6,
       "accuracy_source": "focused_detail",
       "work_hours": 0.0,
+      "expected_daily_earnings": 300000
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-09-21",
+      "posted_verified": true,
+      "work_date": "09/22",
+      "work_start": "2026-09-22",
+      "work_end": "2026-09-22",
+      "region": "부산",
+      "company": "CU 완정본점",
+      "title": "CU 완정본점 평일 야간 스태프 구인합니다.",
+      "task": "팝업, 백화점, 스태프, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "22:00~08:00",
+      "day_pay": 300000,
+      "explicit_day_pay": 300000,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 300,000원",
+      "apply": "문자지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147046559&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 10.0,
       "expected_daily_earnings": 300000
     },
     {
@@ -481,7 +481,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-21",
+      "posted_at": "2026-09-22",
       "posted_verified": true,
       "work_date": "09/25~09/26",
       "work_start": "2026-09-25",
@@ -1094,34 +1094,6 @@
       "work_start": "2026-09-22",
       "work_end": "2026-09-22",
       "region": "부산",
-      "company": "CU 완정본점",
-      "title": "CU 완정본점 평일 야간 스태프 구인합니다.",
-      "task": "팝업, 백화점, 스태프, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "22:00~08:00",
-      "day_pay": 300000,
-      "explicit_day_pay": 300000,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 300,000원",
-      "apply": "문자지원",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147046559&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 10.0,
-      "expected_daily_earnings": 300000
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-09-22",
-      "posted_verified": true,
-      "work_date": "09/22",
-      "work_start": "2026-09-22",
-      "work_end": "2026-09-22",
-      "region": "부산",
       "company": "바로고 강남역삼1허브",
       "title": "강남구 쿠팡x바로고 배달기사님 모집합니다.",
       "task": "팝업, 백화점, 매장, 이벤트, 공연, 아울렛",
@@ -1140,6 +1112,34 @@
       "priority_hits": 6,
       "accuracy_source": "focused_detail",
       "work_hours": 0.0,
+      "expected_daily_earnings": 300000
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-09-21",
+      "posted_verified": true,
+      "work_date": "09/22",
+      "work_start": "2026-09-22",
+      "work_end": "2026-09-22",
+      "region": "부산",
+      "company": "CU 완정본점",
+      "title": "CU 완정본점 평일 야간 스태프 구인합니다.",
+      "task": "팝업, 백화점, 스태프, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "22:00~08:00",
+      "day_pay": 300000,
+      "explicit_day_pay": 300000,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 300,000원",
+      "apply": "문자지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147046559&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 10.0,
       "expected_daily_earnings": 300000
     },
     {
@@ -1536,7 +1536,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-21",
+      "posted_at": "2026-09-22",
       "posted_verified": true,
       "work_date": "09/25~09/26",
       "work_start": "2026-09-25",
@@ -2137,21 +2137,22 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 610,
+      "accepted": 612,
       "messages": [
         "알바천국 상세공고 26건 통과",
         "알바천국 상세공고 30건 통과",
         "알바천국 상세공고 25건 통과",
         "알바천국 상세공고 19건 통과",
-        "알바천국 상세공고 34건 통과",
+        "알바천국 상세공고 35건 통과",
         "알바천국 상세공고 27건 통과",
         "알바천국 상세공고 45건 통과",
-        "알바천국 상세공고 35건 통과",
+        "알바천국 상세공고 36건 통과",
         "알바천국 상세공고 42건 통과",
         "알바천국 상세공고 37건 통과",
         "알바천국 상세공고 43건 통과",
         "알바천국 상세공고 22건 통과",
         "알바천국 상세공고 24건 통과",
+        "알바천국 상세공고 34건 통과",
         "알바천국 상세공고 23건 통과",
         "알바천국 상세공고 17건 통과"
       ]
@@ -2569,8 +2570,8 @@
       "candidates": 50,
       "accepted": 26,
       "rejected": {
-        "work_date_already_passed": 23,
-        "older_than_3_days": 1
+        "older_than_3_days": 1,
+        "work_date_already_passed": 23
       }
     },
     {
@@ -2615,13 +2616,13 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=5",
       "state": "ok",
-      "reason": "알바천국 상세공고 34건 통과",
+      "reason": "알바천국 상세공고 35건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 34,
+      "accepted": 35,
       "rejected": {
         "work_date_already_passed": 14,
-        "older_than_3_days": 2
+        "older_than_3_days": 1
       }
     },
     {
@@ -2653,12 +2654,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=8",
       "state": "ok",
-      "reason": "알바천국 상세공고 35건 통과",
+      "reason": "알바천국 상세공고 36건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 35,
+      "accepted": 36,
       "rejected": {
-        "work_date_already_passed": 15
+        "work_date_already_passed": 14
       }
     },
     {
@@ -2774,8 +2775,8 @@
       "candidates": 50,
       "accepted": 23,
       "rejected": {
-        "older_than_3_days": 6,
-        "work_date_already_passed": 21
+        "work_date_already_passed": 21,
+        "older_than_3_days": 6
       }
     },
     {
