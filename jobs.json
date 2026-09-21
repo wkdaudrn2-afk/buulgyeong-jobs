@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-22 05:47",
+  "updated_at_kst": "2026-09-22 05:56",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -15,11 +15,11 @@
       "title": "함께성장 할 SK매직 가족을 모집합니다.",
       "task": "팝업, 백화점, 보조, 물류, 매장, 이벤트, 공연, 아울렛",
       "work_time": "09:00~18:00",
-      "day_pay": 258000,
-      "explicit_day_pay": 258000,
+      "day_pay": 250000,
+      "explicit_day_pay": 250000,
       "hourly_pay": 10320,
       "pay_type": "일급",
-      "pay_display": "일급 258,000원",
+      "pay_display": "일급 250,000원",
       "apply": "홈페이지",
       "url": "https://www.alba.co.kr/job/Detail?adid=147016860&listmenucd=OPTION",
       "duration_days": 1,
@@ -29,7 +29,7 @@
       "priority_hits": 8,
       "accuracy_source": "focused_detail",
       "work_hours": 9.0,
-      "expected_daily_earnings": 258000
+      "expected_daily_earnings": 250000
     },
     {
       "source": "알바천국",
@@ -189,7 +189,7 @@
       "pay_type": "일급",
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922726&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922722&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -844,6 +844,33 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/18~09/24",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-24",
+      "region": "부산",
+      "company": "",
+      "title": "골프 보조해주실분구해요 2시간4만원",
+      "task": "세팅, 보조, 정리",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 20000,
+      "pay_type": "시급",
+      "pay_display": "시급 20,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EA%B3%A8%ED%94%84-%EB%B3%B4%EC%A1%B0%ED%95%B4%EC%A3%BC%EC%8B%A4%EB%B6%84%EA%B5%AC%ED%95%B4%EC%9A%94-2%EC%8B%9C%EA%B0%844%EB%A7%8C%EC%9B%90-ykoi741n5tfr",
+      "duration_days": 7,
+      "duration_label": "7일",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 3,
+      "work_hours": 0.0,
+      "expected_daily_earnings": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
@@ -1097,11 +1124,11 @@
       "title": "함께성장 할 SK매직 가족을 모집합니다.",
       "task": "팝업, 백화점, 보조, 물류, 매장, 이벤트, 공연, 아울렛",
       "work_time": "09:00~18:00",
-      "day_pay": 258000,
-      "explicit_day_pay": 258000,
+      "day_pay": 250000,
+      "explicit_day_pay": 250000,
       "hourly_pay": 10320,
       "pay_type": "일급",
-      "pay_display": "일급 258,000원",
+      "pay_display": "일급 250,000원",
       "apply": "홈페이지",
       "url": "https://www.alba.co.kr/job/Detail?adid=147016860&listmenucd=OPTION",
       "duration_days": 1,
@@ -1111,7 +1138,7 @@
       "priority_hits": 8,
       "accuracy_source": "focused_detail",
       "work_hours": 9.0,
-      "expected_daily_earnings": 258000
+      "expected_daily_earnings": 250000
     },
     {
       "source": "알바천국",
@@ -1271,7 +1298,7 @@
       "pay_type": "일급",
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922726&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922722&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -1924,6 +1951,33 @@
       "source": "당근알바",
       "posted_at": "등록일 미확인",
       "posted_verified": false,
+      "work_date": "09/18~09/24",
+      "work_start": "2026-09-18",
+      "work_end": "2026-09-24",
+      "region": "부산",
+      "company": "",
+      "title": "골프 보조해주실분구해요 2시간4만원",
+      "task": "세팅, 보조, 정리",
+      "work_time": "시간 확인",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 20000,
+      "pay_type": "시급",
+      "pay_display": "시급 20,000원",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EA%B3%A8%ED%94%84-%EB%B3%B4%EC%A1%B0%ED%95%B4%EC%A3%BC%EC%8B%A4%EB%B6%84%EA%B5%AC%ED%95%B4%EC%9A%94-2%EC%8B%9C%EA%B0%844%EB%A7%8C%EC%9B%90-ykoi741n5tfr",
+      "duration_days": 7,
+      "duration_label": "7일",
+      "day_group": "평일+주말",
+      "post_age_rank": 1,
+      "priority_hits": 3,
+      "work_hours": 0.0,
+      "expected_daily_earnings": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
       "work_date": "근무일 확인",
       "work_start": "",
       "work_end": "",
@@ -2216,16 +2270,17 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 80,
-      "accepted": 14,
+      "accepted": 15,
       "messages": [
         "상세 공고 20건 확인 · 3건 통과",
-        "상세 공고 12건 확인 · 2건 통과",
+        "상세 공고 11건 확인 · 2건 통과",
         "상세 공고 1건 확인 · 현재 조건 통과 0건",
         "상세 공고 19건 확인 · 3건 통과",
-        "상세 공고 4건 확인 · 현재 조건 통과 0건",
+        "상세 공고 3건 확인 · 현재 조건 통과 0건",
         "상세 공고 19건 확인 · 4건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
-        "상세 공고 4건 확인 · 2건 통과"
+        "상세 공고 2건 확인 · 현재 조건 통과 0건",
+        "상세 공고 5건 확인 · 3건 통과"
       ]
     }
   },
@@ -2622,8 +2677,8 @@
       "candidates": 50,
       "accepted": 26,
       "rejected": {
-        "older_than_3_days": 2,
-        "work_date_already_passed": 22
+        "work_date_already_passed": 22,
+        "older_than_3_days": 2
       }
     },
     {
@@ -2886,16 +2941,16 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "상세 공고 12건 확인 · 2건 통과",
+      "reason": "상세 공고 11건 확인 · 2건 통과",
       "http": 200,
-      "candidates": 12,
+      "candidates": 11,
       "accepted": 2,
       "rejected": {
-        "daangn_not_preferred": 7,
+        "daangn_not_preferred": 6,
         "daangn_unwanted_job": 2,
         "excluded_keyword": 1
       },
-      "detail_checked": 12
+      "detail_checked": 11
     },
     {
       "source": "당근알바",
@@ -2929,15 +2984,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "상세 공고 4건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 3건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 4,
+      "candidates": 3,
       "accepted": 0,
       "rejected": {
-        "daangn_not_preferred": 3,
+        "daangn_not_preferred": 2,
         "daangn_unwanted_job": 1
       },
-      "detail_checked": 4
+      "detail_checked": 3
     },
     {
       "source": "당근알바",
@@ -2989,14 +3044,14 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "상세 공고 1건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 2건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 1,
+      "candidates": 2,
       "accepted": 0,
       "rejected": {
-        "daangn_not_preferred": 1
+        "daangn_not_preferred": 2
       },
-      "detail_checked": 1
+      "detail_checked": 2
     },
     {
       "source": "당근알바",
@@ -3013,14 +3068,14 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "상세 공고 4건 확인 · 2건 통과",
+      "reason": "상세 공고 5건 확인 · 3건 통과",
       "http": 200,
-      "candidates": 4,
-      "accepted": 2,
+      "candidates": 5,
+      "accepted": 3,
       "rejected": {
         "daangn_not_preferred": 2
       },
-      "detail_checked": 4
+      "detail_checked": 5
     },
     {
       "source": "당근알바",
