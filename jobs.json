@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-27 05:05",
+  "updated_at_kst": "2026-09-27 05:20",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -272,7 +272,7 @@
       "pay_type": "일급",
       "pay_display": "일급 126,420원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922335&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922344&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "주말",
@@ -1407,7 +1407,7 @@
       "pay_type": "일급",
       "pay_display": "일급 126,420원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146922335&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146922344&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "주말",
