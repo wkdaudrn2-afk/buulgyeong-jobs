@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-27 05:32",
+  "updated_at_kst": "2026-09-27 05:44",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -312,7 +312,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-27",
+      "posted_at": "2026-09-26",
       "posted_verified": true,
       "work_date": "09/27",
       "work_start": "2026-09-27",
@@ -376,22 +376,22 @@
       "region": "부산",
       "company": "쿠팡CFS 평택5센터",
       "title": "[향남청북 노선OPEN]일 최대 15만원+급여익일지급+선착순+단기+하루알바",
-      "task": "팝업, 백화점, 포장, 물류, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "08:00~17:00",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "21:00~07:00",
       "day_pay": 111615,
       "explicit_day_pay": 111615,
       "hourly_pay": 10320,
       "pay_type": "일급",
       "pay_display": "일급 111,615원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146835753&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146835752&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "주말",
       "post_age_rank": 0,
-      "priority_hits": 8,
+      "priority_hits": 7,
       "accuracy_source": "focused_detail",
-      "work_hours": 9.0,
+      "work_hours": 10.0,
       "expected_daily_earnings": 111615
     },
     {
@@ -1447,7 +1447,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-09-27",
+      "posted_at": "2026-09-26",
       "posted_verified": true,
       "work_date": "09/27",
       "work_start": "2026-09-27",
@@ -1511,22 +1511,22 @@
       "region": "부산",
       "company": "쿠팡CFS 평택5센터",
       "title": "[향남청북 노선OPEN]일 최대 15만원+급여익일지급+선착순+단기+하루알바",
-      "task": "팝업, 백화점, 포장, 물류, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "08:00~17:00",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "21:00~07:00",
       "day_pay": 111615,
       "explicit_day_pay": 111615,
       "hourly_pay": 10320,
       "pay_type": "일급",
       "pay_display": "일급 111,615원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146835753&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=146835752&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "주말",
       "post_age_rank": 0,
-      "priority_hits": 8,
+      "priority_hits": 7,
       "accuracy_source": "focused_detail",
-      "work_hours": 9.0,
+      "work_hours": 10.0,
       "expected_daily_earnings": 111615
     },
     {
@@ -2914,8 +2914,8 @@
       "candidates": 50,
       "accepted": 6,
       "rejected": {
-        "work_date_already_passed": 42,
-        "older_than_3_days": 2
+        "older_than_3_days": 2,
+        "work_date_already_passed": 42
       }
     },
     {
