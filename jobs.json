@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-09-28 05:36",
+  "updated_at_kst": "2026-09-28 05:47",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -3388,10 +3388,10 @@
       "candidates": 20,
       "accepted": 4,
       "rejected": {
+        "daangn_unwanted_job": 3,
         "daangn_not_preferred": 8,
-        "daangn_outside_target_area": 4,
-        "excluded_keyword": 2,
-        "daangn_unwanted_job": 2
+        "daangn_outside_target_area": 3,
+        "excluded_keyword": 2
       },
       "detail_checked": 20
     },
