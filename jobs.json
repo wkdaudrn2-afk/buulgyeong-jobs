@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-02 04:58",
+  "updated_at_kst": "2026-10-02 05:15",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -229,7 +229,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-01",
+      "posted_at": "2026-10-02",
       "posted_verified": true,
       "work_date": "10/02",
       "work_start": "2026-10-02",
@@ -541,34 +541,6 @@
       "work_start": "2026-10-02",
       "work_end": "2026-10-02",
       "region": "부산",
-      "company": "파리바게뜨 양주광적점",
-      "title": "파리바게뜨양주광적점 주말오전07부터 13시까지알바구합니다",
-      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "07:00~13:00",
-      "day_pay": 100620,
-      "explicit_day_pay": 100620,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 100,620원",
-      "apply": "원본 공고 확인",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147223667&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 6.0,
-      "expected_daily_earnings": 100620
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-10-01",
-      "posted_verified": true,
-      "work_date": "10/02",
-      "work_start": "2026-10-02",
-      "work_end": "2026-10-02",
-      "region": "부산",
       "company": "쿠팡로지스틱스서비스(유)",
       "title": "원하는날 일하고 일최대 17만원 챙기자 #쿠팡알바#집근처#친구동반#단기#셔틀",
       "task": "팝업, 백화점, 포장, 물류, 매장, 이벤트, 공연, 아울렛",
@@ -587,6 +559,34 @@
       "priority_hits": 8,
       "accuracy_source": "focused_detail",
       "work_hours": 0.0,
+      "expected_daily_earnings": 100620
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-10-02",
+      "posted_verified": true,
+      "work_date": "10/02",
+      "work_start": "2026-10-02",
+      "work_end": "2026-10-02",
+      "region": "부산",
+      "company": "파리바게뜨 양주광적점",
+      "title": "파리바게뜨양주광적점 주말오전07부터 13시까지알바구합니다",
+      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "07:00~13:00",
+      "day_pay": 100620,
+      "explicit_day_pay": 100620,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 100,620원",
+      "apply": "원본 공고 확인",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147223667&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 6.0,
       "expected_daily_earnings": 100620
     },
     {
@@ -1282,7 +1282,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-01",
+      "posted_at": "2026-10-02",
       "posted_verified": true,
       "work_date": "10/02",
       "work_start": "2026-10-02",
@@ -1594,34 +1594,6 @@
       "work_start": "2026-10-02",
       "work_end": "2026-10-02",
       "region": "부산",
-      "company": "파리바게뜨 양주광적점",
-      "title": "파리바게뜨양주광적점 주말오전07부터 13시까지알바구합니다",
-      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "07:00~13:00",
-      "day_pay": 100620,
-      "explicit_day_pay": 100620,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 100,620원",
-      "apply": "원본 공고 확인",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147223667&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 6.0,
-      "expected_daily_earnings": 100620
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-10-01",
-      "posted_verified": true,
-      "work_date": "10/02",
-      "work_start": "2026-10-02",
-      "work_end": "2026-10-02",
-      "region": "부산",
       "company": "쿠팡로지스틱스서비스(유)",
       "title": "원하는날 일하고 일최대 17만원 챙기자 #쿠팡알바#집근처#친구동반#단기#셔틀",
       "task": "팝업, 백화점, 포장, 물류, 매장, 이벤트, 공연, 아울렛",
@@ -1640,6 +1612,34 @@
       "priority_hits": 8,
       "accuracy_source": "focused_detail",
       "work_hours": 0.0,
+      "expected_daily_earnings": 100620
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-10-02",
+      "posted_verified": true,
+      "work_date": "10/02",
+      "work_start": "2026-10-02",
+      "work_end": "2026-10-02",
+      "region": "부산",
+      "company": "파리바게뜨 양주광적점",
+      "title": "파리바게뜨양주광적점 주말오전07부터 13시까지알바구합니다",
+      "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "07:00~13:00",
+      "day_pay": 100620,
+      "explicit_day_pay": 100620,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 100,620원",
+      "apply": "원본 공고 확인",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147223667&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 6.0,
       "expected_daily_earnings": 100620
     },
     {
@@ -2116,9 +2116,9 @@
       "accepted": 190,
       "messages": [
         "공개 페이지 정상 · 30건 통과",
-        "공개 페이지 정상 · 11건 통과",
-        "공개 페이지 정상 · 18건 통과",
         "공개 페이지 정상 · 10건 통과",
+        "공개 페이지 정상 · 18건 통과",
+        "공개 페이지 정상 · 11건 통과",
         "공개 페이지 정상 · 5건 통과",
         "공개 페이지 정상 · 9건 통과",
         "공개 페이지 정상 · 20건 통과",
@@ -2168,12 +2168,11 @@
       "accepted": 14,
       "messages": [
         "상세 공고 20건 확인 · 3건 통과",
-        "상세 공고 8건 확인 · 현재 조건 통과 0건",
+        "상세 공고 9건 확인 · 현재 조건 통과 0건",
         "상세 공고 6건 확인 · 1건 통과",
         "상세 공고 19건 확인 · 2건 통과",
         "상세 공고 20건 확인 · 7건 통과",
-        "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
-        "상세 공고 1건 확인 · 현재 조건 통과 0건"
+        "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인"
       ]
     }
   },
@@ -2184,21 +2183,22 @@
       "state": "ok",
       "reason": "공개 페이지 정상 · 30건 통과",
       "http": 200,
-      "candidates": 62,
+      "candidates": 63,
       "accepted": 30,
       "rejected": {
         "older_than_3_days": 4,
-        "posted_date_unverified": 28
+        "posted_date_unverified": 28,
+        "work_date_already_passed": 1
       }
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 11건 통과",
+      "reason": "공개 페이지 정상 · 10건 통과",
       "http": 200,
-      "candidates": 11,
-      "accepted": 11,
+      "candidates": 10,
+      "accepted": 10,
       "rejected": {}
     },
     {
@@ -2215,10 +2215,10 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=4",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 10건 통과",
+      "reason": "공개 페이지 정상 · 11건 통과",
       "http": 200,
-      "candidates": 11,
-      "accepted": 10,
+      "candidates": 12,
+      "accepted": 11,
       "rejected": {
         "work_date_already_passed": 1
       }
@@ -2229,10 +2229,10 @@
       "state": "ok",
       "reason": "공개 페이지 정상 · 5건 통과",
       "http": 200,
-      "candidates": 20,
+      "candidates": 19,
       "accepted": 5,
       "rejected": {
-        "work_date_already_passed": 2,
+        "work_date_already_passed": 1,
         "posted_date_unverified": 13
       }
     },
@@ -2675,8 +2675,8 @@
       "candidates": 50,
       "accepted": 8,
       "rejected": {
-        "older_than_3_days": 1,
-        "work_date_already_passed": 41
+        "work_date_already_passed": 41,
+        "older_than_3_days": 1
       }
     },
     {
@@ -2700,8 +2700,8 @@
       "candidates": 50,
       "accepted": 10,
       "rejected": {
-        "work_date_already_passed": 39,
-        "older_than_3_days": 1
+        "older_than_3_days": 1,
+        "work_date_already_passed": 39
       }
     },
     {
@@ -2819,16 +2819,16 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "상세 공고 8건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 9건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 8,
+      "candidates": 9,
       "accepted": 0,
       "rejected": {
+        "daangn_not_preferred": 2,
         "region_or_closed": 6,
-        "daangn_outside_target_area": 1,
-        "daangn_not_preferred": 1
+        "daangn_outside_target_area": 1
       },
-      "detail_checked": 8
+      "detail_checked": 9
     },
     {
       "source": "당근알바",
@@ -2948,14 +2948,12 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "상세 공고 1건 확인 · 현재 조건 통과 0건",
+      "reason": "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
       "http": 200,
-      "candidates": 1,
+      "candidates": 0,
       "accepted": 0,
-      "rejected": {
-        "excluded_keyword": 1
-      },
-      "detail_checked": 1
+      "rejected": {},
+      "detail_checked": 0
     },
     {
       "source": "당근알바",
