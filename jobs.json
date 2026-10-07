@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-08 05:20",
+  "updated_at_kst": "2026-10-08 05:37",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -375,6 +375,34 @@
       "work_start": "2026-10-08",
       "work_end": "2026-10-08",
       "region": "부산",
+      "company": "다이소 서귀포중문점",
+      "title": "다이소 서귀포중문점에서 일할 파트사원 모집합니다.",
+      "task": "팝업, 백화점, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "12:00~18:00",
+      "day_pay": 130967,
+      "explicit_day_pay": 130967,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 130,967원",
+      "apply": "문자지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147365906&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 6,
+      "accuracy_source": "focused_detail",
+      "work_hours": 6.0,
+      "expected_daily_earnings": 130967
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-10-08",
+      "posted_verified": true,
+      "work_date": "10/08",
+      "work_start": "2026-10-08",
+      "work_end": "2026-10-08",
+      "region": "부산",
       "company": "교촌치킨 전남 국동점",
       "title": "교촌치킨 국동점 주방멤버 모집합니다.",
       "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
@@ -403,34 +431,6 @@
       "work_start": "2026-10-08",
       "work_end": "2026-10-08",
       "region": "부산",
-      "company": "쿠팡CFS/고양 1센터",
-      "title": "[일최대12만원]다음날바로지급+단순/간단업무+주말/단기알바+초보",
-      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "시간 확인",
-      "day_pay": 125280,
-      "explicit_day_pay": 125280,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 125,280원",
-      "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147268017&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 0.0,
-      "expected_daily_earnings": 125280
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-10-08",
-      "posted_verified": true,
-      "work_date": "10/08",
-      "work_start": "2026-10-08",
-      "work_end": "2026-10-08",
-      "region": "부산",
       "company": "쿠팡CFS / 인천45센터",
       "title": "[일최대12만원]신규노선OPEN+셔틀타고출근하자+익일지급+단기알바",
       "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
@@ -441,7 +441,7 @@
       "pay_type": "일급",
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147093189&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147093185&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -470,6 +470,34 @@
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
       "url": "https://www.alba.co.kr/job/Detail?adid=147268029&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 0.0,
+      "expected_daily_earnings": 125280
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-10-07",
+      "posted_verified": true,
+      "work_date": "10/08",
+      "work_start": "2026-10-08",
+      "work_end": "2026-10-08",
+      "region": "부산",
+      "company": "쿠팡CFS/고양 1센터",
+      "title": "[일최대12만원]다음날바로지급+단순/간단업무+주말/단기알바+초보",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "시간 확인",
+      "day_pay": 125280,
+      "explicit_day_pay": 125280,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 125,280원",
+      "apply": "홈페이지",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147268017&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -673,34 +701,6 @@
       "accuracy_source": "focused_detail",
       "work_hours": 3.0,
       "expected_daily_earnings": 102000
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-10-08",
-      "posted_verified": true,
-      "work_date": "10/08",
-      "work_start": "2026-10-08",
-      "work_end": "2026-10-08",
-      "region": "부산",
-      "company": "쿠팡로지스틱스서비스(유)",
-      "title": "[단순소분] 3일 최대 40만원에 집근처 알바까지! #셔틀#쿠팡#원하는날",
-      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "시간 확인",
-      "day_pay": 100620,
-      "explicit_day_pay": 100620,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 100,620원",
-      "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146973976&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 0.0,
-      "expected_daily_earnings": 100620
     }
   ],
   "daangn_jobs": [
@@ -1483,6 +1483,34 @@
       "work_start": "2026-10-08",
       "work_end": "2026-10-08",
       "region": "부산",
+      "company": "다이소 서귀포중문점",
+      "title": "다이소 서귀포중문점에서 일할 파트사원 모집합니다.",
+      "task": "팝업, 백화점, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "12:00~18:00",
+      "day_pay": 130967,
+      "explicit_day_pay": 130967,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 130,967원",
+      "apply": "문자지원",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147365906&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 6,
+      "accuracy_source": "focused_detail",
+      "work_hours": 6.0,
+      "expected_daily_earnings": 130967
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-10-08",
+      "posted_verified": true,
+      "work_date": "10/08",
+      "work_start": "2026-10-08",
+      "work_end": "2026-10-08",
+      "region": "부산",
       "company": "교촌치킨 전남 국동점",
       "title": "교촌치킨 국동점 주방멤버 모집합니다.",
       "task": "팝업, 백화점, 보조, 매장, 이벤트, 공연, 아울렛",
@@ -1511,34 +1539,6 @@
       "work_start": "2026-10-08",
       "work_end": "2026-10-08",
       "region": "부산",
-      "company": "쿠팡CFS/고양 1센터",
-      "title": "[일최대12만원]다음날바로지급+단순/간단업무+주말/단기알바+초보",
-      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "시간 확인",
-      "day_pay": 125280,
-      "explicit_day_pay": 125280,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 125,280원",
-      "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147268017&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 0.0,
-      "expected_daily_earnings": 125280
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-10-08",
-      "posted_verified": true,
-      "work_date": "10/08",
-      "work_start": "2026-10-08",
-      "work_end": "2026-10-08",
-      "region": "부산",
       "company": "쿠팡CFS / 인천45센터",
       "title": "[일최대12만원]신규노선OPEN+셔틀타고출근하자+익일지급+단기알바",
       "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
@@ -1549,7 +1549,7 @@
       "pay_type": "일급",
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147093189&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147093185&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -1578,6 +1578,34 @@
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
       "url": "https://www.alba.co.kr/job/Detail?adid=147268029&listmenucd=OPTION",
+      "duration_days": 1,
+      "duration_label": "하루(1일)",
+      "day_group": "평일",
+      "post_age_rank": 0,
+      "priority_hits": 7,
+      "accuracy_source": "focused_detail",
+      "work_hours": 0.0,
+      "expected_daily_earnings": 125280
+    },
+    {
+      "source": "알바천국",
+      "posted_at": "2026-10-07",
+      "posted_verified": true,
+      "work_date": "10/08",
+      "work_start": "2026-10-08",
+      "work_end": "2026-10-08",
+      "region": "부산",
+      "company": "쿠팡CFS/고양 1센터",
+      "title": "[일최대12만원]다음날바로지급+단순/간단업무+주말/단기알바+초보",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "시간 확인",
+      "day_pay": 125280,
+      "explicit_day_pay": 125280,
+      "hourly_pay": 10320,
+      "pay_type": "일급",
+      "pay_display": "일급 125,280원",
+      "apply": "홈페이지",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147268017&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
@@ -1781,34 +1809,6 @@
       "accuracy_source": "focused_detail",
       "work_hours": 3.0,
       "expected_daily_earnings": 102000
-    },
-    {
-      "source": "알바천국",
-      "posted_at": "2026-10-08",
-      "posted_verified": true,
-      "work_date": "10/08",
-      "work_start": "2026-10-08",
-      "work_end": "2026-10-08",
-      "region": "부산",
-      "company": "쿠팡로지스틱스서비스(유)",
-      "title": "[단순소분] 3일 최대 40만원에 집근처 알바까지! #셔틀#쿠팡#원하는날",
-      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "시간 확인",
-      "day_pay": 100620,
-      "explicit_day_pay": 100620,
-      "hourly_pay": 10320,
-      "pay_type": "일급",
-      "pay_display": "일급 100,620원",
-      "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=146973976&listmenucd=OPTION",
-      "duration_days": 1,
-      "duration_label": "하루(1일)",
-      "day_group": "평일",
-      "post_age_rank": 0,
-      "priority_hits": 7,
-      "accuracy_source": "focused_detail",
-      "work_hours": 0.0,
-      "expected_daily_earnings": 100620
     },
     {
       "source": "당근알바",
@@ -2225,8 +2225,8 @@
       "candidates": 630,
       "accepted": 171,
       "messages": [
-        "공개 페이지 정상 · 37건 통과",
-        "공개 페이지 정상 · 17건 통과",
+        "공개 페이지 정상 · 38건 통과",
+        "공개 페이지 정상 · 16건 통과",
         "공개 페이지 정상 · 20건 통과",
         "공개 페이지 정상 · 7건 통과",
         "공개 페이지 정상 · 14건 통과",
@@ -2243,21 +2243,24 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 647,
+      "accepted": 654,
       "messages": [
-        "알바천국 상세공고 25건 통과",
+        "알바천국 상세공고 26건 통과",
+        "알바천국 상세공고 28건 통과",
         "알바천국 상세공고 27건 통과",
         "알바천국 상세공고 31건 통과",
         "알바천국 상세공고 30건 통과",
         "알바천국 상세공고 34건 통과",
         "알바천국 상세공고 32건 통과",
-        "알바천국 상세공고 41건 통과",
-        "알바천국 상세공고 39건 통과",
+        "알바천국 상세공고 42건 통과",
+        "알바천국 상세공고 40건 통과",
         "알바천국 상세공고 47건 통과",
         "알바천국 상세공고 50건 통과",
-        "알바천국 상세공고 24건 통과",
+        "알바천국 상세공고 25건 통과",
+        "알바천국 상세공고 29건 통과",
         "알바천국 상세공고 38건 통과",
-        "알바천국 상세공고 28건 통과"
+        "알바천국 상세공고 41건 통과",
+        "알바천국 상세공고 24건 통과"
       ]
     },
     "당근알바": {
@@ -2271,11 +2274,12 @@
         "상세 공고 20건 확인 · 4건 통과",
         "상세 공고 11건 확인 · 2건 통과",
         "상세 공고 6건 확인 · 1건 통과",
-        "상세 공고 19건 확인 · 1건 통과",
+        "상세 공고 18건 확인 · 1건 통과",
         "상세 공고 4건 확인 · 1건 통과",
         "상세 공고 16건 확인 · 6건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
-        "상세 공고 2건 확인 · 현재 조건 통과 0건"
+        "상세 공고 1건 확인 · 현재 조건 통과 0건",
+        "상세 공고 4건 확인 · 현재 조건 통과 0건"
       ]
     }
   },
@@ -2284,10 +2288,10 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 37건 통과",
+      "reason": "공개 페이지 정상 · 38건 통과",
       "http": 200,
-      "candidates": 61,
-      "accepted": 37,
+      "candidates": 62,
+      "accepted": 38,
       "rejected": {
         "older_than_3_days": 2,
         "posted_date_unverified": 22
@@ -2297,10 +2301,10 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 17건 통과",
+      "reason": "공개 페이지 정상 · 16건 통과",
       "http": 200,
-      "candidates": 17,
-      "accepted": 17,
+      "candidates": 16,
+      "accepted": 16,
       "rejected": {}
     },
     {
@@ -2665,12 +2669,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=1",
       "state": "ok",
-      "reason": "알바천국 상세공고 25건 통과",
+      "reason": "알바천국 상세공고 26건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 25,
+      "accepted": 26,
       "rejected": {
-        "work_date_already_passed": 23,
+        "work_date_already_passed": 22,
         "older_than_3_days": 2
       }
     },
@@ -2678,13 +2682,13 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
       "state": "ok",
-      "reason": "알바천국 상세공고 27건 통과",
+      "reason": "알바천국 상세공고 28건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 27,
+      "accepted": 28,
       "rejected": {
         "older_than_3_days": 5,
-        "work_date_already_passed": 18
+        "work_date_already_passed": 17
       }
     },
     {
@@ -2709,8 +2713,9 @@
       "candidates": 50,
       "accepted": 31,
       "rejected": {
-        "work_date_already_passed": 16,
-        "older_than_3_days": 3
+        "work_date_already_passed": 15,
+        "older_than_3_days": 3,
+        "ReadTimeout": 1
       }
     },
     {
@@ -2769,24 +2774,24 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=9",
       "state": "ok",
-      "reason": "알바천국 상세공고 41건 통과",
+      "reason": "알바천국 상세공고 42건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 41,
+      "accepted": 42,
       "rejected": {
-        "work_date_already_passed": 9
+        "work_date_already_passed": 8
       }
     },
     {
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=10",
       "state": "ok",
-      "reason": "알바천국 상세공고 39건 통과",
+      "reason": "알바천국 상세공고 40건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 39,
+      "accepted": 40,
       "rejected": {
-        "work_date_already_passed": 11
+        "work_date_already_passed": 10
       }
     },
     {
@@ -2815,12 +2820,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=13",
       "state": "ok",
-      "reason": "알바천국 상세공고 24건 통과",
+      "reason": "알바천국 상세공고 25건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 24,
+      "accepted": 25,
       "rejected": {
-        "work_date_already_passed": 25,
+        "work_date_already_passed": 24,
         "older_than_3_days": 1
       }
     },
@@ -2828,12 +2833,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=14",
       "state": "ok",
-      "reason": "알바천국 상세공고 27건 통과",
+      "reason": "알바천국 상세공고 29건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 27,
+      "accepted": 29,
       "rejected": {
-        "work_date_already_passed": 19,
+        "work_date_already_passed": 17,
         "older_than_3_days": 4
       }
     },
@@ -2846,7 +2851,8 @@
       "candidates": 50,
       "accepted": 38,
       "rejected": {
-        "work_date_already_passed": 12
+        "work_date_already_passed": 7,
+        "region_or_closed": 5
       }
     },
     {
@@ -2910,7 +2916,8 @@
       "candidates": 50,
       "accepted": 24,
       "rejected": {
-        "work_date_already_passed": 23,
+        "region_or_closed": 5,
+        "work_date_already_passed": 18,
         "older_than_3_days": 3
       }
     },
@@ -2938,8 +2945,8 @@
       "candidates": 11,
       "accepted": 2,
       "rejected": {
-        "daangn_not_preferred": 2,
-        "region_or_closed": 7
+        "region_or_closed": 7,
+        "daangn_not_preferred": 2
       },
       "detail_checked": 11
     },
@@ -2952,7 +2959,8 @@
       "candidates": 6,
       "accepted": 1,
       "rejected": {
-        "daangn_outside_target_area": 3,
+        "daangn_not_preferred": 1,
+        "daangn_outside_target_area": 2,
         "region_or_closed": 2
       },
       "detail_checked": 6
@@ -2961,18 +2969,17 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "상세 공고 19건 확인 · 1건 통과",
+      "reason": "상세 공고 18건 확인 · 1건 통과",
       "http": 200,
-      "candidates": 19,
+      "candidates": 18,
       "accepted": 1,
       "rejected": {
-        "region_or_closed": 8,
-        "daangn_not_preferred": 4,
+        "region_or_closed": 9,
+        "daangn_not_preferred": 3,
         "daangn_outside_target_area": 4,
-        "daangn_unwanted_job": 1,
-        "excluded_keyword": 1
+        "daangn_unwanted_job": 1
       },
-      "detail_checked": 19
+      "detail_checked": 18
     },
     {
       "source": "당근알바",
@@ -3040,14 +3047,14 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "상세 공고 2건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 1건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 2,
+      "candidates": 1,
       "accepted": 0,
       "rejected": {
-        "region_or_closed": 2
+        "region_or_closed": 1
       },
-      "detail_checked": 2
+      "detail_checked": 1
     },
     {
       "source": "당근알바",
@@ -3064,14 +3071,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028&jobTask=LIGHT_WORK",
       "state": "ok",
-      "reason": "상세 공고 2건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 4건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 2,
+      "candidates": 4,
       "accepted": 0,
       "rejected": {
-        "daangn_not_preferred": 2
+        "daangn_not_preferred": 3,
+        "region_or_closed": 1
       },
-      "detail_checked": 2
+      "detail_checked": 4
     },
     {
       "source": "당근알바",
