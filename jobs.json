@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-10 05:18",
+  "updated_at_kst": "2026-10-10 05:36",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -153,7 +153,7 @@
       "company": "투썸플레이스 홍대걷고싶은거리점",
       "title": "투썸플레이스 홍대걷고싶은거리점 스텝 모집",
       "task": "팝업, 백화점, 정리, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "07:00~17:00",
+      "work_time": "17:00~21:30",
       "day_pay": 170000,
       "explicit_day_pay": 170000,
       "hourly_pay": 13134,
@@ -167,7 +167,7 @@
       "post_age_rank": 0,
       "priority_hits": 7,
       "accuracy_source": "focused_detail",
-      "work_hours": 10.0,
+      "work_hours": 4.5,
       "expected_daily_earnings": 170000
     },
     {
@@ -1053,6 +1053,33 @@
       "priority_hits": 3,
       "work_hours": 6.0,
       "expected_daily_earnings": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "스카이라인루지 부산 관광단지 테마파크 구인",
+      "task": "매장",
+      "work_time": "09:00 ~ 18:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%9D%BC%EC%9D%B8%EB%A3%A8%EC%A7%80-%EB%B6%80%EC%82%B0-%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80-%ED%85%8C%EB%A7%88%ED%8C%8C%ED%81%AC-%EA%B5%AC%EC%9D%B8-ycffwbj4eous",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 1,
+      "work_hours": 9.0,
+      "expected_daily_earnings": 0
     }
   ],
   "jobs": [
@@ -1206,7 +1233,7 @@
       "company": "투썸플레이스 홍대걷고싶은거리점",
       "title": "투썸플레이스 홍대걷고싶은거리점 스텝 모집",
       "task": "팝업, 백화점, 정리, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "07:00~17:00",
+      "work_time": "17:00~21:30",
       "day_pay": 170000,
       "explicit_day_pay": 170000,
       "hourly_pay": 13134,
@@ -1220,7 +1247,7 @@
       "post_age_rank": 0,
       "priority_hits": 7,
       "accuracy_source": "focused_detail",
-      "work_hours": 10.0,
+      "work_hours": 4.5,
       "expected_daily_earnings": 170000
     },
     {
@@ -2104,6 +2131,33 @@
       "priority_hits": 3,
       "work_hours": 6.0,
       "expected_daily_earnings": 0
+    },
+    {
+      "source": "당근알바",
+      "posted_at": "등록일 미확인",
+      "posted_verified": false,
+      "work_date": "근무일 확인",
+      "work_start": "",
+      "work_end": "",
+      "region": "부산",
+      "company": "",
+      "title": "스카이라인루지 부산 관광단지 테마파크 구인",
+      "task": "매장",
+      "work_time": "09:00 ~ 18:00",
+      "day_pay": 0,
+      "explicit_day_pay": 0,
+      "hourly_pay": 0,
+      "pay_type": "급여 확인",
+      "pay_display": "급여 확인",
+      "apply": "원본 공고 확인",
+      "url": "https://jobs.daangn.com/job-posts/%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%9D%BC%EC%9D%B8%EB%A3%A8%EC%A7%80-%EB%B6%80%EC%82%B0-%EA%B4%80%EA%B4%91%EB%8B%A8%EC%A7%80-%ED%85%8C%EB%A7%88%ED%8C%8C%ED%81%AC-%EA%B5%AC%EC%9D%B8-ycffwbj4eous",
+      "duration_days": 99,
+      "duration_label": "기간 미확인",
+      "day_group": "미확인",
+      "post_age_rank": 1,
+      "priority_hits": 1,
+      "work_hours": 9.0,
+      "expected_daily_earnings": 0
     }
   ],
   "source_summary": {
@@ -2130,12 +2184,12 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 667,
+      "accepted": 669,
       "messages": [
         "알바천국 상세공고 18건 통과",
-        "알바천국 상세공고 32건 통과",
+        "알바천국 상세공고 33건 통과",
         "알바천국 상세공고 34건 통과",
-        "알바천국 상세공고 29건 통과",
+        "알바천국 상세공고 30건 통과",
         "알바천국 상세공고 25건 통과",
         "알바천국 상세공고 35건 통과",
         "알바천국 상세공고 24건 통과",
@@ -2155,17 +2209,17 @@
       "ok_pages": 15,
       "blocked_pages": 0,
       "error_pages": 0,
-      "candidates": 75,
-      "accepted": 13,
+      "candidates": 76,
+      "accepted": 14,
       "messages": [
-        "상세 공고 20건 확인 · 2건 통과",
-        "상세 공고 9건 확인 · 2건 통과",
-        "상세 공고 5건 확인 · 1건 통과",
-        "상세 공고 17건 확인 · 1건 통과",
+        "상세 공고 20건 확인 · 3건 통과",
+        "상세 공고 8건 확인 · 1건 통과",
+        "상세 공고 6건 확인 · 1건 통과",
+        "상세 공고 17건 확인 · 2건 통과",
         "상세 공고 4건 확인 · 현재 조건 통과 0건",
         "상세 공고 17건 확인 · 6건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
-        "상세 공고 2건 확인 · 현재 조건 통과 0건",
+        "상세 공고 3건 확인 · 현재 조건 통과 0건",
         "상세 공고 1건 확인 · 1건 통과"
       ]
     }
@@ -2569,7 +2623,8 @@
       "candidates": 50,
       "accepted": 18,
       "rejected": {
-        "work_date_already_passed": 31,
+        "region_or_closed": 10,
+        "work_date_already_passed": 21,
         "older_than_3_days": 1
       }
     },
@@ -2577,12 +2632,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=2",
       "state": "ok",
-      "reason": "알바천국 상세공고 32건 통과",
+      "reason": "알바천국 상세공고 33건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 32,
+      "accepted": 33,
       "rejected": {
-        "work_date_already_passed": 17,
+        "work_date_already_passed": 16,
         "older_than_3_days": 1
       }
     },
@@ -2602,12 +2657,12 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=4",
       "state": "ok",
-      "reason": "알바천국 상세공고 29건 통과",
+      "reason": "알바천국 상세공고 30건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 29,
+      "accepted": 30,
       "rejected": {
-        "work_date_already_passed": 19,
+        "work_date_already_passed": 18,
         "older_than_3_days": 2
       }
     },
@@ -2620,8 +2675,8 @@
       "candidates": 50,
       "accepted": 25,
       "rejected": {
-        "older_than_3_days": 2,
-        "work_date_already_passed": 23
+        "work_date_already_passed": 23,
+        "older_than_3_days": 2
       }
     },
     {
@@ -2816,15 +2871,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5917",
       "state": "ok",
-      "reason": "상세 공고 20건 확인 · 2건 통과",
+      "reason": "상세 공고 20건 확인 · 3건 통과",
       "http": 200,
       "candidates": 20,
-      "accepted": 2,
+      "accepted": 3,
       "rejected": {
         "daangn_not_preferred": 6,
         "excluded_keyword": 1,
         "daangn_outside_target_area": 1,
-        "region_or_closed": 9,
+        "region_or_closed": 8,
         "daangn_unwanted_job": 1
       },
       "detail_checked": 20
@@ -2833,42 +2888,42 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "상세 공고 9건 확인 · 2건 통과",
+      "reason": "상세 공고 8건 확인 · 1건 통과",
       "http": 200,
-      "candidates": 9,
-      "accepted": 2,
+      "candidates": 8,
+      "accepted": 1,
       "rejected": {
         "daangn_not_preferred": 2,
         "region_or_closed": 5
       },
-      "detail_checked": 9
+      "detail_checked": 8
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=5923",
       "state": "ok",
-      "reason": "상세 공고 5건 확인 · 1건 통과",
+      "reason": "상세 공고 6건 확인 · 1건 통과",
       "http": 200,
-      "candidates": 5,
+      "candidates": 6,
       "accepted": 1,
       "rejected": {
-        "daangn_outside_target_area": 2,
+        "daangn_outside_target_area": 3,
         "daangn_not_preferred": 1,
         "region_or_closed": 1
       },
-      "detail_checked": 5
+      "detail_checked": 6
     },
     {
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=671",
       "state": "ok",
-      "reason": "상세 공고 17건 확인 · 1건 통과",
+      "reason": "상세 공고 17건 확인 · 2건 통과",
       "http": 200,
       "candidates": 17,
-      "accepted": 1,
+      "accepted": 2,
       "rejected": {
         "daangn_not_preferred": 2,
-        "region_or_closed": 8,
+        "region_or_closed": 7,
         "daangn_outside_target_area": 4,
         "daangn_unwanted_job": 1,
         "excluded_keyword": 1
@@ -2941,14 +2996,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=6028",
       "state": "ok",
-      "reason": "상세 공고 2건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 3건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 2,
+      "candidates": 3,
       "accepted": 0,
       "rejected": {
-        "region_or_closed": 2
+        "region_or_closed": 2,
+        "daangn_not_preferred": 1
       },
-      "detail_checked": 2
+      "detail_checked": 3
     },
     {
       "source": "당근알바",
