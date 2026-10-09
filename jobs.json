@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-10 05:36",
+  "updated_at_kst": "2026-10-10 05:52",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -396,7 +396,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-10",
+      "posted_at": "2026-10-09",
       "posted_verified": true,
       "work_date": "10/10",
       "work_start": "2026-10-10",
@@ -1476,7 +1476,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-10",
+      "posted_at": "2026-10-09",
       "posted_verified": true,
       "work_date": "10/10",
       "work_start": "2026-10-10",
@@ -2184,16 +2184,16 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 669,
+      "accepted": 668,
       "messages": [
         "알바천국 상세공고 18건 통과",
         "알바천국 상세공고 33건 통과",
-        "알바천국 상세공고 34건 통과",
         "알바천국 상세공고 30건 통과",
         "알바천국 상세공고 25건 통과",
         "알바천국 상세공고 35건 통과",
         "알바천국 상세공고 24건 통과",
         "알바천국 상세공고 20건 통과",
+        "알바천국 상세공고 34건 통과",
         "알바천국 상세공고 36건 통과",
         "알바천국 상세공고 45건 통과",
         "알바천국 상세공고 47건 통과",
@@ -2645,12 +2645,13 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=3",
       "state": "ok",
-      "reason": "알바천국 상세공고 34건 통과",
+      "reason": "알바천국 상세공고 33건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 34,
+      "accepted": 33,
       "rejected": {
-        "work_date_already_passed": 16
+        "work_date_already_passed": 16,
+        "region_or_closed": 1
       }
     },
     {
@@ -2701,8 +2702,8 @@
       "candidates": 50,
       "accepted": 35,
       "rejected": {
-        "older_than_3_days": 4,
-        "work_date_already_passed": 11
+        "work_date_already_passed": 11,
+        "older_than_3_days": 4
       }
     },
     {
@@ -2837,8 +2838,8 @@
       "candidates": 50,
       "accepted": 26,
       "rejected": {
-        "work_date_already_passed": 23,
-        "older_than_3_days": 1
+        "older_than_3_days": 1,
+        "work_date_already_passed": 23
       }
     },
     {
