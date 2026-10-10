@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-11 05:27",
+  "updated_at_kst": "2026-10-11 05:43",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -396,7 +396,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-11",
+      "posted_at": "2026-10-10",
       "posted_verified": true,
       "work_date": "10/11",
       "work_start": "2026-10-11",
@@ -536,7 +536,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-11",
+      "posted_at": "2026-10-10",
       "posted_verified": true,
       "work_date": "10/11",
       "work_start": "2026-10-11",
@@ -1639,7 +1639,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-11",
+      "posted_at": "2026-10-10",
       "posted_verified": true,
       "work_date": "10/11",
       "work_start": "2026-10-11",
@@ -1779,7 +1779,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-11",
+      "posted_at": "2026-10-10",
       "posted_verified": true,
       "work_date": "10/11",
       "work_start": "2026-10-11",
@@ -2495,7 +2495,8 @@
       "candidates": 627,
       "accepted": 133,
       "messages": [
-        "공개 페이지 정상 · 56건 통과",
+        "공개 페이지 정상 · 57건 통과",
+        "공개 페이지 정상 · 7건 통과",
         "공개 페이지 정상 · 8건 통과",
         "공개 페이지 정상 · 20건 통과",
         "공고 후보는 찾았지만 현재 필터 조건 통과 0건",
@@ -2552,20 +2553,20 @@
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=1",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 56건 통과",
+      "reason": "공개 페이지 정상 · 57건 통과",
       "http": 200,
-      "candidates": 56,
-      "accepted": 56,
+      "candidates": 57,
+      "accepted": 57,
       "rejected": {}
     },
     {
       "source": "알바몬",
       "url": "https://www.albamon.com/jobs/short-term?areas=H000&page=2",
       "state": "ok",
-      "reason": "공개 페이지 정상 · 8건 통과",
+      "reason": "공개 페이지 정상 · 7건 통과",
       "http": 200,
-      "candidates": 20,
-      "accepted": 8,
+      "candidates": 19,
+      "accepted": 7,
       "rejected": {
         "posted_date_unverified": 12
       }
@@ -2952,8 +2953,8 @@
       "candidates": 50,
       "accepted": 29,
       "rejected": {
-        "older_than_3_days": 1,
-        "work_date_already_passed": 20
+        "work_date_already_passed": 20,
+        "older_than_3_days": 1
       }
     },
     {
@@ -3153,8 +3154,8 @@
       "candidates": 50,
       "accepted": 25,
       "rejected": {
-        "older_than_3_days": 2,
-        "work_date_already_passed": 23
+        "work_date_already_passed": 23,
+        "older_than_3_days": 2
       }
     },
     {
