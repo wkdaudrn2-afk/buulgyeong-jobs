@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-11 05:11",
+  "updated_at_kst": "2026-10-11 05:27",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -292,7 +292,7 @@
       "region": "부산",
       "company": "세븐일레븐 이천수림점",
       "title": "세븐일레븐 이천 송정동 단기 근무자 모집",
-      "task": "행사, 팝업, 백화점, 매장, 이벤트, 공연, 아울렛",
+      "task": "행사, 팝업, 백화점, 스태프, 매장, 이벤트, 공연, 아울렛",
       "work_time": "07:00~16:00",
       "day_pay": 130000,
       "explicit_day_pay": 130000,
@@ -305,7 +305,7 @@
       "duration_label": "하루(1일)",
       "day_group": "주말",
       "post_age_rank": 0,
-      "priority_hits": 7,
+      "priority_hits": 8,
       "accuracy_source": "focused_detail",
       "work_hours": 9.0,
       "expected_daily_earnings": 130000
@@ -1535,7 +1535,7 @@
       "region": "부산",
       "company": "세븐일레븐 이천수림점",
       "title": "세븐일레븐 이천 송정동 단기 근무자 모집",
-      "task": "행사, 팝업, 백화점, 매장, 이벤트, 공연, 아울렛",
+      "task": "행사, 팝업, 백화점, 스태프, 매장, 이벤트, 공연, 아울렛",
       "work_time": "07:00~16:00",
       "day_pay": 130000,
       "explicit_day_pay": 130000,
@@ -1548,7 +1548,7 @@
       "duration_label": "하루(1일)",
       "day_group": "주말",
       "post_age_rank": 0,
-      "priority_hits": 7,
+      "priority_hits": 8,
       "accuracy_source": "focused_detail",
       "work_hours": 9.0,
       "expected_daily_earnings": 130000
@@ -2511,7 +2511,7 @@
       "blocked_pages": 0,
       "error_pages": 0,
       "candidates": 1000,
-      "accepted": 646,
+      "accepted": 647,
       "messages": [
         "알바천국 상세공고 27건 통과",
         "알바천국 상세공고 29건 통과",
@@ -2524,8 +2524,7 @@
         "알바천국 상세공고 38건 통과",
         "알바천국 상세공고 43건 통과",
         "알바천국 상세공고 49건 통과",
-        "알바천국 상세공고 40건 통과",
-        "알바천국 상세공고 24건 통과"
+        "알바천국 상세공고 40건 통과"
       ]
     },
     "당근알바": {
@@ -2953,8 +2952,8 @@
       "candidates": 50,
       "accepted": 29,
       "rejected": {
-        "work_date_already_passed": 20,
-        "older_than_3_days": 1
+        "older_than_3_days": 1,
+        "work_date_already_passed": 20
       }
     },
     {
@@ -3149,13 +3148,13 @@
       "source": "알바천국",
       "url": "https://www.alba.co.kr/job/object/Main?hidsortcnt=50&pagesize=50&page=18",
       "state": "ok",
-      "reason": "알바천국 상세공고 24건 통과",
+      "reason": "알바천국 상세공고 25건 통과",
       "http": 200,
       "candidates": 50,
-      "accepted": 24,
+      "accepted": 25,
       "rejected": {
-        "work_date_already_passed": 24,
-        "older_than_3_days": 2
+        "older_than_3_days": 2,
+        "work_date_already_passed": 23
       }
     },
     {
