@@ -1,5 +1,5 @@
 {
-  "updated_at_kst": "2026-10-13 05:30",
+  "updated_at_kst": "2026-10-13 05:52",
   "collector_status": "ok",
   "criteria": "정확도+수집량+수익 우선: 알바몬·알바천국은 등록일 확인 최근 3일 이내 부산·경남·울산 공고만, 구조화/공고영역 우선 추출, 지난 근무일 제외. TOP25는 일급 높은순→시급×근무시간 예상일수익 높은순→시간미확인 시급 높은순→급여확인. 당근은 부산·김해·양산 현장형 공고 별도 TOP25.",
   "general_jobs": [
@@ -172,7 +172,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-12",
+      "posted_at": "2026-10-13",
       "posted_verified": true,
       "work_date": "10/13",
       "work_start": "2026-10-13",
@@ -375,27 +375,27 @@
       "region": "부산",
       "company": "쿠팡CFS/고양 1센터",
       "title": "[일최대12만원]다음날바로지급+단순/간단업무+주말/단기알바+초보",
-      "task": "팝업, 백화점, 보조, 포장, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "07:00~16:00",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "시간 확인",
       "day_pay": 125280,
       "explicit_day_pay": 125280,
       "hourly_pay": 10320,
       "pay_type": "일급",
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147423431&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147423428&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
       "post_age_rank": 0,
-      "priority_hits": 8,
+      "priority_hits": 7,
       "accuracy_source": "focused_detail",
-      "work_hours": 9.0,
+      "work_hours": 0.0,
       "expected_daily_earnings": 125280
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-13",
+      "posted_at": "2026-10-12",
       "posted_verified": true,
       "work_date": "10/13",
       "work_start": "2026-10-13",
@@ -1063,7 +1063,7 @@
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-12",
+      "posted_at": "2026-10-13",
       "posted_verified": true,
       "work_date": "10/13",
       "work_start": "2026-10-13",
@@ -1266,27 +1266,27 @@
       "region": "부산",
       "company": "쿠팡CFS/고양 1센터",
       "title": "[일최대12만원]다음날바로지급+단순/간단업무+주말/단기알바+초보",
-      "task": "팝업, 백화점, 보조, 포장, 매장, 이벤트, 공연, 아울렛",
-      "work_time": "07:00~16:00",
+      "task": "팝업, 백화점, 포장, 매장, 이벤트, 공연, 아울렛",
+      "work_time": "시간 확인",
       "day_pay": 125280,
       "explicit_day_pay": 125280,
       "hourly_pay": 10320,
       "pay_type": "일급",
       "pay_display": "일급 125,280원",
       "apply": "홈페이지",
-      "url": "https://www.alba.co.kr/job/Detail?adid=147423431&listmenucd=OPTION",
+      "url": "https://www.alba.co.kr/job/Detail?adid=147423428&listmenucd=OPTION",
       "duration_days": 1,
       "duration_label": "하루(1일)",
       "day_group": "평일",
       "post_age_rank": 0,
-      "priority_hits": 8,
+      "priority_hits": 7,
       "accuracy_source": "focused_detail",
-      "work_hours": 9.0,
+      "work_hours": 0.0,
       "expected_daily_earnings": 125280
     },
     {
       "source": "알바천국",
-      "posted_at": "2026-10-13",
+      "posted_at": "2026-10-12",
       "posted_verified": true,
       "work_date": "10/13",
       "work_start": "2026-10-13",
@@ -1839,13 +1839,13 @@
       "accepted": 7,
       "messages": [
         "상세 공고 20건 확인 · 2건 통과",
-        "상세 공고 11건 확인 · 2건 통과",
+        "상세 공고 12건 확인 · 2건 통과",
         "상세 공고 2건 확인 · 현재 조건 통과 0건",
         "상세 공고 20건 확인 · 현재 조건 통과 0건",
-        "상세 공고 4건 확인 · 현재 조건 통과 0건",
+        "상세 공고 3건 확인 · 현재 조건 통과 0건",
         "상세 공고 13건 확인 · 3건 통과",
         "당근 공개 검색 페이지 응답 정상 · 상세 공고 링크 미확인",
-        "상세 공고 3건 확인 · 현재 조건 통과 0건"
+        "상세 공고 4건 확인 · 현재 조건 통과 0건"
       ]
     }
   },
@@ -2484,8 +2484,8 @@
       "candidates": 20,
       "accepted": 2,
       "rejected": {
-        "daangn_not_preferred": 7,
-        "region_or_closed": 10,
+        "daangn_not_preferred": 6,
+        "region_or_closed": 11,
         "daangn_unwanted_job": 1
       },
       "detail_checked": 20
@@ -2494,15 +2494,15 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=594",
       "state": "ok",
-      "reason": "상세 공고 11건 확인 · 2건 통과",
+      "reason": "상세 공고 12건 확인 · 2건 통과",
       "http": 200,
-      "candidates": 11,
+      "candidates": 12,
       "accepted": 2,
       "rejected": {
-        "daangn_not_preferred": 2,
+        "daangn_not_preferred": 3,
         "region_or_closed": 7
       },
-      "detail_checked": 11
+      "detail_checked": 12
     },
     {
       "source": "당근알바",
@@ -2527,9 +2527,9 @@
       "candidates": 20,
       "accepted": 0,
       "rejected": {
+        "daangn_outside_target_area": 5,
         "region_or_closed": 11,
-        "daangn_not_preferred": 4,
-        "daangn_outside_target_area": 5
+        "daangn_not_preferred": 4
       },
       "detail_checked": 20
     },
@@ -2537,16 +2537,16 @@
       "source": "당근알바",
       "url": "https://jobs.daangn.com/s?regionId=648",
       "state": "ok",
-      "reason": "상세 공고 4건 확인 · 현재 조건 통과 0건",
+      "reason": "상세 공고 3건 확인 · 현재 조건 통과 0건",
       "http": 200,
-      "candidates": 4,
+      "candidates": 3,
       "accepted": 0,
       "rejected": {
         "daangn_not_preferred": 1,
-        "region_or_closed": 2,
+        "region_or_closed": 1,
         "daangn_unwanted_job": 1
       },
-      "detail_checked": 4
+      "detail_checked": 3
     },
     {
       "source": "당근알바",
@@ -2604,8 +2604,8 @@
       "candidates": 3,
       "accepted": 0,
       "rejected": {
-        "daangn_not_preferred": 2,
-        "region_or_closed": 1
+        "daangn_not_preferred": 1,
+        "region_or_closed": 2
       },
       "detail_checked": 3
     },
